@@ -306,7 +306,25 @@
         "miracle",
         "nature-miracle"
       ],
-      "orderNote": "Luke 9:10 sets the miracle near Bethsaida, which Robertson takes as Bethsaida Julias on the northeast shore; Mark 6:45 then sends the disciples \"to Bethsaida,\" which Robertson thinks was a second, western Bethsaida near Capernaum (others read it as the same town). Pilgrim tradition since the 4th century has honored the miracle at Tabgha on the northwest shore, where the Church of the Multiplication stands."
+      "orderNote": "Luke 9:10 sets the miracle near Bethsaida, which Robertson takes as Bethsaida Julias on the northeast shore; Mark 6:45 then sends the disciples \"to Bethsaida,\" which Robertson thinks was a second, western Bethsaida near Capernaum (others read it as the same town). Pilgrim tradition since the 4th century has honored the miracle at Tabgha on the northwest shore, where the Church of the Multiplication stands.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 14:21",
+          "text": "And those who ate were about five thousand men, besides women and children."
+        },
+        "Mk": {
+          "ref": "Mark 6:39–40",
+          "text": "Then he commanded them all to sit down by companies upon the green grass. So they sat down in groups, by hundreds and by fifties."
+        },
+        "Lk": {
+          "ref": "Luke 9:11",
+          "text": "When the crowds learned it, they followed him; and he welcomed them and spoke to them of the kingdom of God, and cured those who had need of healing."
+        },
+        "Jn": {
+          "ref": "John 6:9",
+          "text": "\"There is a lad here who has five barley loaves and two fish; but what are they among so many?\""
+        }
+      }
     },
     {
       "id": "notking",
@@ -377,7 +395,21 @@
       ],
       "tags": [
         "prayer"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 14:23",
+          "text": "And after he had dismissed the crowds, he went up into the hills by himself to pray. When evening came, he was there alone,"
+        },
+        "Mk": {
+          "ref": "Mark 6:45",
+          "text": "Immediately he made his disciples get into the boat and go before him to the other side, to Bethsaida, while he dismissed the crowd."
+        },
+        "Jn": {
+          "ref": "John 6:15",
+          "text": "Perceiving then that they were about to come and take him by force to make him king, Jesus withdrew again to the hills by himself."
+        }
+      }
     },
     {
       "id": "walkonwater",
@@ -476,7 +508,21 @@
       "tags": [
         "miracle",
         "nature-miracle"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 14:28–29",
+          "text": "And Peter answered him, \"Lord, if it is you, bid me come to you on the water.\" He said, \"Come.\" So Peter got out of the boat and walked on the water and came to Jesus;"
+        },
+        "Mk": {
+          "ref": "Mark 6:51–52",
+          "text": "And he got into the boat with them and the wind ceased. And they were utterly astounded, for they did not understand about the loaves, but their hearts were hardened."
+        },
+        "Jn": {
+          "ref": "John 6:21",
+          "text": "Then they were glad to take him into the boat, and immediately the boat was at the land to which they were going."
+        }
+      }
     },
     {
       "id": "gennesaretheal",
@@ -542,7 +588,17 @@
       ],
       "tags": [
         "healing"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 14:35",
+          "text": "And when the men of that place recognized him, they sent round to all that region and brought to him all that were sick,"
+        },
+        "Mk": {
+          "ref": "Mark 6:54–55",
+          "text": "And when they got out of the boat, immediately the people recognized him, and ran about the whole neighborhood and began to bring sick people on their pallets to any place where they heard he was."
+        }
+      }
     },
     {
       "id": "breadoflife",
@@ -682,7 +738,21 @@
       "tags": [
         "conflict",
         "teaching"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 15:12–13",
+          "text": "Then the disciples came and said to him, \"Do you know that the Pharisees were offended when they heard this saying?\" He answered, \"Every plant which my heavenly Father has not planted will be rooted up."
+        },
+        "Mk": {
+          "ref": "Mark 7:18–19",
+          "text": "And he said to them, \"Then are you also without understanding? Do you not see that whatever goes into a man from outside cannot defile him, since it enters, not his heart but his stomach, and so passes on?\" (Thus he declared all foods clean.)"
+        },
+        "Jn": {
+          "ref": "John 7:1",
+          "text": "After this Jesus went about in Galilee; he would not go about in Judea, because the Jews sought to kill him."
+        }
+      }
     },
     {
       "id": "syrophoenician",
@@ -784,7 +854,17 @@
         "exorcism",
         "miracle"
       ],
-      "orderNote": "Robertson notes it was once questioned whether Jesus actually left the land of Israel; Matthew's wording and the best text of Mark 7:31 (\"through Sidon\") show that he did. This is the only time the Gospels record him outside the Jewish homeland, apart from the flight to Egypt."
+      "orderNote": "Robertson notes it was once questioned whether Jesus actually left the land of Israel; Matthew's wording and the best text of Mark 7:31 (\"through Sidon\") show that he did. This is the only time the Gospels record him outside the Jewish homeland, apart from the flight to Egypt.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 15:24",
+          "text": "He answered, \"I was sent only to the lost sheep of the house of Israel.\""
+        },
+        "Mk": {
+          "ref": "Mark 7:26–27",
+          "text": "Now the woman was a Greek, a Syrophoenician by birth. And she begged him to cast the demon out of her daughter. And he said to her, \"Let the children first be fed, for it is not right to take the children's bread and throw it to the dogs.\""
+        }
+      }
     },
     {
       "id": "ephphatha",
@@ -885,7 +965,17 @@
         "healing",
         "miracle"
       ],
-      "orderNote": "Robertson stresses that each of the withdrawals keeps out of Herod Antipas' territory and goes into Gentile, Greek-speaking districts."
+      "orderNote": "Robertson stresses that each of the withdrawals keeps out of Herod Antipas' territory and goes into Gentile, Greek-speaking districts.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 15:31",
+          "text": "so that the throng wondered, when they saw the dumb speaking, the maimed whole, the lame walking, and the blind seeing; and they glorified the God of Israel."
+        },
+        "Mk": {
+          "ref": "Mark 7:34",
+          "text": "and looking up to heaven, he sighed, and said to him, \"Ephphatha,\" that is, \"Be opened.\""
+        }
+      }
     },
     {
       "id": "feed4000",
@@ -940,7 +1030,17 @@
         "miracle",
         "nature-miracle"
       ],
-      "orderNote": "Some scholars think this is a second telling of the feeding of the five thousand. Robertson rejects that: Mark and Matthew report both, and both report Jesus himself referring to the two feedings (Mark 8:19–20; Matthew 16:9–10). Some pilgrim traditions set it at Tabgha, but Mark's order places it in the Decapolis."
+      "orderNote": "Some scholars think this is a second telling of the feeding of the five thousand. Robertson rejects that: Mark and Matthew report both, and both report Jesus himself referring to the two feedings (Mark 8:19–20; Matthew 16:9–10). Some pilgrim traditions set it at Tabgha, but Mark's order places it in the Decapolis.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 15:38",
+          "text": "Those who ate were four thousand men, besides women and children."
+        },
+        "Mk": {
+          "ref": "Mark 8:2–3",
+          "text": "\"I have compassion on the crowd, because they have been with me now three days, and have nothing to eat; and if I send them away hungry to their homes, they will faint on the way; and some of them have come a long way.\""
+        }
+      }
     },
     {
       "id": "magadan",
@@ -1035,7 +1135,17 @@
       "tags": [
         "conflict"
       ],
-      "orderNote": "The site of Magadan and Dalmanutha is unknown. Robertson notes that early copyists changed it to the familiar Magdala; he also notes this is the first time the Sadducees appear with the Pharisees against Jesus."
+      "orderNote": "The site of Magadan and Dalmanutha is unknown. Robertson notes that early copyists changed it to the familiar Magdala; he also notes this is the first time the Sadducees appear with the Pharisees against Jesus.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 16:4",
+          "text": "An evil and adulterous generation seeks for a sign, but no sign shall be given to it except the sign of Jonah.\" So he left them and departed."
+        },
+        "Mk": {
+          "ref": "Mark 8:12",
+          "text": "And he sighed deeply in his spirit, and said, \"Why does this generation seek a sign? Truly, I say to you, no sign shall be given to this generation.\""
+        }
+      }
     },
     {
       "id": "bethsaidablind",
@@ -1105,7 +1215,17 @@
         "healing",
         "miracle",
         "teaching"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 16:12",
+          "text": "Then they understood that he did not tell them to beware of the leaven of bread, but of the teaching of the Pharisees and Sadducees."
+        },
+        "Mk": {
+          "ref": "Mark 8:24",
+          "text": "And he looked up and said, \"I see men; but they look like trees, walking.\""
+        }
+      }
     },
     {
       "id": "confession",
@@ -1209,7 +1329,21 @@
       "tags": [
         "teaching",
         "call"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 16:18",
+          "text": "And I tell you, you are Peter, and on this rock I will build my church, and the powers of death shall not prevail against it."
+        },
+        "Mk": {
+          "ref": "Mark 8:29",
+          "text": "And he asked them, \"But who do you say that I am?\" Peter answered him, \"You are the Christ.\""
+        },
+        "Lk": {
+          "ref": "Luke 9:20",
+          "text": "And he said to them, \"But who do you say that I am?\" And Peter answered, \"The Christ of God.\""
+        }
+      }
     },
     {
       "id": "firstprediction",
@@ -1270,7 +1404,21 @@
       "tags": [
         "prophecy",
         "teaching"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 16:22",
+          "text": "And Peter took him and began to rebuke him, saying, \"God forbid, Lord! This shall never happen to you.\""
+        },
+        "Mk": {
+          "ref": "Mark 8:32–33",
+          "text": "And he said this plainly. And Peter took him, and began to rebuke him. But turning and seeing his disciples, he rebuked Peter, and said, \"Get behind me, Satan! For you are not on the side of God, but of men.\""
+        },
+        "Lk": {
+          "ref": "Luke 9:23",
+          "text": "And he said to all, \"If any man would come after me, let him deny himself and take up his cross daily and follow me."
+        }
+      }
     },
     {
       "id": "comingkingdom",
@@ -1327,7 +1475,21 @@
         "prophecy",
         "teaching"
       ],
-      "orderNote": "Interpreters differ on what Jesus meant by the kingdom coming \"with power\" within that generation: the Transfiguration that follows, the Resurrection and Pentecost, or the fall of Jerusalem in AD 70."
+      "orderNote": "Interpreters differ on what Jesus meant by the kingdom coming \"with power\" within that generation: the Transfiguration that follows, the Resurrection and Pentecost, or the fall of Jerusalem in AD 70.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 16:27",
+          "text": "For the Son of man is to come with his angels in the glory of his Father, and then he will repay every man for what he has done."
+        },
+        "Mk": {
+          "ref": "Mark 9:1",
+          "text": "And he said to them, \"Truly, I say to you, there are some standing here who will not taste death before they see the kingdom of God come with power.\""
+        },
+        "Lk": {
+          "ref": "Luke 9:26",
+          "text": "For whoever is ashamed of me and of my words, of him will the Son of man be ashamed when he comes in his glory and the glory of the Father and of the holy angels."
+        }
+      }
     },
     {
       "id": "transfiguration",
@@ -1432,7 +1594,21 @@
         "miracle",
         "prayer"
       ],
-      "orderNote": "The Gospels say only \"a high mountain.\" A tradition from the 4th century (Cyril of Jerusalem, Jerome) names Mount Tabor, where basilicas stand today; Robertson calls that tradition \"beyond question false,\" since Tabor lies far to the south, in Galilee. He prefers a spur of Hermon; others suggest Mount Meron."
+      "orderNote": "The Gospels say only \"a high mountain.\" A tradition from the 4th century (Cyril of Jerusalem, Jerome) names Mount Tabor, where basilicas stand today; Robertson calls that tradition \"beyond question false,\" since Tabor lies far to the south, in Galilee. He prefers a spur of Hermon; others suggest Mount Meron.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 17:6–7",
+          "text": "When the disciples heard this, they fell on their faces, and were filled with awe. But Jesus came and touched them, saying, \"Rise, and have no fear.\""
+        },
+        "Mk": {
+          "ref": "Mark 9:3",
+          "text": "and his garments became glistening, intensely white, as no fuller on earth could bleach them."
+        },
+        "Lk": {
+          "ref": "Luke 9:31",
+          "text": "who appeared in glory and spoke of his departure, which he was to accomplish at Jerusalem."
+        }
+      }
     },
     {
       "id": "elijahcome",
@@ -1504,7 +1680,21 @@
       "tags": [
         "teaching",
         "prophecy"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 17:13",
+          "text": "Then the disciples understood that he was speaking to them of John the Baptist."
+        },
+        "Mk": {
+          "ref": "Mark 9:10",
+          "text": "So they kept the matter to themselves, questioning what the rising from the dead meant."
+        },
+        "Lk": {
+          "ref": "Luke 9:36",
+          "text": "And when the voice had spoken, Jesus was found alone. And they kept silence and told no one in those days anything of what they had seen."
+        }
+      }
     },
     {
       "id": "demoniacboy",
@@ -1582,7 +1772,21 @@
         "exorcism",
         "healing",
         "miracle"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 17:20",
+          "text": "He said to them, \"Because of your little faith. For truly, I say to you, if you have faith as a grain of mustard seed, you will say to this mountain, 'Move from hence to yonder place,' and it will move; and nothing will be impossible to you.\""
+        },
+        "Mk": {
+          "ref": "Mark 9:24",
+          "text": "Immediately the father of the child cried out and said, \"I believe; help my unbelief!\""
+        },
+        "Lk": {
+          "ref": "Luke 9:42",
+          "text": "While he was coming, the demon tore him and convulsed him. But Jesus rebuked the unclean spirit, and healed the boy, and gave him back to his father."
+        }
+      }
     },
     {
       "id": "secondprediction",
@@ -1656,7 +1860,21 @@
         "prophecy",
         "teaching"
       ],
-      "orderNote": "Robertson ends the season of retirement from Galilee here (§§72–88), about six months from spring to autumn, and thinks the events of §§89–96 took only a few days."
+      "orderNote": "Robertson ends the season of retirement from Galilee here (§§72–88), about six months from spring to autumn, and thinks the events of §§89–96 took only a few days.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 17:22–23",
+          "text": "As they were gathering in Galilee, Jesus said to them, \"The Son of man is to be delivered into the hands of men, and they will kill him, and he will be raised on the third day.\" And they were greatly distressed."
+        },
+        "Mk": {
+          "ref": "Mark 9:32",
+          "text": "But they did not understand the saying, and they were afraid to ask him."
+        },
+        "Lk": {
+          "ref": "Luke 9:44",
+          "text": "\"Let these words sink into your ears; for the Son of man is to be delivered into the hands of men.\""
+        }
+      }
     },
     {
       "id": "templetax",
@@ -1779,7 +1997,21 @@
       ],
       "tags": [
         "teaching"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 18:3",
+          "text": "and said, \"Truly, I say to you, unless you turn and become like children, you will never enter the kingdom of heaven."
+        },
+        "Mk": {
+          "ref": "Mark 9:33–34",
+          "text": "And they came to Capernaum; and when he was in the house he asked them, \"What were you discussing on the way?\" But they were silent; for on the way they had discussed with one another who was the greatest."
+        },
+        "Lk": {
+          "ref": "Luke 9:48",
+          "text": "and said to them, \"Whoever receives this child in my name receives me, and whoever receives me receives him who sent me; for he who is least among you all is the one who is great.\""
+        }
+      }
     },
     {
       "id": "johnszeal",
@@ -1844,7 +2076,21 @@
         "teaching",
         "parable"
       ],
-      "orderNote": "Luke tells the parable of the lost sheep again, more fully, to Pharisees and scribes later in the ministry (Luke 15:3–7). Robertson treats them as two occasions."
+      "orderNote": "Luke tells the parable of the lost sheep again, more fully, to Pharisees and scribes later in the ministry (Luke 15:3–7). Robertson treats them as two occasions.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 18:10",
+          "text": "\"See that you do not despise one of these little ones; for I tell you that in heaven their angels always behold the face of my Father who is in heaven."
+        },
+        "Mk": {
+          "ref": "Mark 9:39–40",
+          "text": "But Jesus said, \"Do not forbid him; for no one who does a mighty work in my name will be able soon after to speak evil of me. For he that is not against us is for us."
+        },
+        "Lk": {
+          "ref": "Luke 9:50",
+          "text": "But Jesus said to him, \"Do not forbid him; for he that is not against you is for you.\""
+        }
+      }
     },
     {
       "id": "unmerciful",
@@ -1963,7 +2209,17 @@
         "call",
         "teaching"
       ],
-      "orderNote": "Matthew sets these sayings early, before the crossing to the Gadarenes; Luke sets them on the road after the Samaritan village. Robertson places them here, just before Jesus leaves Galilee, and notes that such sayings may have been repeated."
+      "orderNote": "Matthew sets these sayings early, before the crossing to the Gadarenes; Luke sets them on the road after the Samaritan village. Robertson places them here, just before Jesus leaves Galilee, and notes that such sayings may have been repeated.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 8:19",
+          "text": "And a scribe came up and said to him, \"Teacher, I will follow you wherever you go.\""
+        },
+        "Lk": {
+          "ref": "Luke 9:61–62",
+          "text": "Another said, \"I will follow you, Lord; but let me first say farewell to those at my home.\" Jesus said to him, \"No one who puts his hand to the plow and looks back is fit for the kingdom of God.\""
+        }
+      }
     },
     {
       "id": "brothers",
@@ -2095,7 +2351,17 @@
       "tags": [
         "conflict"
       ],
-      "orderNote": "Luke 9:51 opens his long travel narrative (9:51–19:27). Robertson, joining Luke and John, takes this first journey as the secret one to the Feast of Tabernacles in John 7:10, not the final journey to the Passover; others read Luke's whole section as the last journey."
+      "orderNote": "Luke 9:51 opens his long travel narrative (9:51–19:27). Robertson, joining Luke and John, takes this first journey as the secret one to the Feast of Tabernacles in John 7:10, not the final journey to the Passover; others read Luke's whole section as the last journey.",
+      "parallels": {
+        "Lk": {
+          "ref": "Luke 9:54–55",
+          "text": "And when his disciples James and John saw it, they said, \"Lord, do you want us to bid fire come down from heaven and consume them?\" But he turned and rebuked them."
+        },
+        "Jn": {
+          "ref": "John 7:10",
+          "text": "But after his brethren had gone up to the feast, then he also went up, not publicly but in private."
+        }
+      }
     },
     {
       "id": "tabernacles",
@@ -4245,7 +4511,17 @@
         "teaching",
         "conflict"
       ],
-      "orderNote": "Here Matthew and Mark rejoin the story after a long gap. Matthew 19:1 links this departure to the end of the Galilean teaching (§92), and Robertson notes that we must suppose a break in their narrative. Matthew alone includes the exception \"except for unchastity\"."
+      "orderNote": "Here Matthew and Mark rejoin the story after a long gap. Matthew 19:1 links this departure to the end of the Galilean teaching (§92), and Robertson notes that we must suppose a break in their narrative. Matthew alone includes the exception \"except for unchastity\".",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 19:9",
+          "text": "And I say to you: whoever divorces his wife, except for unchastity, and marries another, commits adultery; and he who marries a divorced woman, commits adultery.\""
+        },
+        "Mk": {
+          "ref": "Mark 10:11–12",
+          "text": "And he said to them, \"Whoever divorces his wife and marries another, commits adultery against her; and if she divorces her husband and marries another, she commits adultery.\""
+        }
+      }
     },
     {
       "id": "children",
@@ -4294,7 +4570,21 @@
       ],
       "tags": [
         "teaching"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 19:13",
+          "text": "Then children were brought to him that he might lay his hands on them and pray. The disciples rebuked the people;"
+        },
+        "Mk": {
+          "ref": "Mark 10:16",
+          "text": "And he took them in his arms and blessed them, laying his hands upon them."
+        },
+        "Lk": {
+          "ref": "Luke 18:15",
+          "text": "Now they were bringing even infants to him that he might touch them; and when the disciples saw it, they rebuked them."
+        }
+      }
     },
     {
       "id": "richruler",
@@ -4356,7 +4646,21 @@
         "teaching",
         "call"
       ],
-      "orderNote": "Only Matthew calls him young and only Luke calls him a ruler; Mark alone says that Jesus looked at him and loved him."
+      "orderNote": "Only Matthew calls him young and only Luke calls him a ruler; Mark alone says that Jesus looked at him and loved him.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 19:20",
+          "text": "The young man said to him, \"All these I have observed; what do I still lack?\""
+        },
+        "Mk": {
+          "ref": "Mark 10:21",
+          "text": "And Jesus looking upon him loved him, and said to him, \"You lack one thing; go, sell what you have, and give to the poor, and you will have treasure in heaven; and come, follow me.\""
+        },
+        "Lk": {
+          "ref": "Luke 18:18",
+          "text": "And a ruler asked him, \"Good Teacher, what shall I do to inherit eternal life?\""
+        }
+      }
     },
     {
       "id": "laborers",
@@ -4480,7 +4784,21 @@
         "passion",
         "teaching"
       ],
-      "orderNote": "In Mark, James and John make the request themselves; in Matthew their mother asks for them. Robertson places this in Perea, before the crossing of the Jordan to Jericho."
+      "orderNote": "In Mark, James and John make the request themselves; in Matthew their mother asks for them. Robertson places this in Perea, before the crossing of the Jordan to Jericho.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 20:20–21",
+          "text": "Then the mother of the sons of Zebedee came up to him, with her sons, and kneeling before him she asked him for something. And he said to her, \"What do you want?\" She said to him, \"Command that these two sons of mine may sit, one at your right hand and one at your left, in your kingdom.\""
+        },
+        "Mk": {
+          "ref": "Mark 10:32",
+          "text": "And they were on the road, going up to Jerusalem, and Jesus was walking ahead of them; and they were amazed, and those who followed were afraid."
+        },
+        "Lk": {
+          "ref": "Luke 18:31",
+          "text": "And taking the twelve, he said to them, \"Behold, we are going up to Jerusalem, and everything that is written of the Son of man by the prophets will be accomplished."
+        }
+      }
     },
     {
       "id": "bartimaeus",
@@ -4582,7 +4900,21 @@
         "miracle",
         "healing"
       ],
-      "orderNote": "Matthew has two blind men; Mark and Luke describe one, probably the better known. Mark and Matthew say Jesus was leaving Jericho, Luke that he was drawing near. Robertson suggests he had left the old town and was approaching Herod's new Jericho nearby."
+      "orderNote": "Matthew has two blind men; Mark and Luke describe one, probably the better known. Mark and Matthew say Jesus was leaving Jericho, Luke that he was drawing near. Robertson suggests he had left the old town and was approaching Herod's new Jericho nearby.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 20:30",
+          "text": "And behold, two blind men sitting by the roadside, when they heard that Jesus was passing by, cried out, \"Have mercy on us, Son of David!\""
+        },
+        "Mk": {
+          "ref": "Mark 10:50",
+          "text": "And throwing off his mantle he sprang up and came to Jesus."
+        },
+        "Lk": {
+          "ref": "Luke 18:43",
+          "text": "And immediately he received his sight and followed him, glorifying God; and all the people, when they saw it, gave praise to God."
+        }
+      }
     },
     {
       "id": "zacchaeus",

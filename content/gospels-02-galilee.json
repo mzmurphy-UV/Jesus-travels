@@ -169,7 +169,21 @@
       "tags": [
         "teaching"
       ],
-      "orderNote": "Robertson treats this as a summary heading for the whole Galilean ministry. How long that ministry lasted is uncertain: about a year and a half if the feast of John 5:1 was a Passover, otherwise perhaps six to eight months."
+      "orderNote": "Robertson treats this as a summary heading for the whole Galilean ministry. How long that ministry lasted is uncertain: about a year and a half if the feast of John 5:1 was a Passover, otherwise perhaps six to eight months.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 4:17",
+          "text": "From that time Jesus began to preach, saying, \"Repent, for the kingdom of heaven is at hand.\""
+        },
+        "Mk": {
+          "ref": "Mark 1:15",
+          "text": "and saying, \"The time is fulfilled, and the kingdom of God is at hand; repent, and believe in the gospel.\""
+        },
+        "Lk": {
+          "ref": "Luke 4:15",
+          "text": "And he taught in their synagogues, being glorified by all."
+        }
+      }
     },
     {
       "id": "courtier",
@@ -511,7 +525,21 @@
         "miracle",
         "nature-miracle"
       ],
-      "orderNote": "Robertson takes Luke's miraculous catch as the same call told in Mark and Matthew; some scholars see two occasions. Mark and Matthew do not name the place beyond \"the Sea of Galilee\"; the shore at Tabgha is the traditional site."
+      "orderNote": "Robertson takes Luke's miraculous catch as the same call told in Mark and Matthew; some scholars see two occasions. Mark and Matthew do not name the place beyond \"the Sea of Galilee\"; the shore at Tabgha is the traditional site.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 4:19",
+          "text": "And he said to them, \"Follow me, and I will make you fishers of men.\""
+        },
+        "Mk": {
+          "ref": "Mark 1:20",
+          "text": "And immediately he called them; and they left their father Zebedee in the boat with the hired servants, and followed him."
+        },
+        "Lk": {
+          "ref": "Luke 5:8",
+          "text": "But when Simon Peter saw it, he fell down at Jesus' knees, saying, \"Depart from me, for I am a sinful man, O Lord.\""
+        }
+      }
     },
     {
       "id": "unclean",
@@ -576,7 +604,17 @@
       "tags": [
         "exorcism",
         "teaching"
-      ]
+      ],
+      "parallels": {
+        "Mk": {
+          "ref": "Mark 1:27",
+          "text": "And they were all amazed, so that they questioned among themselves, saying, \"What is this? A new teaching! With authority he commands even the unclean spirits, and they obey him.\""
+        },
+        "Lk": {
+          "ref": "Luke 4:35",
+          "text": "But Jesus rebuked him, saying, \"Be silent, and come out of him!\" And when the demon had thrown him down in the midst, he came out of him, having done him no harm."
+        }
+      }
     },
     {
       "id": "petersmother",
@@ -637,7 +675,21 @@
         "miracle",
         "healing",
         "exorcism"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 8:17",
+          "text": "This was to fulfil what was spoken by the prophet Isaiah, \"He took our infirmities and bore our diseases.\""
+        },
+        "Mk": {
+          "ref": "Mark 1:31",
+          "text": "And he came and took her by the hand and lifted her up, and the fever left her; and she served them."
+        },
+        "Lk": {
+          "ref": "Luke 4:39",
+          "text": "And he stood over her and rebuked the fever, and it left her; and immediately she rose and served them."
+        }
+      }
     },
     {
       "id": "firsttour",
@@ -723,7 +775,21 @@
         "prayer",
         "healing"
       ],
-      "orderNote": "Robertson counts three tours of Galilee: this one with the four fishermen, a second in Luke 8:1–3 (§60), and a third after the sending of the Twelve (§70)."
+      "orderNote": "Robertson counts three tours of Galilee: this one with the four fishermen, a second in Luke 8:1–3 (§60), and a third after the sending of the Twelve (§70).",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 4:23",
+          "text": "And he went about all Galilee, teaching in their synagogues and preaching the gospel of the kingdom and healing every disease and every infirmity among the people."
+        },
+        "Mk": {
+          "ref": "Mark 1:35",
+          "text": "And in the morning, a great while before day, he rose and went out to a lonely place, and there he prayed."
+        },
+        "Lk": {
+          "ref": "Luke 4:43",
+          "text": "but he said to them, \"I must preach the good news of the kingdom of God to the other cities also; for I was sent for this purpose.\""
+        }
+      }
     },
     {
       "id": "leper",
@@ -783,7 +849,21 @@
         "miracle",
         "healing"
       ],
-      "orderNote": "Luke says only \"in one of the cities\"; Matthew places the healing as Jesus comes down from the mountain after the Sermon. Robertson follows Mark's order."
+      "orderNote": "Luke says only \"in one of the cities\"; Matthew places the healing as Jesus comes down from the mountain after the Sermon. Robertson follows Mark's order.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 8:3",
+          "text": "And he stretched out his hand and touched him, saying, \"I will; be clean.\" And immediately his leprosy was cleansed."
+        },
+        "Mk": {
+          "ref": "Mark 1:41",
+          "text": "Moved with pity, he stretched out his hand and touched him, and said to him, \"I will; be clean.\""
+        },
+        "Lk": {
+          "ref": "Luke 5:16",
+          "text": "But he withdrew to the wilderness and prayed."
+        }
+      }
     },
     {
       "id": "paralytic",
@@ -879,7 +959,21 @@
         "healing",
         "conflict"
       ],
-      "orderNote": "Robertson takes the house to be Peter's. A flat roof of beams, branches and packed earth, as in Galilean houses of basalt, could be dug through; Luke speaks of tiles."
+      "orderNote": "Robertson takes the house to be Peter's. A flat roof of beams, branches and packed earth, as in Galilean houses of basalt, could be dug through; Luke speaks of tiles.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 9:8",
+          "text": "When the crowds saw it, they were afraid, and they glorified God, who had given such authority to men."
+        },
+        "Mk": {
+          "ref": "Mark 2:4",
+          "text": "And when they could not get near him because of the crowd, they removed the roof above him; and when they had made an opening, they let down the pallet on which the paralytic lay."
+        },
+        "Lk": {
+          "ref": "Luke 5:19",
+          "text": "but finding no way to bring him in, because of the crowd, they went up on the roof and let him down with his bed through the tiles into the midst before Jesus."
+        }
+      }
     },
     {
       "id": "levi",
@@ -952,7 +1046,21 @@
         "call",
         "conflict"
       ],
-      "orderNote": "Mark and Luke call him Levi; the first Gospel calls him Matthew, and all three lists of the Twelve include a Matthew. Most take them as one man with two names."
+      "orderNote": "Mark and Luke call him Levi; the first Gospel calls him Matthew, and all three lists of the Twelve include a Matthew. Most take them as one man with two names.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 9:9",
+          "text": "As Jesus passed on from there, he saw a man called Matthew sitting at the tax office; and he said to him, \"Follow me.\" And he rose and followed him."
+        },
+        "Mk": {
+          "ref": "Mark 2:14",
+          "text": "And as he passed on, he saw Levi the son of Alphaeus sitting at the tax office, and he said to him, \"Follow me.\" And he rose and followed him."
+        },
+        "Lk": {
+          "ref": "Luke 5:28–29",
+          "text": "And he left everything, and rose and followed him. And Levi made him a great feast in his house; and there was a large company of tax collectors and others sitting at table with them."
+        }
+      }
     },
     {
       "id": "newwine",
@@ -1010,7 +1118,21 @@
         "teaching",
         "conflict"
       ],
-      "orderNote": "Robertson thinks the question was probably prompted by the disciples feasting at Matthew's house on a Jewish fast day."
+      "orderNote": "Robertson thinks the question was probably prompted by the disciples feasting at Matthew's house on a Jewish fast day.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 9:17",
+          "text": "Neither is new wine put into old wineskins; if it is, the skins burst, and the wine is spilled, and the skins are destroyed; but new wine is put into fresh wineskins, and so both are preserved.\""
+        },
+        "Mk": {
+          "ref": "Mark 2:22",
+          "text": "And no one puts new wine into old wineskins; if he does, the wine will burst the skins, and the wine is lost, and so are the skins; but new wine is for fresh skins.\""
+        },
+        "Lk": {
+          "ref": "Luke 5:39",
+          "text": "And no one after drinking old wine desires new; for he says, 'The old is good.'\""
+        }
+      }
     },
     {
       "id": "bethesda",
@@ -1198,7 +1320,21 @@
         "conflict",
         "teaching"
       ],
-      "orderNote": "Robertson places this \"probably in Galilee on the way back from Jerusalem\"; the Gospels name no place. Ripe grain points to spring, between Passover and Pentecost."
+      "orderNote": "Robertson places this \"probably in Galilee on the way back from Jerusalem\"; the Gospels name no place. Ripe grain points to spring, between Passover and Pentecost.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 12:6",
+          "text": "I tell you, something greater than the temple is here."
+        },
+        "Mk": {
+          "ref": "Mark 2:27–28",
+          "text": "And he said to them, \"The sabbath was made for man, not man for the sabbath; so the Son of man is lord even of the sabbath.\""
+        },
+        "Lk": {
+          "ref": "Luke 6:1",
+          "text": "On a sabbath, while he was going through the grainfields, his disciples plucked and ate some ears of grain, rubbing them in their hands."
+        }
+      }
     },
     {
       "id": "witheredhand",
@@ -1266,7 +1402,21 @@
         "healing",
         "conflict"
       ],
-      "orderNote": "The synagogue is not named. It may have been at Capernaum, but Robertson says only \"in Galilee.\""
+      "orderNote": "The synagogue is not named. It may have been at Capernaum, but Robertson says only \"in Galilee.\"",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 12:11",
+          "text": "He said to them, \"What man of you, if he has one sheep and it falls into a pit on the sabbath, will not lay hold of it and lift it out?"
+        },
+        "Mk": {
+          "ref": "Mark 3:5",
+          "text": "And he looked around at them with anger, grieved at their hardness of heart, and said to the man, \"Stretch out your hand.\" He stretched it out, and his hand was restored."
+        },
+        "Lk": {
+          "ref": "Luke 6:6",
+          "text": "On another sabbath, when he entered the synagogue and taught, a man was there whose right hand was withered."
+        }
+      }
     },
     {
       "id": "multitudes",
@@ -1346,7 +1496,17 @@
         "healing",
         "exorcism",
         "prophecy"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 12:18",
+          "text": "\"Behold, my servant whom I have chosen, my beloved with whom my soul is well pleased. I will put my Spirit upon him, and he shall proclaim justice to the Gentiles."
+        },
+        "Mk": {
+          "ref": "Mark 3:9",
+          "text": "And he told his disciples to have a boat ready for him because of the crowd, lest they should crush him;"
+        }
+      }
     },
     {
       "id": "twelve",
@@ -1427,7 +1587,17 @@
         "call",
         "prayer"
       ],
-      "orderNote": "Matthew gives the names only when the Twelve are sent out (Matthew 10:2–4, §70). The four lists (with Acts 1:13) agree on the names except Thaddaeus, whom Luke calls Judas son of James. The hill is not named; tradition places it near the Mount of Beatitudes."
+      "orderNote": "Matthew gives the names only when the Twelve are sent out (Matthew 10:2–4, §70). The four lists (with Acts 1:13) agree on the names except Thaddaeus, whom Luke calls Judas son of James. The hill is not named; tradition places it near the Mount of Beatitudes.",
+      "parallels": {
+        "Mk": {
+          "ref": "Mark 3:14–15",
+          "text": "And he appointed twelve, to be with him, and to be sent out to preach and have authority to cast out demons:"
+        },
+        "Lk": {
+          "ref": "Luke 6:12",
+          "text": "In these days he went out into the hills to pray; and all night he continued in prayer to God."
+        }
+      }
     },
     {
       "id": "sermon",
@@ -1502,7 +1672,17 @@
         "sermon",
         "teaching"
       ],
-      "orderNote": "Matthew sets the sermon \"on the mountain,\" Luke \"on a level place\" and in shorter form. Robertson takes them as one discourse, perhaps on a level spot on a hillside; others think Matthew has gathered sayings from many occasions."
+      "orderNote": "Matthew sets the sermon \"on the mountain,\" Luke \"on a level place\" and in shorter form. Robertson takes them as one discourse, perhaps on a level spot on a hillside; others think Matthew has gathered sayings from many occasions.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 5:1",
+          "text": "Seeing the crowds, he went up on the mountain, and when he sat down his disciples came to him."
+        },
+        "Lk": {
+          "ref": "Luke 6:17",
+          "text": "And he came down with them and stood on a level place, with a great crowd of his disciples and a great multitude of people from all Judea and Jerusalem and the seacoast of Tyre and Sidon, who came to hear him and to be healed of their diseases;"
+        }
+      }
     },
     {
       "id": "beatitudes",
@@ -1565,7 +1745,17 @@
       "tags": [
         "sermon",
         "teaching"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 5:3",
+          "text": "\"Blessed are the poor in spirit, for theirs is the kingdom of heaven."
+        },
+        "Lk": {
+          "ref": "Luke 6:20",
+          "text": "And he lifted up his eyes on his disciples, and said: \"Blessed are you poor, for yours is the kingdom of God."
+        }
+      }
     },
     {
       "id": "ourfather",
@@ -1654,7 +1844,17 @@
         "parable",
         "sermon",
         "teaching"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 7:24",
+          "text": "\"Every one then who hears these words of mine and does them will be like a wise man who built his house upon the rock;"
+        },
+        "Lk": {
+          "ref": "Luke 6:48",
+          "text": "he is like a man building a house, who dug deep, and laid the foundation upon rock; and when a flood arose, the stream broke against that house, and could not shake it, because it had been well built."
+        }
+      }
     },
     {
       "id": "centurion",
@@ -1721,7 +1921,17 @@
         "miracle",
         "healing"
       ],
-      "orderNote": "Matthew has the centurion come himself; Luke has him send Jewish elders and then friends. The centurion's words are echoed in the Mass before Communion."
+      "orderNote": "Matthew has the centurion come himself; Luke has him send Jewish elders and then friends. The centurion's words are echoed in the Mass before Communion.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 8:8",
+          "text": "But the centurion answered him, \"Lord, I am not worthy to have you come under my roof; but only say the word, and my servant will be healed."
+        },
+        "Lk": {
+          "ref": "Luke 7:4–5",
+          "text": "And when they came to Jesus, they besought him earnestly, saying, \"He is worthy to have you do this for him, for he loves our nation, and he built us our synagogue.\""
+        }
+      }
     },
     {
       "id": "nain",
@@ -1862,7 +2072,17 @@
         "teaching",
         "prophecy"
       ],
-      "orderNote": "Robertson places Jesus \"probably near Nain\" when the messengers come, since Luke ties the question to news of the raising there. John was held at Machaerus, east of the Dead Sea, about 75 miles away."
+      "orderNote": "Robertson places Jesus \"probably near Nain\" when the messengers come, since Luke ties the question to news of the raising there. John was held at Machaerus, east of the Dead Sea, about 75 miles away.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 11:2–3",
+          "text": "Now when John heard in prison about the deeds of the Christ, he sent word by his disciples and said to him, \"Are you he who is to come, or shall we look for another?\""
+        },
+        "Lk": {
+          "ref": "Luke 7:21",
+          "text": "In that hour he cured many of diseases and plagues and evil spirits, and on many that were blind he bestowed sight."
+        }
+      }
     },
     {
       "id": "cityswoes",
@@ -2096,7 +2316,17 @@
         "conflict",
         "teaching"
       ],
-      "orderNote": "Luke gives a similar controversy later (Luke 11:14–23); Robertson treats it as a separate occasion. He calls this the start of a \"busy day\" that runs through the parables by the sea and the storm on the lake."
+      "orderNote": "Luke gives a similar controversy later (Luke 11:14–23); Robertson treats it as a separate occasion. He calls this the start of a \"busy day\" that runs through the parables by the sea and the storm on the lake.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 12:28",
+          "text": "But if it is by the Spirit of God that I cast out demons, then the kingdom of God has come upon you."
+        },
+        "Mk": {
+          "ref": "Mark 3:21",
+          "text": "And when his friends heard it, they went out to seize him, for they said, \"He is beside himself.\""
+        }
+      }
     },
     {
       "id": "signjonah",
@@ -2169,7 +2399,21 @@
       "tags": [
         "teaching"
       ],
-      "orderNote": "Who the \"brothers\" were has been debated since early times: Catholic and Orthodox tradition holds that they were cousins or children of Joseph by an earlier marriage, while many Protestants take them as later children of Mary and Joseph."
+      "orderNote": "Who the \"brothers\" were has been debated since early times: Catholic and Orthodox tradition holds that they were cousins or children of Joseph by an earlier marriage, while many Protestants take them as later children of Mary and Joseph.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 12:49–50",
+          "text": "And stretching out his hand toward his disciples, he said, \"Here are my mother and my brethren! For whoever does the will of my Father in heaven is my brother, and sister, and mother.\""
+        },
+        "Mk": {
+          "ref": "Mark 3:34",
+          "text": "And looking around on those who sat about him, he said, \"Here are my mother and my brethren!"
+        },
+        "Lk": {
+          "ref": "Luke 8:21",
+          "text": "But he said to them, \"My mother and my brethren are those who hear the word of God and do it.\""
+        }
+      }
     },
     {
       "id": "sower",
@@ -2265,7 +2509,21 @@
         "parable",
         "teaching"
       ],
-      "orderNote": "Robertson calls this the first great group of at least ten parables, all spoken the same day. A cove between Tabgha and Capernaum, sometimes called the Bay of Parables or Sower's Cove, is the traditional setting."
+      "orderNote": "Robertson calls this the first great group of at least ten parables, all spoken the same day. A cove between Tabgha and Capernaum, sometimes called the Bay of Parables or Sower's Cove, is the traditional setting.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 13:23",
+          "text": "As for what was sown on good soil, this is he who hears the word and understands it; he indeed bears fruit, and yields, in one case a hundredfold, in another sixty, and in another thirty.\""
+        },
+        "Mk": {
+          "ref": "Mark 4:28",
+          "text": "The earth produces of itself, first the blade, then the ear, then the full grain in the ear."
+        },
+        "Lk": {
+          "ref": "Luke 8:15",
+          "text": "And as for that in the good soil, they are those who, hearing the word, hold it fast in an honest and good heart, and bring forth fruit with patience."
+        }
+      }
     },
     {
       "id": "tares",
@@ -2372,7 +2630,17 @@
       "tags": [
         "parable",
         "teaching"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 13:33",
+          "text": "He told them another parable. \"The kingdom of heaven is like leaven which a woman took and hid in three measures of meal, till it was all leavened.\""
+        },
+        "Mk": {
+          "ref": "Mark 4:33–34",
+          "text": "With many such parables he spoke the word to them, as they were able to hear it; he did not speak to them without a parable, but privately to his own disciples he explained everything."
+        }
+      }
     },
     {
       "id": "treasure",
@@ -2583,7 +2851,21 @@
         "miracle",
         "nature-miracle"
       ],
-      "orderNote": "Matthew places the storm earlier, after the Sermon on the Mount, in a collection of miracles; Robertson follows Mark and Luke, who tie it to the evening of the day of parables."
+      "orderNote": "Matthew places the storm earlier, after the Sermon on the Mount, in a collection of miracles; Robertson follows Mark and Luke, who tie it to the evening of the day of parables.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 8:25",
+          "text": "And they went and woke him, saying, \"Save, Lord; we are perishing.\""
+        },
+        "Mk": {
+          "ref": "Mark 4:38",
+          "text": "But he was in the stern, asleep on the cushion; and they woke him and said to him, \"Teacher, do you not care if we perish?\""
+        },
+        "Lk": {
+          "ref": "Luke 8:24",
+          "text": "And they went and woke him, saying, \"Master, Master, we are perishing!\" And he awoke and rebuked the wind and the raging waves; and they ceased, and there was a calm."
+        }
+      }
     },
     {
       "id": "gerasene",
@@ -2662,7 +2944,21 @@
         "miracle",
         "exorcism"
       ],
-      "orderNote": "The manuscripts read Gerasenes, Gadarenes or Gergesenes. Robertson, following W. M. Thomson, identifies the place with Khersa (Kursi) on the east shore, within the district of Gadara. Matthew speaks of two demoniacs; Mark and Luke tell of one, perhaps the more prominent."
+      "orderNote": "The manuscripts read Gerasenes, Gadarenes or Gergesenes. Robertson, following W. M. Thomson, identifies the place with Khersa (Kursi) on the east shore, within the district of Gadara. Matthew speaks of two demoniacs; Mark and Luke tell of one, perhaps the more prominent.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 8:28",
+          "text": "And when he came to the other side, to the country of the Gadarenes, two demoniacs met him, coming out of the tombs, so fierce that no one could pass that way."
+        },
+        "Mk": {
+          "ref": "Mark 5:9",
+          "text": "And Jesus asked him, \"What is your name?\" He replied, \"My name is Legion; for we are many.\""
+        },
+        "Lk": {
+          "ref": "Luke 8:35",
+          "text": "Then people went out to see what had happened, and they came to Jesus, and found the man from whom the demons had gone, sitting at the feet of Jesus, clothed and in his right mind; and they were afraid."
+        }
+      }
     },
     {
       "id": "jairus",
@@ -2761,7 +3057,21 @@
         "healing",
         "raising"
       ],
-      "orderNote": "Matthew sets this after the feast at Matthew's house; Robertson follows Mark and Luke, judging Matthew not chronological in this part of his Gospel. The town is not named; Capernaum is likely."
+      "orderNote": "Matthew sets this after the feast at Matthew's house; Robertson follows Mark and Luke, judging Matthew not chronological in this part of his Gospel. The town is not named; Capernaum is likely.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 9:18",
+          "text": "While he was thus speaking to them, behold, a ruler came in and knelt before him, saying, \"My daughter has just died; but come and lay your hand on her, and she will live.\""
+        },
+        "Mk": {
+          "ref": "Mark 5:41",
+          "text": "Taking her by the hand he said to her, \"Talitha cumi\"; which means, \"Little girl, I say to you, arise.\""
+        },
+        "Lk": {
+          "ref": "Luke 8:42",
+          "text": "for he had an only daughter, about twelve years of age, and she was dying. As he went, the people pressed round him."
+        }
+      }
     },
     {
       "id": "twoblind",
@@ -2915,7 +3225,17 @@
         "teaching",
         "conflict"
       ],
-      "orderNote": "Robertson sees no reason to identify this with the visit in Luke 4:16–30 (§39): that was at the start of the ministry, this near its close, and the details differ. Many scholars take them as one visit."
+      "orderNote": "Robertson sees no reason to identify this with the visit in Luke 4:16–30 (§39): that was at the start of the ministry, this near its close, and the details differ. Many scholars take them as one visit.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 13:58",
+          "text": "And he did not do many mighty works there, because of their unbelief."
+        },
+        "Mk": {
+          "ref": "Mark 6:5–6",
+          "text": "And he could do no mighty work there, except that he laid his hands upon a few sick people and healed them. And he marveled because of their unbelief."
+        }
+      }
     },
     {
       "id": "twelvesent",
@@ -3007,7 +3327,21 @@
         "teaching",
         "healing"
       ],
-      "orderNote": "Matthew gathers into this charge sayings about persecution that Mark and Luke place later (e.g. Mark 13:9–13). Robertson counts this as the third tour of Galilee."
+      "orderNote": "Matthew gathers into this charge sayings about persecution that Mark and Luke place later (e.g. Mark 13:9–13). Robertson counts this as the third tour of Galilee.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 10:5–6",
+          "text": "These twelve Jesus sent out, charging them, \"Go nowhere among the Gentiles, and enter no town of the Samaritans, but go rather to the lost sheep of the house of Israel."
+        },
+        "Mk": {
+          "ref": "Mark 6:7",
+          "text": "And he called to him the twelve, and began to send them out two by two, and gave them authority over the unclean spirits."
+        },
+        "Lk": {
+          "ref": "Luke 9:2",
+          "text": "and he sent them out to preach the kingdom of God and to heal."
+        }
+      }
     },
     {
       "id": "herodfears",
@@ -3061,7 +3395,21 @@
       "tags": [
         "prophecy"
       ],
-      "orderNote": "Robertson places Herod in Tiberias; the Gospels do not say where he was. Jesus soon withdraws beyond Antipas' territory, partly, Robertson thinks, to avoid his jealousy."
+      "orderNote": "Robertson places Herod in Tiberias; the Gospels do not say where he was. Jesus soon withdraws beyond Antipas' territory, partly, Robertson thinks, to avoid his jealousy.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 14:2",
+          "text": "and he said to his servants, \"This is John the Baptist, he has been raised from the dead; that is why these powers are at work in him.\""
+        },
+        "Mk": {
+          "ref": "Mark 6:16",
+          "text": "But when Herod heard of it he said, \"John, whom I beheaded, has been raised.\""
+        },
+        "Lk": {
+          "ref": "Luke 9:9",
+          "text": "Herod said, \"John I beheaded; but who is this about whom I hear such things?\" And he sought to see him."
+        }
+      }
     },
     {
       "id": "johnbeheaded",
@@ -3140,7 +3488,17 @@
         }
       ],
       "tags": [],
-      "orderNote": "Mark places the story as a flashback; John probably died some time before Herod heard of the Twelve's mission. Josephus (Antiquities 18.5.2) names Machaerus and says Herod killed John fearing an uprising; he names Herodias' daughter as Salome. Some think the banquet was held at Tiberias, though the head was then brought from Machaerus, a long way off."
+      "orderNote": "Mark places the story as a flashback; John probably died some time before Herod heard of the Twelve's mission. Josephus (Antiquities 18.5.2) names Machaerus and says Herod killed John fearing an uprising; he names Herodias' daughter as Salome. Some think the banquet was held at Tiberias, though the head was then brought from Machaerus, a long way off.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 14:12",
+          "text": "And his disciples came and took the body and buried it; and they went and told Jesus."
+        },
+        "Mk": {
+          "ref": "Mark 6:20",
+          "text": "for Herod feared John, knowing that he was a righteous and holy man, and kept him safe. When he heard him, he was much perplexed; and yet he heard him gladly."
+        }
+      }
     }
   ]
 }

@@ -123,7 +123,17 @@
       ],
       "art": [],
       "tags": [],
-      "orderNote": "Matthew 28:1 can be read \"late on the sabbath\" (Robertson, following the King James sense) or \"after the sabbath, toward the dawn\" (RSV). Robertson takes it as a Saturday-evening visit to see the tomb, before the Sunday-morning visit of §171; many others read it as the same Sunday visit."
+      "orderNote": "Matthew 28:1 can be read \"late on the sabbath\" (Robertson, following the King James sense) or \"after the sabbath, toward the dawn\" (RSV). Robertson takes it as a Saturday-evening visit to see the tomb, before the Sunday-morning visit of §171; many others read it as the same Sunday visit.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 28:1",
+          "text": "Now after the sabbath, toward the dawn of the first day of the week, Mary Magdalene and the other Mary went to see the sepulchre."
+        },
+        "Mk": {
+          "ref": "Mark 16:1",
+          "text": "And when the sabbath was past, Mary Magdalene, and Mary the mother of James, and Salome, bought spices, so that they might go and anoint him."
+        }
+      }
     },
     {
       "id": "earthquake",
@@ -262,7 +272,25 @@
         }
       ],
       "tags": [],
-      "orderNote": "The four accounts differ in detail: one angel (Matthew, Mark) or two (Luke, John), \"while it was still dark\" (John) or \"when the sun had risen\" (Mark). Many harmonists take John 20:1 to mean that Mary Magdalene came first, in the dark, saw the stone moved and ran back to Peter (§172) while the others went on."
+      "orderNote": "The four accounts differ in detail: one angel (Matthew, Mark) or two (Luke, John), \"while it was still dark\" (John) or \"when the sun had risen\" (Mark). Many harmonists take John 20:1 to mean that Mary Magdalene came first, in the dark, saw the stone moved and ran back to Peter (§172) while the others went on.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 28:8",
+          "text": "So they departed quickly from the tomb with fear and great joy, and ran to tell his disciples."
+        },
+        "Mk": {
+          "ref": "Mark 16:8",
+          "text": "And they went out and fled from the tomb; for trembling and astonishment had come upon them; and they said nothing to any one, for they were afraid."
+        },
+        "Lk": {
+          "ref": "Luke 24:5",
+          "text": "and as they were frightened and bowed their faces to the ground, the men said to them, \"Why do you seek the living among the dead? He is not here, but has risen."
+        },
+        "Jn": {
+          "ref": "John 20:1",
+          "text": "Now on the first day of the week Mary Magdalene came to the tomb early, while it was still dark, and saw that the stone had been taken away from the tomb."
+        }
+      }
     },
     {
       "id": "peterjohn",
@@ -336,7 +364,17 @@
         }
       ],
       "tags": [],
-      "orderNote": "Some ancient manuscripts omit Luke 24:12. John's \"other disciple, whom Jesus loved\" is traditionally identified as John son of Zebedee."
+      "orderNote": "Some ancient manuscripts omit Luke 24:12. John's \"other disciple, whom Jesus loved\" is traditionally identified as John son of Zebedee.",
+      "parallels": {
+        "Lk": {
+          "ref": "Luke 24:12",
+          "text": "But Peter rose and ran to the tomb; stooping and looking in, he saw the linen cloths by themselves; and he went home wondering at what had happened."
+        },
+        "Jn": {
+          "ref": "John 20:8",
+          "text": "Then the other disciple, who reached the tomb first, also went in, and he saw and believed;"
+        }
+      }
     },
     {
       "id": "magdalene",
@@ -410,7 +448,17 @@
       "tags": [
         "appearance"
       ],
-      "orderNote": "Mark 16:9 says he appeared \"first\" to Mary Magdalene, and Robertson counts this the first of five appearances on Easter Day. Mark 16:9–20, the longer ending of Mark, is missing from many early manuscripts, including the two oldest complete Greek Bibles (Sinaiticus and Vaticanus); the Church receives it as inspired, canonical Scripture."
+      "orderNote": "Mark 16:9 says he appeared \"first\" to Mary Magdalene, and Robertson counts this the first of five appearances on Easter Day. Mark 16:9–20, the longer ending of Mark, is missing from many early manuscripts, including the two oldest complete Greek Bibles (Sinaiticus and Vaticanus); the Church receives it as inspired, canonical Scripture.",
+      "parallels": {
+        "Mk": {
+          "ref": "Mark 16:9",
+          "text": "Now when he rose early on the first day of the week, he appeared first to Mary Magdalene, from whom he had cast out seven demons."
+        },
+        "Jn": {
+          "ref": "John 20:16",
+          "text": "Jesus said to her, \"Mary.\" She turned and said to him in Hebrew, \"Rabboni!\" (which means Teacher)."
+        }
+      }
     },
     {
       "id": "otherwomen",
@@ -598,7 +646,17 @@
       "tags": [
         "appearance"
       ],
-      "orderNote": "The site of Emmaus is disputed: Nicopolis, Abu Ghosh, el-Qubeibeh and Motza all have advocates (see the place note). Mark 16:12–13 tells the same appearance briefly; Mark 16:9–20, the longer ending of Mark, is missing from many early manuscripts, including the two oldest complete Greek Bibles (Sinaiticus and Vaticanus); the Church receives it as inspired, canonical Scripture."
+      "orderNote": "The site of Emmaus is disputed: Nicopolis, Abu Ghosh, el-Qubeibeh and Motza all have advocates (see the place note). Mark 16:12–13 tells the same appearance briefly; Mark 16:9–20, the longer ending of Mark, is missing from many early manuscripts, including the two oldest complete Greek Bibles (Sinaiticus and Vaticanus); the Church receives it as inspired, canonical Scripture.",
+      "parallels": {
+        "Mk": {
+          "ref": "Mark 16:12",
+          "text": "After this he appeared in another form to two of them, as they were walking into the country."
+        },
+        "Lk": {
+          "ref": "Luke 24:30–31",
+          "text": "When he was at table with them, he took the bread and blessed, and broke it, and gave it to them. And their eyes were opened and they recognized him; and he vanished out of their sight."
+        }
+      }
     },
     {
       "id": "simon",
@@ -756,7 +814,21 @@
       "tags": [
         "appearance"
       ],
-      "orderNote": "Robertson counts this the first of three commissions to the apostles (with §181 and §183). The Church sees in John 20:22–23 the institution of the sacrament of Penance (Council of Trent). Mark 16:14 tells it briefly; Mark 16:9–20, the longer ending of Mark, is missing from many early manuscripts, including the two oldest complete Greek Bibles (Sinaiticus and Vaticanus); the Church receives it as inspired, canonical Scripture."
+      "orderNote": "Robertson counts this the first of three commissions to the apostles (with §181 and §183). The Church sees in John 20:22–23 the institution of the sacrament of Penance (Council of Trent). Mark 16:14 tells it briefly; Mark 16:9–20, the longer ending of Mark, is missing from many early manuscripts, including the two oldest complete Greek Bibles (Sinaiticus and Vaticanus); the Church receives it as inspired, canonical Scripture.",
+      "parallels": {
+        "Mk": {
+          "ref": "Mark 16:14",
+          "text": "Afterward he appeared to the eleven themselves as they sat at table; and he upbraided them for their unbelief and hardness of heart, because they had not believed those who saw him after he had risen."
+        },
+        "Lk": {
+          "ref": "Luke 24:42–43",
+          "text": "They gave him a piece of broiled fish, and he took it and ate before them."
+        },
+        "Jn": {
+          "ref": "John 20:22",
+          "text": "And when he had said this, he breathed on them, and said to them, \"Receive the Holy Spirit."
+        }
+      }
     },
     {
       "id": "thomas",
@@ -1092,7 +1164,17 @@
         "appearance",
         "teaching"
       ],
-      "orderNote": "Robertson thinks the appearance to \"more than five hundred brethren\" (1 Corinthians 15:6) was most probably this appointed meeting, and reckons Mark's commission the same as Matthew's; others place Mark 16:15–18 in Jerusalem. Mark 16:9–20, the longer ending of Mark, is missing from many early manuscripts, including the two oldest complete Greek Bibles (Sinaiticus and Vaticanus); the Church receives it as inspired, canonical Scripture."
+      "orderNote": "Robertson thinks the appearance to \"more than five hundred brethren\" (1 Corinthians 15:6) was most probably this appointed meeting, and reckons Mark's commission the same as Matthew's; others place Mark 16:15–18 in Jerusalem. Mark 16:9–20, the longer ending of Mark, is missing from many early manuscripts, including the two oldest complete Greek Bibles (Sinaiticus and Vaticanus); the Church receives it as inspired, canonical Scripture.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 28:19",
+          "text": "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit,"
+        },
+        "Mk": {
+          "ref": "Mark 16:15",
+          "text": "And he said to them, \"Go into all the world and preach the gospel to the whole creation."
+        }
+      }
     },
     {
       "id": "james",
@@ -1332,7 +1414,17 @@
         "appearance",
         "miracle"
       ],
-      "orderNote": "Luke 24:50 says he led them \"as far as Bethany,\" Acts 1:12 says Olivet; Bethany lies on the far slope of the same hill, and the traditional site is near the summit. The Church keeps the feast forty days after Easter. Mark 16:19–20 also tells it; Mark 16:9–20, the longer ending of Mark, is missing from many early manuscripts, including the two oldest complete Greek Bibles (Sinaiticus and Vaticanus); the Church receives it as inspired, canonical Scripture."
+      "orderNote": "Luke 24:50 says he led them \"as far as Bethany,\" Acts 1:12 says Olivet; Bethany lies on the far slope of the same hill, and the traditional site is near the summit. The Church keeps the feast forty days after Easter. Mark 16:19–20 also tells it; Mark 16:9–20, the longer ending of Mark, is missing from many early manuscripts, including the two oldest complete Greek Bibles (Sinaiticus and Vaticanus); the Church receives it as inspired, canonical Scripture.",
+      "parallels": {
+        "Mk": {
+          "ref": "Mark 16:19",
+          "text": "So then the Lord Jesus, after he had spoken to them, was taken up into heaven, and sat down at the right hand of God."
+        },
+        "Lk": {
+          "ref": "Luke 24:52–53",
+          "text": "And they worshiped him, and returned to Jerusalem with great joy, and were continually in the temple blessing God."
+        }
+      }
     }
   ]
 }

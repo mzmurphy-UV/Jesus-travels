@@ -322,7 +322,25 @@
         "prophecy",
         "passion"
       ],
-      "orderNote": "Mark says Jesus only looked around the Temple on Sunday and cleansed it on Monday. Matthew and Luke tell the cleansing straight after the entry; Robertson follows Mark's more exact day-by-day order. Matthew alone mentions both an ass and her colt."
+      "orderNote": "Mark says Jesus only looked around the Temple on Sunday and cleansed it on Monday. Matthew and Luke tell the cleansing straight after the entry; Robertson follows Mark's more exact day-by-day order. Matthew alone mentions both an ass and her colt.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 21:10–11",
+          "text": "And when he entered Jerusalem, all the city was stirred, saying, \"Who is this?\" And the crowds said, \"This is the prophet Jesus from Nazareth of Galilee.\""
+        },
+        "Mk": {
+          "ref": "Mark 11:10",
+          "text": "Blessed is the kingdom of our father David that is coming! Hosanna in the highest!\""
+        },
+        "Lk": {
+          "ref": "Luke 19:39–40",
+          "text": "And some of the Pharisees in the multitude said to him, \"Teacher, rebuke your disciples.\" He answered, \"I tell you, if these were silent, the very stones would cry out.\""
+        },
+        "Jn": {
+          "ref": "John 12:13",
+          "text": "So they took branches of palm trees and went out to meet him, crying, \"Hosanna! Blessed is he who comes in the name of the Lord, even the King of Israel!\""
+        }
+      }
     },
     {
       "id": "figcursed",
@@ -391,7 +409,17 @@
         "nature-miracle",
         "prophecy"
       ],
-      "orderNote": "Matthew tells the cursing and the withering together, as if in one morning (21:18–22). Mark spreads them over two days, with the Temple cleansing in between, and Robertson follows Mark. The exact place on the road is not known."
+      "orderNote": "Matthew tells the cursing and the withering together, as if in one morning (21:18–22). Mark spreads them over two days, with the Temple cleansing in between, and Robertson follows Mark. The exact place on the road is not known.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 21:19",
+          "text": "And seeing a fig tree by the wayside he went to it, and found nothing on it but leaves only. And he said to it, \"May no fruit ever come from you again!\" And the fig tree withered at once."
+        },
+        "Mk": {
+          "ref": "Mark 11:13",
+          "text": "And seeing in the distance a fig tree in leaf, he went to see if he could find anything on it. When he came to it, he found nothing but leaves, for it was not the season for figs."
+        }
+      }
     },
     {
       "id": "secondcleansing",
@@ -489,7 +517,21 @@
         "conflict",
         "prophecy"
       ],
-      "orderNote": "John tells of a cleansing at the first Passover of the ministry (John 2:13–22). Robertson, like many, holds that Jesus cleansed the Temple twice, at the start and the end; many other scholars think there was one cleansing, which John placed early for theological reasons."
+      "orderNote": "John tells of a cleansing at the first Passover of the ministry (John 2:13–22). Robertson, like many, holds that Jesus cleansed the Temple twice, at the start and the end; many other scholars think there was one cleansing, which John placed early for theological reasons.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 21:13",
+          "text": "He said to them, \"It is written, 'My house shall be called a house of prayer'; but you make it a den of robbers.\""
+        },
+        "Mk": {
+          "ref": "Mark 11:17",
+          "text": "And he taught, and said to them, \"Is it not written, 'My house shall be called a house of prayer for all the nations'? But you have made it a den of robbers.\""
+        },
+        "Lk": {
+          "ref": "Luke 19:47–48",
+          "text": "And he was teaching daily in the temple. The chief priests and the scribes and the principal men of the people sought to destroy him; but they did not find anything they could do, for all the people hung upon his words."
+        }
+      }
     },
     {
       "id": "greeks",
@@ -626,7 +668,21 @@
         "teaching",
         "prayer"
       ],
-      "orderNote": "Matthew says the tree withered \"at once\" and tells it on the same morning as the curse. Mark has the disciples notice it the next morning. Robertson takes Mark's two-day account as the exact one."
+      "orderNote": "Matthew says the tree withered \"at once\" and tells it on the same morning as the curse. Mark has the disciples notice it the next morning. Robertson takes Mark's two-day account as the exact one.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 21:20",
+          "text": "When the disciples saw it they marveled, saying, \"How did the fig tree wither at once?\""
+        },
+        "Mk": {
+          "ref": "Mark 11:20–21",
+          "text": "As they passed by in the morning, they saw the fig tree withered away to its roots. And Peter remembered and said to him, \"Master, look! The fig tree which you cursed has withered.\""
+        },
+        "Lk": {
+          "ref": "Luke 21:37",
+          "text": "And every day he was teaching in the temple, but at night he went out and lodged on the mount called Olivet."
+        }
+      }
     },
     {
       "id": "byauthority",
@@ -698,7 +754,21 @@
         "conflict",
         "teaching"
       ],
-      "orderNote": "Robertson calls Tuesday \"a day of controversy\": the leaders formally test Jesus' standing as a teacher, as they had the right to do, and he answers with three parables (the two sons, the wicked tenants, the wedding feast)."
+      "orderNote": "Robertson calls Tuesday \"a day of controversy\": the leaders formally test Jesus' standing as a teacher, as they had the right to do, and he answers with three parables (the two sons, the wicked tenants, the wedding feast).",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 21:27",
+          "text": "So they answered Jesus, \"We do not know.\" And he said to them, \"Neither will I tell you by what authority I do these things."
+        },
+        "Mk": {
+          "ref": "Mark 11:30",
+          "text": "Was the baptism of John from heaven or from men? Answer me.\""
+        },
+        "Lk": {
+          "ref": "Luke 20:6",
+          "text": "But if we say, 'From men,' all the people will stone us; for they are convinced that John was a prophet.\""
+        }
+      }
     },
     {
       "id": "twosons",
@@ -806,7 +876,21 @@
         "parable",
         "conflict",
         "prophecy"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 21:43",
+          "text": "Therefore I tell you, the kingdom of God will be taken away from you and given to a nation producing the fruits of it."
+        },
+        "Mk": {
+          "ref": "Mark 12:6",
+          "text": "He had still one other, a beloved son; finally he sent him to them, saying, 'They will respect my son.'"
+        },
+        "Lk": {
+          "ref": "Luke 20:16",
+          "text": "He will come and destroy those tenants, and give the vineyard to others.\" When they heard this, they said, \"God forbid!\""
+        }
+      }
     },
     {
       "id": "weddingfeast",
@@ -930,7 +1014,21 @@
         "conflict",
         "teaching"
       ],
-      "history": "The coin was a denarius, the Roman silver coin of a day's wage. Under Tiberius it carried his portrait and the inscription TI CAESAR DIVI AVG F AVGVSTVS, \"Tiberius Caesar, son of the divine Augustus, Augustus.\""
+      "history": "The coin was a denarius, the Roman silver coin of a day's wage. Under Tiberius it carried his portrait and the inscription TI CAESAR DIVI AVG F AVGVSTVS, \"Tiberius Caesar, son of the divine Augustus, Augustus.\"",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 22:18",
+          "text": "But Jesus, aware of their malice, said, \"Why put me to the test, you hypocrites?"
+        },
+        "Mk": {
+          "ref": "Mark 12:17",
+          "text": "Jesus said to them, \"Render to Caesar the things that are Caesar's, and to God the things that are God's.\" And they were amazed at him."
+        },
+        "Lk": {
+          "ref": "Luke 20:26",
+          "text": "And they were not able in the presence of the people to catch him by what he said; but marveling at his answer they were silent."
+        }
+      }
     },
     {
       "id": "sadducees",
@@ -975,7 +1073,21 @@
         "conflict",
         "teaching"
       ],
-      "orderNote": "Robertson thinks this was probably a stock riddle the Sadducees had often used against the Pharisees."
+      "orderNote": "Robertson thinks this was probably a stock riddle the Sadducees had often used against the Pharisees.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 22:29",
+          "text": "But Jesus answered them, \"You are wrong, because you know neither the scriptures nor the power of God."
+        },
+        "Mk": {
+          "ref": "Mark 12:27",
+          "text": "He is not God of the dead, but of the living; you are quite wrong.\""
+        },
+        "Lk": {
+          "ref": "Luke 20:35–36",
+          "text": "but those who are accounted worthy to attain to that age and to the resurrection from the dead neither marry nor are given in marriage, for they cannot die any more, because they are equal to angels and are sons of God, being sons of the resurrection."
+        }
+      }
     },
     {
       "id": "greatcommand",
@@ -1013,7 +1125,17 @@
       "tags": [
         "teaching"
       ],
-      "orderNote": "Matthew presents the question as a test; Mark shows the scribe as sincere and praised by Jesus. Luke has a similar exchange with a lawyer much earlier, before the parable of the Good Samaritan (Luke 10:25–28)."
+      "orderNote": "Matthew presents the question as a test; Mark shows the scribe as sincere and praised by Jesus. Luke has a similar exchange with a lawyer much earlier, before the parable of the Good Samaritan (Luke 10:25–28).",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 22:40",
+          "text": "On these two commandments depend all the law and the prophets.\""
+        },
+        "Mk": {
+          "ref": "Mark 12:34",
+          "text": "And when Jesus saw that he answered wisely, he said to him, \"You are not far from the kingdom of God.\" And after that no one dared to ask him any question."
+        }
+      }
     },
     {
       "id": "davidsson",
@@ -1049,7 +1171,21 @@
       "tags": [
         "teaching",
         "conflict"
-      ]
+      ],
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 22:46",
+          "text": "And no one was able to answer him a word, nor from that day did any one dare to ask him any more questions."
+        },
+        "Mk": {
+          "ref": "Mark 12:37",
+          "text": "David himself calls him Lord; so how is he his son?\" And the great throng heard him gladly."
+        },
+        "Lk": {
+          "ref": "Luke 20:42–43",
+          "text": "For David himself says in the Book of Psalms, 'The Lord said to my Lord, Sit at my right hand, till I make your enemies a stool for your feet.'"
+        }
+      }
     },
     {
       "id": "sevenwoes",
@@ -1127,7 +1263,21 @@
         "conflict",
         "prophecy"
       ],
-      "orderNote": "Luke gives similar woes at a Pharisee's table in Galilee or Perea (Luke 11:37–54), and the lament over Jerusalem earlier on the journey (Luke 13:34–35). Robertson holds that Jesus spoke such words more than once; others think Matthew gathered them here."
+      "orderNote": "Luke gives similar woes at a Pharisee's table in Galilee or Perea (Luke 11:37–54), and the lament over Jerusalem earlier on the journey (Luke 13:34–35). Robertson holds that Jesus spoke such words more than once; others think Matthew gathered them here.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 23:37",
+          "text": "\"O Jerusalem, Jerusalem, killing the prophets and stoning those who are sent to you! How often would I have gathered your children together as a hen gathers her brood under her wings, and you would not!"
+        },
+        "Mk": {
+          "ref": "Mark 12:40",
+          "text": "who devour widows' houses and for a pretense make long prayers. They will receive the greater condemnation.\""
+        },
+        "Lk": {
+          "ref": "Luke 20:45–46",
+          "text": "And in the hearing of all the people he said to his disciples, \"Beware of the scribes, who like to go about in long robes, and love salutations in the market places and the best seats in the synagogues and the places of honor at feasts,"
+        }
+      }
     },
     {
       "id": "widowsmite",
@@ -1173,7 +1323,17 @@
       "tags": [
         "teaching"
       ],
-      "history": "The \"treasury\" was probably the thirteen trumpet-shaped offering chests in the Court of the Women, described in the Mishnah (Shekalim 6.5). The widow's coins were lepta, the smallest bronze coins in circulation."
+      "history": "The \"treasury\" was probably the thirteen trumpet-shaped offering chests in the Court of the Women, described in the Mishnah (Shekalim 6.5). The widow's coins were lepta, the smallest bronze coins in circulation.",
+      "parallels": {
+        "Mk": {
+          "ref": "Mark 12:42",
+          "text": "And a poor widow came, and put in two copper coins, which make a penny."
+        },
+        "Lk": {
+          "ref": "Luke 21:3–4",
+          "text": "And he said, \"Truly I tell you, this poor widow has put in more than all of them; for they all contributed out of their abundance, but she out of her poverty put in all the living that she had.\""
+        }
+      }
     },
     {
       "id": "olivet",
@@ -1276,7 +1436,21 @@
         "teaching"
       ],
       "history": "The Romans under Titus took Jerusalem and burned the Temple in AD 70, about forty years later. Huge Herodian stones thrown down from the Temple Mount still lie on the 1st-century street below the Western Wall.",
-      "orderNote": "How much of the discourse refers to the fall of Jerusalem in AD 70 and how much to the end of the age is much debated. Robertson sees the city's destruction as a symbol of the end and warns against pressing details of time. Luke sets this teaching in the Temple (21:5–7); Mark and Matthew on the Mount of Olives."
+      "orderNote": "How much of the discourse refers to the fall of Jerusalem in AD 70 and how much to the end of the age is much debated. Robertson sees the city's destruction as a symbol of the end and warns against pressing details of time. Luke sets this teaching in the Temple (21:5–7); Mark and Matthew on the Mount of Olives.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 24:3",
+          "text": "As he sat on the Mount of Olives, the disciples came to him privately, saying, \"Tell us, when will this be, and what will be the sign of your coming and of the close of the age?\""
+        },
+        "Mk": {
+          "ref": "Mark 13:37",
+          "text": "And what I say to you I say to all: Watch.\""
+        },
+        "Lk": {
+          "ref": "Luke 21:20",
+          "text": "\"But when you see Jerusalem surrounded by armies, then know that its desolation has come near."
+        }
+      }
     },
     {
       "id": "tenvirgins",
@@ -1512,7 +1686,21 @@
         "passion",
         "prophecy"
       ],
-      "orderNote": "Robertson places Jesus' prediction at Bethany on Tuesday evening, which by Jewish reckoning was already Wednesday, \"two days\" before the Passover. The council itself met in Jerusalem at Caiaphas' house. The Gospels record nothing of Wednesday; Robertson takes it as a day of rest in Bethany."
+      "orderNote": "Robertson places Jesus' prediction at Bethany on Tuesday evening, which by Jewish reckoning was already Wednesday, \"two days\" before the Passover. The council itself met in Jerusalem at Caiaphas' house. The Gospels record nothing of Wednesday; Robertson takes it as a day of rest in Bethany.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 26:2",
+          "text": "\"You know that after two days the Passover is coming, and the Son of man will be delivered up to be crucified.\""
+        },
+        "Mk": {
+          "ref": "Mark 14:2",
+          "text": "for they said, \"Not during the feast, lest there be a tumult of the people.\""
+        },
+        "Lk": {
+          "ref": "Luke 22:2",
+          "text": "And the chief priests and the scribes were seeking how to put him to death; for they feared the people."
+        }
+      }
     },
     {
       "id": "bethanyanoint",
@@ -1566,7 +1754,21 @@
       "tags": [
         "passion"
       ],
-      "orderNote": "John places the supper six days before the Passover; Mark and Matthew two days before. Robertson follows Mark. Mark and Matthew say \"a woman\"; John names Mary. Robertson insists it is a different event from the anointing by a sinful woman in Galilee (Luke 7:36–50), though Western tradition long identified Mary of Bethany with that woman and with Mary Magdalene."
+      "orderNote": "John places the supper six days before the Passover; Mark and Matthew two days before. Robertson follows Mark. Mark and Matthew say \"a woman\"; John names Mary. Robertson insists it is a different event from the anointing by a sinful woman in Galilee (Luke 7:36–50), though Western tradition long identified Mary of Bethany with that woman and with Mary Magdalene.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 26:8",
+          "text": "But when the disciples saw it, they were indignant, saying, \"Why this waste?"
+        },
+        "Mk": {
+          "ref": "Mark 14:3",
+          "text": "And while he was at Bethany in the house of Simon the leper, as he sat at table, a woman came with an alabaster jar of ointment of pure nard, very costly, and she broke the jar and poured it over his head."
+        },
+        "Jn": {
+          "ref": "John 12:3",
+          "text": "Mary took a pound of costly ointment of pure nard and anointed the feet of Jesus and wiped his feet with her hair; and the house was filled with the fragrance of the ointment."
+        }
+      }
     },
     {
       "id": "judasbargain",
@@ -1637,7 +1839,21 @@
       "tags": [
         "passion"
       ],
-      "orderNote": "Robertson links the bargain to the anointing: Judas, \"stung by the rebuke\" at the feast, goes to the rulers that same night. Matthew and Mark tell it straight after the anointing; Luke after the council's plot."
+      "orderNote": "Robertson links the bargain to the anointing: Judas, \"stung by the rebuke\" at the feast, goes to the rulers that same night. Matthew and Mark tell it straight after the anointing; Luke after the council's plot.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 26:15",
+          "text": "and said, \"What will you give me if I deliver him to you?\" And they paid him thirty pieces of silver."
+        },
+        "Mk": {
+          "ref": "Mark 14:11",
+          "text": "And when they heard it they were glad, and promised to give him money. And he sought an opportunity to betray him."
+        },
+        "Lk": {
+          "ref": "Luke 22:3",
+          "text": "Then Satan entered into Judas called Iscariot, who was of the number of the twelve;"
+        }
+      }
     },
     {
       "id": "passoverprep",
@@ -1724,7 +1940,21 @@
       "tags": [
         "passion"
       ],
-      "orderNote": "The Synoptics present the Last Supper as the Passover meal, and Robertson agrees. John seems to place the slaying of the Passover lambs on Friday, as Jesus was dying (John 18:28; 19:14). Scholars explain this in several ways, among them a different calendar used by some Jews, or a Passover meal held a day early."
+      "orderNote": "The Synoptics present the Last Supper as the Passover meal, and Robertson agrees. John seems to place the slaying of the Passover lambs on Friday, as Jesus was dying (John 18:28; 19:14). Scholars explain this in several ways, among them a different calendar used by some Jews, or a Passover meal held a day early.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 26:18",
+          "text": "He said, \"Go into the city to such a one, and say to him, 'The Teacher says, My time is at hand; I will keep the passover at your house with my disciples.'\""
+        },
+        "Mk": {
+          "ref": "Mark 14:13",
+          "text": "And he sent two of his disciples, and said to them, \"Go into the city, and a man carrying a jar of water will meet you; follow him,"
+        },
+        "Lk": {
+          "ref": "Luke 22:8",
+          "text": "So Jesus sent Peter and John, saying, \"Go and prepare the passover for us, that we may eat it.\""
+        }
+      }
     },
     {
       "id": "lastsupper",
@@ -1790,7 +2020,21 @@
         "passion",
         "teaching"
       ],
-      "orderNote": "Luke tells the dispute after the supper (22:24–30). Robertson places it at the start of the meal, perhaps a quarrel over places at table, which would also explain the foot washing that follows."
+      "orderNote": "Luke tells the dispute after the supper (22:24–30). Robertson places it at the start of the meal, perhaps a quarrel over places at table, which would also explain the foot washing that follows.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 26:20",
+          "text": "When it was evening, he sat at table with the twelve disciples;"
+        },
+        "Mk": {
+          "ref": "Mark 14:17",
+          "text": "And when it was evening he came with the twelve."
+        },
+        "Lk": {
+          "ref": "Luke 22:24",
+          "text": "A dispute also arose among them, which of them was to be regarded as the greatest."
+        }
+      }
     },
     {
       "id": "footwashing",
@@ -1937,7 +2181,25 @@
         "passion",
         "prophecy"
       ],
-      "orderNote": "Luke places the warning about the betrayer after the bread and cup (22:21–23), which suggests Judas was present at the institution. Robertson follows Mark and John and places Judas's departure first."
+      "orderNote": "Luke places the warning about the betrayer after the bread and cup (22:21–23), which suggests Judas was present at the institution. Robertson follows Mark and John and places Judas's departure first.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 26:25",
+          "text": "Judas, who betrayed him, said, \"Is it I, Master?\" He said to him, \"You have said so.\""
+        },
+        "Mk": {
+          "ref": "Mark 14:20",
+          "text": "He said to them, \"It is one of the twelve, one who is dipping bread in the same dish with me."
+        },
+        "Lk": {
+          "ref": "Luke 22:21",
+          "text": "But behold the hand of him who betrays me is with me on the table."
+        },
+        "Jn": {
+          "ref": "John 13:30",
+          "text": "So, after receiving the morsel, he immediately went out; and it was night."
+        }
+      }
     },
     {
       "id": "peterwarned",
@@ -2000,7 +2262,25 @@
         "teaching",
         "passion"
       ],
-      "orderNote": "Luke and John place the warning to Peter in the upper room; Mark and Matthew on the way to the Mount of Olives after the hymn. Robertson harmonizes them in one section; some think Jesus warned Peter twice. Only Mark has the cock crowing twice."
+      "orderNote": "Luke and John place the warning to Peter in the upper room; Mark and Matthew on the way to the Mount of Olives after the hymn. Robertson harmonizes them in one section; some think Jesus warned Peter twice. Only Mark has the cock crowing twice.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 26:33",
+          "text": "Peter declared to him, \"Though they all fall away because of you, I will never fall away.\""
+        },
+        "Mk": {
+          "ref": "Mark 14:30",
+          "text": "And Jesus said to him, \"Truly, I say to you, this very night, before the cock crows twice, you will deny me three times.\""
+        },
+        "Lk": {
+          "ref": "Luke 22:31–32",
+          "text": "\"Simon, Simon, behold, Satan demanded to have you, that he might sift you like wheat, but I have prayed for you that your faith may not fail; and when you have turned again, strengthen your brethren.\""
+        },
+        "Jn": {
+          "ref": "John 13:34",
+          "text": "A new commandment I give to you, that you love one another; even as I have loved you, that you also love one another."
+        }
+      }
     },
     {
       "id": "eucharist",
@@ -2081,7 +2361,21 @@
         "passion",
         "teaching"
       ],
-      "orderNote": "Mark and Matthew give one account and Paul (1 Corinthians, about AD 56, the earliest written) and Luke another. Luke mentions a cup before the bread (22:17) and the cup of the covenant after supper (22:20). Robertson follows Mark's order and places the institution after Judas has gone out; Luke's order suggests Judas was still present."
+      "orderNote": "Mark and Matthew give one account and Paul (1 Corinthians, about AD 56, the earliest written) and Luke another. Luke mentions a cup before the bread (22:17) and the cup of the covenant after supper (22:20). Robertson follows Mark's order and places the institution after Judas has gone out; Luke's order suggests Judas was still present.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 26:28",
+          "text": "for this is my blood of the covenant, which is poured out for many for the forgiveness of sins."
+        },
+        "Mk": {
+          "ref": "Mark 14:22",
+          "text": "And as they were eating, he took bread, and blessed, and broke it, and gave it to them, and said, \"Take; this is my body.\""
+        },
+        "Lk": {
+          "ref": "Luke 22:19",
+          "text": "And he took bread, and when he had given thanks he broke it and gave it to them, saying, \"This is my body which is given for you. Do this in remembrance of me.\""
+        }
+      }
     },
     {
       "id": "farewell",
@@ -2334,7 +2628,25 @@
         "prayer",
         "passion"
       ],
-      "orderNote": "Luke 22:43–44 (the angel and the bloody sweat) is missing from some early manuscripts but is in many others and in the Church's text. Robertson places the agony late in the night, at the start of the Jewish Friday."
+      "orderNote": "Luke 22:43–44 (the angel and the bloody sweat) is missing from some early manuscripts but is in many others and in the Church's text. Robertson places the agony late in the night, at the start of the Jewish Friday.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 26:42",
+          "text": "Again, for the second time, he went away and prayed, \"My Father, if this cannot pass unless I drink it, your will be done.\""
+        },
+        "Mk": {
+          "ref": "Mark 14:36",
+          "text": "And he said, \"Abba, Father, all things are possible to you; remove this cup from me; yet not what I will, but what you will.\""
+        },
+        "Lk": {
+          "ref": "Luke 22:43–44",
+          "text": "And there appeared to him an angel from heaven, strengthening him. And being in an agony he prayed more earnestly; and his sweat became like great drops of blood falling down upon the ground."
+        },
+        "Jn": {
+          "ref": "John 18:1",
+          "text": "When Jesus had spoken these words, he went forth with his disciples across the Kidron valley, where there was a garden, which he and his disciples entered."
+        }
+      }
     },
     {
       "id": "arrest",
@@ -2419,7 +2731,25 @@
         "passion",
         "healing"
       ],
-      "orderNote": "Only Luke records the healing of the ear, and only John names Peter and Malchus. Many readers since early times have guessed that the young man of Mark 14:51–52 was Mark himself, but the Gospel does not say."
+      "orderNote": "Only Luke records the healing of the ear, and only John names Peter and Malchus. Many readers since early times have guessed that the young man of Mark 14:51–52 was Mark himself, but the Gospel does not say.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 26:52",
+          "text": "Then Jesus said to him, \"Put your sword back into its place; for all who take the sword will perish by the sword."
+        },
+        "Mk": {
+          "ref": "Mark 14:51–52",
+          "text": "And a young man followed him, with nothing but a linen cloth about his body; and they seized him, but he left the linen cloth and ran away naked."
+        },
+        "Lk": {
+          "ref": "Luke 22:51",
+          "text": "But Jesus said, \"No more of this!\" And he touched his ear and healed him."
+        },
+        "Jn": {
+          "ref": "John 18:6",
+          "text": "When he said to them, \"I am he,\" they drew back and fell to the ground."
+        }
+      }
     },
     {
       "id": "annas",
@@ -2581,7 +2911,25 @@
         "passion",
         "conflict"
       ],
-      "orderNote": "Robertson treats this as an informal night session, followed by a formal vote after dawn (§157); Luke describes only the morning meeting. A night capital trial broke the later rules of the Mishnah, which Robertson takes as a sign of the council's haste, not of an unhistorical story. An ossuary inscribed \"Joseph son of Caiaphas\", found in Jerusalem in 1990, probably belonged to this high priest."
+      "orderNote": "Robertson treats this as an informal night session, followed by a formal vote after dawn (§157); Luke describes only the morning meeting. A night capital trial broke the later rules of the Mishnah, which Robertson takes as a sign of the council's haste, not of an unhistorical story. An ossuary inscribed \"Joseph son of Caiaphas\", found in Jerusalem in 1990, probably belonged to this high priest.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 26:64",
+          "text": "Jesus said to him, \"You have said so. But I tell you, hereafter you will see the Son of man seated at the right hand of Power, and coming on the clouds of heaven.\""
+        },
+        "Mk": {
+          "ref": "Mark 14:62",
+          "text": "And Jesus said, \"I am; and you will see the Son of man sitting at the right hand of Power, and coming with the clouds of heaven.\""
+        },
+        "Lk": {
+          "ref": "Luke 22:63–64",
+          "text": "Now the men who were holding Jesus mocked him and beat him; they also blindfolded him and asked him, \"Prophesy! Who is it that struck you?\""
+        },
+        "Jn": {
+          "ref": "John 18:24",
+          "text": "Annas then sent him bound to Caiaphas the high priest."
+        }
+      }
     },
     {
       "id": "denial",
@@ -2650,7 +2998,25 @@
       "tags": [
         "passion"
       ],
-      "orderNote": "All four Gospels record three denials, but the speakers and places differ. Robertson suggests the denials ran through the hours of all three hearings (Luke notes an hour between the second and third), so each Gospel gathers them into one scene. The \"other disciple\" is usually taken to be John."
+      "orderNote": "All four Gospels record three denials, but the speakers and places differ. Robertson suggests the denials ran through the hours of all three hearings (Luke notes an hour between the second and third), so each Gospel gathers them into one scene. The \"other disciple\" is usually taken to be John.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 26:73",
+          "text": "After a little while the bystanders came up and said to Peter, \"Certainly you are also one of them, for your accent betrays you.\""
+        },
+        "Mk": {
+          "ref": "Mark 14:72",
+          "text": "And immediately the cock crowed a second time. And Peter remembered how Jesus had said to him, \"Before the cock crows twice, you will deny me three times.\" And he broke down and wept."
+        },
+        "Lk": {
+          "ref": "Luke 22:61",
+          "text": "And the Lord turned and looked at Peter. And Peter remembered the word of the Lord, how he had said to him, \"Before the cock crows today, you will deny me three times.\""
+        },
+        "Jn": {
+          "ref": "John 18:26",
+          "text": "One of the servants of the high priest, a kinsman of the man whose ear Peter had cut off, asked, \"Did I not see you in the garden with him?\""
+        }
+      }
     },
     {
       "id": "dawntrial",
@@ -2707,7 +3073,21 @@
         "passion",
         "conflict"
       ],
-      "orderNote": "Robertson sees this morning session as an attempt to make the night's condemnation legal. Luke says they led him \"to their council\", which may mean the council chamber near the Temple rather than Caiaphas' house; the exact place is unknown."
+      "orderNote": "Robertson sees this morning session as an attempt to make the night's condemnation legal. Luke says they led him \"to their council\", which may mean the council chamber near the Temple rather than Caiaphas' house; the exact place is unknown.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 27:1",
+          "text": "When morning came, all the chief priests and the elders of the people took counsel against Jesus to put him to death;"
+        },
+        "Mk": {
+          "ref": "Mark 15:1",
+          "text": "And as soon as it was morning the chief priests, with the elders and scribes, and the whole council held a consultation; and they bound Jesus and led him away and delivered him to Pilate."
+        },
+        "Lk": {
+          "ref": "Luke 22:70",
+          "text": "And they all said, \"Are you the Son of God, then?\" And he said to them, \"You say that I am.\""
+        }
+      }
     },
     {
       "id": "judasdeath",
@@ -2870,7 +3250,25 @@
       "tags": [
         "passion"
       ],
-      "orderNote": "Robertson divides the Roman trial into three stages: before Pilate, before Herod Antipas, and before Pilate again. John gives the private dialogue inside the praetorium that the other Gospels compress into one question. Where the praetorium stood (Herod's palace or the Antonia) is still debated; see the place note."
+      "orderNote": "Robertson divides the Roman trial into three stages: before Pilate, before Herod Antipas, and before Pilate again. John gives the private dialogue inside the praetorium that the other Gospels compress into one question. Where the praetorium stood (Herod's palace or the Antonia) is still debated; see the place note.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 27:14",
+          "text": "But he gave him no answer, not even to a single charge; so that the governor wondered greatly."
+        },
+        "Mk": {
+          "ref": "Mark 15:2",
+          "text": "And Pilate asked him, \"Are you the King of the Jews?\" And he answered him, \"You have said so.\""
+        },
+        "Lk": {
+          "ref": "Luke 23:2",
+          "text": "And they began to accuse him, saying, \"We found this man perverting our nation, and forbidding us to give tribute to Caesar, and saying that he himself is Christ a king.\""
+        },
+        "Jn": {
+          "ref": "John 18:36",
+          "text": "Jesus answered, \"My kingship is not of this world; if my kingship were of this world, my servants would fight, that I might not be handed over to the Jews; but my kingship is not from the world.\""
+        }
+      }
     },
     {
       "id": "herodantipas",
@@ -3040,7 +3438,25 @@
       "tags": [
         "passion"
       ],
-      "orderNote": "No source outside the Gospels mentions the Passover release. Some manuscripts of Matthew 27:16–17 call him \"Jesus Barabbas\"; Barabbas means \"son of the father\". Robertson stresses that Pilate cannot escape responsibility for his cowardly surrender, and that the guilt belongs to the plotters, not to a whole people. The Catholic Church teaches the same (Nostra Aetate 4)."
+      "orderNote": "No source outside the Gospels mentions the Passover release. Some manuscripts of Matthew 27:16–17 call him \"Jesus Barabbas\"; Barabbas means \"son of the father\". Robertson stresses that Pilate cannot escape responsibility for his cowardly surrender, and that the guilt belongs to the plotters, not to a whole people. The Catholic Church teaches the same (Nostra Aetate 4).",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 27:24",
+          "text": "So when Pilate saw that he was gaining nothing, but rather that a riot was beginning, he took water and washed his hands before the crowd, saying, \"I am innocent of this righteous man's blood; see to it yourselves.\""
+        },
+        "Mk": {
+          "ref": "Mark 15:11",
+          "text": "But the chief priests stirred up the crowd to have him release for them Barabbas instead."
+        },
+        "Lk": {
+          "ref": "Luke 23:22",
+          "text": "A third time he said to them, \"Why, what evil has he done? I have found in him no crime deserving death; I will therefore chastise him and release him.\""
+        },
+        "Jn": {
+          "ref": "John 18:40",
+          "text": "They cried out again, \"Not this man, but Barabbas!\" Now Barabbas was a robber."
+        }
+      }
     },
     {
       "id": "eccehomo",
@@ -3116,7 +3532,21 @@
       "tags": [
         "passion"
       ],
-      "orderNote": "John places the scourging and crowning before the sentence; Matthew and Mark mention the scourging with the sentence and the crowning after it (§162). John's \"about the sixth hour\" (19:14) seems to clash with Mark's \"third hour\" for the crucifixion; Robertson follows the view that John counts from midnight, Roman style, so the sentence fell about 6 a.m. The words \"Ecce homo\" are the Latin Vulgate of John 19:5."
+      "orderNote": "John places the scourging and crowning before the sentence; Matthew and Mark mention the scourging with the sentence and the crowning after it (§162). John's \"about the sixth hour\" (19:14) seems to clash with Mark's \"third hour\" for the crucifixion; Robertson follows the view that John counts from midnight, Roman style, so the sentence fell about 6 a.m. The words \"Ecce homo\" are the Latin Vulgate of John 19:5.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 27:26",
+          "text": "Then he released for them Barabbas, and having scourged Jesus, delivered him to be crucified."
+        },
+        "Mk": {
+          "ref": "Mark 15:15",
+          "text": "So Pilate, wishing to satisfy the crowd, released for them Barabbas; and having scourged Jesus, he delivered him to be crucified."
+        },
+        "Jn": {
+          "ref": "John 19:5",
+          "text": "So Jesus came out, wearing the crown of thorns and the purple robe. Pilate said to them, \"Here is the man!\""
+        }
+      }
     },
     {
       "id": "mocking",
@@ -3185,7 +3615,17 @@
       "tags": [
         "passion"
       ],
-      "orderNote": "Robertson notes that the Sanhedrin's men had mocked Jesus too (§155); Herod's soldiers did the same (§160). Pilate's soldiers were probably auxiliaries recruited from non-Jewish towns of the region, such as Sebaste and Caesarea."
+      "orderNote": "Robertson notes that the Sanhedrin's men had mocked Jesus too (§155); Herod's soldiers did the same (§160). Pilate's soldiers were probably auxiliaries recruited from non-Jewish towns of the region, such as Sebaste and Caesarea.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 27:29",
+          "text": "and plaiting a crown of thorns they put it on his head, and put a reed in his right hand. And kneeling before him they mocked him, saying, \"Hail, King of the Jews!\""
+        },
+        "Mk": {
+          "ref": "Mark 15:17–18",
+          "text": "And they clothed him in a purple cloak, and plaiting a crown of thorns they put it on him. And they began to salute him, \"Hail, King of the Jews!\""
+        }
+      }
     },
     {
       "id": "waycross",
@@ -3283,7 +3723,25 @@
       "tags": [
         "passion"
       ],
-      "orderNote": "The fourteen Stations of the Cross follow the traditional Via Dolorosa. Several stations come from tradition, not the Gospels: Jesus' three falls, his meeting with his mother, and Veronica wiping his face (a story first found in medieval writings). Robertson himself, writing in 1922, favored Gordon's Calvary as the site; most scholars today hold to the Holy Sepulchre."
+      "orderNote": "The fourteen Stations of the Cross follow the traditional Via Dolorosa. Several stations come from tradition, not the Gospels: Jesus' three falls, his meeting with his mother, and Veronica wiping his face (a story first found in medieval writings). Robertson himself, writing in 1922, favored Gordon's Calvary as the site; most scholars today hold to the Holy Sepulchre.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 27:34",
+          "text": "they offered him wine to drink, mingled with gall; but when he tasted it, he would not drink it."
+        },
+        "Mk": {
+          "ref": "Mark 15:21",
+          "text": "And they compelled a passer-by, Simon of Cyrene, who was coming in from the country, the father of Alexander and Rufus, to carry his cross."
+        },
+        "Lk": {
+          "ref": "Luke 23:28",
+          "text": "But Jesus turning to them said, \"Daughters of Jerusalem, do not weep for me, but weep for yourselves and for your children."
+        },
+        "Jn": {
+          "ref": "John 19:17",
+          "text": "So they took Jesus, and he went out, bearing his own cross, to the place called the place of a skull, which is called in Hebrew Golgotha."
+        }
+      }
     },
     {
       "id": "crucifixion",
@@ -3366,7 +3824,25 @@
         "passion",
         "prayer"
       ],
-      "orderNote": "Robertson dates the crucifixion to April AD 30 (or 29). This map follows the date many scholars now prefer, Friday, 3 April AD 33; both years have a Passover that fits a Friday crucifixion. The Synoptics present the Last Supper as the Passover meal, while John places the crucifixion on the day of Preparation, when the lambs were slain; Robertson, like many harmonists, takes the Supper as the Passover meal. He follows Mark's order for the sayings on the cross: \"Father, forgive them,\" the promise to the robber, and the words to Mary and John."
+      "orderNote": "Robertson dates the crucifixion to April AD 30 (or 29). This map follows the date many scholars now prefer, Friday, 3 April AD 33; both years have a Passover that fits a Friday crucifixion. The Synoptics present the Last Supper as the Passover meal, while John places the crucifixion on the day of Preparation, when the lambs were slain; Robertson, like many harmonists, takes the Supper as the Passover meal. He follows Mark's order for the sayings on the cross: \"Father, forgive them,\" the promise to the robber, and the words to Mary and John.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 27:43",
+          "text": "He trusts in God; let God deliver him now, if he desires him; for he said, 'I am the Son of God.'\""
+        },
+        "Mk": {
+          "ref": "Mark 15:25",
+          "text": "And it was the third hour, when they crucified him."
+        },
+        "Lk": {
+          "ref": "Luke 23:34",
+          "text": "And Jesus said, \"Father, forgive them; for they know not what they do.\""
+        },
+        "Jn": {
+          "ref": "John 19:20",
+          "text": "Many of the Jews read this title, for the place where Jesus was crucified was near the city; and it was written in Hebrew, in Latin, and in Greek."
+        }
+      }
     },
     {
       "id": "goodthief",
@@ -3431,7 +3907,21 @@
       "tags": [
         "passion"
       ],
-      "orderNote": "Matthew and Mark say the robbers reviled him; only Luke tells of one repenting. Many harmonists take it that both mocked at first and one later changed his heart. The name Dismas comes from the apocryphal Gospel of Nicodemus, not from Scripture."
+      "orderNote": "Matthew and Mark say the robbers reviled him; only Luke tells of one repenting. Many harmonists take it that both mocked at first and one later changed his heart. The name Dismas comes from the apocryphal Gospel of Nicodemus, not from Scripture.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 27:44",
+          "text": "And the robbers who were crucified with him also reviled him in the same way."
+        },
+        "Mk": {
+          "ref": "Mark 15:32",
+          "text": "Those who were crucified with him also reviled him."
+        },
+        "Lk": {
+          "ref": "Luke 23:42–43",
+          "text": "And he said, \"Jesus, remember me when you come in your kingly power.\" And he said to him, \"Truly, I say to you, today you will be with me in Paradise.\""
+        }
+      }
     },
     {
       "id": "marycross",
@@ -3577,7 +4067,25 @@
         "passion",
         "prayer"
       ],
-      "orderNote": "Robertson orders the last four sayings: the cry of desolation (Mark, Matthew), \"I thirst\" (John), \"It is finished\" (John), and \"Father, into your hands\" (Luke). The darkness cannot have been a solar eclipse, which is impossible at Passover's full moon."
+      "orderNote": "Robertson orders the last four sayings: the cry of desolation (Mark, Matthew), \"I thirst\" (John), \"It is finished\" (John), and \"Father, into your hands\" (Luke). The darkness cannot have been a solar eclipse, which is impossible at Passover's full moon.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 27:46",
+          "text": "And about the ninth hour Jesus cried with a loud voice, \"Eli, Eli, lama sabach-thani?\" that is, \"My God, my God, why have you forsaken me?\""
+        },
+        "Mk": {
+          "ref": "Mark 15:37",
+          "text": "And Jesus uttered a loud cry, and breathed his last."
+        },
+        "Lk": {
+          "ref": "Luke 23:46",
+          "text": "Then Jesus, crying with a loud voice, said, \"Father, into your hands I commit my spirit!\" And having said this he breathed his last."
+        },
+        "Jn": {
+          "ref": "John 19:30",
+          "text": "When Jesus had received the vinegar, he said, \"It is finished\"; and he bowed his head and gave up his spirit."
+        }
+      }
     },
     {
       "id": "veiltorn",
@@ -3656,7 +4164,21 @@
         "passion",
         "miracle"
       ],
-      "orderNote": "Luke mentions the torn curtain just before Jesus' death, the others just after. In Luke the centurion says \"Certainly this man was innocent!\" Only Matthew tells of the raised saints."
+      "orderNote": "Luke mentions the torn curtain just before Jesus' death, the others just after. In Luke the centurion says \"Certainly this man was innocent!\" Only Matthew tells of the raised saints.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 27:52–53",
+          "text": "the tombs also were opened, and many bodies of the saints who had fallen asleep were raised, and coming out of the tombs after his resurrection they went into the holy city and appeared to many."
+        },
+        "Mk": {
+          "ref": "Mark 15:39",
+          "text": "And when the centurion, who stood facing him, saw that he thus breathed his last, he said, \"Truly this man was the Son of God!\""
+        },
+        "Lk": {
+          "ref": "Luke 23:47",
+          "text": "Now when the centurion saw what had taken place, he praised God, and said, \"Certainly this man was innocent!\""
+        }
+      }
     },
     {
       "id": "piercing",
@@ -3804,7 +4326,25 @@
       "tags": [
         "passion"
       ],
-      "orderNote": "Devotion (the Stations of the Cross and the Pietà) pictures Mary receiving her son's body when it is taken down; the Gospels do not say so. Arimathea is usually identified with Ramathaim, northwest of Jerusalem."
+      "orderNote": "Devotion (the Stations of the Cross and the Pietà) pictures Mary receiving her son's body when it is taken down; the Gospels do not say so. Arimathea is usually identified with Ramathaim, northwest of Jerusalem.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 27:60",
+          "text": "and laid it in his own new tomb, which he had hewn in the rock; and he rolled a great stone to the door of the tomb, and departed."
+        },
+        "Mk": {
+          "ref": "Mark 15:44",
+          "text": "And Pilate wondered if he were already dead; and summoning the centurion, he asked him whether he was already dead."
+        },
+        "Lk": {
+          "ref": "Luke 23:51",
+          "text": "who had not consented to their purpose and deed, and he was looking for the kingdom of God."
+        },
+        "Jn": {
+          "ref": "John 19:39",
+          "text": "Nicodemus also, who had at first come to him by night, came bringing a mixture of myrrh and aloes, about a hundred pounds' weight."
+        }
+      }
     },
     {
       "id": "womenwatch",
@@ -3861,7 +4401,21 @@
       "tags": [
         "passion"
       ],
-      "orderNote": "Robertson notes that the Sabbath began at 6 p.m. on Friday, so the women's rest covered our Friday night and Saturday. Luke has them prepare spices before the Sabbath, Mark buying them after it (16:1); they may have done both."
+      "orderNote": "Robertson notes that the Sabbath began at 6 p.m. on Friday, so the women's rest covered our Friday night and Saturday. Luke has them prepare spices before the Sabbath, Mark buying them after it (16:1); they may have done both.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 27:61",
+          "text": "Mary Magdalene and the other Mary were there, sitting opposite the sepulchre."
+        },
+        "Mk": {
+          "ref": "Mark 15:47",
+          "text": "Mary Magdalene and Mary the mother of Joses saw where he was laid."
+        },
+        "Lk": {
+          "ref": "Luke 23:56",
+          "text": "then they returned, and prepared spices and ointments. On the sabbath they rested according to the commandment."
+        }
+      }
     },
     {
       "id": "guard",

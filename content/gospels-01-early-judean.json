@@ -195,7 +195,21 @@
       "tags": [
         "conflict"
       ],
-      "orderNote": "Matthew gives the order bread, pinnacle, mountain; Luke has bread, mountain, pinnacle, perhaps so that the scene ends in Jerusalem, as his Gospel does. Matthew's \"then\" and \"again\" suggest he keeps the actual sequence. The second or third temptation takes Jesus to the Temple in Jerusalem, so not all of it happens on the mountain."
+      "orderNote": "Matthew gives the order bread, pinnacle, mountain; Luke has bread, mountain, pinnacle, perhaps so that the scene ends in Jerusalem, as his Gospel does. Matthew's \"then\" and \"again\" suggest he keeps the actual sequence. The second or third temptation takes Jesus to the Temple in Jerusalem, so not all of it happens on the mountain.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 4:10",
+          "text": "Then Jesus said to him, \"Begone, Satan! for it is written, 'You shall worship the Lord your God and him only shall you serve.'\""
+        },
+        "Mk": {
+          "ref": "Mark 1:13",
+          "text": "And he was in the wilderness forty days, tempted by Satan; and he was with the wild beasts; and the angels ministered to him."
+        },
+        "Lk": {
+          "ref": "Luke 4:13",
+          "text": "And when the devil had ended every temptation, he departed from him until an opportune time."
+        }
+      }
     },
     {
       "id": "johnwitness",
@@ -938,7 +952,25 @@
       "tags": [
         "conflict"
       ],
-      "orderNote": "John's Gospel says only that the Pharisees heard of his success; Matthew and Mark tie the return to Galilee to John's arrest. Mark and Matthew pass straight from the temptation to Galilee, so without John's Gospel we would not know of this earlier Judean ministry."
+      "orderNote": "John's Gospel says only that the Pharisees heard of his success; Matthew and Mark tie the return to Galilee to John's arrest. Mark and Matthew pass straight from the temptation to Galilee, so without John's Gospel we would not know of this earlier Judean ministry.",
+      "parallels": {
+        "Mt": {
+          "ref": "Matthew 4:12",
+          "text": "Now when he heard that John had been arrested, he withdrew into Galilee;"
+        },
+        "Mk": {
+          "ref": "Mark 1:14",
+          "text": "Now after John was arrested, Jesus came into Galilee, preaching the gospel of God,"
+        },
+        "Lk": {
+          "ref": "Luke 4:14",
+          "text": "And Jesus returned in the power of the Spirit into Galilee, and a report concerning him went out through all the surrounding country."
+        },
+        "Jn": {
+          "ref": "John 4:3–4",
+          "text": "he left Judea and departed again to Galilee. He had to pass through Samaria."
+        }
+      }
     },
     {
       "id": "johnarrested",
