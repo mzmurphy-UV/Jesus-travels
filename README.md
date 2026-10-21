@@ -1,6 +1,6 @@
 # Footsteps of the Gospel
 
-An interactive map of the life of Jesus. Step through the Gospel story event by event and watch the journeys unfold on a real, zoomable map of the Holy Land, with Scripture (RSV-2CE), masterpiece art, who ruled where, and each place as it looks today.
+An interactive map of the Gospels and Acts. Step through the Gospel story event by event and watch the journeys unfold on a real, zoomable map of the Holy Land, with Scripture (RSV-2CE), masterpiece art, who ruled where, and each place as it looks today.
 
 The site is plain HTML, CSS and JavaScript with no build step. It is served by GitHub Pages.
 
@@ -12,6 +12,7 @@ The site is plain HTML, CSS and JavaScript with no build step. It is served by G
 | `css/app.css` | All styling |
 | `js/config.js` | The MapTiler key (public by design; restrict it to the site's domain in MapTiler) |
 | `js/data.js` | Places, routes, timeline lanes and events, with Scripture, art and "today" notes |
+| `js/content.js` | The Gospel and Acts events, generated from `content/*.json` by `tools/build_content.py` |
 | `js/routestats.js` | Miles and climb for each route, built by `tools/routestats.py` |
 | `js/realms.js` | Approximate regions and rulers by year |
 | `js/app.js` | Map, timeline, event panel, search |

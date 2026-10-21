@@ -1,0 +1,2151 @@
+{
+  "_batch": "acts-02-spread",
+  "_sections": "Acts 8:1–12:25",
+  "_unverified": [],
+  "_notes": [
+    "New lane `paul`: Saul/Paul and his companions (Barnabas). Used for damascusroad, saulbaptized, damascuspreach, arabia, basket, saulinjerusalem, tarsus, barnabassaul, faminerelief, barnabasreturn. Lane `herod` for Herod Agrippa I (jameskilled, agrippadeath); everything else uses `apostles`.",
+    "Order follows Acts 8:1b–12:25; `harmony` holds the Acts passage, except `arabia`, which holds \"Gal 1:17\" because Acts does not mention it. Paul's letters that add to a scene are extra keys in `gospels` (`Gal`, `2Cor`, `1Cor`).",
+    "Boundary with acts-01: its Stephen event covers Acts 7:54–8:2 (including 8:1a, Saul consenting); `scattering` here starts at 8:1b.",
+    "New place `kawkab` (Road to Damascus, the traditional site of the conversion at Kawkab, about 10 miles SW of Damascus; certainty Traditional). Other places are the canonical Acts ids; `caesarea` is from data.js.",
+    "Dates: persecution and Philip c. AD 34; conversion c. AD 34–35; Arabia c. AD 35–37; escape and first Jerusalem visit c. AD 37 (Gal 1:18, \"after three years\"); Tarsus c. AD 37–43; Peter's tour, Tabitha and Cornelius c. AD 38–40; Antioch c. AD 40–44; James killed and Peter freed at Passover AD 44 (or 43); Agrippa I dies AD 44; famine visit c. AD 44–46; return to Antioch c. AD 46–47.",
+    "Routes: Jerusalem–Damascus via Samaria, the Jordan Valley, the Bridge of Jacob's Daughters and the Golan; Damascus–Petra via Bostra and Philadelphia on the King's Highway (Paul's destination in Arabia is unknown); Caesarea–Tarsus by sea along the Phoenician and Syrian coast; Tarsus–Antioch by the Cilician plain, Issus and the Syrian Gates (Belen Pass); Jerusalem–Antioch by the coast road."
+  ],
+  "places": {
+    "antioch": {
+      "name": "Antioch (Syria)",
+      "ll": [
+        36.161,
+        36.202
+      ],
+      "region": "Syria",
+      "certainty": "Certain",
+      "note": "Antioch on the Orontes, the third city of the Roman Empire and capital of the province of Syria. Here the disciples were first called Christians (Acts 11:26), and from here Paul set out on each of his journeys. Today Antakya in southern Turkey; on the slope of Mount Staurin the cave church of St Peter is honored as an early meeting place of the church."
+    },
+    "arabia": {
+      "name": "Arabia (Nabataea)",
+      "ll": [
+        35.8,
+        30.6
+      ],
+      "region": "Nabataea",
+      "certainty": "Traditional",
+      "note": "Paul says only \"I went away into Arabia\" (Galatians 1:17). This was the Nabataean kingdom of Aretas IV, whose lands ran from the Hauran south of Damascus down through Petra, its capital, to the Hejaz. Where Paul went is unknown; the marker sits near Petra. Some think of the towns of the Hauran close to Damascus, others of Sinai, which Paul himself places \"in Arabia\" (Galatians 4:25)."
+    },
+    "damascus": {
+      "name": "Damascus",
+      "ll": [
+        36.306,
+        33.511
+      ],
+      "region": "Syria",
+      "certainty": "Certain",
+      "note": "One of the oldest continuously inhabited cities in the world, then a city of the Decapolis with a large Jewish community and many synagogues. The \"street called Straight\" (Acts 9:11), the Roman Via Recta, still runs east to west across the Old City to the Bab Sharqi gate; an underground chapel near it is honored as the House of Ananias, and St Paul's Chapel at Bab Kisan marks the traditional spot where he was let down over the wall."
+    },
+    "gazaroad": {
+      "name": "The road down to Gaza",
+      "ll": [
+        34.8,
+        31.6
+      ],
+      "region": "Judea",
+      "certainty": "Traditional",
+      "note": "\"The road that goes down from Jerusalem to Gaza. This is a desert road\" (Acts 8:26). The road ran southwest through the Judean hills toward the coast; the point marks its lower stretch toward Gaza. Where the eunuch was baptized is not known. Pilgrims honored a spring at Beth-zur near Hebron (the Ain ed-Dirweh, \"Philip's Fountain\"), and another tradition points to Ein Haniya near Jerusalem."
+    },
+    "jerusalemchurch": {
+      "name": "Jerusalem (the city)",
+      "ll": [
+        35.231,
+        31.776
+      ],
+      "region": "Judea",
+      "certainty": "Certain",
+      "note": "The first church met in the Temple courts and \"in their homes\" across the city (Acts 2:46; 5:42). Acts names no single meeting place, so events of the church's common life are mapped at the city itself."
+    },
+    "joppa": {
+      "name": "Joppa",
+      "ll": [
+        34.752,
+        32.054
+      ],
+      "region": "Coastal plain",
+      "certainty": "Certain",
+      "note": "The ancient port of Jerusalem, from which Jonah sailed to flee from the Lord (Jonah 1:3). Today Jaffa, the old city of Tel Aviv-Yafo. A house near the lighthouse is shown as the House of Simon the Tanner, and the Franciscan church of St Peter stands above the harbor."
+    },
+    "kawkab": {
+      "name": "Road to Damascus (Kawkab)",
+      "ll": [
+        36.18,
+        33.42
+      ],
+      "region": "Syria",
+      "certainty": "Traditional",
+      "note": "Acts says only that it happened \"as he journeyed he approached Damascus\" (9:3). Tradition points to the hill of Kawkab, about 10 miles southwest of the city, where a Greek Orthodox monastery of St Paul now marks the place."
+    },
+    "lydda": {
+      "name": "Lydda",
+      "ll": [
+        34.895,
+        31.951
+      ],
+      "region": "Judea",
+      "certainty": "Certain",
+      "note": "A town on the edge of the coastal plain of Sharon, about 25 miles northwest of Jerusalem on the road to Joppa. Later called Diospolis, it is today Lod in Israel, where the Church of St George keeps the tomb honored as that of the martyr."
+    },
+    "sebaste": {
+      "name": "Samaria (Sebaste)",
+      "ll": [
+        35.192,
+        32.276
+      ],
+      "region": "Samaria",
+      "certainty": "Probable",
+      "note": "The old capital of the northern kingdom, rebuilt by Herod the Great and renamed Sebaste in honor of Augustus. Acts 8:5 says only \"a city of Samaria\" (some manuscripts read \"the city\"); Sebaste is the usual reading, but Shechem (near Sychar) and Gitta, Simon Magus' home town in Justin Martyr, have also been proposed. Today Sebastia, a village in the West Bank, keeps the ruins of Herod's temple of Augustus, a colonnaded street and a Crusader church of St John the Baptist."
+    },
+    "tarsus": {
+      "name": "Tarsus",
+      "ll": [
+        34.895,
+        36.918
+      ],
+      "region": "Cilicia",
+      "certainty": "Certain",
+      "note": "Paul's home town, \"no mean city\" (Acts 21:39): the capital of Cilicia on the river Cydnus, a seat of Greek learning, with a river harbor reached from the sea. Today Tarsus in southern Turkey shows a long stretch of Roman paved street, the Roman gate called Cleopatra's Gate, and \"St Paul's Well\" in the old quarter, honored by pilgrims as the site of his family home."
+    }
+  },
+  "events": [
+    {
+      "id": "scattering",
+      "harmony": "Acts 8:1–4",
+      "lane": "apostles",
+      "place": "jerusalemchurch",
+      "date": "c. AD 34",
+      "title": "The Persecution and the Scattering",
+      "people": [
+        "Saul of Tarsus",
+        "The church in Jerusalem",
+        "The apostles"
+      ],
+      "gospels": {
+        "Acts": "8:1–4",
+        "Gal": "1:13"
+      },
+      "summary": "On the day of Stephen's death a great persecution breaks out against the church in Jerusalem. Saul goes from house to house, dragging men and women off to prison. The believers scatter through Judea and Samaria; only the apostles stay. The scattering spreads the Gospel: those who flee preach wherever they go, as Jesus had said, \"in all Judea and Samaria\" (Acts 1:8).",
+      "scripture": [
+        {
+          "ref": "Acts 8:1",
+          "text": "And on that day a great persecution arose against the church in Jerusalem; and they were all scattered throughout the region of Judea and Samaria, except the apostles."
+        },
+        {
+          "ref": "Acts 8:3–4",
+          "text": "But Saul laid waste the church, and entering house after house, he dragged off men and women and committed them to prison. Now those who were scattered went about preaching the word."
+        },
+        {
+          "ref": "Galatians 1:13",
+          "text": "For you have heard of my former life in Judaism, how I persecuted the church of God violently and tried to destroy it;"
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "Saul Persecutes the Church in Jerusalem",
+          "artist": "Pieter Tanjé (engraver)",
+          "year": "18th century",
+          "medium": "Engraving (book illustration)",
+          "location": "Rijksmuseum, Amsterdam",
+          "description": "Two scenes on one page. Above (Acts 8): soldiers drag men and women from their houses and lead them off bound, while a young Saul on horseback points the way. Below (Acts 9): Saul is struck down on the road to Damascus by a shaft of light.",
+          "significance": "From an eighteenth-century Dutch picture Bible, with captions in Dutch and French: \"The arrest of various men and women\" and \"The Conversion of Saul.\"",
+          "symbolism": "Saul rides high in the first scene and lies on the ground in the second: the persecutor's fall told in one page.",
+          "impact": "Such illustrated Bibles were widely used for teaching the Bible story in Dutch homes.",
+          "img": "img/scattering0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Saulus_vervolgt_de_gemeente_in_Jeruzalem_Bekering_van_Paulus_Gevangenneming_van_Verscheide_Mannen_en_Vrouwen_(..)_Bekeering_van_Saulus_(..)_(titel_op_object),_RP-P-1933-113.jpg"
+        }
+      ],
+      "tags": [
+        "conflict"
+      ],
+      "orderNote": "The year is uncertain: Stephen's death and the persecution are usually dated AD 33–35, depending on the date of the Crucifixion (AD 30 or 33). Saul's own word for what he did is \"violently\" (Galatians 1:13; also 1 Corinthians 15:9, Philippians 3:6)."
+    },
+    {
+      "id": "philipsamaria",
+      "harmony": "Acts 8:5–8",
+      "lane": "apostles",
+      "place": "sebaste",
+      "from": "jerusalemchurch",
+      "date": "c. AD 34",
+      "title": "Philip Preaches in Samaria",
+      "people": [
+        "Philip the deacon",
+        "The Samaritans"
+      ],
+      "gospels": {
+        "Acts": "8:5–8"
+      },
+      "summary": "Philip, one of the Seven chosen with Stephen, flees north to a city of Samaria and proclaims the Christ. The crowds listen, seeing the signs he does: unclean spirits come out, and the paralyzed and lame are healed. The Samaritans, long at odds with the Jews, receive the Gospel, and there is much joy in the city. It is the first step of the Gospel beyond Judea.",
+      "journey": "About 40 miles north from Jerusalem along the ridge road past Bethel and Shechem, two or three days on foot.",
+      "route": [
+        [
+          35.231,
+          31.776
+        ],
+        [
+          35.21,
+          31.86
+        ],
+        [
+          35.22,
+          31.93
+        ],
+        [
+          35.25,
+          32.07
+        ],
+        [
+          35.28,
+          32.21
+        ],
+        [
+          35.192,
+          32.276
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 8:5–6",
+          "text": "Philip went down to a city of Samaria, and proclaimed to them the Christ. And the multitudes with one accord gave heed to what was said by Philip, when they heard him and saw the signs which he did."
+        },
+        {
+          "ref": "Acts 8:8",
+          "text": "So there was much joy in that city."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "2 Kings 17:24–41",
+          "note": "The origin of the Samaritans, settled in the land after the fall of the northern kingdom; their rift with the Jews runs through the Gospels (John 4:9)."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Ruins at Sebastia (Samaria)",
+          "artist": "Photo by Daniel Ventura",
+          "year": "Photo 1990",
+          "medium": "Photograph",
+          "location": "Sebastia, West Bank",
+          "description": "Massive ancient walls and a tower of squared stones rise on the hill of Samaria-Sebaste, above a road winding past the ruins.",
+          "significance": "Samaria was the capital of Israel's northern kingdom (1 Kings 16:24). Herod the Great rebuilt it as Sebaste with a temple of Augustus, a stadium and a colonnaded street.",
+          "symbolism": "Stones of a capital once at odds with Jerusalem, where the Gospel was now gladly received.",
+          "impact": "Excavated by Harvard (1908–10) and a joint expedition (1931–35), the site is among the great archaeological sites of the region.",
+          "img": "img/philipsamaria0.jpg",
+          "credit": "Photo: Daniel Ventura, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Ruins_by_Sebastia_02.jpg"
+        }
+      ],
+      "tags": [
+        "miracle",
+        "healing",
+        "exorcism",
+        "sermon"
+      ],
+      "orderNote": "This Philip is the deacon of Acts 6:5, later called \"the evangelist\" (Acts 21:8), not the apostle Philip. Acts does not name the city; see the place note."
+    },
+    {
+      "id": "simonmagus",
+      "harmony": "Acts 8:9–25",
+      "lane": "apostles",
+      "place": "sebaste",
+      "from": "jerusalemchurch",
+      "date": "c. AD 34",
+      "title": "Peter and John in Samaria; Simon the Magician",
+      "people": [
+        "Peter",
+        "John",
+        "Philip",
+        "Simon the magician",
+        "The Samaritans"
+      ],
+      "gospels": {
+        "Acts": "8:9–25"
+      },
+      "summary": "A magician named Simon, whom the Samaritans called \"the power of God which is called Great,\" believes Philip's preaching and is baptized. The apostles in Jerusalem send Peter and John, who pray and lay hands on the new believers, and they receive the Holy Spirit. Simon offers money for the same power. Peter rebukes him sharply, and Simon asks for prayer. From his name comes the word simony, the buying and selling of holy things.",
+      "journey": "Peter and John come about 40 miles north from Jerusalem; on the way back they preach in many Samaritan villages.",
+      "route": [
+        [
+          35.231,
+          31.776
+        ],
+        [
+          35.21,
+          31.86
+        ],
+        [
+          35.22,
+          31.93
+        ],
+        [
+          35.25,
+          32.07
+        ],
+        [
+          35.28,
+          32.21
+        ],
+        [
+          35.192,
+          32.276
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 8:14–15",
+          "text": "Now when the apostles at Jerusalem heard that Samaria had received the word of God, they sent to them Peter and John, who came down and prayed for them that they might receive the Holy Spirit;"
+        },
+        {
+          "ref": "Acts 8:18–20",
+          "text": "Now when Simon saw that the Spirit was given through the laying on of the apostles' hands, he offered them money, saying, \"Give me also this power, that any one on whom I lay my hands may receive the Holy Spirit.\" But Peter said to him, \"Your silver perish with you, because you thought you could obtain the gift of God with money!"
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Deuteronomy 29:18",
+          "note": "Peter's \"gall of bitterness\" (Acts 8:23) recalls Moses' warning against \"a root bearing poisonous and bitter fruit\" in Israel."
+        },
+        {
+          "ref": "2 Kings 5:15–27",
+          "note": "Elisha refuses Naaman's money for God's healing, and Gehazi is punished for taking it."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "Simon Magus Offering Saint Peter Money for the Power of Conferring the Holy Spirit",
+          "artist": "Liberale da Verona",
+          "year": "c. 1470–1475",
+          "medium": "Tempera on panel",
+          "location": "Fitzwilliam Museum, Cambridge",
+          "description": "Before an elegant Renaissance palace, a young man in a red cloak and blue tunic, Simon, steps forward holding out a purse to Peter, who draws back with a gesture of refusal, another apostle behind him. At right a woman in red, veiled in white, comes down the palace stairs.",
+          "significance": "A small panel by the Veronese painter and illuminator Liberale da Verona, probably part of a series or predella of St Peter's life.",
+          "symbolism": "The purse held out at arm's length and the apostle's raised hand say it all: \"Your silver perish with you\" (Acts 8:20). The fine courtly dress makes Simon a man of the world.",
+          "impact": "Simon's sin gave its name to simony, the buying of spiritual office, a burning issue in the Church of Liberale's day.",
+          "img": "img/simonmagus0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Liberale_da_Verona_(c.1445-c.1526)_-_Simon_Magus_Offering_St_Peter_Money_for_the_Power_of_Conferring_the_Holy_Spirit_-_PD.21-1961_-_Fitzwilliam_Museum.jpg"
+        }
+      ],
+      "tags": [
+        "conflict"
+      ],
+      "orderNote": "John is the same apostle who once wanted to call down fire on a Samaritan village (Luke 9:54). Later writers (Justin Martyr, Irenaeus) make Simon the father of Gnostic heresy, and legend tells of his contest with Peter in Rome; Acts says nothing of his end."
+    },
+    {
+      "id": "eunuch",
+      "harmony": "Acts 8:26–40",
+      "lane": "apostles",
+      "place": "gazaroad",
+      "from": "sebaste",
+      "date": "c. AD 34",
+      "title": "Philip and the Ethiopian Eunuch",
+      "people": [
+        "Philip",
+        "An Ethiopian eunuch, treasurer of the Candace",
+        "An angel of the Lord"
+      ],
+      "gospels": {
+        "Acts": "8:26–40"
+      },
+      "summary": "An angel sends Philip south to the desert road from Jerusalem to Gaza. There an Ethiopian official, treasurer of the Candace (the title of the queens of Meroë, in today's Sudan), is riding home from worship in Jerusalem, reading Isaiah aloud in his chariot. Philip runs alongside and asks if he understands. Starting from Isaiah's suffering servant, Philip tells him the good news of Jesus, and at the first water they come to, the eunuch asks for baptism. Then the Spirit carries Philip off to Azotus, and he preaches along the coast to Caesarea.",
+      "stay": "Philip settles at Caesarea, where Paul finds him with his four daughters some twenty years later (Acts 21:8–9).",
+      "journey": "From Samaria back south past Jerusalem and down toward the coast, about 75 miles, four or five days on foot. Afterwards Philip goes north up the coast from Azotus to Caesarea, about 60 miles.",
+      "route": [
+        [
+          35.192,
+          32.276
+        ],
+        [
+          35.28,
+          32.21
+        ],
+        [
+          35.25,
+          32.07
+        ],
+        [
+          35.22,
+          31.93
+        ],
+        [
+          35.21,
+          31.8
+        ],
+        [
+          35.06,
+          31.7
+        ],
+        [
+          34.95,
+          31.62
+        ],
+        [
+          34.8,
+          31.6
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 8:30–31",
+          "text": "So Philip ran to him, and heard him reading Isaiah the prophet, and asked, \"Do you understand what you are reading?\" And he said, \"How can I, unless some one guides me?\" And he invited Philip to come up and sit with him."
+        },
+        {
+          "ref": "Acts 8:35–36",
+          "text": "Then Philip opened his mouth, and beginning with this scripture he told him the good news of Jesus. And as they went along the road they came to some water, and the eunuch said, \"See, here is water! What is to prevent my being baptized?\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Isaiah 53:7–8",
+          "note": "The passage he is reading: the servant led like a lamb to the slaughter."
+        },
+        {
+          "ref": "Isaiah 56:3–5",
+          "note": "\"Let not the eunuch say, 'Behold, I am a dry tree'\": God promises eunuchs who keep his covenant a name better than sons and daughters."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Baptism of the Eunuch",
+          "artist": "Rembrandt van Rijn",
+          "year": "1626",
+          "medium": "Oil on panel",
+          "location": "Museum Catharijneconvent, Utrecht",
+          "description": "The eunuch kneels in a fur-trimmed robe with his hands on his breast as Philip, bald and bearded, raises his hand over him. A servant holds open the great book of Isaiah, attendants watch from the chariot and horses, and a dog drinks from the stream.",
+          "significance": "An early work, painted in Leiden when Rembrandt was about twenty, after the example of his teacher Pieter Lastman. Long known only from copies and prints, it was rediscovered in the 1970s.",
+          "symbolism": "The open book is the scroll of Isaiah he was reading on the road; the parasol and fine robes mark the court official, and the kneeling posture his faith.",
+          "impact": "One of a small number of early Rembrandt history paintings; the subject was a favorite of Dutch painters, who saw in it the Gospel reaching the ends of the earth.",
+          "img": "img/eunuch0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Rembrandt,_The_Baptism_of_the_Eunuch,_1626,_Museum_Catharijneconvent,_Utrecht.jpg"
+        }
+      ],
+      "tags": [
+        "call"
+      ],
+      "orderNote": "Verse 37 (\"I believe that Jesus Christ is the Son of God\") is missing from the oldest manuscripts and is printed as a footnote in the RSV; the Church has long used it as a baptismal confession. Ethiopian Christians honor the eunuch as the first to bring the faith to Africa."
+    },
+    {
+      "id": "damascusroad",
+      "harmony": "Acts 9:1–9",
+      "lane": "paul",
+      "place": "kawkab",
+      "from": "jerusalemchurch",
+      "date": "c. AD 34–35",
+      "title": "The Conversion of Saul on the Road to Damascus",
+      "people": [
+        "Saul of Tarsus",
+        "The risen Jesus",
+        "Saul's companions"
+      ],
+      "gospels": {
+        "Acts": "9:1–9",
+        "Gal": "1:15–16",
+        "1Cor": "15:8"
+      },
+      "summary": "Still breathing threats against the disciples, Saul gets letters from the high priest to arrest any followers of \"the Way\" in the synagogues of Damascus. Near the city a light from heaven flashes around him. He falls to the ground and hears a voice: \"Saul, Saul, why do you persecute me?\" It is Jesus, who calls the persecution of his followers a persecution of himself. Saul rises blind, and his companions lead him by the hand into Damascus, where for three days he neither eats nor drinks.",
+      "journey": "About 140 miles north from Jerusalem through Samaria, up the Jordan Valley past the Sea of Galilee, over the Jordan near the Bridge of Jacob's Daughters and across the Golan plateau, a journey of about a week.",
+      "route": [
+        [
+          35.231,
+          31.776
+        ],
+        [
+          35.22,
+          31.93
+        ],
+        [
+          35.25,
+          32.07
+        ],
+        [
+          35.28,
+          32.21
+        ],
+        [
+          35.3,
+          32.46
+        ],
+        [
+          35.5,
+          32.5
+        ],
+        [
+          35.55,
+          32.7
+        ],
+        [
+          35.57,
+          32.88
+        ],
+        [
+          35.63,
+          33.01
+        ],
+        [
+          35.82,
+          33.13
+        ],
+        [
+          36.18,
+          33.42
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 9:3–5",
+          "text": "Now as he journeyed he approached Damascus, and suddenly a light from heaven flashed about him. And he fell to the ground and heard a voice saying to him, \"Saul, Saul, why do you persecute me?\" And he said, \"Who are you, Lord?\" And he said, \"I am Jesus, whom you are persecuting;"
+        },
+        {
+          "ref": "Acts 9:8",
+          "text": "Saul arose from the ground; and when his eyes were opened, he could see nothing; so they led him by the hand and brought him into Damascus."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "1 Samuel 3:10",
+          "note": "\"Samuel! Samuel!\": God calls a servant by name, twice, as with Abraham and Moses."
+        },
+        {
+          "ref": "Ezekiel 1:28",
+          "note": "Ezekiel falls on his face before the brightness of the glory of the Lord and hears a voice speaking."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Conversion on the Way to Damascus",
+          "artist": "Caravaggio",
+          "year": "1600–1601",
+          "medium": "Oil on canvas",
+          "location": "Cerasi Chapel, Santa Maria del Popolo, Rome",
+          "description": "Saul lies on his back in the road, thrown from his horse, eyes closed and arms raised to the light. The great piebald horse lifts a hoof carefully over him while an old groom holds its bridle. There is no vision of Christ, only light.",
+          "significance": "Painted for the chapel of Tiberio Cerasi, facing Caravaggio's Crucifixion of St Peter. It is his second version: the first, crowded with a descending Christ and angels, was not used and is now in the Odescalchi collection in Rome.",
+          "symbolism": "Most of the canvas is horse and darkness; the man who came to arrest others is overturned and helpless, and the light falls on his open arms. His sword and helmet lie useless on the ground.",
+          "impact": "One of the most famous images of the conversion, and of Caravaggio's art: a miracle shown as a single inward moment in an ordinary stable-dark world.",
+          "img": "img/damascusroad0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Conversion_on_the_Way_to_Damascus-Caravaggio_(c.1600-1).jpg"
+        },
+        {
+          "kind": "Masterpiece",
+          "title": "The Conversion of Saul",
+          "artist": "Michelangelo Buonarroti",
+          "year": "1542–1545",
+          "medium": "Fresco",
+          "location": "Pauline Chapel (Cappella Paolina), Apostolic Palace, Vatican City",
+          "description": "Christ plunges head-first out of heaven with his arm stretched down, sending a shaft of light onto Saul. Saul, an old bearded man, has fallen and covers his eyes, while his horse bolts and his companions scatter in terror.",
+          "significance": "One of Michelangelo's last two frescoes, painted for Pope Paul III, his namesake's chapel, opposite the Crucifixion of St Peter.",
+          "symbolism": "The shaft of light links Christ's hand and Saul's face. Michelangelo makes Saul an old man, unlike Acts' \"young man\" (7:58); many have seen in the face the painter himself, then nearly seventy.",
+          "impact": "Long hidden in the pope's private chapel, the frescoes were cleaned in 2004–2009 and are now seen as the dark, spiritual close of his painting career.",
+          "img": "img/damascusroad1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Conversion_of_Saint_Paul_(Michelangelo_Buonarroti).jpg"
+        }
+      ],
+      "tags": [
+        "appearance",
+        "call",
+        "miracle"
+      ],
+      "orderNote": "Acts tells the story three times (9:1–19, 22:6–16, 26:12–18), with small differences: here the companions hear the voice but see no one, in 22:9 they see the light but do not hear the voice. Paul counts it as the last appearance of the risen Christ (1 Corinthians 15:8). Dates range from AD 31 to 36; the Church keeps the feast of the Conversion of St Paul on 25 January. Acts mentions no horse: that is the painters' tradition."
+    },
+    {
+      "id": "saulbaptized",
+      "harmony": "Acts 9:10–19a",
+      "lane": "paul",
+      "place": "damascus",
+      "from": "kawkab",
+      "date": "c. AD 34–35",
+      "title": "Ananias Baptizes Saul",
+      "people": [
+        "Saul",
+        "Ananias of Damascus",
+        "Judas of Straight Street"
+      ],
+      "gospels": {
+        "Acts": "9:10–19"
+      },
+      "summary": "In a vision the Lord sends Ananias, a disciple in Damascus, to the house of Judas on the street called Straight. Ananias protests that Saul has come to arrest believers. The Lord answers that Saul is his chosen instrument to carry his name to the Gentiles, to kings and to Israel. Ananias lays his hands on him and calls him \"Brother Saul\"; something like scales falls from his eyes, and he is baptized.",
+      "stay": "In the house of Judas on Straight Street, then \"several days with the disciples at Damascus.\"",
+      "journey": "Led by the hand into the city, about 10 miles.",
+      "route": [
+        [
+          36.18,
+          33.42
+        ],
+        [
+          36.24,
+          33.47
+        ],
+        [
+          36.306,
+          33.511
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 9:15",
+          "text": "But the Lord said to him, \"Go, for he is a chosen instrument of mine to carry my name before the Gentiles and kings and the sons of Israel;"
+        },
+        {
+          "ref": "Acts 9:17–18",
+          "text": "So Ananias departed and entered the house. And laying his hands on him he said, \"Brother Saul, the Lord Jesus who appeared to you on the road by which you came, has sent me that you may regain your sight and be filled with the Holy Spirit.\" And immediately something like scales fell from his eyes and he regained his sight. Then he rose and was baptized,"
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Tobit 11:13",
+          "note": "When Tobias treats his father's eyes, the white films scale off and old Tobit sees again."
+        },
+        {
+          "ref": "Isaiah 49:6",
+          "note": "\"I will give you as a light to the nations\": the servant's mission that Paul later claims for himself (Acts 13:47)."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "Ananias Restoring the Sight of Saint Paul",
+          "artist": "Pietro da Cortona",
+          "year": "c. 1631",
+          "medium": "Oil on canvas",
+          "location": "Santa Maria della Concezione dei Cappuccini, Rome",
+          "description": "Saul, in Roman armor with his helmet on the floor, kneels with hands open as the white-bearded Ananias lays a hand on his head. A youth brings a basin and ewer for the baptism, and the dove of the Spirit shines above.",
+          "significance": "An altarpiece by the leading painter of Roman Baroque, for the Capuchin church on the Via Veneto, whose side chapels hold works by Guido Reni and others.",
+          "symbolism": "The fallen helmet and the bowed soldier show the persecutor disarmed; the basin and the dove join the two parts of Ananias' errand, \"that you may regain your sight and be filled with the Holy Spirit.\"",
+          "impact": "A widely copied image of the scene; Cortona's warm, theatrical style shaped Roman church painting for generations.",
+          "img": "img/saulbaptized0.jpg",
+          "credit": "Photo: IlSistemone, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Anania_guarisce_San_Paolo_-_Pietro_da_Cortona_(chiesa_di_S.M._della_Concezione,_Roma).jpg"
+        },
+        {
+          "kind": "Artifact",
+          "title": "Damascus: The Street Called \"Straight\"",
+          "artist": "Félix Bonfils",
+          "year": "c. 1870s",
+          "medium": "Albumen photograph",
+          "location": "Library of Congress, Washington",
+          "description": "A narrow, cobbled lane runs between mud-brick and stone houses with overhanging wooden upper storeys; the caption reads \"DAMASCUS. The Street called 'Straight.'\"",
+          "significance": "Bonfils, a French photographer based in Beirut, made some of the first photographs of the Holy Land and Syria, sold widely to pilgrims and travelers.",
+          "symbolism": "An ordinary street of an ordinary city: the Lord sends Ananias to a real address, \"the street called Straight... the house of Judas\" (Acts 9:11).",
+          "impact": "The Bonfils studio's images, now largely in the Library of Congress, are a key record of the region before modern change.",
+          "img": "img/saulbaptized1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Damascus._The_street_called_\"Straight\"_-_Bonfils._LCCN92513509.jpg"
+        }
+      ],
+      "tags": [
+        "healing",
+        "miracle",
+        "call"
+      ],
+      "orderNote": "The street called Straight survives as the main east–west street of Old Damascus. The underground chapel shown as the House of Ananias is a tradition, not certain."
+    },
+    {
+      "id": "damascuspreach",
+      "harmony": "Acts 9:19b–22",
+      "lane": "paul",
+      "place": "damascus",
+      "date": "c. AD 35",
+      "title": "Saul Preaches in the Synagogues of Damascus",
+      "people": [
+        "Saul",
+        "The Jews of Damascus",
+        "The disciples"
+      ],
+      "gospels": {
+        "Acts": "9:19–22"
+      },
+      "summary": "At once Saul goes into the same synagogues he came to purge and proclaims that Jesus is the Son of God. His hearers are amazed: this is the man who made havoc of the believers in Jerusalem. Saul grows stronger and confounds the Jews of Damascus, proving from the Scriptures that Jesus is the Christ.",
+      "scripture": [
+        {
+          "ref": "Acts 9:20–21",
+          "text": "And in the synagogues immediately he proclaimed Jesus, saying, \"He is the Son of God.\" And all who heard him were amazed, and said, \"Is not this the man who made havoc in Jerusalem of those who called on this name? And he has come here for this purpose, to bring them bound before the chief priests.\""
+        },
+        {
+          "ref": "Acts 9:22",
+          "text": "But Saul increased all the more in strength, and confounded the Jews who lived in Damascus by proving that Jesus was the Christ."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The Roman Arch on the Street Called Straight",
+          "artist": "Photo by Varun Shiv Kapur",
+          "year": "Photo 2011",
+          "medium": "Photograph",
+          "location": "Straight Street (Via Recta), Old City of Damascus",
+          "description": "A Roman arch of white limestone, its columns half-buried by the rise of the street level, stands beside the cobbled Straight Street, among old Damascene houses with wooden balconies.",
+          "significance": "The arch belonged to the colonnaded Roman main street, the Via Recta (\"Straight Street\") of Acts 9:11, which ran east–west across the city, where the Jewish quarter and its synagogues lay.",
+          "symbolism": "The street itself carries the story: the road down which the blind Saul was led, and in whose synagogues he soon preached.",
+          "impact": "The Roman arch is one of the best-known landmarks of the Old City of Damascus, a UNESCO World Heritage Site.",
+          "img": "img/damascuspreach0.jpg",
+          "credit": "Photo: Varun Shiv Kapur, CC BY 2.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Straight_Street_and_Roman_Arch_(5348408394).jpg"
+        }
+      ],
+      "tags": [
+        "sermon",
+        "teaching"
+      ],
+      "orderNote": "Acts runs straight on to the plot against him \"when many days had passed\" (9:23). Paul's own account puts a stay in Arabia between his first days in Damascus and his return there (Galatians 1:17); most place it here, within Luke's \"many days.\""
+    },
+    {
+      "id": "arabia",
+      "harmony": "Gal 1:17",
+      "lane": "paul",
+      "place": "arabia",
+      "from": "damascus",
+      "date": "c. AD 35–37",
+      "title": "Saul in Arabia",
+      "people": [
+        "Saul"
+      ],
+      "gospels": {
+        "Gal": "1:15–17",
+        "Acts": "9:23"
+      },
+      "summary": "Paul's letter to the Galatians adds what Acts leaves out. After his call he did not go up to Jerusalem to consult the apostles, but went away into Arabia, the Nabataean kingdom of King Aretas, and then came back to Damascus. He gives no reason. Many think of prayer and study after his overturning; others of his first preaching to Gentiles, which would explain why the Nabataean king's governor later wanted him arrested.",
+      "stay": "Part of the three years between his conversion and his first visit to Jerusalem (Galatians 1:18).",
+      "journey": "Where he went is not known. To Petra by the King's Highway, through Bostra and Philadelphia (Amman), is about 260 miles, some two to three weeks on foot; the nearer towns of the Hauran are two or three days from Damascus.",
+      "route": [
+        [
+          36.306,
+          33.511
+        ],
+        [
+          36.3,
+          33.1
+        ],
+        [
+          36.48,
+          32.52
+        ],
+        [
+          36.1,
+          32.3
+        ],
+        [
+          35.93,
+          31.95
+        ],
+        [
+          35.79,
+          31.72
+        ],
+        [
+          35.7,
+          31.18
+        ],
+        [
+          35.62,
+          30.85
+        ],
+        [
+          35.8,
+          30.6
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Galatians 1:15–17",
+          "text": "But when he who had set me apart before I was born, and had called me through his grace, was pleased to reveal his Son to me, in order that I might preach him among the Gentiles, I did not confer with flesh and blood, nor did I go up to Jerusalem to those who were apostles before me, but I went away into Arabia; and again I returned to Damascus."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "1 Kings 19:8",
+          "note": "Elijah, after his zeal for the Lord, goes forty days to Horeb, the mountain of God; some think Paul too went toward Sinai, which he places \"in Arabia\" (Galatians 4:25)."
+        },
+        {
+          "ref": "Jeremiah 1:5",
+          "note": "\"Before I formed you in the womb I knew you\": Paul's \"set me apart before I was born\" echoes the call of Jeremiah."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Al-Khazneh (\"The Treasury\"), Petra",
+          "artist": "Nabataean builders; photo by Vyacheslav Argenberg",
+          "year": "1st century BC–1st century AD (photo 2007)",
+          "medium": "Facade carved in the sandstone cliff",
+          "location": "Petra, Jordan",
+          "description": "The famous two-storey facade of columns, pediment and round pavilion, cut straight into the rose-red rock at the end of the narrow Siq gorge.",
+          "significance": "Petra was the capital of the Nabataean kingdom that Paul calls \"Arabia.\" Many scholars date the Khazneh, probably a royal tomb, to the reign of Aretas IV (9 BC–AD 40), the king whose governor later tried to seize Paul at Damascus (2 Corinthians 11:32).",
+          "symbolism": "Greek and Roman forms carved by an Arab kingdom: the mixed world of the caravan roads Paul would have walked.",
+          "impact": "A UNESCO World Heritage Site since 1985 and one of the New Seven Wonders of the World.",
+          "img": "img/arabia0.jpg",
+          "credit": "Photo: Vyacheslav Argenberg, CC BY 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Al-Khazneh_(The_Treasury),_Petra,_Jordan.jpg"
+        }
+      ],
+      "tags": [
+        "prayer",
+        "call"
+      ],
+      "orderNote": "Acts does not mention Arabia. Where it fits is debated: most place it within the \"many days\" of Acts 9:23, before the escape over the wall; a few put it after verse 19. \"After three years\" (Galatians 1:18) may count from the conversion, in the ancient inclusive way, so the stay may have been short or long."
+    },
+    {
+      "id": "basket",
+      "harmony": "Acts 9:23–25",
+      "lane": "paul",
+      "place": "damascus",
+      "from": "arabia",
+      "date": "c. AD 37",
+      "title": "Saul Escapes Over the Wall of Damascus",
+      "people": [
+        "Saul",
+        "His disciples",
+        "The governor of King Aretas"
+      ],
+      "gospels": {
+        "Acts": "9:23–25",
+        "2Cor": "11:32–33",
+        "Gal": "1:17"
+      },
+      "summary": "Back in Damascus, Saul's preaching stirs a plot to kill him. The gates are watched day and night. By night his disciples lower him over the city wall in a basket, and he escapes. Paul remembers this humbling exit years later, when he lists the things he can boast of: his weakness.",
+      "journey": "Back north to Damascus from Arabia (see the previous leg).",
+      "route": [
+        [
+          35.8,
+          30.6
+        ],
+        [
+          35.62,
+          30.85
+        ],
+        [
+          35.7,
+          31.18
+        ],
+        [
+          35.79,
+          31.72
+        ],
+        [
+          35.93,
+          31.95
+        ],
+        [
+          36.1,
+          32.3
+        ],
+        [
+          36.48,
+          32.52
+        ],
+        [
+          36.3,
+          33.1
+        ],
+        [
+          36.306,
+          33.511
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 9:24–25",
+          "text": "but their plot became known to Saul. They were watching the gates day and night, to kill him; but his disciples took him by night and let him down over the wall, lowering him in a basket."
+        },
+        {
+          "ref": "2 Corinthians 11:32–33",
+          "text": "At Damascus, the governor under King Aretas guarded the city of Damascus in order to seize me, but I was let down in a basket through a window in the wall, and escaped his hands."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Joshua 2:15",
+          "note": "Rahab lets the spies down by a rope through her window in the wall of Jericho."
+        },
+        {
+          "ref": "1 Samuel 19:12",
+          "note": "Michal lets David down through a window, and he flees from Saul, his namesake king."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Bab Kisan and the Chapel of St Paul, Damascus",
+          "artist": "Photo by Bassel Khabbaz",
+          "year": "Photo 2016",
+          "medium": "Photograph",
+          "location": "Bab Kisan, southeastern wall of the Old City, Damascus",
+          "description": "A squat stone tower with two Chi-Rho medallions on its face, built into the old Bab Kisan, a gate in the southeastern wall of Damascus, with an iron gate and steps leading to the chapel inside.",
+          "significance": "Christians have long shown this stretch of wall as the place where Paul was let down in a basket. The gate was rebuilt in the Middle Ages and turned into the Chapel of St Paul in the twentieth century.",
+          "symbolism": "The Chi-Rho, the first two Greek letters of \"Christ,\" marks the gate the persecutor-turned-apostle escaped through.",
+          "impact": "One of the main Christian pilgrim stops in Damascus, with Straight Street and the House of Ananias.",
+          "img": "img/basket0.jpg",
+          "credit": "Photo: Bassel Khabbaz, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Bab_Kisan_-_Chapel_of_St._Paul.jpg"
+        },
+        {
+          "kind": "Descriptive",
+          "title": "St Paul's Wall, Damascus",
+          "artist": "Sketch signed \"A H\", lithographed by Vincent Brooks",
+          "year": "1861",
+          "medium": "Tinted lithograph (book illustration)",
+          "location": "British Library (scanned book, Mechanical Curator collection)",
+          "description": "Round towers and patched stone curtain walls of Damascus stand above a dusty track, with trees and bushes at their foot, as a British traveler drew them in 1861.",
+          "significance": "Nineteenth-century travelers were shown this part of the wall as \"St Paul's Wall,\" where he was lowered in a basket.",
+          "symbolism": "The high blank wall with its few windows makes plain how Paul escaped: \"through a window in the wall\" (2 Corinthians 11:33).",
+          "impact": "Such travel views shaped how Victorian readers pictured the places of the Bible.",
+          "img": "img/basket1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:HARVEY(1861)_p131_DAMASCUS,_CITY_WALLS_(OR)_ST._PAUL'S_WALL.jpg"
+        }
+      ],
+      "tags": [
+        "conflict"
+      ],
+      "orderNote": "Acts blames the Jews of Damascus; Paul names the ethnarch of King Aretas IV of Nabataea, who died about AD 40. Both may have watched for him, the Jews in the city and the king's men at the gates. Aretas's role helps date the escape to before AD 40."
+    },
+    {
+      "id": "saulinjerusalem",
+      "harmony": "Acts 9:26–29",
+      "lane": "paul",
+      "place": "jerusalemchurch",
+      "from": "damascus",
+      "date": "c. AD 37",
+      "title": "Saul's First Visit to Jerusalem",
+      "people": [
+        "Saul",
+        "Barnabas",
+        "Peter (Cephas)",
+        "James the Lord's brother",
+        "The Hellenists"
+      ],
+      "gospels": {
+        "Acts": "9:26–29",
+        "Gal": "1:18–20"
+      },
+      "summary": "Saul comes to Jerusalem and tries to join the disciples, but they are all afraid of him. Barnabas takes him to the apostles and tells how he saw the Lord and preached boldly in Damascus. Paul says he came to see Peter and stayed with him fifteen days, seeing only James the Lord's brother of the other leaders. He preaches boldly and argues with the Greek-speaking Jews, the same circle that had turned on Stephen, and they plot to kill him.",
+      "stay": "Fifteen days with Peter (Galatians 1:18).",
+      "journey": "About 150 miles back south from Damascus over the Golan, down the Jordan Valley and up through Samaria, about a week on foot.",
+      "route": [
+        [
+          36.306,
+          33.511
+        ],
+        [
+          36.18,
+          33.42
+        ],
+        [
+          35.82,
+          33.13
+        ],
+        [
+          35.63,
+          33.01
+        ],
+        [
+          35.57,
+          32.88
+        ],
+        [
+          35.55,
+          32.7
+        ],
+        [
+          35.5,
+          32.5
+        ],
+        [
+          35.3,
+          32.46
+        ],
+        [
+          35.28,
+          32.21
+        ],
+        [
+          35.25,
+          32.07
+        ],
+        [
+          35.22,
+          31.93
+        ],
+        [
+          35.231,
+          31.776
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 9:26–27",
+          "text": "And when he had come to Jerusalem he attempted to join the disciples; and they were all afraid of him, for they did not believe that he was a disciple. But Barnabas took him, and brought him to the apostles, and declared to them how on the road he had seen the Lord, who spoke to him, and how at Damascus he had preached boldly in the name of Jesus."
+        },
+        {
+          "ref": "Galatians 1:18–19",
+          "text": "Then after three years I went up to Jerusalem to visit Cephas, and remained with him fifteen days. But I saw none of the other apostles except James the Lord's brother."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "Barnabas Brings Paul to the Apostles",
+          "artist": "Cornelis Bos (monogram CB)",
+          "year": "1546",
+          "medium": "Engraving",
+          "location": "Rijksmuseum, Amsterdam",
+          "description": "In a columned hall Barnabas, his arm around Saul, presents him to the wary apostles; Peter, with a staff, points as if questioning. Through the open door, in the distance, a tiny figure is let down in a basket from the wall of Damascus.",
+          "significance": "Plate 7 of a ten-print series on the life of Paul, made in Antwerp in 1546.",
+          "symbolism": "The background shows what Barnabas is telling: how Saul had preached and escaped at Damascus. Barnabas's embrace is his whole role here: \"Barnabas took him.\"",
+          "impact": "Small Netherlandish print series like this spread Bible scenes, including rarely painted ones, across sixteenth-century Europe.",
+          "img": "img/saulinjerusalem0.jpg",
+          "credit": "Public domain (CC0), Rijksmuseum, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Barnabas_brengt_Paulus_naar_de_apostelen_Het_leven_van_Paulus_(serietitel),_RP-P-1877-A-330.jpg"
+        }
+      ],
+      "tags": [
+        "call"
+      ],
+      "orderNote": "Luke's \"the apostles\" and Paul's \"none of the other apostles except James\" are usually reconciled as Barnabas bringing him to the two leaders present. In Acts 22:17–21 Paul adds that while praying in the Temple on this visit he saw the Lord, who told him to leave Jerusalem and go far away to the Gentiles."
+    },
+    {
+      "id": "tarsus",
+      "harmony": "Acts 9:30–31",
+      "lane": "paul",
+      "place": "tarsus",
+      "from": "jerusalemchurch",
+      "date": "c. AD 37–43",
+      "title": "Saul Sent Home to Tarsus",
+      "people": [
+        "Saul",
+        "The brethren of Jerusalem"
+      ],
+      "gospels": {
+        "Acts": "9:30–31",
+        "Gal": "1:21–24"
+      },
+      "summary": "When the believers learn of the plot, they take Saul down to Caesarea and send him off to Tarsus, his home city. There he stays for several years, \"in the regions of Syria and Cilicia,\" in what are often called his hidden years. The churches of Judea know him only by report: the persecutor now preaches the faith he tried to destroy. Meanwhile the church in Judea, Galilee and Samaria has peace and grows.",
+      "stay": "Some six or seven years in Tarsus and the regions of Syria and Cilicia, until Barnabas comes to look for him (Acts 11:25).",
+      "journey": "Down to the coast at Caesarea, about 65 miles, then by ship about 350 miles north along the coast of Phoenicia and Syria and across the mouth of the Gulf of Issus to Tarsus, a week or more by sea.",
+      "route": [
+        [
+          35.231,
+          31.776
+        ],
+        [
+          35.04,
+          31.9
+        ],
+        [
+          34.895,
+          31.951
+        ],
+        [
+          34.93,
+          32.1
+        ],
+        [
+          34.89,
+          32.5
+        ],
+        [
+          34.9,
+          32.85
+        ],
+        [
+          35.05,
+          33.1
+        ],
+        [
+          35.15,
+          33.3
+        ],
+        [
+          35.45,
+          34.0
+        ],
+        [
+          35.75,
+          34.5
+        ],
+        [
+          35.65,
+          35.55
+        ],
+        [
+          35.7,
+          35.9
+        ],
+        [
+          35.45,
+          36.4
+        ],
+        [
+          35.0,
+          36.78
+        ],
+        [
+          34.895,
+          36.918
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 9:30–31",
+          "text": "And when the brethren knew it, they brought him down to Caesarea, and sent him off to Tarsus. So the church throughout all Judea and Galilee and Samaria had peace and was built up; and walking in the fear of the Lord and in the comfort of the Holy Spirit it was multiplied."
+        },
+        {
+          "ref": "Galatians 1:21–23",
+          "text": "Then I went into the regions of Syria and Cilicia. And I was still not known by sight to the churches of Christ in Judea; they only heard it said, \"He who once persecuted us is now preaching the faith he once tried to destroy.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Cleopatra's Gate, Tarsus",
+          "artist": "Photo by Nedim Ardoğa",
+          "year": "Photo 2011",
+          "medium": "Photograph",
+          "location": "Tarsus, Mersin Province, Turkey",
+          "description": "A massive arched gateway of cut stone, overgrown with grass on top, stands alone in a traffic circle among palm trees.",
+          "significance": "Called Cleopatra's Gate after the tradition that Cleopatra landed at Tarsus to meet Mark Antony in 41 BC. It is one of the few standing monuments of ancient Tarsus, though its present form may be late Roman or later.",
+          "symbolism": "A gate of the \"no mean city\" (Acts 21:39) that Paul called home, and from which he would set out again.",
+          "impact": "A landmark of modern Tarsus, alongside St Paul's Well and the excavated Roman street.",
+          "img": "img/tarsus0.jpg",
+          "credit": "Photo: Nedim Ardoğa, CC BY-SA 3.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Cleopatra's_Gate,_Tarsus,_Mersin_Province.jpg"
+        }
+      ],
+      "tags": [
+        "call"
+      ],
+      "orderNote": "Acts does not say whether he sailed or went by land; \"sent him off\" from the port of Caesarea suggests a ship. Galatians 1:21 names Syria before Cilicia, which some read as an overland journey. Some of the sufferings listed in 2 Corinthians 11:23–27 may belong to these years, of which nothing else is told."
+    },
+    {
+      "id": "aeneas",
+      "harmony": "Acts 9:32–35",
+      "lane": "apostles",
+      "place": "lydda",
+      "from": "jerusalemchurch",
+      "date": "c. AD 38–40",
+      "title": "Peter Heals Aeneas at Lydda",
+      "people": [
+        "Peter",
+        "Aeneas",
+        "The saints at Lydda"
+      ],
+      "gospels": {
+        "Acts": "9:32–35"
+      },
+      "summary": "In the time of peace, Peter travels around the churches and comes down to the believers at Lydda. There he finds Aeneas, paralyzed and bedridden for eight years. \"Aeneas, Jesus Christ heals you,\" Peter says, and he gets up at once. All of Lydda and the plain of Sharon see him and turn to the Lord.",
+      "journey": "About 25 miles northwest from Jerusalem, down through the Beth-horon pass to the coastal plain, a day or two on foot.",
+      "route": [
+        [
+          35.231,
+          31.776
+        ],
+        [
+          35.17,
+          31.87
+        ],
+        [
+          35.1,
+          31.88
+        ],
+        [
+          35.0,
+          31.92
+        ],
+        [
+          34.895,
+          31.951
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 9:33–34",
+          "text": "There he found a man named Aeneas, who had been bedridden for eight years and was paralyzed. And Peter said to him, \"Aeneas, Jesus Christ heals you; rise and make your bed.\" And immediately he rose."
+        },
+        {
+          "ref": "Acts 9:35",
+          "text": "And all the residents of Lydda and Sharon saw him, and they turned to the Lord."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "The Healing of Aeneas by Saint Peter",
+          "artist": "Philips Galle, after Maarten van Heemskerck",
+          "year": "16th century",
+          "medium": "Engraving",
+          "location": "National Gallery of Art, Washington",
+          "description": "In a Dutch household, with a well, a hearth and pots on the shelf, Peter speaks to the bedridden Aeneas, who swings his legs out of the canopied bed. The Latin verses below retell Acts 9:33–34: \"Rise, in Christ's name.\"",
+          "significance": "From a series of prints of the Acts of the Apostles designed by Heemskerck and engraved by Galle in Haarlem and Antwerp; this impression bears the address of the publisher Claes Jansz. Visscher.",
+          "symbolism": "Peter holds the keys; the busy, ordinary room sets the miracle in daily life, as Acts does.",
+          "impact": "Such print series carried the Acts scenes into Protestant and Catholic homes alike across northern Europe.",
+          "img": "img/aeneas0.jpg",
+          "credit": "Public domain (CC0), National Gallery of Art, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Philip_Galle_after_Maerten_van_Heemskerck,_The_Healing_of_Eneas_by_Saint_Peter,_NGA_54317.jpg"
+        }
+      ],
+      "tags": [
+        "miracle",
+        "healing"
+      ],
+      "orderNote": "Peter's words echo Jesus' healing of the paralytic at Capernaum (Mark 2:11), but Peter makes plain who heals: \"Jesus Christ heals you.\" The date is not given; Acts places it in the peace that followed Saul's conversion."
+    },
+    {
+      "id": "tabitha",
+      "harmony": "Acts 9:36–43",
+      "lane": "apostles",
+      "place": "joppa",
+      "from": "lydda",
+      "date": "c. AD 38–40",
+      "title": "Peter Raises Tabitha at Joppa",
+      "people": [
+        "Peter",
+        "Tabitha (Dorcas)",
+        "The widows of Joppa",
+        "Simon the tanner"
+      ],
+      "gospels": {
+        "Acts": "9:36–43"
+      },
+      "summary": "At Joppa a disciple named Tabitha, in Greek Dorcas (\"Gazelle\"), known for her good works and charity, falls sick and dies. The believers send for Peter at Lydda. The widows show him the coats and garments she made for them. Peter sends them all out, kneels and prays, and says, \"Tabitha, rise.\" She opens her eyes and sits up, and many in Joppa believe.",
+      "stay": "\"Many days\" in Joppa with Simon, a tanner, whose house was by the sea.",
+      "journey": "About 11 miles northwest across the plain from Lydda to the coast, half a day's walk.",
+      "route": [
+        [
+          34.895,
+          31.951
+        ],
+        [
+          34.82,
+          32.0
+        ],
+        [
+          34.752,
+          32.054
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 9:39",
+          "text": "So Peter rose and went with them. And when he had come, they took him to the upper room. All the widows stood beside him weeping, and showing coats and garments which Dorcas made while she was with them."
+        },
+        {
+          "ref": "Acts 9:40",
+          "text": "But Peter put them all outside and knelt down and prayed; then turning to the body he said, \"Tabitha, rise.\" And she opened her eyes, and when she saw Peter she sat up."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "2 Kings 4:32–37",
+          "note": "Elisha shuts the door, prays, and the Shunammite's son is raised in the upper room."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "Healing of the Cripple and Raising of Tabitha",
+          "artist": "Masolino da Panicale",
+          "year": "c. 1424–1425",
+          "medium": "Fresco",
+          "location": "Brancacci Chapel, Santa Maria del Carmine, Florence",
+          "description": "Two of Peter's miracles share one Florentine square. At left Peter and John heal the lame beggar at the Temple gate (Acts 3); at right Peter, in a loggia, raises Tabitha, who sits up on her bier among astonished onlookers. Two young dandies stroll between the scenes.",
+          "significance": "Part of the Brancacci Chapel cycle of St Peter's life, begun by Masolino and Masaccio and finished by Filippino Lippi; this fresco is usually given to Masolino, perhaps with Masaccio's help on the buildings.",
+          "symbolism": "The perspective street of fifteenth-century Florence makes the apostle's miracles happen in the painter's own city, among its citizens.",
+          "impact": "The chapel was a school for later Florentine painters, Michelangelo among them, who came to study its figures and space.",
+          "img": "img/tabitha0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Cappella_brancacci,_Guarigione_dello_storpio_e_resurrezione_di_Tabita_(restaurato),_Masolino.jpg"
+        }
+      ],
+      "tags": [
+        "miracle",
+        "raising"
+      ],
+      "orderNote": "Peter does as he saw Jesus do with Jairus' daughter: he puts the mourners out, and his words \"Tabitha, rise\" (Tabitha koum) are one letter from Jesus' \"Talitha cumi\" (Mark 5:40–41). Staying with a tanner, whose trade made him ritually unclean in strict eyes, already hints at what comes next."
+    },
+    {
+      "id": "petervision",
+      "harmony": "Acts 10:1–23",
+      "lane": "apostles",
+      "place": "joppa",
+      "date": "c. AD 38–40",
+      "title": "Cornelius's Vision and Peter's Vision at Joppa",
+      "people": [
+        "Peter",
+        "Cornelius the centurion",
+        "An angel",
+        "Cornelius's messengers"
+      ],
+      "gospels": {
+        "Acts": "10:1–23"
+      },
+      "summary": "At Caesarea a God-fearing Roman centurion, Cornelius, is told by an angel to send for Simon Peter at Joppa. The next day at noon, praying on the roof of the tanner's house, Peter falls into a trance. He sees a great sheet let down from heaven full of animals clean and unclean, and hears, \"Rise, Peter; kill and eat.\" When he refuses, the voice says, \"What God has cleansed, you must not call common.\" While he is puzzling over it, Cornelius's men arrive, and the Spirit tells him to go with them.",
+      "stay": "On the housetop of Simon the tanner's house by the sea.",
+      "scripture": [
+        {
+          "ref": "Acts 10:11–13",
+          "text": "and saw the heaven opened, and something descending, like a great sheet, let down by four corners upon the earth. In it were all kinds of animals and reptiles and birds of the air. And there came a voice to him, \"Rise, Peter; kill and eat.\""
+        },
+        {
+          "ref": "Acts 10:14–15",
+          "text": "But Peter said, \"No, Lord; for I have never eaten anything that is common or unclean.\" And the voice came to him again a second time, \"What God has cleansed, you must not call common.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Leviticus 11",
+          "note": "The law of clean and unclean animals that Peter had kept all his life."
+        },
+        {
+          "ref": "Jonah 1:3",
+          "note": "From this same port Jonah fled rather than preach to Gentile Nineveh; Peter, \"Simon son of Jonah\" (Matthew 16:17), is sent to the Gentiles."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "Saint Peter's Vision of the Sheet with Animals",
+          "artist": "Domenico Fetti",
+          "year": "c. 1619",
+          "medium": "Oil on canvas",
+          "location": "Kunsthistorisches Museum, Vienna",
+          "description": "Peter, old and heavy-limbed, has fallen asleep on the flat roof with his head on his hand and his book open beside him. Above him, in a corner of the sky, a figure lowers the great sheet full of animals: a calf, a sheep, a rabbit, birds.",
+          "significance": "Fetti, court painter to the Gonzaga in Mantua, painted the vision as a dream, keeping the heavenly sheet small and the sleeping apostle large and human.",
+          "symbolism": "The housetop's balustrade and the distant landscape set the scene \"on the housetop\" at Joppa; the clean and unclean beasts tumble together in one cloth.",
+          "impact": "A rare painting of a rarely painted vision, by an artist whose free, warm brushwork was prized by collectors in his own day.",
+          "img": "img/petervision0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Domenico_Fetti_-_Peter's_vision_of_a_sheet_with_animals_-_Kunsthistorisches_Museum_Wien.jpg"
+        },
+        {
+          "kind": "Masterpiece",
+          "title": "The Vision of Cornelius the Centurion",
+          "artist": "Gerbrand van den Eeckhout",
+          "year": "1664",
+          "medium": "Oil on canvas",
+          "location": "Walters Art Museum, Baltimore",
+          "description": "Cornelius, in armor, kneels in a dim room with his hands crossed on his breast as a winged angel in white appears on a cloud and points onward, telling him to send to Joppa. His staff of command lies on the floor.",
+          "significance": "By one of Rembrandt's closest pupils and friends, painted in his teacher's warm, dark manner.",
+          "symbolism": "The baton laid down shows the officer humbled before God; the angel's outstretched hand points the way to Peter, as the angel in Acts sends him.",
+          "impact": "Cornelius's vision was a favorite subject in the Dutch Republic, where it spoke of God's welcome to every nation.",
+          "img": "img/petervision1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Gerbrand_van_den_Eeckhout_-_Vision_of_Cornelius_the_Centurion_-_Walters_372492.jpg"
+        }
+      ],
+      "tags": [
+        "prayer",
+        "call"
+      ],
+      "orderNote": "The vision is about food, but Peter reads it about people: \"God has shown me that I should not call any man common or unclean\" (Acts 10:28). Acts tells it twice more (11:5–10, and in summary at 15:7–9)."
+    },
+    {
+      "id": "cornelius",
+      "harmony": "Acts 10:23b–48",
+      "lane": "apostles",
+      "place": "caesarea",
+      "from": "joppa",
+      "date": "c. AD 38–40",
+      "title": "Peter at the House of Cornelius",
+      "people": [
+        "Peter",
+        "Cornelius",
+        "Cornelius's kinsmen and friends",
+        "Six brethren from Joppa"
+      ],
+      "gospels": {
+        "Acts": "10:23–48"
+      },
+      "summary": "Peter goes up the coast to Caesarea with six brethren from Joppa. Cornelius has gathered his household and friends; he falls at Peter's feet, and Peter raises him: \"I too am a man.\" Peter, a Jew in a Gentile house, declares that God shows no partiality and tells the story of Jesus. While he is still speaking the Holy Spirit falls on all who hear, and they speak in tongues as at Pentecost. Peter has them baptized, the first Gentiles received into the Church.",
+      "stay": "Cornelius asks him to remain \"for some days.\"",
+      "journey": "About 35 miles north along the coast road through the plain of Sharon, a two-day walk (they arrive \"on the following day\").",
+      "route": [
+        [
+          34.752,
+          32.054
+        ],
+        [
+          34.8,
+          32.15
+        ],
+        [
+          34.84,
+          32.28
+        ],
+        [
+          34.87,
+          32.4
+        ],
+        [
+          34.89,
+          32.5
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 10:34–35",
+          "text": "And Peter opened his mouth and said: \"Truly I perceive that God shows no partiality, but in every nation any one who fears him and does what is right is acceptable to him."
+        },
+        {
+          "ref": "Acts 10:44–45",
+          "text": "While Peter was still saying this, the Holy Spirit fell on all who heard the word. And the believers from among the circumcised who came with Peter were amazed, because the gift of the Holy Spirit had been poured out even on the Gentiles."
+        },
+        {
+          "ref": "Acts 10:47",
+          "text": "\"Can any one forbid water for baptizing these people who have received the Holy Spirit just as we have?\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Deuteronomy 10:17",
+          "note": "The Lord \"is not partial and takes no bribe\": Peter's \"God shows no partiality.\""
+        },
+        {
+          "ref": "Isaiah 56:6–7",
+          "note": "Foreigners who join themselves to the Lord: \"my house shall be called a house of prayer for all peoples.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "Saint Peter Baptizing the Centurion Cornelius",
+          "artist": "Alberto Carlieri",
+          "year": "Early 18th century",
+          "medium": "Oil on canvas",
+          "location": "Walters Art Museum, Baltimore",
+          "description": "Among grand ruined arches and columns, Peter pours water over the head of the kneeling centurion, whose armor lies at his feet. His household, women and children, press forward to be baptized next.",
+          "significance": "Carlieri, a Roman painter of architectural fantasies, set the first baptism of Gentiles among classical ruins, a reminder that the Roman world itself was entering the Church.",
+          "symbolism": "The discarded armor marks the soldier's new allegiance; the waiting family recalls that \"all his household\" feared God (Acts 10:2).",
+          "impact": "A typical Roman Baroque treatment of a scene that the Church has read as the opening of the Gospel to the nations.",
+          "img": "img/cornelius0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Alberto_Carlieri_-_St_Peter_Baptizing_the_Centurion,_Cornelius_-_Walters_37503.jpg"
+        }
+      ],
+      "tags": [
+        "sermon",
+        "miracle",
+        "call"
+      ],
+      "orderNote": "Peter's sermon here is a short outline of the Gospel, from John's baptism through Galilee to the cross and the Resurrection; many think Mark's Gospel follows the same shape. The \"Italian Cohort\" is known from inscriptions in Syria later in the century."
+    },
+    {
+      "id": "peterreport",
+      "harmony": "Acts 11:1–18",
+      "lane": "apostles",
+      "place": "jerusalemchurch",
+      "from": "caesarea",
+      "date": "c. AD 38–40",
+      "title": "Peter Explains Himself in Jerusalem",
+      "people": [
+        "Peter",
+        "The apostles and brethren",
+        "The circumcision party"
+      ],
+      "gospels": {
+        "Acts": "11:1–18"
+      },
+      "summary": "News reaches Judea that Gentiles have received the word of God. When Peter comes up to Jerusalem, believers who insist on circumcision criticize him for eating with uncircumcised men. Peter tells them everything in order: the vision, the messengers, and the Spirit falling on Cornelius's household as on the apostles at the beginning. \"Who was I that I could withstand God?\" They fall silent and then praise God.",
+      "journey": "About 65 miles from Caesarea to Jerusalem, by Antipatris and the climb up from Lydda, three days on foot.",
+      "route": [
+        [
+          34.89,
+          32.5
+        ],
+        [
+          34.92,
+          32.3
+        ],
+        [
+          34.93,
+          32.1
+        ],
+        [
+          34.895,
+          31.951
+        ],
+        [
+          35.04,
+          31.9
+        ],
+        [
+          35.17,
+          31.87
+        ],
+        [
+          35.231,
+          31.776
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 11:2–3",
+          "text": "So when Peter went up to Jerusalem, the circumcision party criticized him, saying, \"Why did you go to uncircumcised men and eat with them?\""
+        },
+        {
+          "ref": "Acts 11:17–18",
+          "text": "If then God gave the same gift to them as he gave to us when we believed in the Lord Jesus Christ, who was I that I could withstand God?\" When they heard this they were silenced. And they glorified God, saying, \"Then to the Gentiles also God has granted repentance unto life.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "Peter's Vision of the Unclean Animals",
+          "artist": "After Jan van der Straet (Stradanus); published by Claes Jansz. Visscher",
+          "year": "1643",
+          "medium": "Engraving",
+          "location": "Rijksmuseum, Amsterdam",
+          "description": "A busy cutaway of Simon the tanner's house at Joppa: tanners scrape hides in the vaulted workshop below; Peter prays on the roof; at right he dozes by a table while the cook brings food, and through the arch the great sheet of animals descends from heaven as Cornelius's messengers approach the town.",
+          "significance": "Plate 21 of a Dutch picture Bible series of the Acts; the Latin verses tell the whole story through to the baptisms at Caesarea, the story Peter retells in Jerusalem.",
+          "symbolism": "The hanging hides and the tanner's trade show what Peter's hosts thought unclean; the vision comes to him in the middle of it.",
+          "impact": "Such dense, story-telling prints let readers follow every detail of Peter's account in Acts 11:5–12.",
+          "img": "img/peterreport0.jpg",
+          "credit": "Public domain (CC0), Rijksmuseum, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Petrus'_visioen_van_de_onreine_dieren_Acta_Apostolorum_(serietitel)_Handelingen_van_de_apostelen_(serietitel)_Theatrum_Biblicum_Hoc_Est_Historiae_Sacrae_Veteris_et_Novi_Testamenti_Tabulis_Aeneis_Expressae_(serietitel),_RP-P-1976-30-411.jpg"
+        }
+      ],
+      "tags": [
+        "teaching",
+        "conflict"
+      ],
+      "orderNote": "The question is settled here for Cornelius, but it returns in full at the Council of Jerusalem (Acts 15), where Peter again points to this day."
+    },
+    {
+      "id": "antiochchurch",
+      "harmony": "Acts 11:19–24",
+      "lane": "apostles",
+      "place": "antioch",
+      "from": "jerusalemchurch",
+      "date": "c. AD 40–43",
+      "title": "The Church at Antioch; Barnabas Sent",
+      "people": [
+        "Believers from Cyprus and Cyrene",
+        "Barnabas",
+        "The Greeks of Antioch"
+      ],
+      "gospels": {
+        "Acts": "11:19–24"
+      },
+      "summary": "Some of those scattered after Stephen's death travel as far as Phoenicia, Cyprus and Antioch, at first speaking only to Jews. But men from Cyprus and Cyrene, coming to Antioch, preach the Lord Jesus to Greeks as well, and a great number believe. The Jerusalem church sends Barnabas, himself a Cypriot. He sees the grace of God, rejoices, and encourages them all, and many more are added.",
+      "journey": "Barnabas's journey from Jerusalem, about 350 miles north, probably by the coast road through Caesarea, Tyre, Sidon and Laodicea, about three weeks on foot.",
+      "route": [
+        [
+          35.231,
+          31.776
+        ],
+        [
+          35.04,
+          31.9
+        ],
+        [
+          34.93,
+          32.1
+        ],
+        [
+          34.89,
+          32.5
+        ],
+        [
+          35.07,
+          32.92
+        ],
+        [
+          35.19,
+          33.27
+        ],
+        [
+          35.37,
+          33.56
+        ],
+        [
+          35.5,
+          33.89
+        ],
+        [
+          35.84,
+          34.43
+        ],
+        [
+          35.88,
+          34.89
+        ],
+        [
+          35.78,
+          35.52
+        ],
+        [
+          35.95,
+          35.85
+        ],
+        [
+          36.161,
+          36.202
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 11:20–21",
+          "text": "But there were some of them, men of Cyprus and Cyrene, who on coming to Antioch spoke to the Greeks also, preaching the Lord Jesus. And the hand of the Lord was with them, and a great number that believed turned to the Lord."
+        },
+        {
+          "ref": "Acts 11:23–24",
+          "text": "When he came and saw the grace of God, he was glad; and he exhorted them all to remain faithful to the Lord with steadfast purpose; for he was a good man, full of the Holy Spirit and of faith. And a large company was added to the Lord."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The Antioch \"Chalice\"",
+          "artist": "Unknown Byzantine silversmith; photo by Marie-Lan Nguyen",
+          "year": "c. 500–550",
+          "medium": "Silver, silver-gilt",
+          "location": "The Cloisters, Metropolitan Museum of Art, New York",
+          "description": "A silver cup set in an openwork gilded holder of grapevines, with birds and animals among the leaves and seated figures, often identified as Christ and apostles.",
+          "significance": "Said to have been found near Antioch in 1910, it was once hailed as the Holy Grail. The Metropolitan Museum now dates it to about 500–550 and thinks it was probably a standing lamp.",
+          "symbolism": "The vine recalls Christ's \"I am the vine, you are the branches\" (John 15:5); its figures may show Christ among his apostles.",
+          "impact": "One of the most famous early Christian silver objects, a witness to the wealth and faith of Antioch, one of the great sees of the early Church.",
+          "img": "img/antiochchurch0.jpg",
+          "credit": "Photo: Marie-Lan Nguyen, CC BY 2.5, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Antioch_chalice_Met_50.4.jpg"
+        }
+      ],
+      "tags": [
+        "sermon"
+      ],
+      "orderNote": "Some manuscripts read \"Hellenists\" (Greek-speaking Jews) for \"Greeks\" in 11:20, but the contrast with \"none except Jews\" in verse 19 shows Gentiles are meant. Acts does not say whether this came before or after Cornelius; it picks up the thread from 8:4. Antioch later counts St Peter as its first bishop, and the Antioch tradition gives Luke as a native of the city."
+    },
+    {
+      "id": "barnabassaul",
+      "harmony": "Acts 11:25–26",
+      "lane": "paul",
+      "place": "antioch",
+      "from": "tarsus",
+      "date": "c. AD 43–44",
+      "title": "Barnabas Brings Saul to Antioch; \"Christians\"",
+      "people": [
+        "Barnabas",
+        "Saul",
+        "The church at Antioch"
+      ],
+      "gospels": {
+        "Acts": "11:25–26"
+      },
+      "summary": "With the work at Antioch growing, Barnabas goes to Tarsus to look for Saul and brings him back. For a whole year the two meet with the church and teach a large company of people. In Antioch the disciples are first called \"Christians,\" Christ's people. The city becomes the base from which Paul will set out on all his journeys.",
+      "stay": "\"For a whole year\" at Antioch.",
+      "journey": "Barnabas goes to Tarsus and back: about 140 miles each way, east across the Cilician plain past Adana, round the head of the Gulf of Issus and through the Syrian Gates (the Belen Pass) over the Amanus range, about a week on foot each way.",
+      "route": [
+        [
+          34.895,
+          36.918
+        ],
+        [
+          35.32,
+          37.0
+        ],
+        [
+          35.62,
+          36.96
+        ],
+        [
+          35.95,
+          36.95
+        ],
+        [
+          36.2,
+          36.84
+        ],
+        [
+          36.17,
+          36.59
+        ],
+        [
+          36.22,
+          36.49
+        ],
+        [
+          36.161,
+          36.202
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 11:25–26",
+          "text": "So Barnabas went to Tarsus to look for Saul; and when he had found him, he brought him to Antioch. For a whole year they met with the church, and taught a large company of people; and in Antioch the disciples were for the first time called Christians."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The Orontes at Antioch (Antakya)",
+          "artist": "Photo by Carole Raddato",
+          "year": "Photo 2017",
+          "medium": "Photograph",
+          "location": "Antakya, Hatay, Turkey",
+          "description": "The Orontes River, low in summer, runs between embanked shores through the middle of modern Antakya, under a footbridge, with tree-lined parks along its bank.",
+          "significance": "Ancient Antioch spread along the left bank of the Orontes at the foot of Mount Silpius, with an island quarter in the river. Little of the Roman city is visible today; most of it lies deep under the modern town, which was badly damaged by the earthquakes of February 2023.",
+          "symbolism": "The river joined the inland capital to the sea at Seleucia, the road by which Barnabas and Saul would later sail out on their first journey (Acts 13:4).",
+          "impact": "Antioch remained one of the great centers of the Church, one of the ancient patriarchates, whose Greek Orthodox and other patriarchs still bear its name.",
+          "img": "img/barnabassaul0.jpg",
+          "credit": "Photo: Carole Raddato, CC BY-SA 2.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Antioch_on_the_Orontes,_Antakya,_Turkey_(35863345530).jpg"
+        }
+      ],
+      "tags": [
+        "teaching",
+        "call"
+      ],
+      "orderNote": "\"Christians\" (Christianoi) is a Latin-style party name, like \"Herodians\" (Mark 3:6), probably first given by outsiders; it appears only three times in the New Testament (also Acts 26:28 and 1 Peter 4:16). The word for \"look for\" suggests Barnabas had to search for him."
+    },
+    {
+      "id": "faminerelief",
+      "harmony": "Acts 11:27–30",
+      "lane": "paul",
+      "place": "jerusalemchurch",
+      "from": "antioch",
+      "date": "c. AD 44–46",
+      "title": "Agabus Foretells a Famine; Relief for Judea",
+      "people": [
+        "Agabus",
+        "Prophets from Jerusalem",
+        "Barnabas",
+        "Saul",
+        "The elders in Judea"
+      ],
+      "gospels": {
+        "Acts": "11:27–30",
+        "Gal": "2:1–10"
+      },
+      "summary": "Prophets come down from Jerusalem to Antioch, and one of them, Agabus, foretells by the Spirit a great famine over all the world. It comes in the reign of the emperor Claudius. The disciples at Antioch, each as he is able, send relief to the believers in Judea. They send it to the elders by the hands of Barnabas and Saul: the Gentile church's first gift to the mother church.",
+      "journey": "About 350 miles south from Antioch to Jerusalem by the coast road, about three weeks on foot.",
+      "route": [
+        [
+          36.161,
+          36.202
+        ],
+        [
+          35.95,
+          35.85
+        ],
+        [
+          35.78,
+          35.52
+        ],
+        [
+          35.88,
+          34.89
+        ],
+        [
+          35.84,
+          34.43
+        ],
+        [
+          35.5,
+          33.89
+        ],
+        [
+          35.37,
+          33.56
+        ],
+        [
+          35.19,
+          33.27
+        ],
+        [
+          35.07,
+          32.92
+        ],
+        [
+          34.89,
+          32.5
+        ],
+        [
+          34.93,
+          32.1
+        ],
+        [
+          35.04,
+          31.9
+        ],
+        [
+          35.231,
+          31.776
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 11:28",
+          "text": "And one of them named Agabus stood up and foretold by the Spirit that there would be a great famine over all the world; and this took place in the days of Claudius."
+        },
+        {
+          "ref": "Acts 11:29–30",
+          "text": "And the disciples determined, every one according to his ability, to send relief to the brethren who lived in Judea; and they did so, sending it to the elders by the hand of Barnabas and Saul."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Genesis 41:54–57",
+          "note": "Joseph foretells the famine and stores grain, and all the earth comes to Egypt to buy."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Bust of the Emperor Claudius",
+          "artist": "Roman sculptor; photo by Marie-Lan Nguyen",
+          "year": "AD 41–54",
+          "medium": "Marble",
+          "location": "National Archaeological Museum, Naples",
+          "description": "A marble bust of Claudius, crowned with an oak wreath, with a calm, lined face and a toga pinned at the shoulder.",
+          "significance": "Claudius (emperor AD 41–54) is the emperor named in Acts 11:28, in whose reign the famine came; he also expelled the Jews from Rome (Acts 18:2). He owed his throne in part to Herod Agrippa I.",
+          "symbolism": "The civic crown of oak leaves honored a ruler as savior of citizens; Luke dates God's word by Rome's rulers, as he does at Christ's birth (Luke 2:1).",
+          "impact": "Food shortages in his reign are recorded by Roman writers such as Suetonius and Tacitus.",
+          "img": "img/faminerelief0.jpg",
+          "credit": "Photo: Marie-Lan Nguyen, CC BY 2.5, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Claudius_MAN_Napoli_Inv6060.jpg"
+        }
+      ],
+      "tags": [
+        "prophecy"
+      ],
+      "orderNote": "Roman writers record food shortages under Claudius (AD 41–54), and Josephus tells of a severe famine in Judea about AD 45–48, when Queen Helena of Adiabene bought grain in Egypt for Jerusalem. Acts 12, which ends with Herod's death in AD 44, is set \"about that time\"; the visit itself may fall a little later. Whether this famine visit is the visit of Galatians 2:1–10 (\"after fourteen years... with Barnabas\"), or that is the Council of Acts 15, is one of the most debated questions of Paul's chronology."
+    },
+    {
+      "id": "jameskilled",
+      "harmony": "Acts 12:1–2",
+      "lane": "herod",
+      "place": "jerusalemchurch",
+      "date": "AD 44 (or 43)",
+      "title": "Herod Agrippa Kills James",
+      "people": [
+        "Herod Agrippa I",
+        "James son of Zebedee, brother of John"
+      ],
+      "gospels": {
+        "Acts": "12:1–2"
+      },
+      "summary": "Herod Agrippa I, grandson of Herod the Great, now king over all the old kingdom, lays violent hands on the church. He has James the brother of John, one of the three closest to Jesus, killed with the sword. James is the first of the Twelve to die a martyr, fulfilling Jesus' word that he would drink his cup. Seeing that it pleases the people, Herod arrests Peter too.",
+      "scripture": [
+        {
+          "ref": "Acts 12:1–3",
+          "text": "About that time Herod the king laid violent hands upon some who belonged to the church. He killed James the brother of John with the sword; and when he saw that it pleased the Jews, he proceeded to arrest Peter also. This was during the days of Unleavened Bread."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Martyrdom of Saint James",
+          "artist": "Francisco de Zurbarán",
+          "year": "c. 1640",
+          "medium": "Oil on canvas",
+          "location": "Museo del Prado, Madrid",
+          "description": "James kneels with his hands joined on the block and turns his calm face toward us as the executioner, in a red shirt, grips his hair and raises the sword. A turbaned king, Herod, looks on with soldiers and bystanders; above, a cherub brings the martyr's palm and wreath of roses.",
+          "significance": "Zurbarán, the great painter of Seville's monasteries, gives the apostle-martyr the plain, still dignity of his saints and monks.",
+          "symbolism": "The sword is the instrument named in Acts 12:2 and James's emblem. The palm and crown are the martyr's victory; the hound at right is a common Spanish touch of everyday life.",
+          "impact": "James (Santiago) is the patron of Spain, and his martyrdom was a favorite subject of Spanish Golden Age painting.",
+          "img": "img/jameskilled0.jpg",
+          "credit": "Photo: Museo del Prado, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Zurbarán_-_Martirio_de_Santiago,_Hacia_1640.jpg"
+        },
+        {
+          "kind": "Masterpiece",
+          "title": "Saint James Led to His Execution (study)",
+          "artist": "Andrea Mantegna",
+          "year": "c. 1453",
+          "medium": "Pen and brown ink on paper",
+          "location": "British Museum, London",
+          "description": "A rapid pen sketch: James, a tall figure in a mantle, is led along by a soldier in a crested helmet amid a crowd; at left, figures bend toward the ground, perhaps the man who knelt for the apostle's blessing on the way.",
+          "significance": "A study for Mantegna's fresco of St James led to execution in the Ovetari Chapel of the Eremitani church in Padua, destroyed by bombing in 1944; drawings and old photographs are all that remain of most of the cycle.",
+          "symbolism": "The legend behind the scene, told by Clement of Alexandria, is that the man who brought James to trial was converted by his witness and died with him.",
+          "impact": "The Ovetari frescoes made the young Mantegna famous; their loss in the Second World War was one of the great artistic casualties of the war.",
+          "img": "img/jameskilled1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:1453_Mantegna_Der_Heilige_Jakobus_wird_zur_Hinrichtung_geführt_Britisch_Museum_anagoria.jpg"
+        }
+      ],
+      "tags": [
+        "passion",
+        "prophecy"
+      ],
+      "orderNote": "Jesus foretold it: \"The cup that I drink you will drink\" (Mark 10:39). Clement of Alexandria, quoted by Eusebius, tells that his accuser was moved by his witness, confessed himself a Christian and was beheaded with him. The tradition that James preached in Spain and lies at Santiago de Compostela is medieval and has no support in Acts."
+    },
+    {
+      "id": "peterfreed",
+      "harmony": "Acts 12:3–19a",
+      "lane": "apostles",
+      "place": "jerusalemchurch",
+      "date": "Passover, AD 44 (or 43)",
+      "title": "An Angel Frees Peter from Prison",
+      "people": [
+        "Peter",
+        "An angel of the Lord",
+        "Mary the mother of John Mark",
+        "Rhoda",
+        "Herod's soldiers"
+      ],
+      "gospels": {
+        "Acts": "12:3–19"
+      },
+      "summary": "Herod jails Peter during the Passover feast, under four squads of soldiers, meaning to put him on show afterward, while the church prays earnestly for him. On the last night, as Peter sleeps chained between two soldiers, an angel wakes him; the chains fall off, and they pass the guards and the iron gate, which opens by itself. Peter goes to the house of Mary, the mother of John Mark, where many are praying. The maid Rhoda is so glad to hear his voice that she runs in without opening the gate. Peter tells his story, asks them to tell James, and goes \"to another place.\"",
+      "scripture": [
+        {
+          "ref": "Acts 12:5",
+          "text": "So Peter was kept in prison; but earnest prayer for him was made to God by the church."
+        },
+        {
+          "ref": "Acts 12:7",
+          "text": "and behold, an angel of the Lord appeared, and a light shone in the cell; and he struck Peter on the side and woke him, saying, \"Get up quickly.\" And the chains fell off his hands."
+        },
+        {
+          "ref": "Acts 12:14–15",
+          "text": "Recognizing Peter's voice, in her joy she did not open the gate but ran in and told that Peter was standing at the gate. They said to her, \"You are mad.\" But she insisted that it was so. They said, \"It is his angel!\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Exodus 12:11",
+          "note": "At Passover the angel's command echoes Israel's night of deliverance: belt fastened, sandals on, ready to go."
+        },
+        {
+          "ref": "Psalm 34:7",
+          "note": "\"The angel of the Lord encamps around those who fear him, and delivers them.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Deliverance of Saint Peter",
+          "artist": "Raphael",
+          "year": "1514",
+          "medium": "Fresco",
+          "location": "Stanza di Eliodoro, Apostolic Palace, Vatican City",
+          "description": "Three moments over a window. In the center, behind bars, a radiant angel wakes Peter, who sleeps chained between two armored soldiers. At right the angel leads the dazed Peter out past sleeping guards. At left the soldiers wake in the moonlight and torchlight and raise the alarm.",
+          "significance": "Painted for Pope Julius II, whose titular church was San Pietro in Vincoli (St Peter in Chains), and completed under Leo X; it also alludes to the papacy delivered from its enemies.",
+          "symbolism": "Raphael plays four lights against each other: the angel's glow, the moon, a torch and the dawn, and the heavenly light outshines them all.",
+          "impact": "Admired as one of the first great night scenes in Western painting.",
+          "img": "img/peterfreed0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Raphael_-_Deliverance_of_Saint_Peter.jpg"
+        }
+      ],
+      "tags": [
+        "miracle",
+        "prayer"
+      ],
+      "orderNote": "Acts does not say where Peter was held; the Antonia Fortress or Herod's palace prison are guesses. The Syriac Orthodox church of St Mark in the Armenian Quarter claims the site of Mary's house. Where Peter went is unknown; he is back in Jerusalem for the Council (Acts 15:7). The chains of St Peter are honored in Rome at San Pietro in Vincoli, and the Church keeps the feast on 1 August."
+    },
+    {
+      "id": "agrippadeath",
+      "harmony": "Acts 12:19b–23",
+      "lane": "herod",
+      "place": "caesarea",
+      "from": "jerusalemchurch",
+      "date": "AD 44",
+      "title": "The Death of Herod Agrippa I at Caesarea",
+      "people": [
+        "Herod Agrippa I",
+        "Blastus the chamberlain",
+        "Envoys of Tyre and Sidon"
+      ],
+      "gospels": {
+        "Acts": "12:19–23"
+      },
+      "summary": "Herod has the guards put to death and goes down to Caesarea. Envoys from Tyre and Sidon, which depend on his land for food, come to make peace. On an appointed day he puts on his royal robes, sits on his throne and makes a speech, and the people shout, \"The voice of a god, and not of man!\" Because he does not give God the glory, an angel of the Lord strikes him; he is eaten by worms and dies. \"But the word of God grew and multiplied.\"",
+      "journey": "About 65 miles from Jerusalem down to Caesarea on the coast, by Lydda and Antipatris.",
+      "route": [
+        [
+          35.231,
+          31.776
+        ],
+        [
+          35.17,
+          31.87
+        ],
+        [
+          35.04,
+          31.9
+        ],
+        [
+          34.895,
+          31.951
+        ],
+        [
+          34.93,
+          32.1
+        ],
+        [
+          34.92,
+          32.3
+        ],
+        [
+          34.89,
+          32.5
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 12:21–23",
+          "text": "On an appointed day Herod put on his royal robes, took his seat upon the throne, and made an oration to them. And the people shouted, \"The voice of a god, and not of man!\" Immediately an angel of the Lord smote him, because he did not give God the glory; and he was eaten by worms and died."
+        },
+        {
+          "ref": "Acts 12:24",
+          "text": "But the word of God grew and multiplied."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Ezekiel 28:2",
+          "note": "The prince of Tyre says \"I am a god\" and is told \"you are but a man, and no god.\""
+        },
+        {
+          "ref": "2 Maccabees 9:9",
+          "note": "The persecutor Antiochus IV, struck by God, dies with worms swarming in his body."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Bronze Prutah of Herod Agrippa I",
+          "artist": "Mint of Jerusalem; photo by Classical Numismatic Group",
+          "year": "AD 41/42",
+          "medium": "Bronze coin",
+          "location": "Private collection (sold by CNG)",
+          "description": "Two sides of a small bronze coin: on one, a royal canopy (parasol) with fringes and the Greek legend BASILEOS AGRIPPA, \"of King Agrippa\"; on the other, three ears of barley and the date, year 6 of his reign.",
+          "significance": "Agrippa I struck these small coins in Jerusalem in AD 41/42, after Claudius gave him all of Judea. They carry no portrait, out of respect for Jewish law, unlike the coins he issued for his non-Jewish lands.",
+          "symbolism": "The canopy is a sign of kingship; the barley speaks of the land's harvest, the same food supply Tyre and Sidon depended on (Acts 12:20).",
+          "impact": "One of the most common coins of ancient Judea, still found often in Jerusalem.",
+          "img": "img/agrippadeath0.jpg",
+          "credit": "Photo: Classical Numismatic Group, CC BY-SA 3.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Agrippa_I_prutah.jpg"
+        },
+        {
+          "kind": "Descriptive",
+          "title": "The Death of Herod Agrippa",
+          "artist": "Jan Luyken",
+          "year": "1703",
+          "medium": "Etching",
+          "location": "Rijksmuseum, Amsterdam",
+          "description": "Herod, in royal robes under a canopy on a high tribunal, addresses a vast crowd who raise their arms and acclaim him. High in the sky at upper left, an angel swoops down to strike him.",
+          "significance": "One of hundreds of Bible etchings by Jan Luyken, the Amsterdam poet and printmaker, for a picture Bible published by Pieter Mortier.",
+          "symbolism": "The crowd's lifted hands answer the king, not God; the small angel in the sky is the real power in the scene.",
+          "impact": "Luyken's prints, clear and dramatic, illustrated Dutch Bibles for generations.",
+          "img": "img/agrippadeath1.jpg",
+          "credit": "Public domain (CC0), Rijksmuseum, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Dood_van_Herodes_Agrippa,_RP-P-OB-45.127.jpg"
+        }
+      ],
+      "tags": [
+        "conflict"
+      ],
+      "orderNote": "Josephus tells the same story (Antiquities 19.343–350): at games in Caesarea for the emperor, Agrippa came into the theater at dawn in a robe woven of silver, flatterers hailed him as a god, he saw an owl as an omen of doom, was seized with violent pains in the belly and died five days later, aged 54. It fixes the date at AD 44."
+    },
+    {
+      "id": "barnabasreturn",
+      "harmony": "Acts 12:25",
+      "lane": "paul",
+      "place": "antioch",
+      "from": "jerusalemchurch",
+      "date": "c. AD 46–47",
+      "title": "Barnabas and Saul Return to Antioch with John Mark",
+      "people": [
+        "Barnabas",
+        "Saul",
+        "John Mark"
+      ],
+      "gospels": {
+        "Acts": "12:25"
+      },
+      "summary": "Their mission to Jerusalem done, Barnabas and Saul return to Antioch. They bring with them John Mark, Barnabas's cousin (Colossians 4:10), the son of the Mary in whose house the church prayed for Peter. Mark will go with them on the first missionary journey, and tradition holds he later wrote the Gospel of Mark from Peter's preaching. The scene is set for the church of Antioch to send them out.",
+      "journey": "About 350 miles north again by the coast road, about three weeks on foot.",
+      "route": [
+        [
+          35.231,
+          31.776
+        ],
+        [
+          35.04,
+          31.9
+        ],
+        [
+          34.93,
+          32.1
+        ],
+        [
+          34.89,
+          32.5
+        ],
+        [
+          35.07,
+          32.92
+        ],
+        [
+          35.19,
+          33.27
+        ],
+        [
+          35.37,
+          33.56
+        ],
+        [
+          35.5,
+          33.89
+        ],
+        [
+          35.84,
+          34.43
+        ],
+        [
+          35.88,
+          34.89
+        ],
+        [
+          35.78,
+          35.52
+        ],
+        [
+          35.95,
+          35.85
+        ],
+        [
+          36.161,
+          36.202
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 12:25",
+          "text": "And Barnabas and Saul returned from Jerusalem when they had fulfilled their mission, bringing with them John whose other name was Mark."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "Saint Mark the Evangelist",
+          "artist": "Andrea Mantegna",
+          "year": "c. 1448–1451",
+          "medium": "Tempera on canvas",
+          "location": "Städel Museum, Frankfurt",
+          "description": "The evangelist looks out from an arched stone window framed with a garland of fruit, his finger raised to his cheek in thought, a closed red book resting on the sill beside him. A painted label below bears a Latin inscription naming the evangelist and the painter.",
+          "significance": "Usually counted among Mantegna's earliest works, painted in Padua around 1450. The illusion of the figure leaning out of the painted window shows the young artist's mastery of perspective.",
+          "symbolism": "The book is his Gospel; tradition, from Papias, says Mark wrote it from Peter's preaching. The fruit garland is a classical motif Mantegna loved.",
+          "impact": "The painted window and the figure leaning out of it became a favorite device of Venetian and north Italian portraits.",
+          "img": "img/barnabasreturn0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Andrea_Mantegna_-_St._Mark_the_Evangelist_-_Google_Art_Project.jpg"
+        }
+      ],
+      "tags": [
+        "call"
+      ],
+      "orderNote": "Some of the best manuscripts read \"returned to Jerusalem,\" which is hard to fit; most translations, like the RSV, read \"from Jerusalem.\" Papias (c. AD 120), quoted by Eusebius, is the earliest witness that Mark wrote down Peter's preaching."
+    }
+  ]
+}

@@ -1,0 +1,1115 @@
+{
+  "_batch": "acts-01-jerusalem",
+  "_sections": "Acts 1:12–7:60 (to 8:2)",
+  "_unverified": [],
+  "_notes": [
+    "Lane: all events use `apostles` (Peter, John, the Twelve, the Seven, Stephen). Saul appears only as a witness in stephendeath; the `paul` lane begins in later batches.",
+    "No harmony for Acts: `harmony` holds the Acts passage, and events follow the order of Acts.",
+    "New place `stephensite` (place of Stephen's stoning, Traditional, the Eudocia/Saint-Etienne site north of the Damascus Gate). Uses `jerusalemchurch` from places-acts.txt; `upperroom` and `olives` copied unchanged from the Gospel batches; `temple` is from data.js.",
+    "stephendeath covers Acts 7:54–8:2 (Saul consenting, Stephen's burial), by agreement with acts-02, whose `scattering` starts at 8:1b.",
+    "Acts 4:23–37 (prayer for boldness, goods in common, Barnabas) is one event, `boldness`, since no separate artwork for the prayer scene was found.",
+    "Journeys inside Jerusalem are given only for Olivet to the upper room (matthias) and the Temple to the stoning site (stephendeath); other moves within the city have no journey."
+  ],
+  "places": {
+    "jerusalemchurch": {
+      "name": "Jerusalem (the city)",
+      "ll": [
+        35.231,
+        31.776
+      ],
+      "region": "Judea",
+      "certainty": "Certain",
+      "note": "The first church met in the Temple courts and \"in their homes\" across the city (Acts 2:46; 5:42). Acts names no single meeting place, so events of the church's common life are mapped at the city itself."
+    },
+    "olives": {
+      "name": "Mount of Olives",
+      "ll": [
+        35.245,
+        31.778
+      ],
+      "region": "Jerusalem",
+      "certainty": "Certain",
+      "note": "The ridge east of Jerusalem across the Kidron Valley, about 2,700 ft high. Constantine built the Eleona church over a cave near the summit; the Pater Noster church there today recalls the teaching of the Lord's Prayer."
+    },
+    "stephensite": {
+      "name": "Place of Stephen's stoning",
+      "ll": [
+        35.2296,
+        31.7853
+      ],
+      "region": "Jerusalem",
+      "certainty": "Traditional",
+      "note": "Acts says only that they \"cast him out of the city\" (7:58). The oldest tradition is north of the city, outside today's Damascus Gate, where the empress Eudocia built a basilica to Saint Stephen about AD 460; the Dominicans' Basilica of Saint-Etienne (École Biblique) stands on its ruins. A later, medieval tradition moved the site east, to the gate now called St Stephen's (Lions') Gate above the Kidron Valley. The map marks the northern site."
+    },
+    "upperroom": {
+      "name": "Upper Room (Cenacle)",
+      "ll": [
+        35.229,
+        31.7716
+      ],
+      "region": "Jerusalem",
+      "certainty": "Traditional",
+      "note": "The Gospels name only \"a large upper room furnished\" in the city. Since at least the 4th century, Christians have honored a site on Mount Zion, in the southwest of the old city, as the room of the Last Supper and of Pentecost. The present Gothic hall was built by the Crusaders and Franciscans in the 12th to 14th centuries. Robertson suggests it may have been the house of John Mark's mother (Acts 12:12)."
+    }
+  },
+  "events": [
+    {
+      "id": "matthias",
+      "harmony": "Acts 1:12–26",
+      "lane": "apostles",
+      "place": "upperroom",
+      "from": "olives",
+      "date": "May AD 33, between the Ascension and Pentecost",
+      "title": "Matthias Chosen",
+      "people": [
+        "Peter",
+        "The eleven",
+        "Mary the mother of Jesus",
+        "The women",
+        "Jesus' brethren",
+        "Joseph Barsabbas",
+        "Matthias"
+      ],
+      "gospels": {
+        "Acts": "1:12–26"
+      },
+      "summary": "The apostles walk back from the Mount of Olives to the upper room where they are staying. About a hundred and twenty disciples, with Mary the mother of Jesus and the women, devote themselves to prayer. Peter says that Judas' place must be filled by a man who has been with them from John's baptism to the Ascension, a witness to the Resurrection. Two are put forward, Joseph Barsabbas and Matthias; they pray and cast lots, and the lot falls on Matthias, who is counted with the eleven.",
+      "stay": "The eleven were staying in the upper room (Acts 1:13) and waited there in prayer for the promised Spirit.",
+      "journey": "Down from the Mount of Olives, across the Kidron Valley and up into the city to the upper room, about a mile, \"a sabbath day's journey\" (Acts 1:12).",
+      "route": [
+        [
+          35.245,
+          31.778
+        ],
+        [
+          35.24,
+          31.779
+        ],
+        [
+          35.236,
+          31.775
+        ],
+        [
+          35.229,
+          31.7716
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 1:14",
+          "text": "All these with one accord devoted themselves to prayer, together with the women and Mary the mother of Jesus, and with his brethren."
+        },
+        {
+          "ref": "Acts 1:26",
+          "text": "And they cast lots for them, and the lot fell on Matthias; and he was enrolled with the eleven apostles."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Psalm 109:8",
+          "note": "\"May another seize his goods\" (\"His office let another take\"): Peter cites it for filling Judas' place."
+        },
+        {
+          "ref": "Psalm 69:25",
+          "note": "\"May their camp be a desolation\": Peter applies it to Judas' field, Akeldama."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "The Return of the Apostles from Mount Olivet and the Election of Matthias",
+          "artist": "Philips Galle after Maarten van Heemskerck",
+          "year": "1575",
+          "medium": "Engraving",
+          "location": "Royal Library of Belgium (KBR), Brussels",
+          "description": "In the upper room Peter stands and points as the apostles, Mary and the women kneel in prayer. Through the window at left, Christ rises into the clouds above the Mount of Olives, the disciples gather on the hill, and two men in white stand below; in the street, two apostles walk back to the city.",
+          "significance": "One plate of Heemskerck's Acta Apostolorum, a series of engravings on the Acts of the Apostles, designed by the Haarlem painter and engraved by Philips Galle.",
+          "symbolism": "The Latin line below reads \"The Lord ascends into heaven and Matthias is made an apostle\" (Acts 1); the print joins the Ascension and the choosing of Matthias in one view, as Luke does.",
+          "impact": "Galle's Antwerp prints of Heemskerck's designs spread his biblical scenes across Europe as models for painters, glass makers and book illustrators.",
+          "img": "img/matthias0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Return_of_The_Apostles_from_Mount_Olivet_and_The_Election_of_Matthias_as_Apostle_1575_print_by_Maarten_van_Heemskerck,_S.I_55821,_Prints_Department,_Royal_Library_of_Belgium.jpg"
+        }
+      ],
+      "tags": [
+        "prayer",
+        "call"
+      ],
+      "orderNote": "Acts 1:18–19 sets Judas' death in a parenthesis inside Peter's speech; Matthew 27:3–10 tells it differently, and the two accounts are usually harmonized (see the Gospel event judasdeath). Acts places the choosing \"in those days\" before Pentecost but gives no day."
+    },
+    {
+      "id": "pentecost",
+      "harmony": "Acts 2:1–13",
+      "lane": "apostles",
+      "place": "upperroom",
+      "date": "Pentecost, May AD 33",
+      "title": "The Descent of the Holy Spirit",
+      "people": [
+        "The apostles",
+        "Mary the mother of Jesus",
+        "The disciples",
+        "Pilgrims from every nation"
+      ],
+      "gospels": {
+        "Acts": "2:1–13"
+      },
+      "summary": "Fifty days after the Passover, on the Jewish feast of Weeks, the disciples are all together in one place. A sound like a mighty wind fills the house, tongues as of fire rest on each of them, and they are filled with the Holy Spirit and speak in other tongues. Jews from every nation, in Jerusalem for the feast, hear them speak of God's mighty works in their own languages. Some are amazed; others mock and say they are drunk. The Church keeps this day as its birthday.",
+      "scripture": [
+        {
+          "ref": "Acts 2:2–4",
+          "text": "And suddenly a sound came from heaven like the rush of a mighty wind, and it filled all the house where they were sitting. And there appeared to them tongues as of fire, distributed and resting on each one of them. And they were all filled with the Holy Spirit and began to speak in other tongues, as the Spirit gave them utterance."
+        },
+        {
+          "ref": "Acts 2:12–13",
+          "text": "And all were amazed and perplexed, saying to one another, \"What does this mean?\" But others mocking said, \"They are filled with new wine.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Genesis 11:7–9",
+          "note": "At Babel God confused the languages and scattered the nations; at Pentecost the nations hear one message, each in its own tongue."
+        },
+        {
+          "ref": "Exodus 19:18",
+          "note": "The Lord came down on Sinai in fire; later Jewish tradition linked the feast of Weeks with the giving of the Law."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "Pentecost",
+          "artist": "Giotto di Bondone",
+          "year": "c. 1305",
+          "medium": "Fresco",
+          "location": "Scrovegni (Arena) Chapel, Padua",
+          "description": "The apostles sit on benches inside an open Gothic loggia, some facing us, some turned away. Red rays stream down onto their heads from above.",
+          "significance": "The last scene of Giotto's life of Christ in the Scrovegni Chapel, following the Ascension.",
+          "symbolism": "The rays stand for the \"tongues as of fire\"; the open hall lets us see the gathered apostles \"all together in one place.\"",
+          "impact": "The Scrovegni cycle is often called the starting point of Western Renaissance painting.",
+          "img": "img/pentecost0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Giotto_di_Bondone_-_No._39_Scenes_from_the_Life_of_Christ_-_23._Pentecost_-_WGA09227.jpg"
+        },
+        {
+          "kind": "Masterpiece",
+          "title": "Pentecost",
+          "artist": "El Greco",
+          "year": "c. 1600",
+          "medium": "Oil on canvas",
+          "location": "Museo del Prado, Madrid",
+          "description": "Mary sits at the center with hands joined, among the apostles and another woman. Above, the dove of the Holy Spirit shines, and a small flame burns over each head as the apostles look up or fall back in wonder.",
+          "significance": "A late work of El Greco's Toledo years, painted with the tall, flame-like figures typical of his mature style.",
+          "symbolism": "Mary at the center follows Acts 1:14, where she prays with the apostles; the dove and flames join the Spirit of the Baptism with the fire of Pentecost.",
+          "impact": "El Greco's late visionary style, long neglected, was rediscovered around 1900 and admired by modern painters.",
+          "img": "img/pentecost1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pentecostés_(El_Greco,_c._1600)_Prado.jpg"
+        }
+      ],
+      "tags": [
+        "miracle"
+      ],
+      "orderNote": "Acts says only that they were \"all together in one place\" and that the sound filled \"all the house\" (2:1–2). Tradition places it in the upper room of 1:13 on Mount Zion; some scholars think of the Temple courts, where a crowd of thousands could gather. The map marks the Cenacle."
+    },
+    {
+      "id": "petersermon",
+      "harmony": "Acts 2:14–41",
+      "lane": "apostles",
+      "place": "upperroom",
+      "date": "Pentecost, May AD 33",
+      "title": "Peter's Sermon at Pentecost",
+      "people": [
+        "Peter",
+        "The eleven",
+        "The crowd"
+      ],
+      "gospels": {
+        "Acts": "2:14–41"
+      },
+      "summary": "Peter stands up with the eleven and tells the crowd that these men are not drunk: this is what the prophet Joel foretold, the Spirit poured out on all flesh. He proclaims that Jesus of Nazareth, whom they crucified, God has raised up, and David's psalms foretold it. Jesus, now exalted at God's right hand, has poured out the Spirit. Cut to the heart, the people ask what to do; Peter tells them to repent and be baptized, and about three thousand are baptized that day.",
+      "scripture": [
+        {
+          "ref": "Acts 2:36",
+          "text": "Let all the house of Israel therefore know assuredly that God has made him both Lord and Christ, this Jesus whom you crucified.\""
+        },
+        {
+          "ref": "Acts 2:38",
+          "text": "And Peter said to them, \"Repent, and be baptized every one of you in the name of Jesus Christ for the forgiveness of your sins; and you shall receive the gift of the Holy Spirit."
+        },
+        {
+          "ref": "Acts 2:41",
+          "text": "So those who received his word were baptized, and there were added that day about three thousand souls."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Joel 2:28–32",
+          "note": "\"I will pour out my spirit on all flesh\": the text of Peter's sermon."
+        },
+        {
+          "ref": "Psalm 16:10",
+          "note": "\"You do not give me up to Sheol\": Peter reads it of the Resurrection."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "St Peter Preaching",
+          "artist": "Masolino da Panicale",
+          "year": "c. 1425",
+          "medium": "Fresco",
+          "location": "Brancacci Chapel, Santa Maria del Carmine, Florence",
+          "description": "Peter stands at left with his hand raised, preaching to a close crowd of listeners: a veiled woman, an old man lost in thought, and men in the dress of 15th-century Florence, with two white-robed friars at right and green hills behind.",
+          "significance": "Part of the Brancacci Chapel's cycle of the life of St Peter, painted by Masolino and his young partner Masaccio and finished decades later by Filippino Lippi.",
+          "symbolism": "The friars in white are Carmelites, the order that served the church; Masolino places his own city among those who hear the apostle.",
+          "impact": "The Brancacci Chapel became a school for Florentine artists; Michelangelo studied and copied its frescoes.",
+          "img": "img/petersermon0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Cappella_brancacci,_Predica_di_San_Pietro_(restaurato),_Masolino.jpg"
+        },
+        {
+          "kind": "Descriptive",
+          "title": "St Peter Preaching in Jerusalem",
+          "artist": "Philips Galle after Maarten van Heemskerck",
+          "year": "1575",
+          "medium": "Engraving",
+          "location": "Royal Library of Belgium (KBR), Brussels",
+          "description": "Peter, haloed, stands at the top of a stair and preaches with an outstretched arm to a crowd of men in turbans and robes. At upper left, through a window, the Spirit's rays fall on Mary and the apostles; a round, Roman-looking temple rises at right.",
+          "significance": "One plate of Heemskerck's Acta Apostolorum, a series of engravings on the Acts of the Apostles, designed by the Haarlem painter and engraved by Philips Galle.",
+          "symbolism": "The title reads \"Peter converted three thousand men\" (Acts 2:41); the Pentecost scene above shows the source of his boldness.",
+          "impact": "Galle's Antwerp prints of Heemskerck's designs spread his biblical scenes across Europe as models for painters, glass makers and book illustrators.",
+          "img": "img/petersermon1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:St_Peter_Preaching_In_Jerusalem_1575_print_by_Maarten_van_Heemskerck,_S.I_55791,_Prints_Department,_Royal_Library_of_Belgium.jpg"
+        }
+      ],
+      "tags": [
+        "sermon",
+        "prophecy"
+      ],
+      "orderNote": "Where the crowd heard Peter is not stated; it may have been in the streets near the house or in the Temple courts, where the many baptisms could have used the ritual pools south of the Temple Mount."
+    },
+    {
+      "id": "commonlife",
+      "harmony": "Acts 2:42–47",
+      "lane": "apostles",
+      "place": "jerusalemchurch",
+      "date": "AD 33",
+      "title": "The Life of the First Church",
+      "people": [
+        "The apostles",
+        "The believers"
+      ],
+      "gospels": {
+        "Acts": "2:42–47"
+      },
+      "summary": "The new believers devote themselves to the apostles' teaching and fellowship, to the breaking of bread and the prayers. They hold all things in common, selling their goods and sharing with any in need. Day by day they attend the Temple together and break bread in their homes with glad and generous hearts. The Lord adds to their number every day.",
+      "scripture": [
+        {
+          "ref": "Acts 2:42",
+          "text": "And they devoted themselves to the apostles' teaching and fellowship, to the breaking of bread and the prayers."
+        },
+        {
+          "ref": "Acts 2:44–45",
+          "text": "And all who believed were together and had all things in common; and they sold their possessions and goods and distributed them to all, as any had need."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Fractio Panis (The Breaking of Bread)",
+          "artist": "Unknown early Christian painter",
+          "year": "c. 3rd century",
+          "medium": "Fresco",
+          "location": "Cappella Greca, Catacomb of Priscilla, Rome",
+          "description": "Seven figures recline at a curved table in faded red and white, one of them stretching out his hands over the bread. Dishes lie on the table before them.",
+          "significance": "One of the oldest Christian pictures of a meal, painted in the burial chapel of the Roman catacomb of Priscilla. Its name, given by its discoverer Joseph Wilpert, is Luke's phrase \"the breaking of bread.\"",
+          "symbolism": "The gesture of breaking bread echoes the Last Supper and Emmaus; whether the scene shows a Eucharist, a funeral meal or an agape is debated.",
+          "impact": "Often reproduced as an image of the early Church's shared meal and of the Eucharist.",
+          "img": "img/commonlife0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Catacombe_di_Priscilla,_Rome_-_Fresco_of_a_Christian_Agape_feast_-_Fractio_panis_-_Greek_chapel_-_2nd_-_4th_century.jpg"
+        },
+        {
+          "kind": "Descriptive",
+          "title": "The Apostles Baptizing in Jerusalem",
+          "artist": "Philips Galle after Maarten van Heemskerck",
+          "year": "1575",
+          "medium": "Engraving",
+          "location": "Royal Library of Belgium (KBR), Brussels",
+          "description": "In a crowded courtyard, an apostle pours water over a kneeling convert while others undress and wait their turn; another apostle preaches from the steps behind. At upper left the dove of the Spirit hovers, and goods are laid on a table above.",
+          "significance": "One plate of Heemskerck's Acta Apostolorum, a series of engravings on the Acts of the Apostles, designed by the Haarlem painter and engraved by Philips Galle.",
+          "symbolism": "The Latin reads \"Where very many are baptized, all their goods brought together in common\" (Acts 2): baptism and the sharing of goods shown as one life.",
+          "impact": "Galle's Antwerp prints of Heemskerck's designs spread his biblical scenes across Europe as models for painters, glass makers and book illustrators.",
+          "img": "img/commonlife1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Apostles_Baptizing_in_Jerusalem_1575_print_by_Maarten_van_Heemskerck,_S.I_55824,_Prints_Department,_Royal_Library_of_Belgium.jpg"
+        }
+      ],
+      "tags": [
+        "prayer",
+        "teaching"
+      ]
+    },
+    {
+      "id": "lameman",
+      "harmony": "Acts 3:1–10",
+      "lane": "apostles",
+      "place": "temple",
+      "date": "c. AD 33",
+      "title": "The Lame Man at the Beautiful Gate",
+      "people": [
+        "Peter",
+        "John",
+        "A man lame from birth"
+      ],
+      "gospels": {
+        "Acts": "3:1–10"
+      },
+      "summary": "Peter and John go up to the Temple at the hour of prayer, three in the afternoon. A man lame from birth, carried every day to the gate called Beautiful, asks them for alms. Peter says he has no silver or gold, but in the name of Jesus Christ of Nazareth he tells him to walk, and takes him by the hand. The man leaps up and goes into the Temple with them, walking and leaping and praising God.",
+      "scripture": [
+        {
+          "ref": "Acts 3:6",
+          "text": "But Peter said, \"I have no silver and gold, but I give you what I have; in the name of Jesus Christ of Nazareth, walk.\""
+        },
+        {
+          "ref": "Acts 3:8",
+          "text": "And leaping up he stood and walked and entered the temple with them, walking and leaping and praising God."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Isaiah 35:6",
+          "note": "\"Then shall the lame man leap like a hart\": a sign of the age of salvation."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Healing of the Lame Man",
+          "artist": "Raphael",
+          "year": "1515–1516",
+          "medium": "Bodycolour on paper, mounted on canvas",
+          "location": "Royal Collection, on loan to the Victoria and Albert Museum, London",
+          "description": "Between great twisted columns, Peter bends to take the hand of the crippled man, as John looks on. Another cripple leans on a stick at right, and mothers with children and onlookers crowd the Temple gate.",
+          "significance": "One of seven surviving full-size cartoons Raphael made for tapestries ordered by Pope Leo X for the Sistine Chapel, woven in Brussels in the workshop of Pieter van Aelst.",
+          "symbolism": "The twisted columns copy the ones in Old St Peter's that were believed to come from Solomon's Temple; they set the scene at the Temple's gate and tie it to the Pope's own basilica.",
+          "impact": "Bought by the future Charles I in 1623, the cartoons have hung in the V&A since 1865 and were among the most studied and copied works of art in Britain.",
+          "img": "img/lameman0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:V&A_-_Raphael,_The_Healing_of_the_Lame_Man_(1515).jpg"
+        },
+        {
+          "kind": "Masterpiece",
+          "title": "Saints Peter and John Healing the Lame Man",
+          "artist": "Nicolas Poussin",
+          "year": "1655",
+          "medium": "Oil on canvas",
+          "location": "The Metropolitan Museum of Art, New York",
+          "description": "On the Temple steps, Peter reaches out his hand to the lame man sitting on the stair, while John points to heaven. A beggar woman with a baby and townspeople fill the steps below.",
+          "significance": "A late work by Poussin, the French classical painter who spent most of his life in Rome.",
+          "symbolism": "John's raised finger shows where the power comes from, \"in the name of Jesus Christ\"; the calm, stage-like steps are typical of Poussin's classical order.",
+          "impact": "Poussin's ordered, sculptural style became the model for the French Academy.",
+          "img": "img/lameman1.jpg",
+          "credit": "Public domain (CC0), The Metropolitan Museum of Art, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Saints_Peter_and_John_Healing_the_Lame_Man_MET_DP340180.jpg"
+        }
+      ],
+      "tags": [
+        "miracle",
+        "healing"
+      ],
+      "orderNote": "The Beautiful Gate is named nowhere else. It is often identified with the Nicanor Gate, the great bronze gate between the Court of the Gentiles (or of the Women) and the inner courts that Josephus describes; others think of the Shushan Gate on the east."
+    },
+    {
+      "id": "solomonsportico",
+      "harmony": "Acts 3:11–26",
+      "lane": "apostles",
+      "place": "temple",
+      "date": "c. AD 33",
+      "title": "Peter Preaches in Solomon's Portico",
+      "people": [
+        "Peter",
+        "John",
+        "The healed man",
+        "The people"
+      ],
+      "gospels": {
+        "Acts": "3:11–26"
+      },
+      "summary": "As the healed man clings to Peter and John, the people run together to them in the colonnade called Solomon's Portico. Peter tells them the man was not healed by the apostles' own power but by faith in the name of Jesus, the Author of life, whom they denied before Pilate and whom God raised from the dead. They acted in ignorance, he says, and now they must repent so that their sins may be blotted out. Jesus is the prophet like Moses whom Moses foretold.",
+      "scripture": [
+        {
+          "ref": "Acts 3:15",
+          "text": "and killed the Author of life, whom God raised from the dead. To this we are witnesses."
+        },
+        {
+          "ref": "Acts 3:19",
+          "text": "Repent therefore, and turn again, that your sins may be blotted out, that times of refreshing may come from the presence of the Lord,"
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Deuteronomy 18:15",
+          "note": "\"The Lord your God will raise up for you a prophet like me\": Peter applies it to Jesus."
+        },
+        {
+          "ref": "Genesis 22:18",
+          "note": "\"By your descendants shall all the nations of the earth bless themselves\": the promise to Abraham."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "St Peter Healing the Lame at the Beautiful Gate",
+          "artist": "Philips Galle after Maarten van Heemskerck",
+          "year": "1575",
+          "medium": "Engraving",
+          "location": "Royal Library of Belgium (KBR), Brussels",
+          "description": "On the Temple steps Peter takes the lame man by the hand as John stands by; at left men wheel in another cripple on a barrow, and a third lies on the pavement. Deep in the colonnaded courts behind, the apostles go on into the Temple, where the crowd gathers.",
+          "significance": "One plate of Heemskerck's Acta Apostolorum, a series of engravings on the Acts of the Apostles, designed by the Haarlem painter and engraved by Philips Galle.",
+          "symbolism": "The line in the picture reads \"The man born lame is healed by the apostle Peter\"; the long colonnades recall the porticoes of the Temple court where Peter then preached.",
+          "impact": "Galle's Antwerp prints of Heemskerck's designs spread his biblical scenes across Europe as models for painters, glass makers and book illustrators.",
+          "img": "img/solomonsportico0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:St_Peter_Healing_The_Lame_at_The_Beautiful_Gate_1575_print_by_Maarten_van_Heemskerck,_S.I_55793,_Prints_Department,_Royal_Library_of_Belgium.jpg"
+        }
+      ],
+      "tags": [
+        "sermon"
+      ],
+      "orderNote": "Solomon's Portico was the colonnade along the east side of Herod's Temple court; Jesus taught there at the feast of Dedication (John 10:23)."
+    },
+    {
+      "id": "petercouncil",
+      "harmony": "Acts 4:1–22",
+      "lane": "apostles",
+      "place": "temple",
+      "date": "c. AD 33",
+      "title": "Peter and John before the Sanhedrin",
+      "people": [
+        "Peter",
+        "John",
+        "Annas",
+        "Caiaphas",
+        "The captain of the Temple",
+        "The Sadducees",
+        "The healed man"
+      ],
+      "gospels": {
+        "Acts": "4:1–22"
+      },
+      "summary": "The priests, the captain of the Temple and the Sadducees arrest Peter and John for preaching the resurrection in Jesus, and hold them overnight; still the believers grow to about five thousand men. Next day, before Annas, Caiaphas and the rulers, Peter, filled with the Holy Spirit, says the man was healed by the name of Jesus, whom they crucified and God raised. The council marvels at the boldness of these uneducated men and recognizes that they had been with Jesus. They order them never to speak in that name, but Peter and John answer that they cannot stop speaking of what they have seen and heard.",
+      "scripture": [
+        {
+          "ref": "Acts 4:12",
+          "text": "And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.\""
+        },
+        {
+          "ref": "Acts 4:19–20",
+          "text": "But Peter and John answered them, \"Whether it is right in the sight of God to listen to you rather than to God, you must judge; for we cannot but speak of what we have seen and heard.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Psalm 118:22",
+          "note": "\"The stone which the builders rejected has become the head of the corner\": Peter turns it on the council, as Jesus had (Mark 12:10)."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Ossuary of Joseph son of Caiaphas",
+          "artist": "Unknown Jerusalem stone carver",
+          "year": "1st century AD",
+          "medium": "Carved limestone",
+          "location": "Israel Museum, Jerusalem",
+          "description": "A rectangular limestone box with a curved lid, its front carved with two large circles of rosettes framed by palm-like branches. A short inscription is scratched on the plain end.",
+          "significance": "Found in 1990 in a burial cave in south Jerusalem. One of its two inscriptions reads \"Yehosef bar Qayafa,\" Joseph son of Caiaphas; Josephus gives the high priest's full name as Joseph Caiaphas. Many scholars think it held the bones of the high priest who sat in judgment on Jesus and on Peter and John.",
+          "symbolism": "The fine carving fits a rich, high-priestly family; the bones of several people were found inside, one of them a man of about sixty.",
+          "impact": "Among the best-known finds linked to a person named in the Gospels and Acts.",
+          "img": "img/petercouncil0.jpg",
+          "credit": "Photo: Gary Todd, CC0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Limestone_Ossuary_of_\"Joseph_Son_of_Caiaphas\"_Jerusalem,_1st_Century_AD_(41409261800).jpg"
+        }
+      ],
+      "tags": [
+        "conflict"
+      ],
+      "orderNote": "Acts gives no place for the hearing. The Mishnah says the Sanhedrin sat in the Chamber of Hewn Stone in the Temple, so the map marks the Temple; some think of the high priest's house. Luke calls Annas \"the high priest\"; his son-in-law Caiaphas held the office in AD 18–36, as in Luke 3:2 and John 18:13."
+    },
+    {
+      "id": "boldness",
+      "harmony": "Acts 4:23–37",
+      "lane": "apostles",
+      "place": "jerusalemchurch",
+      "date": "c. AD 33",
+      "title": "The Prayer for Boldness; One Heart and Soul",
+      "people": [
+        "Peter",
+        "John",
+        "The believers",
+        "Joseph Barnabas"
+      ],
+      "gospels": {
+        "Acts": "4:23–37"
+      },
+      "summary": "Released, Peter and John report the council's threats, and the church prays together, reading Psalm 2 of Herod and Pilate gathered against God's holy servant Jesus. They ask not for safety but for boldness to speak; the place where they are gathered is shaken, and all are filled with the Holy Spirit. The believers are of one heart and soul: owners of land or houses sell them and lay the money at the apostles' feet, so that no one is in need. Among them is Joseph, a Levite from Cyprus, whom the apostles call Barnabas, \"son of encouragement\"; he sells a field and brings the money. Barnabas will later stand by Saul and go with him on the first missionary journey.",
+      "scripture": [
+        {
+          "ref": "Acts 4:31",
+          "text": "And when they had prayed, the place in which they were gathered together was shaken; and they were all filled with the Holy Spirit and spoke the word of God with boldness."
+        },
+        {
+          "ref": "Acts 4:32",
+          "text": "Now the company of those who believed were of one heart and soul, and no one said that any of the things which he possessed was his own, but they had everything in common."
+        },
+        {
+          "ref": "Acts 4:36–37",
+          "text": "Thus Joseph who was surnamed by the apostles Barnabas (which means, Son of encouragement), a Levite, a native of Cyprus, sold a field which belonged to him, and brought the money and laid it at the apostles' feet."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Psalm 2:1–2",
+          "note": "\"Why do the nations conspire... against the Lord and his anointed\": the church's prayer reads it as fulfilled in the Passion."
+        },
+        {
+          "ref": "Deuteronomy 15:4",
+          "note": "\"There will be no poor among you\": Luke's \"there was not a needy person among them\" (4:34) echoes the promise."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Distribution of Alms and the Death of Ananias",
+          "artist": "Masaccio",
+          "year": "c. 1426–1427",
+          "medium": "Fresco",
+          "location": "Brancacci Chapel, Santa Maria del Carmine, Florence",
+          "description": "Peter, with John beside him, places a coin in the hand of a mother holding a baby, while poor people wait. On the ground at his feet lies the dead Ananias, and a Tuscan village and hills stretch behind.",
+          "significance": "One of Masaccio's scenes in the Brancacci Chapel's life of St Peter, painted shortly before his death at 26.",
+          "symbolism": "Masaccio joins two scenes, the sharing of goods \"as any had need\" (4:35) and the death of Ananias who held back (5:5), making one lesson of the church's common life.",
+          "impact": "Masaccio's solid figures, real light and Florentine street settings made the chapel a school for Renaissance painters.",
+          "img": "img/boldness0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Masaccio_-_The_Distribution_of_Alms_and_the_Death_of_Ananias_-_WGA14184.jpg"
+        }
+      ],
+      "tags": [
+        "prayer",
+        "miracle"
+      ]
+    },
+    {
+      "id": "ananiassapphira",
+      "harmony": "Acts 5:1–11",
+      "lane": "apostles",
+      "place": "jerusalemchurch",
+      "date": "c. AD 33–34",
+      "title": "Ananias and Sapphira",
+      "people": [
+        "Peter",
+        "Ananias",
+        "Sapphira",
+        "The young men"
+      ],
+      "gospels": {
+        "Acts": "5:1–11"
+      },
+      "summary": "Ananias and his wife Sapphira sell a piece of property, keep back part of the price and lay the rest at the apostles' feet as if it were all. Peter tells Ananias that the land was his own to keep, but he has lied not to men but to the Holy Spirit; Ananias falls down and dies. Three hours later Sapphira tells the same lie and dies at Peter's feet. Great fear comes upon the whole church; this is the first time Acts uses the word \"church.\"",
+      "scripture": [
+        {
+          "ref": "Acts 5:3",
+          "text": "But Peter said, \"Ananias, why has Satan filled your heart to lie to the Holy Spirit and to keep back part of the proceeds of the land?"
+        },
+        {
+          "ref": "Acts 5:5",
+          "text": "When Ananias heard these words, he fell down and died. And great fear came upon all who heard of it."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Joshua 7:1",
+          "note": "Achan kept back what was devoted to God at Jericho and died for it; the Greek Old Testament uses the same verb, \"kept back,\" as Acts 5:2."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Death of Ananias",
+          "artist": "Raphael",
+          "year": "1515–1516",
+          "medium": "Bodycolour on paper, mounted on canvas",
+          "location": "Royal Collection, on loan to the Victoria and Albert Museum, London",
+          "description": "Peter stands on a raised platform among the apostles and points down as Ananias collapses in a convulsion before him; the bystanders recoil in horror. At left people bring their gifts, and at right Sapphira counts money, unaware of what has happened.",
+          "significance": "One of the seven surviving cartoons Raphael made for the Sistine Chapel tapestries of Pope Leo X, woven in Brussels.",
+          "symbolism": "The apostles raised above the crowd show their authority; the falling body of Ananias is one of Raphael's most dramatic figures.",
+          "impact": "The cartoons hung at Hampton Court for two centuries and shaped the way British artists composed history paintings.",
+          "img": "img/ananiassapphira0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:V&A_-_Raphael,_The_Death_of_Ananias_(1515).jpg"
+        },
+        {
+          "kind": "Descriptive",
+          "title": "The Death of Sapphira",
+          "artist": "Philips Galle after Maarten van Heemskerck",
+          "year": "1575",
+          "medium": "Engraving",
+          "location": "Royal Library of Belgium (KBR), Brussels",
+          "description": "Peter and the apostles stand on the Temple steps as Sapphira sinks dying at their feet. In front, Ananias lies dead beside his scattered money, and young men carry a body away in the background.",
+          "significance": "One plate of Heemskerck's Acta Apostolorum, a series of engravings on the Acts of the Apostles, designed by the Haarlem painter and engraved by Philips Galle.",
+          "symbolism": "The Latin verses say that unhappy Ananias died for his false deed and his wife was struck with the same punishment, for God can neither be deceived nor deceive.",
+          "impact": "Galle's Antwerp prints of Heemskerck's designs spread his biblical scenes across Europe as models for painters, glass makers and book illustrators.",
+          "img": "img/ananiassapphira1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Death_of_Sapphira_1575_print_by_Maarten_van_Heemskerck,_S.I_55759,_Prints_Department,_Royal_Library_of_Belgium.jpg"
+        }
+      ],
+      "tags": [
+        "miracle"
+      ]
+    },
+    {
+      "id": "petershadow",
+      "harmony": "Acts 5:12–16",
+      "lane": "apostles",
+      "place": "temple",
+      "date": "c. AD 33–34",
+      "title": "Signs and Wonders: Peter's Shadow",
+      "people": [
+        "Peter",
+        "The apostles",
+        "The sick",
+        "The people"
+      ],
+      "gospels": {
+        "Acts": "5:12–16"
+      },
+      "summary": "Many signs and wonders are done through the apostles, who meet together in Solomon's Portico. The people hold them in high honor, and more and more men and women believe. They carry the sick into the streets on beds and pallets, hoping that at least Peter's shadow may fall on some of them as he passes. Crowds come from the towns around Jerusalem with the sick and those troubled by unclean spirits, and all are healed.",
+      "scripture": [
+        {
+          "ref": "Acts 5:15–16",
+          "text": "so that they even carried out the sick into the streets, and laid them on beds and pallets, that as Peter came by at least his shadow might fall on some of them. The people also gathered from the towns around Jerusalem, bringing the sick and those afflicted with unclean spirits, and they were all healed."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "St Peter Healing the Sick with His Shadow",
+          "artist": "Masaccio",
+          "year": "c. 1426–1427",
+          "medium": "Fresco",
+          "location": "Brancacci Chapel, Santa Maria del Carmine, Florence",
+          "description": "Peter walks down a narrow Florentine street with John and another apostle, looking straight ahead. Crippled men kneel and sit by the walls, and one rises as Peter's shadow falls on him.",
+          "significance": "Masaccio sets Acts 5:15 in a street of 15th-century Florence, in the Brancacci Chapel's life of St Peter.",
+          "symbolism": "Peter does not touch or even look at the sick: the healing passes through his shadow, a sign that the power is God's, not his.",
+          "impact": "Restored in 1983–1990, the frescoes regained their original color and are counted among the founding works of Renaissance painting.",
+          "img": "img/petershadow0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Cappella_brancacci,_San_Pietro_risana_gli_infermi_con_la_sua_ombra_(restaurato),_Masaccio.jpg"
+        }
+      ],
+      "tags": [
+        "miracle",
+        "healing",
+        "exorcism"
+      ]
+    },
+    {
+      "id": "prisonopened",
+      "harmony": "Acts 5:17–26",
+      "lane": "apostles",
+      "place": "temple",
+      "date": "c. AD 33–34",
+      "title": "The Apostles Freed by an Angel",
+      "people": [
+        "The apostles",
+        "The high priest",
+        "The Sadducees",
+        "An angel of the Lord",
+        "The captain of the Temple"
+      ],
+      "gospels": {
+        "Acts": "5:17–26"
+      },
+      "summary": "Filled with jealousy, the high priest and the Sadducees arrest the apostles and put them in the public prison. At night an angel of the Lord opens the doors, leads them out and tells them to go and speak in the Temple \"all the words of this Life.\" At daybreak they are teaching in the Temple. When the council sends for them, the officers find the prison locked and the guards at the doors, but no one inside, and the captain brings the apostles back without violence, for fear of the people.",
+      "scripture": [
+        {
+          "ref": "Acts 5:19–20",
+          "text": "But at night an angel of the Lord opened the prison doors and brought them out and said, \"Go and stand in the temple and speak to the people all the words of this Life.\""
+        },
+        {
+          "ref": "Acts 5:23",
+          "text": "\"We found the prison securely locked and the sentries standing at the doors, but when we opened it we found no one inside.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "The Angel Delivering the Apostles out of Prison",
+          "artist": "Philips Galle after Maarten van Heemskerck",
+          "year": "1575",
+          "medium": "Engraving",
+          "location": "Royal Library of Belgium (KBR), Brussels",
+          "description": "A shining angel leads Peter, holding his keys, and the other apostles out through an arched gate, while armed guards sleep on the stairs and around the doorway.",
+          "significance": "One plate of Heemskerck's Acta Apostolorum, a series of engravings on the Acts of the Apostles, designed by the Haarlem painter and engraved by Philips Galle.",
+          "symbolism": "The sleeping guards match the report that the prison was \"securely locked and the sentries standing at the doors\" (5:23); Peter's keys mark him as leader of the Twelve.",
+          "impact": "Galle's Antwerp prints of Heemskerck's designs spread his biblical scenes across Europe as models for painters, glass makers and book illustrators.",
+          "img": "img/prisonopened0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Angel_Delivering_The_Apostles_out_of_Prison_1575_print_by_Maarten_van_Heemskerck,_S.I_55828,_Prints_Department,_Royal_Library_of_Belgium.jpg"
+        }
+      ],
+      "tags": [
+        "miracle",
+        "conflict"
+      ],
+      "orderNote": "The \"common prison\" is not located; the map marks the Temple, where the apostles were found teaching at dawn."
+    },
+    {
+      "id": "gamaliel",
+      "harmony": "Acts 5:27–42",
+      "lane": "apostles",
+      "place": "temple",
+      "date": "c. AD 33–34",
+      "title": "\"We Must Obey God\": Gamaliel's Counsel",
+      "people": [
+        "Peter",
+        "The apostles",
+        "The high priest",
+        "Gamaliel",
+        "The council"
+      ],
+      "gospels": {
+        "Acts": "5:27–42"
+      },
+      "summary": "Before the council the high priest reminds the apostles they were forbidden to teach in Jesus' name. Peter answers that they must obey God rather than men, and bears witness to Jesus, raised and exalted as Leader and Savior. The council wants to kill them, but Gamaliel, an honored Pharisee and teacher of the law, warns them: if this work is of men it will fail, but if it is of God they cannot overthrow it. The apostles are beaten and released, and go away rejoicing that they were counted worthy to suffer for the name.",
+      "scripture": [
+        {
+          "ref": "Acts 5:29",
+          "text": "But Peter and the apostles answered, \"We must obey God rather than men."
+        },
+        {
+          "ref": "Acts 5:38–39",
+          "text": "So in the present case I tell you, keep away from these men and let them alone; for if this plan or this undertaking is of men, it will fail; but if it is of God, you will not be able to overthrow them. You might even be found opposing God!\""
+        },
+        {
+          "ref": "Acts 5:41",
+          "text": "Then they left the presence of the council, rejoicing that they were counted worthy to suffer dishonor for the name."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "The Apostles Flogged before the Council",
+          "artist": "Sadeler after Maerten de Vos",
+          "year": "Late 16th century",
+          "medium": "Engraving",
+          "location": "Rijksmuseum, Amsterdam",
+          "description": "In front of the council hall, two stripped and bound apostles, one young and one old with a halo, are driven forward by men swinging whips and rods. At right, councilors in turbans argue and point; in the background others gather before a palace.",
+          "significance": "An Antwerp engraving by one of the Sadeler family of printmakers, after a design by Maerten de Vos, the leading Antwerp painter of the time.",
+          "symbolism": "The Latin reads \"And calling in the apostles, they beat them and charged them not to speak in the name of Jesus\" (Acts 5:40); the apostles' upturned faces show the joy of 5:41.",
+          "impact": "Flemish Bible prints like this were copied by painters from Europe to Latin America.",
+          "img": "img/gamaliel0.jpg",
+          "credit": "Public domain (CC0), Rijksmuseum, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Geseling_van_de_apostelen,_RP-P-OB-5870.jpg"
+        }
+      ],
+      "tags": [
+        "conflict"
+      ],
+      "orderNote": "Gamaliel the Elder, grandson of Hillel by later Jewish tradition, was Saul's teacher (Acts 22:3). His mention of Theudas (5:36) is debated, since Josephus dates a Theudas about AD 44–46; Luke may mean an earlier rebel of that name."
+    },
+    {
+      "id": "seven",
+      "harmony": "Acts 6:1–7",
+      "lane": "apostles",
+      "place": "jerusalemchurch",
+      "date": "c. AD 34",
+      "title": "The Seven Chosen",
+      "people": [
+        "The twelve",
+        "Stephen",
+        "Philip",
+        "Prochorus",
+        "Nicanor",
+        "Timon",
+        "Parmenas",
+        "Nicolaus"
+      ],
+      "gospels": {
+        "Acts": "6:1–7"
+      },
+      "summary": "As the disciples grow, the Greek-speaking Jewish believers complain that their widows are being overlooked in the daily distribution of food. The Twelve say they must not give up preaching to serve tables, and ask the church to choose seven men of good repute, full of the Spirit and of wisdom. The church chooses Stephen, Philip and five others, all with Greek names; the apostles pray and lay their hands on them. The word of God spreads, and many priests become obedient to the faith.",
+      "scripture": [
+        {
+          "ref": "Acts 6:3",
+          "text": "Therefore, brethren, pick out from among you seven men of good repute, full of the Spirit and of wisdom, whom we may appoint to this duty."
+        },
+        {
+          "ref": "Acts 6:6",
+          "text": "These they set before the apostles, and they prayed and laid their hands upon them."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Numbers 27:18–23",
+          "note": "Moses lays his hands on Joshua before the people to commission him."
+        },
+        {
+          "ref": "Exodus 18:17–23",
+          "note": "Jethro advises Moses to share the burden by appointing able men."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "St Peter Consecrates Stephen as Deacon; St Stephen Distributing Alms",
+          "artist": "Fra Angelico",
+          "year": "1447–1449",
+          "medium": "Fresco",
+          "location": "Niccoline Chapel, Apostolic Palace, Vatican City",
+          "description": "At left, Peter, with the apostles behind him, hands the kneeling Stephen a chalice and paten, the sign of his ordination. At right, Stephen in a deacon's dalmatic gives alms to a widow, a child and other poor people.",
+          "significance": "The first scene of Stephen's life in the private chapel of Pope Nicholas V, where Fra Angelico painted the stories of the two great deacon-martyrs, Stephen and Lawrence.",
+          "symbolism": "The chalice shows the deacon's service at the altar; the alms show the \"serving tables\" of Acts 6:2. The pillar dividing the two halves joins the two duties.",
+          "impact": "Fra Angelico's last great fresco cycle, among the finest works of early Renaissance Rome.",
+          "img": "img/seven0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Angelico,_niccolina_06.jpg"
+        }
+      ],
+      "tags": [
+        "call",
+        "prayer"
+      ],
+      "orderNote": "Acts does not call the Seven \"deacons,\" though it uses the verb \"to serve\" (diakonein, 6:2); since Irenaeus (2nd century) the Church has seen in them the first deacons."
+    },
+    {
+      "id": "stephenarrest",
+      "harmony": "Acts 6:8–15",
+      "lane": "apostles",
+      "place": "temple",
+      "date": "c. AD 34",
+      "title": "Stephen Seized",
+      "people": [
+        "Stephen",
+        "Men of the synagogue of the Freedmen",
+        "Cyrenians, Alexandrians, men of Cilicia and Asia",
+        "False witnesses",
+        "The council"
+      ],
+      "gospels": {
+        "Acts": "6:8–15"
+      },
+      "summary": "Stephen, full of grace and power, does great wonders and signs among the people. Men from the synagogue of the Freedmen and from Cyrene, Alexandria, Cilicia and Asia argue with him but cannot withstand his wisdom and the Spirit with which he speaks. They stir up the people, seize him and bring him before the council, with false witnesses who say he speaks against the Temple and the Law. As the council gazes at him, his face is like the face of an angel.",
+      "scripture": [
+        {
+          "ref": "Acts 6:8",
+          "text": "And Stephen, full of grace and power, did great wonders and signs among the people."
+        },
+        {
+          "ref": "Acts 6:15",
+          "text": "And gazing at him, all who sat in the council saw that his face was like the face of an angel."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Exodus 34:29–30",
+          "note": "Moses' face shone when he came down from Sinai; Stephen, accused of speaking against Moses, shines like him."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Disputation of St Stephen",
+          "artist": "Vittore Carpaccio",
+          "year": "1514",
+          "medium": "Oil on canvas",
+          "location": "Pinacoteca di Brera, Milan",
+          "description": "Under an open arcade, Stephen stands on a low platform and argues with a seated audience of scholars in turbans and robes, with Venetian citizens in red and black at right. Beyond lies an imagined Jerusalem with an obelisk, an equestrian statue and towers.",
+          "significance": "Part of Carpaccio's cycle of the life of St Stephen for the Scuola di Santo Stefano, a Venetian confraternity (1511–1520).",
+          "symbolism": "The learned men with books are the members of the synagogues who \"disputed with Stephen\" but \"could not withstand the wisdom and the Spirit with which he spoke\" (6:9–10). The date MDXIIII and Carpaccio's signature are on the pillars.",
+          "impact": "Carpaccio's crowded, exotic cityscapes are a vivid record of how Venice imagined the East.",
+          "img": "img/stephenarrest0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Vittore_Carpaccio_Disputation_of_St_Stephen.jpg"
+        }
+      ],
+      "tags": [
+        "conflict",
+        "miracle"
+      ],
+      "orderNote": "The charges echo those at Jesus' trial (Mark 14:57–58). Saul of Tarsus in Cilicia may have been among the men of the Cilician synagogue, but Acts does not say so."
+    },
+    {
+      "id": "stephenspeech",
+      "harmony": "Acts 7:1–53",
+      "lane": "apostles",
+      "place": "temple",
+      "date": "c. AD 34",
+      "title": "Stephen's Speech",
+      "people": [
+        "Stephen",
+        "The high priest",
+        "The council"
+      ],
+      "gospels": {
+        "Acts": "7:1–53"
+      },
+      "summary": "Asked by the high priest whether the charges are true, Stephen retells Israel's story: God's call of Abraham, Joseph sold by his brothers, Moses rejected by his own people, the tent in the wilderness and the house Solomon built. God met his people outside the land and does not dwell in houses made with hands. Again and again, he says, the fathers resisted the Holy Spirit and killed the prophets, and now the council has betrayed and murdered the Righteous One. It is the longest speech in Acts.",
+      "scripture": [
+        {
+          "ref": "Acts 7:48",
+          "text": "Yet the Most High does not dwell in houses made with hands"
+        },
+        {
+          "ref": "Acts 7:51",
+          "text": "\"You stiff-necked people, uncircumcised in heart and ears, you always resist the Holy Spirit. As your fathers did, so do you."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Isaiah 66:1",
+          "note": "\"Heaven is my throne and the earth is my footstool; what is the house which you would build for me?\": quoted by Stephen (7:49–50)."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "St Stephen Preaching; St Stephen Addressing the Council",
+          "artist": "Fra Angelico",
+          "year": "1447–1449",
+          "medium": "Fresco",
+          "location": "Niccoline Chapel, Apostolic Palace, Vatican City",
+          "description": "At left, Stephen stands on a low step and preaches to seated women and a group of men in a city square. At right, inside a hall, he stands before the seated high priest and the elders, raising a finger as he makes his defense.",
+          "significance": "The second lunette of Stephen's story in the chapel Fra Angelico painted for Pope Nicholas V.",
+          "symbolism": "The wall between the two scenes sets Stephen's open-air preaching against the closed council chamber; the high priest's raised hand questions, Stephen's raised finger points to God.",
+          "impact": "Fra Angelico's last great fresco cycle, among the finest works of early Renaissance Rome.",
+          "img": "img/stephenspeech0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Angelico,_niccolina_05.jpg"
+        },
+        {
+          "kind": "Descriptive",
+          "title": "St Stephen before the High Priest and the Council",
+          "artist": "Philips Galle after Maarten van Heemskerck",
+          "year": "1575",
+          "medium": "Engraving",
+          "location": "Royal Library of Belgium (KBR), Brussels",
+          "description": "The high priest, robed and mitred, sits enthroned with the council under a canopy as soldiers bring Stephen before him; Stephen stands calmly with open hands. Through the colonnade at right, his stoning and the opened heavens are already shown in the distance.",
+          "significance": "One plate of Heemskerck's Acta Apostolorum, a series of engravings on the Acts of the Apostles, designed by the Haarlem painter and engraved by Philips Galle.",
+          "symbolism": "The Latin verses hail Stephen as the first to win the crown and palm of martyrdom, who saw the heavens opened.",
+          "impact": "Galle's Antwerp prints of Heemskerck's designs spread his biblical scenes across Europe as models for painters, glass makers and book illustrators.",
+          "img": "img/stephenspeech1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:St_Stephen_Before_The_High_Priest_and_The_Council_1575_print_by_Maarten_van_Heemskerck,_S.I_55762,_Prints_Department,_Royal_Library_of_Belgium.jpg"
+        }
+      ],
+      "tags": [
+        "sermon",
+        "conflict"
+      ]
+    },
+    {
+      "id": "stephendeath",
+      "harmony": "Acts 7:54–8:2",
+      "lane": "apostles",
+      "place": "stephensite",
+      "from": "temple",
+      "date": "c. AD 34",
+      "title": "The Martyrdom of Stephen",
+      "people": [
+        "Stephen",
+        "The council",
+        "Saul",
+        "Devout men"
+      ],
+      "gospels": {
+        "Acts": "7:54–8:2"
+      },
+      "summary": "Enraged, the council grinds its teeth at Stephen. Full of the Holy Spirit, he gazes into heaven and sees the glory of God and Jesus standing at God's right hand. They stop their ears, rush on him, drive him out of the city and stone him, and the witnesses lay their garments at the feet of a young man named Saul. Stephen prays, \"Lord Jesus, receive my spirit,\" and kneeling asks forgiveness for his killers before he falls asleep. Saul consents to his death, and devout men bury Stephen with great lamentation; he is honored as the first martyr.",
+      "journey": "Driven out of the city from the council; by the oldest tradition north, through the gate on the Damascus road, under half a mile.",
+      "route": [
+        [
+          35.235,
+          31.778
+        ],
+        [
+          35.2325,
+          31.7805
+        ],
+        [
+          35.2305,
+          31.783
+        ],
+        [
+          35.2296,
+          31.7853
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 7:56",
+          "text": "and he said, \"Behold, I see the heavens opened, and the Son of man standing at the right hand of God.\""
+        },
+        {
+          "ref": "Acts 7:58",
+          "text": "Then they cast him out of the city and stoned him; and the witnesses laid down their garments at the feet of a young man named Saul."
+        },
+        {
+          "ref": "Acts 7:59–60",
+          "text": "And as they were stoning Stephen, he prayed, \"Lord Jesus, receive my spirit.\" And he knelt down and cried with a loud voice, \"Lord, do not hold this sin against them.\" And when he had said this, he fell asleep."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Daniel 7:13",
+          "note": "Daniel sees \"one like a son of man\" come before the Ancient of Days; Stephen sees the Son of man standing at God's right hand."
+        },
+        {
+          "ref": "2 Chronicles 24:20–22",
+          "note": "Zechariah, stoned in the Temple court, dies saying \"May the Lord see and avenge\"; Stephen dies forgiving, as Jesus did (Luke 23:34)."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Stoning of St Stephen",
+          "artist": "Rembrandt",
+          "year": "1625",
+          "medium": "Oil on panel",
+          "location": "Musée des Beaux-Arts, Lyon",
+          "description": "Stephen, in a red deacon's dalmatic, kneels with raised hands as men heave stones over him. A rider in red watches from the left, and on a rise behind, a young man sits with the cloaks of the witnesses on his lap, with elders around him.",
+          "significance": "Rembrandt's earliest known dated painting, made in Leiden when he was 19.",
+          "symbolism": "The young man holding the garments is Saul (Acts 7:58), the future apostle. The face just above Stephen's head is often taken as Rembrandt's own, his first self-portrait.",
+          "impact": "It shows the young Rembrandt already using strong light and dark to pick out the drama of a scene.",
+          "img": "img/stephendeath0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Rembrandt-Lapidation-Saint-Étienne-MBA-Lyon.jpg"
+        },
+        {
+          "kind": "Masterpiece",
+          "title": "The Stoning of St Stephen",
+          "artist": "Adam Elsheimer",
+          "year": "c. 1603–1604",
+          "medium": "Oil on copper",
+          "location": "Scottish National Gallery, Edinburgh",
+          "description": "Stephen kneels in a rich dalmatic, looking up as a half-naked man lifts a great stone over him and others gather more. Above, an angel swoops down with a palm, followed by little angels, and heaven opens in light at the top left.",
+          "significance": "A small, jewel-like picture on copper by the German painter Elsheimer, painted in Rome.",
+          "symbolism": "The palm and the opening heaven answer Stephen's vision: \"I see the heavens opened\" (Acts 7:56).",
+          "impact": "Elsheimer's small, glowing paintings on copper influenced Rubens and the young Rembrandt's teachers.",
+          "img": "img/stephendeath1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Adam_Elsheimer_-_Steinigung_des_heiligen_Stephanus_(Edinburgh).jpg"
+        }
+      ],
+      "tags": [
+        "passion",
+        "prayer",
+        "appearance"
+      ],
+      "orderNote": "Under Roman rule the council could not lawfully carry out a death sentence (John 18:31), so the stoning may have been mob violence, or happened in a lapse of Roman control; some date it to AD 36, when Pilate was recalled. Dates for Stephen range from AD 31 to 36, depending on the date of the Crucifixion."
+    }
+  ]
+}

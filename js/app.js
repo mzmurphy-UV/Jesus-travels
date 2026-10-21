@@ -9,13 +9,13 @@
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const mapwrap = document.getElementById("mapwrap");
 
-  // Merge the Gospel events (js/gospels.js) after the opening events in data.js
-  if (typeof GOSPEL_EVENTS !== "undefined") {
-    for (const [k, p] of Object.entries(GOSPEL_PLACES)) if (!PLACES[k]) PLACES[k] = p;
-    EVENTS.push(...GOSPEL_EVENTS);
+  // Merge the Gospel and Acts events (js/content.js) after the opening events in data.js
+  if (typeof CONTENT_EVENTS !== "undefined") {
+    for (const [k, p] of Object.entries(CONTENT_PLACES)) if (!PLACES[k]) PLACES[k] = p;
+    EVENTS.push(...CONTENT_EVENTS);
     // A town that is now a real place no longer needs its context dot
     for (let i = CONTEXT.length - 1; i >= 0; i--) if (Object.values(PLACES).some(p => Math.hypot(p.ll[0] - CONTEXT[i][1], p.ll[1] - CONTEXT[i][2]) < 0.03)) CONTEXT.splice(i, 1);
-    [["apostles", "The apostles"], ["women", "The women disciples"]].forEach(([id, name]) => { if (!LANES.some(l => l.id === id) && EVENTS.some(e => e.lane === id)) LANES.push({ id, name }); });
+    [["apostles", "Peter & the apostles"], ["women", "The women disciples"], ["paul", "Paul & his companions"]].forEach(([id, name]) => { if (!LANES.some(l => l.id === id) && EVENTS.some(e => e.lane === id)) LANES.push({ id, name }); });
   }
   const store = { get: (k, d) => { try { return localStorage.getItem(k) ?? d; } catch (_) { return d; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (_) {} } };
 
@@ -69,7 +69,9 @@
     map.addSource("routes", { type: "geojson", data: routeData });
     map.addLayer({ id: "route-past", type: "line", source: "routes", filter: ["!", ["get", "now"]], layout: { "line-join": "round" }, paint: { "line-color": ["get", "color"], "line-width": 2.5, "line-opacity": 0.75, "line-dasharray": [2, 2] } });
     map.addLayer({ id: "route-casing", type: "line", source: "routes", filter: ["get", "now"], layout: { "line-join": "round", "line-cap": "round" }, paint: { "line-color": bm === "sat" ? "rgba(255,255,255,.8)" : cssVar("--panel"), "line-width": 7 } });
-    map.addLayer({ id: "route-now", type: "line", source: "routes", filter: ["get", "now"], layout: { "line-join": "round", "line-cap": "round" }, paint: { "line-color": ["get", "color"], "line-width": 4 } });
+    map.addLayer({ id: "route-now", type: "line", source: "routes", filter: ["all", ["get", "now"], ["!", ["get", "uncertain"]]], layout: { "line-join": "round", "line-cap": "round" }, paint: { "line-color": ["get", "color"], "line-width": 4 } });
+    // A leg whose line is a reconstruction (the storm drift in Acts 27) is drawn dashed
+    map.addLayer({ id: "route-now-uncertain", type: "line", source: "routes", filter: ["all", ["get", "now"], ["get", "uncertain"]], layout: { "line-join": "round" }, paint: { "line-color": ["get", "color"], "line-width": 4, "line-dasharray": [1.5, 1.2] } });
     if (terrainOn) map.setTerrain({ source: "dem3d", exaggeration: 1.5 });
   }
   map.on("style.load", addOverlays);
@@ -90,11 +92,12 @@
   const placeEls = {};
   const placeHasEvent = new Set(EVENTS.map(e => e.place));
   const LBL = { einkarem: "l", shepherds: "b", bethlehem: "bl", herodium: "b", temple: "t", bethabara: "b", wilderness: "t" };
-  const KEYPLACES = ["nazareth", "temple", "bethlehem", "egypt", "capernaum"];
+  const KEYPLACES = ["nazareth", "temple", "bethlehem", "egypt", "capernaum", "rome", "athens", "antioch", "ephesus", "corinth", "damascus"];
   Object.entries(PLACES).forEach(([id, p]) => {
     const m = mk("place" + (placeHasEvent.has(id) ? " has-event" : ""), p.name, p.ll, LBL[id] || "r", () => true);
     const g = m.el; g.tabIndex = 0; g.setAttribute("role", "button"); g.setAttribute("aria-label", p.name);
-    m.labelShow = z => z >= (placeHasEvent.has(id) ? 9.2 : 9.8) || KEYPLACES.includes(id) || g.classList.contains("active");
+    const far = p.ll[0] < 34 || p.ll[1] > 33.6 || p.ll[0] > 36.2; // outside the crowded Holy Land core
+    m.labelShow = z => far || z >= (placeHasEvent.has(id) ? 9.2 : 9.8) || KEYPLACES.includes(id) || g.classList.contains("active");
     g.addEventListener("click", ev => { ev.stopPropagation(); const i = EVENTS.findIndex((e, k) => e.place === id && k >= cur); go(i >= 0 ? i : EVENTS.findIndex(e => e.place === id)); });
     g.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); g.click(); } });
     placeEls[id] = g; m.isPlace = true; m.rank = () => g.classList.contains("active") ? 3 : KEYPLACES.includes(id) ? 2 : placeHasEvent.has(id) ? 1 : 0;
@@ -126,7 +129,8 @@
     ["Holy Land", [[34.4, 31.0], [35.9, 33.3]]],
     ["Galilee", [[35.15, 32.6], [35.75, 33.0]]],
     ["Judea", [[35.05, 31.6], [35.6, 31.92]]],
-    ["Egypt route", [[31.2, 30.0], [35.3, 31.8]]]
+    ["Egypt route", [[31.2, 30.0], [35.3, 31.8]]],
+    ["Paul's world", [[12.3, 30.8], [36.5, 42.0]]]
   ];
   const presetsEl = document.getElementById("presets");
   PRESETS.forEach(([name, b]) => { const btn = document.createElement("button"); btn.textContent = name; btn.addEventListener("click", () => flyBounds(b, 12, 900)); presetsEl.appendChild(btn); });
@@ -151,8 +155,9 @@
       });
     });
     // Era labels: the first visible event of each year
-    let last = null;
-    VIS.forEach(i => { const y = Math.trunc(yearOf(EVENTS[i])); if (last === null || y > last) { eraAt[i] = y < 0 ? `${-y} BC` : `AD ${y}`; last = y; } });
+    // Era labels: the first visible event of each year, at least three columns apart so they don't run together
+    let last = null, lastPos = -9;
+    VIS.forEach((i, pos) => { const y = Math.trunc(yearOf(EVENTS[i])); if ((last === null || y > last) && pos - lastPos >= 3) { eraAt[i] = y < 0 ? `${-y} BC` : `AD ${y}`; last = y; lastPos = pos; } });
   }
 
   // ---------- Folio ----------
@@ -167,7 +172,8 @@
     const X = i => (i / (pr.length - 1) * 300).toFixed(1), Y = v => (56 - (v - lo) / span * 52).toFixed(1);
     const area = `M0 60L${pr.map((v, i) => `${X(i)} ${Y(v)}`).join("L")}L300 60Z`;
     const seaLine = st.lo < 0 ? `<line class="sea0" x1="0" x2="300" y1="${Y(0)}" y2="${Y(0)}"/>` : "";
-    return `<div class="jstats">Along the route drawn: <b>${st.mi} miles</b> · about <b>${fmt(st.up)} ft</b> of climbing and <b>${fmt(st.down)} ft</b> down · highest ${fmt(st.hi)} ft, lowest ${fmt(st.lo)} ft${st.lo < 0 ? " (below sea level)" : ""}</div>
+    if (st.sea >= 0.5) return `<div class="jstats">Along the route drawn: <b>${fmt(st.mi)} miles</b>, mostly by sea${e.routeUncertain ? ". The line is a reconstruction of the ship's drift." : ""}</div>`;
+    return `<div class="jstats">Along the route drawn: <b>${fmt(st.mi)} miles</b>${st.sea >= 0.1 ? ", partly by sea" : ""} · about <b>${fmt(st.up)} ft</b> of climbing and <b>${fmt(st.down)} ft</b> down · highest ${fmt(st.hi)} ft, lowest ${fmt(st.lo)} ft${st.lo < 0 ? " (below sea level)" : ""}</div>
       ${st.mi >= 3 ? `<svg class="profile" viewBox="0 0 300 60" preserveAspectRatio="none" role="img" aria-label="Elevation profile from ${esc(PLACES[e.from].name)} to ${esc(PLACES[e.place].name)}"><path class="area" d="${area}"/>${seaLine}</svg>
       <div class="jstats" style="display:flex;justify-content:space-between;margin-top:0"><span>${esc(PLACES[e.from].name)}</span>${st.lo < 0 ? "<span>dashed line: sea level</span>" : ""}<span>${esc(PLACES[e.place].name)}</span></div>` : ""}`;
   }
@@ -183,13 +189,14 @@
     lb.querySelector(".lb-img").onclick = ev => { if (ev.target === ev.currentTarget || ev.target.tagName === "IMG") close(); };
     document.addEventListener("keydown", onKey); document.body.appendChild(lb); lb.querySelector(".lb-close").focus();
   }
+  const BOOKNAME = { Mt: "Matthew", Mk: "Mark", Lk: "Luke", Jn: "John", Acts: "Acts", Rom: "Romans", "1Cor": "1 Corinthians", "2Cor": "2 Corinthians", Gal: "Galatians", Phil: "Philippians", "1Thess": "1 Thessalonians", "2Tim": "2 Timothy" };
   const TAGNAME = { miracle: "Miracle", healing: "Healing", "nature-miracle": "Nature miracle", raising: "Raising the dead", exorcism: "Exorcism", parable: "Parable", teaching: "Teaching", sermon: "Sermon",
     prayer: "Prayer", call: "Call", conflict: "Conflict", prophecy: "Prophecy", passion: "Passion", appearance: "Appearance" };
   function renderFolio(e) {
     const p = PLACES[e.place];
     const lane = LANES.find(l => l.id === e.lane);
     folio.style.setProperty("--lc", laneColor(e.lane));
-    const G = [["Mt", "Matthew"], ["Mk", "Mark"], ["Lk", "Luke"], ["Jn", "John"]];
+    const G = e.gospels.Acts ? Object.keys(e.gospels).map(k => [k, BOOKNAME[k] || k]) : [["Mt", "Matthew"], ["Mk", "Mark"], ["Lk", "Luke"], ["Jn", "John"]];
     const tabs = [["story", "Story"], ["scripture", "Scripture"], ["art", `Art${e.art.length ? " (" + e.art.length + ")" : ""}`], ["place", "Place"]];
     let body = "";
     if (tab === "story") {
@@ -238,7 +245,7 @@
 
   // ---------- Routes ----------
   const fc = features => ({ type: "FeatureCollection", features });
-  const feat = (pts, now, color) => ({ type: "Feature", properties: { now, color }, geometry: { type: "LineString", coordinates: pts } });
+  const feat = (pts, now, color, uncertain = false) => ({ type: "Feature", properties: { now, color, uncertain }, geometry: { type: "LineString", coordinates: pts } });
   function partial(pts, f) {
     const seg = pts.slice(1).map((p, i) => Math.hypot(p[0] - pts[i][0], p[1] - pts[i][1]));
     let left = seg.reduce((a, b) => a + b, 0) * f; const out = [pts[0]];
@@ -254,12 +261,14 @@
     cancelAnimationFrame(routeAnim);
     const e = EVENTS[i], r = journeyOf(e), past = [];
     // The last few journeys stay on the map as dashed lines; older ones fade out so the map stays readable
-    EVENTS.slice(0, i).filter(x => journeyOf(x) && x.lane === "jesus").slice(-5).forEach(x => past.push(feat(journeyOf(x), false, laneHex(x.lane))));
+    const trail = ["paul", "apostles"].includes(e.lane) ? e.lane : "jesus";
+    EVENTS.slice(0, i).filter(x => journeyOf(x) && x.lane === trail).slice(-5).forEach(x => past.push(feat(journeyOf(x), false, laneHex(x.lane))));
     if (!r) return setRoutes(fc(past));
     const color = laneHex(e.lane);
-    if (reduce) return setRoutes(fc([...past, feat(r, true, color)]));
+    const unc = !!e.routeUncertain;
+    if (reduce) return setRoutes(fc([...past, feat(r, true, color, unc)]));
     const t0 = performance.now() + 300, dur = 1600, ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
-    const step = now => { const t = Math.max(0, Math.min(1, (now - t0) / dur)); setRoutes(fc([...past, feat(partial(r, ease(t)), true, color)])); if (t < 1) routeAnim = requestAnimationFrame(step); };
+    const step = now => { const t = Math.max(0, Math.min(1, (now - t0) / dur)); setRoutes(fc([...past, feat(partial(r, ease(t)), true, color, unc)])); if (t < 1) routeAnim = requestAnimationFrame(step); };
     routeAnim = requestAnimationFrame(step);
   }
 
@@ -338,9 +347,11 @@
     Psalm: ["psalm", "psalms", "ps", "psa"], Isaiah: ["isaiah", "isa", "is"], Jeremiah: ["jeremiah", "jer"], Hosea: ["hosea", "hos"], Micah: ["micah", "mic"], Malachi: ["malachi", "mal"],
     Deuteronomy: ["deuteronomy", "deut", "dt"], "1 Kings": ["1 kings", "1 kgs", "1kgs", "1 ki"], Ezekiel: ["ezekiel", "ezek", "ez"], Zechariah: ["zechariah", "zech", "zec"], Daniel: ["daniel", "dan", "dn"],
     Jonah: ["jonah", "jon"], Proverbs: ["proverbs", "prov", "prv"], Sirach: ["sirach", "sir"], Joel: ["joel"], Amos: ["amos"], Job: ["job"], Esther: ["esther", "esth"], "2 Chronicles": ["2 chronicles", "2 chr"],
-    "Song of Songs": ["song of songs", "song", "song of solomon"], "1 Maccabees": ["1 maccabees", "1 macc"], "1 Corinthians": ["1 corinthians", "1 cor"] };
+    "Song of Songs": ["song of songs", "song", "song of solomon"], "1 Maccabees": ["1 maccabees", "1 macc"], "1 Corinthians": ["1 corinthians", "1 cor", "1cor"],
+    Romans: ["romans", "rom", "rm"], "2 Corinthians": ["2 corinthians", "2 cor", "2cor"], Galatians: ["galatians", "gal"], Ephesians: ["ephesians", "eph"], Philippians: ["philippians", "phil", "php"],
+    Colossians: ["colossians", "col"], "1 Thessalonians": ["1 thessalonians", "1 thess", "1thess", "1 thes"], "2 Thessalonians": ["2 thessalonians", "2 thess"], "2 Timothy": ["2 timothy", "2 tim", "2tim"] };
   const ALIAS = {}; for (const [b, list] of Object.entries(BOOKS)) list.forEach(a => ALIAS[a] = b);
-  const CODE = { Mt: "Matthew", Mk: "Mark", Lk: "Luke", Jn: "John" };
+  const CODE = { Mt: "Matthew", Mk: "Mark", Lk: "Luke", Jn: "John", Acts: "Acts", Rom: "Romans", "1Cor": "1 Corinthians", "2Cor": "2 Corinthians", Gal: "Galatians", Phil: "Philippians", "1Thess": "1 Thessalonians", "2Tim": "2 Timothy" };
   const normBook = s => ALIAS[s.toLowerCase().replace(/\./g, "").replace(/\s+/g, " ").trim()];
   // "Psalm 72:10–11; Isaiah 60:6" or "1:25; 2:1" (with a default book) -> [{ book, c1, v1, c2, v2 }]
   function parseRefs(str, book) {
@@ -412,7 +423,7 @@
     flyBounds([h.ll], 11);
     showPin(h.ll);
     noteEl.querySelector("h4").textContent = h.name;
-    noteEl.querySelector("p").textContent = h.note ? h.note + " No Gospel event happens here on this map yet." : `No Gospel event happens here on this map yet. ${h.name} is shown for context.`;
+    noteEl.querySelector("p").textContent = h.note ? h.note + " No event happens here on this map yet." : `No event happens here on this map yet. ${h.name} is shown for context.`;
     noteEl.hidden = false;
   }
   let pin = null;
@@ -447,7 +458,7 @@
 
   // ---------- Gospel lens and kind filter ----------
   const KINDS = { miracles: ["miracle", "healing", "nature-miracle", "raising", "exorcism"], parables: ["parable"], teaching: ["teaching", "sermon"], passion: ["passion"], appearances: ["appearance"] };
-  const LENSES = { all: "All four", Mt: "Matthew", Mk: "Mark", Lk: "Luke", Jn: "John" };
+  const LENSES = { all: "All", Mt: "Matthew", Mk: "Mark", Lk: "Luke", Jn: "John", Acts: "Acts" };
   const KINDNAMES = { all: "Everything", miracles: "Miracles", parables: "Parables", teaching: "Teaching", passion: "Passion", appearances: "Risen Lord" };
   let lens = store.get("ntmap.lens", "all"), kind = store.get("ntmap.kind", "all");
   if (!LENSES[lens]) lens = "all"; if (!KINDNAMES[kind]) kind = "all";

@@ -1,0 +1,1697 @@
+{
+  "_batch": "acts-05-third-journey",
+  "_sections": "Acts 18:23–21:16",
+  "_unverified": [],
+  "_notes": [
+    "New lane `paul`: Paul and his companions (Priscilla and Aquila, Apollos, Luke's \"we\" passages). Every event in this batch uses it.",
+    "Order follows Acts 18:23–21:16. `harmony` holds the Acts passage; Paul's letters that fill in the story are extra keys in `gospels` (`1Cor`, `2Cor`, `Rom`).",
+    "Dates: third journey from c. AD 52; Ephesus c. AD 53–56 (about three years, Acts 20:31); riot spring AD 56; Macedonia AD 56; Greece (Romans) winter AD 56–57; Passover at Philippi April AD 57; Jerusalem before Pentecost AD 57.",
+    "`apollos` (Acts 18:24–26) has no journey: Paul is away, and Apollos comes from Alexandria, which has no place on the map.",
+    "`macedonia3` (id chosen to avoid any clash with a second-journey Macedonia event) and `greece` are mapped on the region markers `macedonia` and on `corinth` (inferred from Romans 16).",
+    "Event `tyrebeach` reuses the Gospel place `tyre` (Region of Tyre and Sidon, copied unchanged); `philipsdaughters` and `agabus` use data.js `caesarea`.",
+    "The batch stops at Acts 21:16 (lodging with Mnason); Acts 21:17 onward (welcome by James) belongs to the next batch."
+  ],
+  "places": {
+    "antioch": {
+      "name": "Antioch (Syria)",
+      "ll": [
+        36.161,
+        36.202
+      ],
+      "region": "Syria",
+      "certainty": "Certain",
+      "note": "Antioch on the Orontes, the third city of the Roman Empire and capital of the province of Syria. Here the disciples were first called Christians (Acts 11:26), and from here Paul set out on each of his journeys. Today Antakya in southern Turkey; on the slope of Mount Staurin the cave church of St Peter is honored as an early meeting place of the church."
+    },
+    "assos": {
+      "name": "Assos",
+      "ll": [
+        26.34,
+        39.49
+      ],
+      "region": "Asia",
+      "certainty": "Certain",
+      "note": "A harbor city on the south coast of the Troad, on a steep volcanic hill crowned by a temple of Athena, facing the island of Lesbos."
+    },
+    "corinth": {
+      "name": "Corinth",
+      "ll": [
+        22.879,
+        37.906
+      ],
+      "region": "Achaia",
+      "certainty": "Certain",
+      "note": "Destroyed by Rome in 146 BC and refounded as a Roman colony by Julius Caesar in 44 BC, Corinth was the capital of the province of Achaia and a rich trading city on the isthmus between two seas, with ports at Lechaeum and Cenchreae. Excavations have uncovered its forum, the bema and the Erastus inscription."
+    },
+    "ephesus": {
+      "name": "Ephesus",
+      "ll": [
+        27.341,
+        37.939
+      ],
+      "region": "Asia",
+      "certainty": "Certain",
+      "note": "Capital of the Roman province of Asia and one of the largest cities of the empire, famous for the temple of Artemis. Its harbor has long since silted up; the ruins lie near Selçuk in western Turkey."
+    },
+    "jerusalemchurch": {
+      "name": "Jerusalem (the city)",
+      "ll": [
+        35.231,
+        31.776
+      ],
+      "region": "Judea",
+      "certainty": "Certain",
+      "note": "The first church met in the Temple courts and \"in their homes\" across the city (Acts 2:46; 5:42). Acts names no single meeting place, so events of the church's common life are mapped at the city itself."
+    },
+    "macedonia": {
+      "name": "Macedonia and Greece (the region)",
+      "ll": [
+        22.5,
+        40.2
+      ],
+      "region": "Macedonia",
+      "certainty": "Probable",
+      "note": "The Roman province of Macedonia, crossed by the Via Egnatia, with the churches Paul founded at Philippi, Thessalonica and Beroea. The marker stands for the region, not a town."
+    },
+    "miletus": {
+      "name": "Miletus",
+      "ll": [
+        27.278,
+        37.53
+      ],
+      "region": "Asia",
+      "certainty": "Certain",
+      "note": "An old Ionian harbor city near the mouth of the Maeander river, about 30 miles south of Ephesus. The river's silt has since left its ruins several miles inland."
+    },
+    "philippi": {
+      "name": "Philippi",
+      "ll": [
+        24.287,
+        41.013
+      ],
+      "region": "Macedonia",
+      "certainty": "Certain",
+      "note": "Founded by Philip II of Macedon and refounded as a Roman colony after the battle of Philippi (42 BC), on the Via Egnatia about 10 miles inland from its port Neapolis. Its forum, theater and early churches are a UNESCO World Heritage Site."
+    },
+    "phrygia": {
+      "name": "Phrygia and Galatia (the region)",
+      "ll": [
+        31.5,
+        39.2
+      ],
+      "region": "Asia Minor",
+      "certainty": "Probable",
+      "note": "Acts names a region, not a town. Whether it means the Phrygian district of the province of Galatia (around Iconium and Pisidian Antioch) or the old Celtic Galatia around Ancyra is debated; the map marks a general point on the Phrygian uplands between the two, on the way toward Mysia and Bithynia."
+    },
+    "ptolemais": {
+      "name": "Ptolemais (Acre)",
+      "ll": [
+        35.07,
+        32.92
+      ],
+      "region": "Phoenicia",
+      "certainty": "Certain",
+      "note": "The old Canaanite port of Acco, renamed Ptolemais by the Ptolemies of Egypt, on the bay north of Mount Carmel. Under Claudius it became a Roman colony."
+    },
+    "troas": {
+      "name": "Troas",
+      "ll": [
+        26.155,
+        39.752
+      ],
+      "region": "Asia",
+      "certainty": "Certain",
+      "note": "Alexandria Troas, a Roman colony and the main port for crossing from Asia to Macedonia, about 15 miles south of ancient Troy. Its ruins lie in the woods near Dalyan on the Turkish coast."
+    },
+    "tyre": {
+      "name": "Region of Tyre and Sidon",
+      "ll": [
+        35.2,
+        33.27
+      ],
+      "region": "Phoenicia",
+      "certainty": "Certain",
+      "note": "The old Phoenician port cities on the coast, outside Jewish territory and outside Herod Antipas' rule. Tyre lies about 35 miles northwest of Capernaum, and Sidon about 22 miles farther north. People from this region had already come to hear Jesus (Mark 3:8)."
+    }
+  },
+  "events": [
+    {
+      "id": "galatiaphrygia",
+      "harmony": "Acts 18:23",
+      "lane": "paul",
+      "place": "phrygia",
+      "from": "antioch",
+      "date": "c. AD 52",
+      "title": "Through Galatia and Phrygia",
+      "people": [
+        "Paul"
+      ],
+      "gospels": {
+        "Acts": "18:23",
+        "1Cor": "16:1"
+      },
+      "summary": "After some time in Antioch, Paul sets out on his third journey. He goes from place to place through the region of Galatia and Phrygia, strengthening all the disciples. These are the churches he founded on his first journey and visited again on his second: Derbe, Lystra, Iconium and Antioch of Pisidia. On this journey he also begins the collection for the poor in Jerusalem, which he asked the churches of Galatia to take part in.",
+      "journey": "About 450 miles by land: north from Antioch over the Amanus pass, west along the coast to Tarsus, up through the Cilician Gates onto the plateau, then on to Derbe, Lystra, Iconium and Antioch of Pisidia. At least a month or two of walking, with stops.",
+      "route": [
+        [
+          36.161,
+          36.202
+        ],
+        [
+          36.22,
+          36.49
+        ],
+        [
+          36.2,
+          36.85
+        ],
+        [
+          35.4,
+          36.98
+        ],
+        [
+          34.895,
+          36.918
+        ],
+        [
+          34.78,
+          37.3
+        ],
+        [
+          34.55,
+          37.45
+        ],
+        [
+          33.36,
+          37.35
+        ],
+        [
+          32.33,
+          37.58
+        ],
+        [
+          32.48,
+          37.87
+        ],
+        [
+          31.8,
+          38.1
+        ],
+        [
+          31.189,
+          38.306
+        ],
+        [
+          31.5,
+          39.2
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 18:23",
+          "text": "After spending some time there he departed and went from place to place through the region of Galatia and Phrygia, strengthening all the disciples."
+        },
+        {
+          "ref": "1 Corinthians 16:1",
+          "text": "Now concerning the contribution for the saints: as I directed the churches of Galatia, so you also are to do."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The Cilician Gates (Gülek Pass)",
+          "artist": "Photo: Teogomez",
+          "year": "2007",
+          "medium": "Photograph",
+          "location": "Taurus Mountains, north of Tarsus, Turkey",
+          "description": "A modern highway runs through a narrow gorge between high limestone cliffs; the road sign reads \"Gülek Boğazı,\" the Turkish name of the pass.",
+          "significance": "The Cilician Gates were the one main pass from Tarsus and the coast up through the Taurus Mountains onto the plateau of Asia Minor. Alexander the Great marched through them, and Paul most likely took this road to reach Derbe and Lystra.",
+          "symbolism": "The tight walls of the pass show why travelers went in company: Paul speaks of \"danger from robbers\" on his journeys (2 Corinthians 11:26).",
+          "impact": "The pass has carried the main road between Syria and Anatolia for some three thousand years, and still does.",
+          "img": "img/galatiaphrygia0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Puertas_Cilícias.jpg"
+        }
+      ],
+      "tags": [
+        "teaching"
+      ],
+      "orderNote": "Luke gives this journey one verse. \"The region of Galatia and Phrygia\" most likely means the churches of southern Galatia from the first journey; some scholars (the North Galatian view) think Paul also went to the ethnic Galatians around Ancyra. Dates for the start of the third journey run from AD 52 to 54."
+    },
+    {
+      "id": "apollos",
+      "harmony": "Acts 18:24–26",
+      "lane": "paul",
+      "place": "ephesus",
+      "date": "c. AD 52",
+      "title": "Apollos, Priscilla and Aquila at Ephesus",
+      "people": [
+        "Apollos",
+        "Priscilla",
+        "Aquila"
+      ],
+      "gospels": {
+        "Acts": "18:24–26"
+      },
+      "summary": "While Paul is away, a Jew named Apollos comes to Ephesus from Alexandria. He is eloquent, knows the Scriptures well and teaches accurately about Jesus, though he knows only the baptism of John. Priscilla and Aquila, Paul's fellow tentmakers whom he had left in Ephesus, hear him in the synagogue. They take him aside and explain the way of God to him more accurately.",
+      "stay": "Priscilla and Aquila had stayed on in Ephesus when Paul sailed for Syria (Acts 18:18–19); later a church met in their house there (1 Corinthians 16:19).",
+      "scripture": [
+        {
+          "ref": "Acts 18:24–25",
+          "text": "Now a Jew named Apollos, a native of Alexandria, came to Ephesus. He was an eloquent man, well versed in the scriptures. He had been instructed in the way of the Lord; and being fervent in spirit, he spoke and taught accurately the things concerning Jesus, though he knew only the baptism of John."
+        },
+        {
+          "ref": "Acts 18:26",
+          "text": "He began to speak boldly in the synagogue; but when Priscilla and Aquila heard him, they took him and expounded to him the way of God more accurately."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "Companions of Paul: Silas, Timothy, Aquila, Priscilla, Titus and Apollos",
+          "artist": "Clayton and Bell",
+          "year": "1903",
+          "medium": "Stained glass",
+          "location": "All Saints Church, Hove, England",
+          "description": "Six tall lights each show one of Paul's fellow workers standing under a canopy, named on a scroll above: from left Silas, Timothy, Aquila, Priscilla, Titus and Apollos, who holds a book of the Scriptures. Small scenes from their stories fill the panels below.",
+          "significance": "Made by Clayton and Bell, one of the leading Victorian stained-glass studios, for the large Gothic Revival church of All Saints in Hove.",
+          "symbolism": "Priscilla and Aquila stand side by side in the center, as the couple who taught Apollos; Apollos' book recalls that he was \"well versed in the scriptures.\"",
+          "impact": "Few works of art show Apollos at all; here he takes his place among the circle that carried the gospel with Paul.",
+          "img": "img/apollos0.jpg",
+          "credit": "Photo: Antiquary, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:All_Saints,_Hove_glass_15.jpg"
+        }
+      ],
+      "tags": [
+        "teaching"
+      ],
+      "orderNote": "Alexandria had the largest Jewish community outside Judea and was a great center of learning. Luke does not say where Apollos first heard about Jesus. Martin Luther suggested that Apollos wrote the Letter to the Hebrews; this is only a guess."
+    },
+    {
+      "id": "apolloscorinth",
+      "harmony": "Acts 18:27–19:1",
+      "lane": "paul",
+      "place": "corinth",
+      "from": "ephesus",
+      "date": "c. AD 52–53",
+      "title": "Apollos waters the church at Corinth",
+      "people": [
+        "Apollos"
+      ],
+      "gospels": {
+        "Acts": "18:27–19:1",
+        "1Cor": "3:4–6"
+      },
+      "summary": "Apollos wants to cross over to Achaia, and the believers at Ephesus write a letter asking the disciples there to welcome him. At Corinth he is a great help to those who had believed. He refutes the Jews in public, showing from the Scriptures that the Christ is Jesus. Later some Corinthians said \"I belong to Apollos\" against those who said \"I belong to Paul\"; Paul answers that both are only servants.",
+      "journey": "About 250 miles by sea, west from Ephesus across the Aegean past Samos and the Cyclades to Cenchreae, the eastern port of Corinth. Three to five days with good winds.",
+      "route": [
+        [
+          27.341,
+          37.939
+        ],
+        [
+          27.1,
+          37.88
+        ],
+        [
+          26.7,
+          37.8
+        ],
+        [
+          26.0,
+          37.62
+        ],
+        [
+          25.4,
+          37.48
+        ],
+        [
+          24.95,
+          37.45
+        ],
+        [
+          24.4,
+          37.55
+        ],
+        [
+          23.9,
+          37.68
+        ],
+        [
+          23.4,
+          37.8
+        ],
+        [
+          22.99,
+          37.88
+        ],
+        [
+          22.879,
+          37.906
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 18:27–28",
+          "text": "And when he wished to cross to Achaia, the brethren encouraged him, and wrote to the disciples to receive him. When he arrived, he greatly helped those who through grace had believed, for he powerfully confuted the Jews in public, showing by the scriptures that the Christ was Jesus."
+        },
+        {
+          "ref": "1 Corinthians 3:6",
+          "text": "I planted, Apollos watered, but God gave the growth."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Papyrus 46: 1 Corinthians 2:11–3:5",
+          "artist": "Unknown Egyptian scribe",
+          "year": "c. AD 200",
+          "medium": "Ink on papyrus",
+          "location": "University of Michigan Papyrology Collection, Ann Arbor",
+          "description": "A page from the oldest surviving book of Paul's letters. Near the foot of the page, in Greek capitals, are the words of 1 Corinthians 3:4: \"I belong to Paul,\" and \"I belong to Apollos.\"",
+          "significance": "Papyrus 46 is a codex of Paul's letters copied in Egypt around AD 200, about 150 years after he wrote. Its 86 surviving leaves are divided between the Chester Beatty Library in Dublin and the University of Michigan.",
+          "symbolism": "The page number at the top (79, written in Greek letters) shows this was a bound book, not a scroll: early Christians favored the codex for their Scriptures.",
+          "impact": "Its text is a key witness for scholars reconstructing the Greek text of Paul's letters.",
+          "img": "img/apolloscorinth0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Ann_Arbor,_University_of_Michigan_P.Mich.inv._6238_(Papyrus_46)_fol._79v_1_Cor_2,_11–3,_5.jpg"
+        }
+      ],
+      "tags": [
+        "teaching",
+        "conflict"
+      ]
+    },
+    {
+      "id": "johnsdisciples",
+      "harmony": "Acts 19:1–7",
+      "lane": "paul",
+      "place": "ephesus",
+      "from": "phrygia",
+      "date": "c. AD 53",
+      "title": "The disciples of John at Ephesus",
+      "people": [
+        "Paul",
+        "About twelve disciples"
+      ],
+      "gospels": {
+        "Acts": "19:1–7"
+      },
+      "summary": "Paul comes down to Ephesus through the upper country. There he finds about twelve disciples who have received only John's baptism and have never heard that there is a Holy Spirit. Paul explains that John pointed to the one coming after him, Jesus. They are baptized in the name of the Lord Jesus, and when Paul lays his hands on them the Holy Spirit comes on them, and they speak in tongues and prophesy. It is a small Pentecost in Asia, like the ones in Samaria and at Cornelius' house.",
+      "journey": "About 250 miles west by land from central Phrygia, by the \"upper country\": the high road across the plateau and down the Cayster valley to Ephesus, rather than the busier Lycus and Maeander valleys. About two to three weeks on foot.",
+      "route": [
+        [
+          31.5,
+          39.2
+        ],
+        [
+          30.55,
+          38.75
+        ],
+        [
+          29.9,
+          38.65
+        ],
+        [
+          29.4,
+          38.62
+        ],
+        [
+          28.7,
+          38.4
+        ],
+        [
+          28.2,
+          38.25
+        ],
+        [
+          27.8,
+          38.15
+        ],
+        [
+          27.5,
+          38.02
+        ],
+        [
+          27.341,
+          37.939
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 19:2",
+          "text": "And he said to them, \"Did you receive the Holy Spirit when you believed?\" And they said, \"No, we have never even heard that there is a Holy Spirit.\""
+        },
+        {
+          "ref": "Acts 19:5–6",
+          "text": "On hearing this, they were baptized in the name of the Lord Jesus. And when Paul had laid his hands upon them, the Holy Spirit came on them; and they spoke with tongues and prophesied."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Joel 2:28",
+          "note": "\"I will pour out my spirit on all flesh; your sons and your daughters shall prophesy\": the promise Peter quoted at Pentecost."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "Paul Baptizes the Disciples at Ephesus",
+          "artist": "After Maarten van Heemskerck; published by Hieronymus Cock",
+          "year": "1553",
+          "medium": "Engraving",
+          "location": "Rijksmuseum, Amsterdam",
+          "description": "Paul, seated, pours water over the head of a kneeling man from a basin, while other men wait, pray and look up as the dove of the Holy Spirit flies in at the top right. On the floor lie open books.",
+          "significance": "One of a series of prints of the Acts of the Apostles designed by the Dutch painter Heemskerck and published in Antwerp by Hieronymus Cock, the leading print publisher of the day.",
+          "symbolism": "The Latin caption reads, \"At Ephesus Paul initiates into Christ those baptized only with John's baptism\"; the dove shows the Spirit coming on them as Paul lays on his hands.",
+          "impact": "Heemskerck, who had studied ancient sculpture in Rome, gave biblical figures the heroic, muscular bodies of Michelangelo; his print designs spread that style across northern Europe.",
+          "img": "img/johnsdisciples0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Paulus_doopt_de_inwoners_van_Efeze,_RP-P-OB-7279.jpg"
+        }
+      ],
+      "tags": [
+        "teaching",
+        "miracle"
+      ],
+      "orderNote": "Paul had promised to return to Ephesus \"if God wills\" (Acts 18:21). The Church has seen in the laying on of hands after baptism here a witness to the sacrament of Confirmation."
+    },
+    {
+      "id": "tyrannus",
+      "harmony": "Acts 19:8–10",
+      "lane": "paul",
+      "place": "ephesus",
+      "date": "c. AD 53–55",
+      "title": "Two years in the hall of Tyrannus",
+      "people": [
+        "Paul",
+        "Tyrannus"
+      ],
+      "gospels": {
+        "Acts": "19:8–10",
+        "1Cor": "16:8–9"
+      },
+      "summary": "For three months Paul speaks boldly in the synagogue about the kingdom of God. When some harden their hearts and speak evil of the Way, he takes the disciples and argues daily in the lecture hall of Tyrannus. This goes on for two years, so that all who live in the province of Asia, Jews and Greeks, hear the word of the Lord. The churches of the Lycus valley, Colossae, Laodicea and Hierapolis, were likely founded in these years by Paul's helpers such as Epaphras. From Ephesus Paul also writes 1 Corinthians.",
+      "stay": "About three years in all at Ephesus (Acts 20:31), Paul's longest stay anywhere on his journeys. He worked with his own hands to support himself (Acts 20:34).",
+      "scripture": [
+        {
+          "ref": "Acts 19:9–10",
+          "text": "but when some were stubborn and disbelieved, speaking evil of the Way before the congregation, he withdrew from them, taking the disciples with him, and argued daily in the hall of Tyrannus. This continued for two years, so that all the residents of Asia heard the word of the Lord, both Jews and Greeks."
+        },
+        {
+          "ref": "1 Corinthians 16:8–9",
+          "text": "But I will stay in Ephesus until Pentecost, for a wide door for effective work has opened to me, and there are many adversaries."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Curetes Street, Ephesus",
+          "artist": "Photo: shankar s.",
+          "year": "2014",
+          "medium": "Photograph",
+          "location": "Ephesus, near Selçuk, Turkey",
+          "description": "The marble-paved main street of Ephesus runs downhill between rows of columns, statue bases and ruined facades toward the Library of Celsus.",
+          "significance": "Curetes Street was one of the city's chief streets in Paul's day, though many of the buildings seen now are later. The hall of Tyrannus has not been found; it was likely a lecture hall or school building in the city center.",
+          "symbolism": "For two years Paul argued here daily, in the heart of a great pagan city, so that \"all the residents of Asia heard the word of the Lord.\"",
+          "impact": "Ephesus became a UNESCO World Heritage Site in 2015.",
+          "img": "img/tyrannus0.jpg",
+          "credit": "Photo: shankar s., CC BY 2.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Looking_down_the_Street_of_Curetes_(16314212482).jpg"
+        }
+      ],
+      "tags": [
+        "teaching",
+        "sermon",
+        "conflict"
+      ],
+      "orderNote": "An old Western reading of Acts 19:9 adds that Paul taught \"from the fifth hour to the tenth,\" about 11 a.m. to 4 p.m., the hot midday hours when the hall stood empty. Many scholars think Paul was also imprisoned for a time at Ephesus, and that some of the \"prison letters\" (Philippians, Philemon) may come from here rather than Rome; this is debated."
+    },
+    {
+      "id": "sceva",
+      "harmony": "Acts 19:11–17",
+      "lane": "paul",
+      "place": "ephesus",
+      "date": "c. AD 54–55",
+      "title": "Miracles at Ephesus and the sons of Sceva",
+      "people": [
+        "Paul",
+        "The seven sons of Sceva"
+      ],
+      "gospels": {
+        "Acts": "19:11–17"
+      },
+      "summary": "God works extraordinary miracles through Paul: even handkerchiefs and aprons that have touched him are carried to the sick, and they are healed and evil spirits leave them. Some wandering Jewish exorcists, the seven sons of a Jewish high priest named Sceva, try to use the name of Jesus like a spell. The evil spirit answers, \"Jesus I know, and Paul I know; but who are you?\" The possessed man leaps on them and overpowers them, and they flee naked and wounded. Fear falls on Ephesus, and the name of the Lord Jesus is praised.",
+      "scripture": [
+        {
+          "ref": "Acts 19:11–12",
+          "text": "And God did extraordinary miracles by the hands of Paul, so that handkerchiefs or aprons were carried away from his body to the sick, and diseases left them and the evil spirits came out of them."
+        },
+        {
+          "ref": "Acts 19:15",
+          "text": "But the evil spirit answered them, \"Jesus I know, and Paul I know; but who are you?\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "2 Kings 13:21",
+          "note": "A dead man touches the bones of Elisha and comes back to life: an Old Testament root of the veneration of relics."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Sons of Sceva Beaten by the Demon",
+          "artist": "Mathieu Elias",
+          "year": "1702",
+          "medium": "Oil on canvas",
+          "location": "Notre-Dame de Paris",
+          "description": "A possessed man, bare-chested, swings a chain over the sons of Sceva; one falls in terror at the front, stripped of his clothes, while women clutch a child and flee. In the background, under a domed temple, Paul appears among the sick he heals.",
+          "significance": "The \"May\" of 1702, given to Notre-Dame by the Paris goldsmiths' guild. It was shown newly restored at the Galerie des Gobelins in 2024, where this photo was taken.",
+          "symbolism": "The violence in front and Paul's calm healing behind set the true power of Jesus' name against those who tried to use it as a spell.",
+          "impact": "Elias, born in French Flanders, worked mostly in Dunkirk and Paris; this is his best-known painting.",
+          "img": "img/sceva0.jpg",
+          "credit": "Photo: GO69, CC BY 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Mathieu_Elias_-_Les_fils_de_Scéva_battus_par_le_démon_-_01.jpg"
+        }
+      ],
+      "tags": [
+        "miracle",
+        "healing",
+        "exorcism"
+      ],
+      "orderNote": "No Jewish high priest named Sceva is known from other sources; he may have been from a high-priestly family, or the title may have been his own claim. The \"handkerchiefs and aprons\" were probably the sweat-cloths and work aprons Paul wore at his trade."
+    },
+    {
+      "id": "magicbooks",
+      "harmony": "Acts 19:18–22",
+      "lane": "paul",
+      "place": "ephesus",
+      "date": "c. AD 55",
+      "title": "The burning of the magic books",
+      "people": [
+        "Paul",
+        "New believers of Ephesus",
+        "Timothy",
+        "Erastus"
+      ],
+      "gospels": {
+        "Acts": "19:18–22"
+      },
+      "summary": "Many who have become believers come forward and openly confess their practices. Those who had practiced magic bring their books and burn them in front of everyone. The books are worth fifty thousand pieces of silver, a fortune. \"So the word of the Lord grew and prevailed mightily.\" Paul then resolves in the Spirit to pass through Macedonia and Achaia, go to Jerusalem, and afterward see Rome; he sends Timothy and Erastus ahead into Macedonia.",
+      "scripture": [
+        {
+          "ref": "Acts 19:19–20",
+          "text": "And a number of those who practiced magic arts brought their books together and burned them in the sight of all; and they counted the value of them and found it came to fifty thousand pieces of silver. So the word of the Lord grew and prevailed mightily."
+        },
+        {
+          "ref": "Acts 19:21",
+          "text": "Now after these events Paul resolved in the Spirit to pass through Macedonia and Achaia and go to Jerusalem, saying, \"After I have been there, I must also see Rome.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Deuteronomy 18:10–12",
+          "note": "Divination, sorcery and charms are forbidden as \"an abomination to the Lord.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Preaching of Saint Paul at Ephesus",
+          "artist": "Eustache Le Sueur",
+          "year": "1649",
+          "medium": "Oil on canvas",
+          "location": "Musée du Louvre, Paris",
+          "description": "Paul, in a red mantle, stands on the steps of a classical portico and points to heaven. Around him the Ephesians bring armfuls of books; in the foreground a kneeling man feeds a fire with books and scrolls, while a scribe on the left writes down Paul's words.",
+          "significance": "Painted as the \"May\" of 1649, the large picture the Paris goldsmiths' guild gave each year to Notre-Dame Cathedral. It is often counted Le Sueur's masterpiece.",
+          "symbolism": "The upward finger and the downward fire set heaven against magic; the temple and the statue on the right stand for the pagan city that is giving up its arts.",
+          "impact": "Le Sueur, called \"the French Raphael,\" made the scene a model of French classical painting; it was widely copied and engraved.",
+          "img": "img/magicbooks0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Eustache_Le_Sueur_-_The_Preaching_of_St_Paul_at_Ephesus_-_WGA12613.jpg"
+        }
+      ],
+      "tags": [
+        "conflict"
+      ],
+      "orderNote": "Ephesus was famous in the ancient world for magic; spells written on papyrus were called \"Ephesian letters\" (Ephesia grammata). A piece of silver was about a day's wage, so the books were worth some fifty thousand days' wages. From this point Luke's story looks toward Rome."
+    },
+    {
+      "id": "ephesusriot",
+      "harmony": "Acts 19:23–41",
+      "lane": "paul",
+      "place": "ephesus",
+      "date": "Spring AD 56",
+      "title": "The riot of the silversmiths",
+      "people": [
+        "Demetrius the silversmith",
+        "Gaius",
+        "Aristarchus",
+        "Alexander",
+        "The town clerk"
+      ],
+      "gospels": {
+        "Acts": "19:23–41",
+        "1Cor": "15:32",
+        "2Cor": "1:8–10"
+      },
+      "summary": "Demetrius, a silversmith who makes silver shrines of Artemis, gathers the craftsmen. Paul's preaching that gods made with hands are not gods is ruining their trade and threatens the honor of the great temple of Artemis. The crowd shouts \"Great is Artemis of the Ephesians!\" and rushes into the theater, dragging Paul's companions Gaius and Aristarchus. Paul wants to go in, but the disciples and some friendly officials of Asia hold him back. For two hours the crowd chants, until the town clerk quiets them and sends them home, warning that the courts are open and Rome may charge the city with rioting.",
+      "scripture": [
+        {
+          "ref": "Acts 19:26",
+          "text": "And you see and hear that not only at Ephesus but almost throughout all Asia this Paul has persuaded and turned away a considerable company of people, saying that gods made with hands are not gods."
+        },
+        {
+          "ref": "Acts 19:28–29",
+          "text": "When they heard this they were enraged, and cried out, \"Great is Artemis of the Ephesians!\" So the city was filled with the confusion; and they rushed together into the theater, dragging with them Gaius and Aristarchus, Macedonians who were Paul's companions in travel."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Psalm 115:4",
+          "note": "\"Their idols are silver and gold, the work of men's hands.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The Great Theater of Ephesus",
+          "artist": "Photo: Slyronit",
+          "year": "2011 (theater 3rd century BC, enlarged in Roman times)",
+          "medium": "Photograph",
+          "location": "Ephesus, near Selçuk, Turkey",
+          "description": "The steep, curved banks of seats of the great theater rise up the slope of Mount Pion, dwarfing the visitors on the stage floor below.",
+          "significance": "This is the theater into which the mob rushed, dragging Gaius and Aristarchus, and where for two hours they shouted \"Great is Artemis of the Ephesians!\" It held about 25,000 people.",
+          "symbolism": "The town clerk's speech was made to the crowd in this space, the city's official place of assembly.",
+          "impact": "Still one of the largest ancient theaters to survive, it is used for concerts today.",
+          "img": "img/ephesusriot0.jpg",
+          "credit": "Photo: Slyronit, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Theatre_of_Ephesus_2.jpg"
+        }
+      ],
+      "tags": [
+        "conflict"
+      ],
+      "orderNote": "The Temple of Artemis at Ephesus was one of the Seven Wonders of the ancient world; the theater held about 25,000 people. Paul's words about \"fighting with beasts at Ephesus\" (1 Corinthians 15:32) and his deadly peril in Asia (2 Corinthians 1:8) may refer to this time, or to other dangers there; Luke does not say. The riot is usually dated to spring AD 55 or 56, around the festival month of Artemis."
+    },
+    {
+      "id": "macedonia3",
+      "harmony": "Acts 20:1–2",
+      "lane": "paul",
+      "place": "macedonia",
+      "from": "ephesus",
+      "date": "Summer–autumn AD 56",
+      "title": "Through Macedonia, waiting for Titus",
+      "people": [
+        "Paul",
+        "Titus",
+        "Timothy"
+      ],
+      "gospels": {
+        "Acts": "20:1–2",
+        "2Cor": "2:12–13; 7:5–7",
+        "Rom": "15:19"
+      },
+      "summary": "After the uproar Paul encourages the disciples, says goodbye and leaves for Macedonia. His letters fill in what Luke leaves out: he stops at Troas to preach, but cannot rest because Titus has not come with news from troubled Corinth. In Macedonia he is afflicted on every side until Titus arrives with good news, and Paul writes 2 Corinthians. He goes through the region giving the churches much encouragement, and perhaps reaches as far as Illyricum.",
+      "journey": "About 450 miles: north by land from Ephesus through Smyrna and Pergamum to Troas (about 200 miles), by ship past Samothrace to Neapolis (about 125 miles, two days), then along the Via Egnatia through Philippi, Amphipolis and Thessalonica. Several months with stops in the churches.",
+      "route": [
+        [
+          27.341,
+          37.939
+        ],
+        [
+          27.14,
+          38.42
+        ],
+        [
+          27.0,
+          38.8
+        ],
+        [
+          27.18,
+          39.12
+        ],
+        [
+          27.02,
+          39.6
+        ],
+        [
+          26.4,
+          39.7
+        ],
+        [
+          26.155,
+          39.752
+        ],
+        [
+          25.53,
+          40.47
+        ],
+        [
+          24.41,
+          40.94
+        ],
+        [
+          24.287,
+          41.013
+        ],
+        [
+          23.84,
+          40.82
+        ],
+        [
+          23.43,
+          40.64
+        ],
+        [
+          22.94,
+          40.64
+        ],
+        [
+          22.5,
+          40.2
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "2 Corinthians 2:12–13",
+          "text": "When I came to Troas to preach the gospel of Christ, a door was opened for me in the Lord; but my mind could not rest because I did not find my brother Titus there. So I took leave of them and went on to Macedonia."
+        },
+        {
+          "ref": "2 Corinthians 7:5–6",
+          "text": "For even when we came into Macedonia, our bodies had no rest but we were afflicted at every turn—fighting without and fear within. But God, who comforts the downcast, comforted us by the coming of Titus,"
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Papyrus 46: 2 Corinthians 11:33–12:9",
+          "artist": "Unknown Egyptian scribe",
+          "year": "c. AD 200",
+          "medium": "Ink on papyrus",
+          "location": "University of Michigan Papyrology Collection, Ann Arbor",
+          "description": "A leaf of 2 Corinthians, the letter Paul wrote from Macedonia after Titus brought news from Corinth. This page runs from his escape over the wall of Damascus in a basket to the \"thorn in the flesh\" and the Lord's answer, \"My grace is sufficient for you.\"",
+          "significance": "Papyrus 46, copied in Egypt around AD 200, is the oldest surviving collection of Paul's letters; this leaf belongs to the part kept at the University of Michigan.",
+          "symbolism": "On this one page Paul boasts only of his weakness: \"when I am weak, then I am strong\" follows on the next lines of the letter.",
+          "impact": "2 Corinthians is the most personal of Paul's letters, and much of what is known of his journey through Macedonia comes from it.",
+          "img": "img/macedonia30.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Ann_Arbor,_University_of_Michigan_P.Mich.inv._6238_(Papyrus_46)_fol._142r_-_2_Corinthians_11,33-12,9.jpg"
+        }
+      ],
+      "tags": [
+        "teaching"
+      ],
+      "orderNote": "Luke covers these months in two verses; the order comes from 2 Corinthians. Romans 15:19 says Paul preached \"as far round as Illyricum\" (modern Albania and the former Yugoslavia), probably on this visit, going west along the Via Egnatia. Some date this part of the journey to AD 55–56."
+    },
+    {
+      "id": "greece",
+      "harmony": "Acts 20:2–3",
+      "lane": "paul",
+      "place": "corinth",
+      "from": "macedonia",
+      "date": "Winter AD 56–57",
+      "title": "Three months in Greece: the Letter to the Romans",
+      "people": [
+        "Paul",
+        "Gaius",
+        "Erastus",
+        "Phoebe"
+      ],
+      "gospels": {
+        "Acts": "20:2–3",
+        "Rom": "15:25–26; 16:1, 23"
+      },
+      "summary": "Paul comes to Greece and spends three winter months there, most likely at Corinth in the house of Gaius. There he writes his Letter to the Romans, the fullest statement of his gospel, to a church he has not yet visited; Phoebe of nearby Cenchreae probably carried it. He is gathering the collection from Macedonia and Achaia for the poor in Jerusalem. As he is about to sail for Syria, he learns of a plot by some of the Jews and decides to go back through Macedonia instead.",
+      "stay": "Three months (Acts 20:3), probably as the guest of Gaius, \"who is host to me and to the whole church\" (Romans 16:23).",
+      "journey": "About 300 miles by land south from Macedonia through Thessaly, past Thermopylae and Thebes, to the Isthmus and Corinth. About two weeks on foot.",
+      "route": [
+        [
+          22.5,
+          40.2
+        ],
+        [
+          22.42,
+          39.64
+        ],
+        [
+          22.4,
+          39.1
+        ],
+        [
+          22.55,
+          38.8
+        ],
+        [
+          23.0,
+          38.55
+        ],
+        [
+          23.32,
+          38.32
+        ],
+        [
+          23.35,
+          38.0
+        ],
+        [
+          23.1,
+          37.95
+        ],
+        [
+          22.879,
+          37.906
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Romans 15:25–26",
+          "text": "At present, however, I am going to Jerusalem with aid for the saints. For Macedonia and Achaia have been pleased to make some contribution for the poor among the saints at Jerusalem;"
+        },
+        {
+          "ref": "Romans 16:23",
+          "text": "Gaius, who is host to me and to the whole church, greets you. Erastus, the city treasurer, and our brother Quartus, greet you."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "Saint Paul Writing His Epistles",
+          "artist": "Valentin de Boulogne (attributed)",
+          "year": "c. 1618–1620",
+          "medium": "Oil on canvas",
+          "location": "Museum of Fine Arts, Houston (Blaffer Foundation)",
+          "description": "Paul, bald and red-bearded in a red mantle, sits at a plain table writing with a quill, a letter open in his other hand. Books and a scroll lie around him, and the hilt of a sword rises at the right.",
+          "significance": "Valentin, a French follower of Caravaggio working in Rome, shows Paul as a real man at work rather than a distant saint. The Letter to the Romans, written in Corinth, is the longest of his epistles.",
+          "symbolism": "The sword is Paul's traditional emblem, the instrument of his martyrdom in Rome and \"the sword of the Spirit, which is the word of God\" (Ephesians 6:17).",
+          "impact": "The strong light from the left and the dark background are typical of the Caravaggesque painting that swept Rome in the 1610s.",
+          "img": "img/greece0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Valentin_de_Boulogne_-_Saint_Paul_Writing_His_Epistles_-_BF.1991.4_-_Museum_of_Fine_Arts.jpg"
+        },
+        {
+          "kind": "Artifact",
+          "title": "The Erastus inscription",
+          "artist": "Unknown",
+          "year": "Mid-1st century AD",
+          "medium": "Limestone paving slab with letters once inlaid in bronze",
+          "location": "Ancient Corinth, near the theater",
+          "description": "A paving stone with large Latin letters: \"Erastus, in return for his aedileship, laid this pavement at his own expense.\" The letters were cut to hold bronze inlay, now lost.",
+          "significance": "Found in 1929 near the theater of Corinth. Many scholars identify this Erastus with \"Erastus, the city treasurer\" who sends greetings in Romans 16:23, written from Corinth; others think the titles do not match or date it later.",
+          "symbolism": "A public gift by a rich official: a glimpse of the kind of well-placed people who joined Paul's church in Corinth.",
+          "impact": "One of the very few inscriptions that may name a person from the New Testament.",
+          "img": "img/greece1.jpg",
+          "credit": "Photo: Rduncan2, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Erastus_stone_at_Theater_of_Corinth_(cropped).jpg"
+        }
+      ],
+      "tags": [
+        "teaching",
+        "conflict"
+      ],
+      "orderNote": "Acts says only \"Greece\"; Corinth is inferred from Romans 16 (Gaius, Erastus the city treasurer, Phoebe of Cenchreae). Most scholars date Romans to the winter of AD 56–57, some to 55–56 or 57–58. The plot may have been to kill Paul on a pilgrim ship bound for Passover, with the collection money aboard."
+    },
+    {
+      "id": "philippipassover",
+      "harmony": "Acts 20:3–6",
+      "lane": "paul",
+      "place": "philippi",
+      "from": "corinth",
+      "date": "Spring AD 57",
+      "title": "Back through Macedonia: Passover at Philippi",
+      "people": [
+        "Paul",
+        "Luke",
+        "Sopater",
+        "Aristarchus",
+        "Secundus",
+        "Gaius of Derbe",
+        "Timothy",
+        "Tychicus",
+        "Trophimus"
+      ],
+      "gospels": {
+        "Acts": "20:3–6"
+      },
+      "summary": "Paul turns back north through Macedonia with a band of companions from the churches: Sopater of Beroea, Aristarchus and Secundus of Thessalonica, Gaius of Derbe, Timothy, and Tychicus and Trophimus of Asia. They likely carry the collection on behalf of their churches. The others go ahead to Troas. Paul keeps the days of Unleavened Bread at Philippi, and here the \"we\" of Luke's narrative begins again: Luke, last with Paul at Philippi years before, rejoins him.",
+      "journey": "About 400 miles back by land, north through Thessaly to Thessalonica, then east along the Via Egnatia to Philippi. About three weeks.",
+      "route": [
+        [
+          22.879,
+          37.906
+        ],
+        [
+          23.35,
+          38.0
+        ],
+        [
+          23.32,
+          38.32
+        ],
+        [
+          22.55,
+          38.8
+        ],
+        [
+          22.42,
+          39.64
+        ],
+        [
+          22.5,
+          40.2
+        ],
+        [
+          22.94,
+          40.64
+        ],
+        [
+          23.43,
+          40.64
+        ],
+        [
+          23.84,
+          40.82
+        ],
+        [
+          24.287,
+          41.013
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 20:4–5",
+          "text": "Sopater of Beroea, the son of Pyrrhus, accompanied him; and of the Thessalonians, Aristarchus and Secundus; and Gaius of Derbe, and Timothy; and the Asians, Tychicus and Trophimus. These went on and were waiting for us at Troas,"
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The forum of Philippi in spring",
+          "artist": "Photo: Carole Raddato",
+          "year": "2012 (forum 2nd century AD; basilica 6th century)",
+          "medium": "Photograph",
+          "location": "Philippi, Greece",
+          "description": "The paved Roman forum of Philippi in April, with the tall piers of a great 6th-century church, Basilica B, behind it and the snow-capped Pangaion range beyond.",
+          "significance": "Paul kept the Passover days here in spring AD 57, among the believers of the first church he founded in Europe. The forum seen today was rebuilt in the 2nd century over the one Paul knew.",
+          "symbolism": "Spring flowers in the ancient streets match the season of Unleavened Bread, when Luke rejoined Paul here.",
+          "impact": "Philippi has been a UNESCO World Heritage Site since 2016.",
+          "img": "img/philippipassover0.jpg",
+          "credit": "Photo: Carole Raddato, CC BY-SA 2.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:View_on_the_forum_and_the_basilica_B_with_Pangaion_Hills_in_the_background,_Philippi_(7272434092).jpg"
+        }
+      ],
+      "tags": [
+        "prayer"
+      ],
+      "orderNote": "The \"we\" passages of Acts stopped at Philippi in Acts 16:17 and resume here at Acts 20:5; the traditional reading is that Luke, the author, stayed at Philippi in between. The days of Unleavened Bread fell in April AD 57."
+    },
+    {
+      "id": "eutychus",
+      "harmony": "Acts 20:7–12",
+      "lane": "paul",
+      "place": "troas",
+      "from": "philippi",
+      "date": "April AD 57",
+      "title": "Eutychus falls from the window at Troas",
+      "people": [
+        "Paul",
+        "Eutychus",
+        "Luke"
+      ],
+      "gospels": {
+        "Acts": "20:7–12"
+      },
+      "summary": "On the first day of the week the believers at Troas gather in an upper room to break bread. Paul, leaving the next day, talks on until midnight in the room full of lamps. A young man named Eutychus, sitting in the window, sinks into a deep sleep and falls three stories; he is taken up dead. Paul goes down, embraces him and says, \"Do not be alarmed, for his life is in him.\" Then Paul goes back up, breaks bread, and talks until daybreak, and they take the boy home alive.",
+      "stay": "Seven days at Troas (Acts 20:6).",
+      "journey": "About 150 miles by sea from Neapolis, the port of Philippi, past Samothrace to Troas. Five days, against the wind; the same crossing took two days going the other way (Acts 16:11).",
+      "route": [
+        [
+          24.287,
+          41.013
+        ],
+        [
+          24.41,
+          40.94
+        ],
+        [
+          24.9,
+          40.7
+        ],
+        [
+          25.53,
+          40.47
+        ],
+        [
+          25.95,
+          40.1
+        ],
+        [
+          26.155,
+          39.752
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 20:7",
+          "text": "On the first day of the week, when we were gathered together to break bread, Paul talked with them, intending to depart on the morrow; and he prolonged his speech until midnight."
+        },
+        {
+          "ref": "Acts 20:9–10",
+          "text": "And a young man named Eutychus was sitting in the window. He sank into a deep sleep as Paul talked still longer; and being overcome by sleep, he fell down from the third story and was taken up dead. But Paul went down and bent over him, and embracing him said, \"Do not be alarmed, for his life is in him.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "1 Kings 17:21",
+          "note": "Elijah stretches himself upon the widow's dead son three times, and the child revives."
+        },
+        {
+          "ref": "2 Kings 4:34",
+          "note": "Elisha lies upon the Shunammite's son, mouth to mouth, and the child's flesh becomes warm."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "Saint Paul Raising Eutychus",
+          "artist": "Jacques-François Courtin",
+          "year": "Early 18th century",
+          "medium": "Oil on canvas",
+          "location": "Cathédrale Saint-Étienne, Toulouse",
+          "description": "By lamplight, Paul bends over the limp, half-naked body of Eutychus and lays his hand on the boy's chest. A man holds the boy up from behind, while the believers around them pray, stare and raise their hands in alarm.",
+          "significance": "A large altarpiece-style canvas in Toulouse Cathedral by Courtin, a member of the Royal Academy of Painting in Paris; it is listed among France's protected historic objects.",
+          "symbolism": "The burning lamps recall Luke's detail, \"there were many lights in the upper chamber\"; the man praying with joined hands looks up as Paul says, \"his life is in him.\"",
+          "impact": "One of the few large paintings of this rarely painted scene, the only raising of the dead by Paul told in Acts.",
+          "img": "img/eutychus0.jpg",
+          "credit": "Photo: Didier Descouens, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Cathédrale_Saint-Étienne_de_Toulouse_-_Saint_Paul_ressuscitant_Eutyque_par_Jacques_François_Courtin_PM31001406.jpg"
+        },
+        {
+          "kind": "Descriptive",
+          "title": "Saint Paul Restoring Eutychus to Life",
+          "artist": "Taddeo Zuccari",
+          "year": "c. 1550–1566",
+          "medium": "Pen and brown ink, brush and brown wash, highlighted with white",
+          "location": "Metropolitan Museum of Art, New York",
+          "description": "In a crowded hall, the young Eutychus lies limp on the floor while two men lift him. Paul, at the center, raises his hand, and the believers press around to see.",
+          "significance": "A drawing by the Roman Mannerist Taddeo Zuccari, who painted scenes from the life of Paul in the Frangipani Chapel of San Marcello al Corso in Rome.",
+          "symbolism": "The dead weight of the boy's body, held up by others, contrasts with Paul's open, raised hand.",
+          "impact": "Zuccari's drawings were prized by collectors and studied by later artists.",
+          "img": "img/eutychus1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Saint_Paul_Restoring_Eutychus_to_Life_MET_DP812361.jpg"
+        }
+      ],
+      "tags": [
+        "raising",
+        "miracle"
+      ],
+      "orderNote": "This is one of the earliest descriptions of Christians gathering on Sunday, \"the first day of the week,\" for the breaking of bread, the Eucharist. Luke, who was present, says Eutychus was \"taken up dead\"; a few interpreters think he only seemed dead."
+    },
+    {
+      "id": "assoswalk",
+      "harmony": "Acts 20:13–14",
+      "lane": "paul",
+      "place": "assos",
+      "from": "troas",
+      "date": "April AD 57",
+      "title": "Paul walks to Assos",
+      "people": [
+        "Paul",
+        "Luke and companions"
+      ],
+      "gospels": {
+        "Acts": "20:13–14"
+      },
+      "summary": "The others board the ship at Troas and sail for Assos, but Paul chooses to go on foot. The ship must round Cape Lectum, while the road cuts straight across the neck of land. Paul meets them at Assos, they take him aboard, and they sail on to Mitylene on the island of Lesbos. Luke does not say why Paul wanted to walk alone.",
+      "journey": "About 20 to 30 miles south by the Roman road, a long day's walk, while the ship sailed around Cape Lectum.",
+      "route": [
+        [
+          26.155,
+          39.752
+        ],
+        [
+          26.2,
+          39.66
+        ],
+        [
+          26.27,
+          39.57
+        ],
+        [
+          26.34,
+          39.49
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 20:13–14",
+          "text": "But going ahead to the ship, we set sail for Assos, intending to take Paul aboard there; for so he had arranged, intending himself to go by land. And when he met us at Assos, we took him on board and came to Mitylene."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The Temple of Athena at Assos",
+          "artist": "Photo: Carole Raddato",
+          "year": "Temple c. 530 BC",
+          "medium": "Photograph",
+          "location": "Assos (Behramkale), Turkey",
+          "description": "Re-erected Doric columns of the temple of Athena stand on the summit of the acropolis of Assos, with the sea and the island of Lesbos lost in the mist beyond.",
+          "significance": "The temple, built about 530 BC, crowned the city where Paul joined the ship after walking from Troas. From the summit one looks south over the harbor toward Lesbos, the next stop.",
+          "symbolism": "The old pagan temple above and the sea below frame the moment Paul stepped aboard for the last voyage of his journey.",
+          "impact": "It is the only Archaic Doric temple in Asia Minor; parts of its sculpture are in the Louvre, Boston and Istanbul.",
+          "img": "img/assoswalk0.jpg",
+          "credit": "Photo: Carole Raddato, CC BY-SA 2.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Temple_of_Athena,_Assos,_Turkey.jpg"
+        }
+      ],
+      "tags": [],
+      "orderNote": "Assos was a harbor city on a high volcanic hill crowned by a temple of Athena; Aristotle lived there for a few years in the 340s BC."
+    },
+    {
+      "id": "miletusfarewell",
+      "harmony": "Acts 20:15–38",
+      "lane": "paul",
+      "place": "miletus",
+      "from": "assos",
+      "date": "Late April AD 57",
+      "title": "Farewell to the Ephesian elders at Miletus",
+      "people": [
+        "Paul",
+        "The elders of Ephesus"
+      ],
+      "gospels": {
+        "Acts": "20:15–38"
+      },
+      "summary": "Paul is hurrying to reach Jerusalem by Pentecost, so the ship sails past Ephesus. From Miletus he sends for the elders of the Ephesian church. He reminds them how he served among them with tears and trials, and says he is going to Jerusalem bound in the Spirit, knowing that prison and afflictions await him. He charges them to shepherd the flock, the church of God which he obtained with his own blood, and warns of fierce wolves to come. Then he kneels and prays with them all, and they weep and embrace him, grieving most because they will not see his face again.",
+      "stay": "The elders came about 30 miles from Ephesus, so Paul likely waited at Miletus three or four days.",
+      "journey": "About 150 miles by sea over four days, hugging the coast: Assos to Mitylene on Lesbos, down the strait off Chios, across to Samos, and through the narrows by Trogyllium to Miletus.",
+      "route": [
+        [
+          26.34,
+          39.49
+        ],
+        [
+          26.45,
+          39.33
+        ],
+        [
+          26.55,
+          39.11
+        ],
+        [
+          26.42,
+          38.8
+        ],
+        [
+          26.3,
+          38.55
+        ],
+        [
+          26.24,
+          38.4
+        ],
+        [
+          26.35,
+          38.2
+        ],
+        [
+          26.6,
+          37.9
+        ],
+        [
+          26.85,
+          37.72
+        ],
+        [
+          26.94,
+          37.69
+        ],
+        [
+          27.05,
+          37.64
+        ],
+        [
+          27.278,
+          37.53
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 20:24",
+          "text": "But I do not account my life of any value nor as precious to myself, if only I may accomplish my course and the ministry which I received from the Lord Jesus, to testify to the gospel of the grace of God."
+        },
+        {
+          "ref": "Acts 20:28",
+          "text": "Take heed to yourselves and to all the flock, in which the Holy Spirit has made you guardians, to feed the church of the Lord which he obtained with his own blood."
+        },
+        {
+          "ref": "Acts 20:35",
+          "text": "In all things I have shown you that by so toiling one must help the weak, remembering the words of the Lord Jesus, how he said, 'It is more blessed to give than to receive.'"
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "1 Samuel 12:3",
+          "note": "Samuel's farewell: \"Whose ox have I taken? Or whose ass have I taken?\" Like Paul, he calls the people to witness that he took nothing from them."
+        },
+        {
+          "ref": "Ezekiel 34:2–5",
+          "note": "The Lord's word against shepherds who feed themselves and leave the flock to the wild beasts."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The theater of Miletus",
+          "artist": "Photo: Tomisti",
+          "year": "Theater 4th century BC, rebuilt in Roman times",
+          "medium": "Photograph",
+          "location": "Miletus (Balat), Turkey",
+          "description": "The great curved seating bank and stage of the theater of Miletus rise out of the plain, with a later Byzantine fortress on top.",
+          "significance": "The theater faced one of the city's harbors, near where Paul's ship would have put in. It was enlarged in Roman times to seat some 15,000 people. The coastline has since moved miles away.",
+          "symbolism": "The empty harbor plain recalls the parting: \"And they brought him to the ship.\"",
+          "impact": "One of the largest and best-preserved theaters of Asia Minor; an inscription on its seats reserves places for \"Jews who are also God-fearers.\"",
+          "img": "img/miletusfarewell0.jpg",
+          "credit": "Photo: Tomisti, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Miletus_theatre_01.jpg"
+        },
+        {
+          "kind": "Descriptive",
+          "title": "Paul Takes Leave of the Elders",
+          "artist": "Jan Luyken",
+          "year": "1712",
+          "medium": "Etching",
+          "location": "Rijksmuseum, Amsterdam",
+          "description": "On the shore by a fortified harbor, Paul clasps hands with the elders of Ephesus, his other hand on his heart. Behind them a small boat waits to take him out to the ship at anchor.",
+          "significance": "From the Bible illustrations of the Dutch poet and etcher Jan Luyken, who made several thousand etchings for books.",
+          "symbolism": "The waiting ship gives the end of the scene: \"And they brought him to the ship.\"",
+          "impact": "Luyken's Bible etchings were reprinted for generations in Dutch family Bibles.",
+          "img": "img/miletusfarewell1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Paulus_neemt_afscheid_van_de_ouderlingen,_RP-P-OB-46.090.jpg"
+        }
+      ],
+      "tags": [
+        "sermon",
+        "prayer",
+        "prophecy"
+      ],
+      "orderNote": "This is the only speech in Acts given to Christians, and the one most like Paul's letters. \"It is more blessed to give than to receive\" is a saying of Jesus found nowhere in the Gospels. Some manuscripts read \"the church of God\" in Acts 20:28, others \"the church of the Lord.\" The later stop at Trogyllium (Acts 20:15) is in some manuscripts only."
+    },
+    {
+      "id": "tyrebeach",
+      "harmony": "Acts 21:1–6",
+      "lane": "paul",
+      "place": "tyre",
+      "from": "miletus",
+      "date": "May AD 57",
+      "title": "A week at Tyre and farewell on the beach",
+      "people": [
+        "Paul",
+        "Luke",
+        "The disciples of Tyre"
+      ],
+      "gospels": {
+        "Acts": "21:1–6"
+      },
+      "summary": "The ship runs straight to Cos, then Rhodes, then Patara on the Lycian coast. There Paul's party finds a ship crossing to Phoenicia, sails past Cyprus on the left, and lands at Tyre, where the ship unloads its cargo. They seek out the disciples and stay seven days. Through the Spirit the disciples tell Paul not to go up to Jerusalem. When the week is over, the whole church, with wives and children, walks them out of the city, and they kneel on the beach to pray and say goodbye.",
+      "stay": "Seven days at Tyre (Acts 21:4).",
+      "journey": "About 550 miles by sea: island-hopping along the coast of Asia to Cos, Rhodes and Patara (about 150 miles, three days), then in a larger merchant ship across the open sea south of Cyprus to Tyre (about 400 miles, some five days).",
+      "route": [
+        [
+          27.278,
+          37.53
+        ],
+        [
+          27.2,
+          37.25
+        ],
+        [
+          27.29,
+          36.95
+        ],
+        [
+          27.6,
+          36.7
+        ],
+        [
+          28.22,
+          36.44
+        ],
+        [
+          28.8,
+          36.3
+        ],
+        [
+          29.32,
+          36.26
+        ],
+        [
+          30.4,
+          35.6
+        ],
+        [
+          31.5,
+          35.0
+        ],
+        [
+          32.5,
+          34.4
+        ],
+        [
+          33.4,
+          34.2
+        ],
+        [
+          34.4,
+          33.6
+        ],
+        [
+          35.195,
+          33.27
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 21:4",
+          "text": "And having sought out the disciples, we stayed there for seven days. Through the Spirit they told Paul not to go on to Jerusalem."
+        },
+        {
+          "ref": "Acts 21:5",
+          "text": "And when our days there were ended, we departed and went on our journey; and they all, with wives and children, brought us on our way till we were outside the city; and kneeling down on the beach we prayed and bade one another farewell."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "Paul Prays on the Shore Outside Tyre",
+          "artist": "Jan Luyken",
+          "year": "c. 1700",
+          "medium": "Etching",
+          "location": "Rijksmuseum, Amsterdam",
+          "description": "Paul stands with joined hands on the beach, praying, while men, women and children of the church of Tyre kneel around him. The ship waits offshore, and the city lies along the coast behind.",
+          "significance": "From Jan Luyken's Bible etchings; the caption reads \"Paul's prayer on the shore outside Tyre, Acts 21:5.\"",
+          "symbolism": "The families with small children follow Luke's detail: \"they all, with wives and children, brought us on our way.\"",
+          "impact": "Luyken's plates made rarely painted scenes of Acts familiar in Dutch Bibles for two centuries.",
+          "img": "img/tyrebeach0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Paulus_bidt_bij_het_strand_van_Tyrus_Paulus_gebed_aan_den_oever_buijten_Tirus_(titel_op_object),_RP-P-OB-44.779.jpg"
+        },
+        {
+          "kind": "Artifact",
+          "title": "The Roman road and arch at Al-Bass, Tyre",
+          "artist": "Photo: RomanDeckert",
+          "year": "2019 (arch 2nd century AD)",
+          "medium": "Photograph",
+          "location": "Al-Bass archaeological site, Tyre, Lebanon",
+          "description": "A long Roman road paved with stone runs toward a monumental arch, with the ruins of the aqueduct on the right.",
+          "significance": "The road led into Tyre from the mainland; the arch is later than Paul, probably from the time of Hadrian, but the road follows the old way into the city. The site is part of a UNESCO World Heritage Site.",
+          "symbolism": "This is the kind of road the church of Tyre walked with Paul \"till we were outside the city\" on the way to the beach.",
+          "impact": "Tyre's Roman ruins are among the largest in Lebanon.",
+          "img": "img/tyrebeach1.jpg",
+          "credit": "Photo: RomanDeckert, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:TyreAlBass_RomanTriumphalArch-Aqueduct_RomanDeckert19112019.jpg"
+        }
+      ],
+      "tags": [
+        "prayer",
+        "prophecy"
+      ],
+      "orderNote": "The church at Tyre likely began among believers scattered after Stephen's death (Acts 11:19). The Spirit's warnings are about what awaits Paul; Paul himself understood that the Spirit was leading him on to Jerusalem (Acts 20:22)."
+    },
+    {
+      "id": "ptolemaisstop",
+      "harmony": "Acts 21:7",
+      "lane": "paul",
+      "place": "ptolemais",
+      "from": "tyre",
+      "date": "May AD 57",
+      "title": "One day at Ptolemais",
+      "people": [
+        "Paul",
+        "Luke",
+        "The brethren of Ptolemais"
+      ],
+      "gospels": {
+        "Acts": "21:7"
+      },
+      "summary": "The ship finishes its voyage down the coast from Tyre at Ptolemais, the old port of Acco. Paul and his companions greet the believers there and stay with them for one day. Even in this small harbor town on the way to Jerusalem there is already a Christian community.",
+      "stay": "One day (Acts 21:7).",
+      "journey": "About 25 miles south by sea along the Phoenician coast, less than a day.",
+      "route": [
+        [
+          35.195,
+          33.27
+        ],
+        [
+          35.15,
+          33.12
+        ],
+        [
+          35.09,
+          33.0
+        ],
+        [
+          35.07,
+          32.92
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 21:7",
+          "text": "When we had finished the voyage from Tyre, we arrived at Ptolemais; and we greeted the brethren and stayed with them for one day."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The old port of Acre",
+          "artist": "Photo: Mary Madigan",
+          "year": "2006",
+          "medium": "Photograph",
+          "location": "Acre (Akko), Israel",
+          "description": "Small boats in Acre's harbor beside the ruined stones of the old sea wall, with the bay curving south toward Haifa and Mount Carmel.",
+          "significance": "Acre's harbor has been in use since Canaanite times; it was the Roman Ptolemais where Paul stayed a day, and later the main port of the Crusaders.",
+          "symbolism": "The small harbor matches Luke's brief note: they greeted the brethren and stayed one day.",
+          "impact": "The Old City of Acre is a UNESCO World Heritage Site.",
+          "img": "img/ptolemaisstop0.jpg",
+          "credit": "Photo: Mary Madigan, CC BY 2.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Akko._View_of_the_port_(494794255).jpg"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "philipsdaughters",
+      "harmony": "Acts 21:8–9",
+      "lane": "paul",
+      "place": "caesarea",
+      "from": "ptolemais",
+      "date": "May AD 57",
+      "title": "At the house of Philip the evangelist",
+      "people": [
+        "Paul",
+        "Luke",
+        "Philip the evangelist",
+        "Philip's four daughters"
+      ],
+      "gospels": {
+        "Acts": "21:8–9"
+      },
+      "summary": "The next day they come to Caesarea and stay in the house of Philip the evangelist, one of the seven chosen with Stephen, who had preached in Samaria and baptized the Ethiopian. More than twenty years earlier he had settled in Caesarea. Philip has four unmarried daughters who prophesy. Luke probably heard from Philip much of what he later wrote about the early church in Jerusalem and Samaria.",
+      "stay": "\"Some days\" in Philip's house (Acts 21:8, 10).",
+      "journey": "About 40 miles south along the coast road around Mount Carmel, one or two days on foot.",
+      "route": [
+        [
+          35.07,
+          32.92
+        ],
+        [
+          35.0,
+          32.83
+        ],
+        [
+          34.96,
+          32.72
+        ],
+        [
+          34.93,
+          32.6
+        ],
+        [
+          34.89,
+          32.5
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 21:8–9",
+          "text": "On the morrow we departed and came to Caesarea; and we entered the house of Philip the evangelist, who was one of the seven, and stayed with him. And he had four unmarried daughters, who prophesied."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Joel 2:28",
+          "note": "\"Your sons and your daughters shall prophesy\": fulfilled in Philip's household."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The harbor of Caesarea Maritima",
+          "artist": "Photo: Immanuel Giel",
+          "year": "2018 (harbor c. 22–10 BC)",
+          "medium": "Photograph",
+          "location": "Caesarea National Park, Israel",
+          "description": "The remains of Herod's harbor at Caesarea along the shore, where Paul's party arrived to stay in the house of Philip.",
+          "significance": "Herod the Great built the harbor and city between about 22 and 10 BC. Philip the evangelist had lived here for about twenty years when Paul came.",
+          "symbolism": "Caesarea, Rome's capital in Judea, was where the gospel first went to the Gentiles in Cornelius' house, and where Paul would spend two years in prison.",
+          "impact": "Underwater archaeology since the 1960s has shown that Herod's harbor was built with Roman concrete that set under the sea.",
+          "img": "img/philipsdaughters0.jpg",
+          "credit": "Photo: Immanuel Giel, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Caesarea_Maritima_Harbour_01.jpg"
+        }
+      ],
+      "tags": [
+        "prophecy"
+      ],
+      "orderNote": "Philip came to Caesarea after baptizing the Ethiopian (Acts 8:40). Early tradition (Papias, Polycrates) says Philip and his daughters later lived at Hierapolis in Asia; some ancient writers confused him with Philip the apostle."
+    },
+    {
+      "id": "agabus",
+      "harmony": "Acts 21:10–14",
+      "lane": "paul",
+      "place": "caesarea",
+      "date": "May AD 57",
+      "title": "Agabus binds himself with Paul's belt",
+      "people": [
+        "Paul",
+        "Agabus",
+        "Luke",
+        "The believers of Caesarea"
+      ],
+      "gospels": {
+        "Acts": "21:10–14"
+      },
+      "summary": "A prophet named Agabus comes down from Judea, the same who had foretold the great famine years before. He takes Paul's belt, binds his own hands and feet, and says the Holy Spirit declares that the Jews in Jerusalem will bind the owner of this belt and hand him over to the Gentiles. Luke and the others beg Paul not to go up. Paul answers that he is ready not only to be bound but to die at Jerusalem for the name of the Lord Jesus. They fall silent and say, \"The will of the Lord be done.\"",
+      "scripture": [
+        {
+          "ref": "Acts 21:11",
+          "text": "And coming to us he took Paul's girdle and bound his own feet and hands, and said, \"Thus says the Holy Spirit, 'So shall the Jews at Jerusalem bind the man who owns this girdle and deliver him into the hands of the Gentiles.'\""
+        },
+        {
+          "ref": "Acts 21:13–14",
+          "text": "Then Paul answered, \"What are you doing, weeping and breaking my heart? For I am ready not only to be imprisoned but even to die at Jerusalem for the name of the Lord Jesus.\" And when he would not be persuaded, we ceased and said, \"The will of the Lord be done.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Jeremiah 13:1–11",
+          "note": "Jeremiah's loincloth: like the old prophets, Agabus speaks with an acted sign."
+        },
+        {
+          "ref": "Isaiah 20:2–4",
+          "note": "Isaiah walks stripped and barefoot as a sign of Egypt's captivity."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Prophet Agabus Foretelling Saint Paul's Sufferings in Jerusalem",
+          "artist": "Louis Chéron",
+          "year": "1687",
+          "medium": "Oil on canvas",
+          "location": "Notre-Dame de Paris",
+          "description": "At the center Agabus sits with a band bound around his wrist and ankle, raising his hand toward the dove of the Holy Spirit above. An old, white-bearded apostle in a red mantle, most likely Paul, gestures toward him; a disciple at his feet hides his face, and the women of the house weep.",
+          "significance": "One of the \"Mays\" of Notre-Dame, painted for the cathedral in 1687. Newly restored, it was shown in the 2024 exhibition of Notre-Dame's restored paintings at the Galerie des Gobelins in Paris, where this photo was taken.",
+          "symbolism": "The dove marks the prophecy as the Holy Spirit's word: \"Thus says the Holy Spirit.\" The bound hands and feet show in advance the chains Paul will wear in Jerusalem and Rome.",
+          "impact": "Chéron, a Huguenot, later left France for London, where he helped found an academy of drawing.",
+          "img": "img/agabus0.jpg",
+          "credit": "Photo: GO69, CC BY 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Louis_Chéron_-_Le_prophète_Agabus_prédisant_à_saint_Paul_ses_souffrances_à_Jérusalem_-_01.jpg"
+        }
+      ],
+      "tags": [
+        "prophecy"
+      ],
+      "orderNote": "Agabus also foretold the famine under Claudius (Acts 11:28). In the event, the Romans bound Paul to rescue him from a Jewish mob (Acts 21:33), so the prophecy came true in substance. \"The will of the Lord be done\" echoes Jesus in Gethsemane."
+    },
+    {
+      "id": "uptojerusalem",
+      "harmony": "Acts 21:15–16",
+      "lane": "paul",
+      "place": "jerusalemchurch",
+      "from": "caesarea",
+      "date": "May AD 57, before Pentecost",
+      "title": "Up to Jerusalem",
+      "people": [
+        "Paul",
+        "Luke",
+        "Disciples from Caesarea",
+        "Mnason of Cyprus"
+      ],
+      "gospels": {
+        "Acts": "21:15–16"
+      },
+      "summary": "After these days Paul and his companions get ready and go up to Jerusalem, carrying the collection from the Gentile churches. Some disciples from Caesarea go with them and bring them to the house of Mnason of Cyprus, an early disciple, where they will lodge. It is Paul's fifth and last visit to Jerusalem as a free man.",
+      "journey": "About 65 miles: south along the coastal plain to Antipatris, then up through Lydda and the ascent of Beth-horon into the hills to Jerusalem. Two to three days, possibly with horses or mules.",
+      "route": [
+        [
+          34.89,
+          32.5
+        ],
+        [
+          34.9,
+          32.3
+        ],
+        [
+          34.93,
+          32.1
+        ],
+        [
+          34.895,
+          31.951
+        ],
+        [
+          35.05,
+          31.88
+        ],
+        [
+          35.13,
+          31.86
+        ],
+        [
+          35.231,
+          31.776
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 21:15–16",
+          "text": "After these days we made ready and went up to Jerusalem. And some of the disciples from Caesarea went with us, bringing us to the house of Mnason of Cyprus, an early disciple, with whom we should lodge."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The ascent to Beth-horon",
+          "artist": "American Colony Photo Department (Matson Collection)",
+          "year": "c. 1900",
+          "medium": "Photograph",
+          "location": "Library of Congress, Washington",
+          "description": "A rider on a donkey comes down a stony track through the terraced hills northwest of Jerusalem, on the old ascent from the coastal plain past Beth-horon. (One half of a stereoscopic photograph.)",
+          "significance": "From Lydda the main road up to Jerusalem climbed the ridge of Beth-horon; this was the likely way for travelers coming from Caesarea, as Paul did.",
+          "symbolism": "Going \"up\" to Jerusalem was a real climb: from the sea to about 2,500 feet.",
+          "impact": "The American Colony photographers documented the land before modern roads and towns changed it.",
+          "img": "img/uptojerusalem0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Tibna,_north_west_of_Jerusalem,_etc._The_ascent_to_Beth-Horon._LOC_matpc.05135.jpg"
+        }
+      ],
+      "tags": [],
+      "orderNote": "The Greek can mean they brought Paul to Mnason's house in Jerusalem, or that Mnason lived in a village on the way; the Western text says the latter. Paul hoped to arrive by Pentecost (Acts 20:16), most likely late May AD 57."
+    }
+  ]
+}

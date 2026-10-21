@@ -1,0 +1,1570 @@
+{
+  "_batch": "acts-03-first-journey",
+  "_sections": "Acts 13:1–15:35",
+  "_unverified": [],
+  "_notes": [
+    "Lanes: new lane `paul` (Saul/Paul and his companions: Barnabas, John Mark, later Silas) for all events but two; `jerusalemcouncil` and `jamesverdict` use `apostles` (the Jerusalem apostles and elders, Peter and James, decide).",
+    "No harmony for Acts: `harmony` holds the Acts passage, events follow the order of Acts. Extra `gospels` keys for Paul's letters: `Gal` (Galatians 2:1–10 at the council, 2:11–14 at Antioch), `2Cor` and `2Tim` (the stoning at Lystra).",
+    "Dates follow the brief: first journey c. AD 47–48, return to Antioch c. AD 48, council c. AD 49.",
+    "Every leg of the first journey has `from`, `journey` and `route`: Antioch–Seleucia–Salamis (sea), across Cyprus by the south-coast road to Paphos, Paphos–Perga (sea, round the Akamas cape), over the Taurus to Pisidian Antioch, the Via Sebaste to Iconium, Lystra, Derbe, back through the cities, down to Attalia and by sea along the Cilician coast to Seleucia and Antioch; then Antioch–Jerusalem and back by the Phoenician coast road and Samaria.",
+    "Events at the same place as the one before, so no journey: `turngentiles` (Pisidian Antioch), `lystragods` and `lystrastoned` (Lystra), `circumcision` (Antioch), `jamesverdict` (Jerusalem).",
+    "Uses Acts place ids from places-acts.txt only; no new place ids. `antioch` and `jerusalemchurch` objects match the other Acts batches."
+  ],
+  "places": {
+    "antioch": {
+      "name": "Antioch (Syria)",
+      "ll": [
+        36.161,
+        36.202
+      ],
+      "region": "Syria",
+      "certainty": "Certain",
+      "note": "Antioch on the Orontes, the third city of the Roman Empire and capital of the province of Syria. Here the disciples were first called Christians (Acts 11:26), and from here Paul set out on each of his journeys. Today Antakya in southern Turkey; on the slope of Mount Staurin the cave church of St Peter is honored as an early meeting place of the church."
+    },
+    "attalia": {
+      "name": "Attalia",
+      "ll": [
+        30.7,
+        36.886
+      ],
+      "region": "Pamphylia",
+      "certainty": "Certain",
+      "note": "The main harbor of Pamphylia, founded by Attalus II of Pergamum; modern Antalya. The old harbor and Hadrian's Gate (AD 130) are in today's Kaleiçi quarter."
+    },
+    "derbe": {
+      "name": "Derbe",
+      "ll": [
+        33.36,
+        37.35
+      ],
+      "region": "Galatia",
+      "certainty": "Probable",
+      "note": "The easternmost city of the first journey, on the road toward the Cilician Gates. Inscriptions found in 1956 and 1964 point to the mound of Kerti Hüyük, about 60 miles from Lystra; some scholars prefer nearby Devri Şehri."
+    },
+    "iconium": {
+      "name": "Iconium",
+      "ll": [
+        32.48,
+        37.87
+      ],
+      "region": "Galatia",
+      "certainty": "Certain",
+      "note": "An old Phrygian city on the edge of the Lycaonian plain, today Konya, one of Turkey's largest cities. Little of the Roman city survives under the modern one."
+    },
+    "jerusalemchurch": {
+      "name": "Jerusalem (the city)",
+      "ll": [
+        35.231,
+        31.776
+      ],
+      "region": "Judea",
+      "certainty": "Certain",
+      "note": "The first church met in the Temple courts and \"in their homes\" across the city (Acts 2:46; 5:42). Acts names no single meeting place, so events of the church's common life are mapped at the city itself."
+    },
+    "lystra": {
+      "name": "Lystra",
+      "ll": [
+        32.33,
+        37.58
+      ],
+      "region": "Galatia",
+      "certainty": "Probable",
+      "note": "A small Roman colony in Lycaonia, home of Timothy (Acts 16:1). An inscription naming Lystra, found in 1885, located it at the mound of Zoldera near Hatunsaray, about 20 miles south-southwest of Konya. The site is largely unexcavated."
+    },
+    "paphos": {
+      "name": "Paphos",
+      "ll": [
+        32.41,
+        34.76
+      ],
+      "region": "Cyprus",
+      "certainty": "Certain",
+      "note": "New Paphos, the Roman capital of Cyprus and seat of the proconsul, on the island's west coast. Its villas with mosaic floors are famous; a column at the church of Agia Kyriaki Chrysopolitissa is shown by tradition as \"St Paul's Pillar,\" where he is said to have been scourged."
+    },
+    "perga": {
+      "name": "Perga",
+      "ll": [
+        30.854,
+        36.961
+      ],
+      "region": "Pamphylia",
+      "certainty": "Certain",
+      "note": "A leading city of Pamphylia, a few miles inland from the coast near the Cestrus (Aksu) river, about 10 miles east of modern Antalya. Its theater, stadium, gate towers and colonnaded street survive."
+    },
+    "pisidianantioch": {
+      "name": "Antioch of Pisidia",
+      "ll": [
+        31.189,
+        38.306
+      ],
+      "region": "Galatia",
+      "certainty": "Certain",
+      "note": "A Roman colony (Colonia Caesarea) on the high plateau at about 3,600 ft, the chief city of southern Galatia. Its ruins, with a temple of Augustus, theater and a large early church, lie just outside Yalvaç, Turkey."
+    },
+    "salamis": {
+      "name": "Salamis (Cyprus)",
+      "ll": [
+        33.9,
+        35.18
+      ],
+      "region": "Cyprus",
+      "certainty": "Certain",
+      "note": "The chief port of eastern Cyprus, with a large Jewish community. Its ruins (gymnasium, theater, baths) lie north of Famagusta. Tradition holds that Barnabas was martyred and buried here."
+    }
+  },
+  "events": [
+    {
+      "id": "sentout",
+      "harmony": "Acts 13:1–3",
+      "lane": "paul",
+      "place": "antioch",
+      "date": "c. AD 47",
+      "title": "Barnabas and Saul are set apart at Antioch",
+      "people": [
+        "Barnabas",
+        "Saul",
+        "Symeon called Niger",
+        "Lucius of Cyrene",
+        "Manaen",
+        "The church at Antioch"
+      ],
+      "gospels": {
+        "Acts": "13:1–3"
+      },
+      "summary": "The church at Antioch has prophets and teachers from many backgrounds: Barnabas from Cyprus, Symeon called Niger, Lucius of Cyrene, Manaen who grew up with Herod Antipas, and Saul. While they worship and fast, the Holy Spirit tells them to set apart Barnabas and Saul for a work he has called them to. After more fasting and prayer they lay hands on the two men and send them off. It is the start of the first planned mission to the wider world.",
+      "scripture": [
+        {
+          "ref": "Acts 13:2",
+          "text": "While they were worshiping the Lord and fasting, the Holy Spirit said, \"Set apart for me Barnabas and Saul for the work to which I have called them.\""
+        },
+        {
+          "ref": "Acts 13:3",
+          "text": "Then after fasting and praying they laid their hands on them and sent them off."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "Paul and Barnabas of Cyprus Chosen as Apostles by the Holy Spirit",
+          "artist": "Ambrosius Francken the Elder",
+          "year": "c. 1600",
+          "medium": "Oil on panel",
+          "location": "Royal Museum of Fine Arts (KMSKA), Antwerp",
+          "description": "The church at Antioch is gathered at worship around an altar. Light streams down from the Hebrew name of God in the upper corner onto two men in the crowd, who look up as the call comes. A Latin inscription quotes Acts 13:2: \"Set apart for me Saul and Barnabas.\"",
+          "significance": "A tall panel by the Antwerp painter Ambrosius Francken, painted in the years of the Catholic renewal after the iconoclasm of 1566, when Antwerp's churches were refurnished.",
+          "symbolism": "The rays from the divine Name single out the two apostles: the mission begins with God's call in the middle of the church's prayer and fasting.",
+          "impact": "One of very few paintings of this moment, which is otherwise almost never shown in art.",
+          "img": "img/sentout1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Ambrosius_Francken_(I)_-_Paul_and_Barnabas_of_Cyprus_chosen_as_apostles_by_the_Holy_Spirit.jpg"
+        },
+        {
+          "kind": "Artifact",
+          "title": "The cave church of St Peter, Antioch",
+          "artist": "Photo: Volkan Hatem",
+          "year": "2003",
+          "medium": "Photograph",
+          "location": "Antakya (Antioch), Turkey",
+          "description": "A stone facade, built by the Crusaders and restored in 1863, closes the mouth of a cave on the slope of Mount Staurin above Antakya. Inside is a simple grotto church with an altar and traces of an early mosaic floor.",
+          "significance": "By old tradition this cave was a meeting place of the first Christians of Antioch, the church that sent Barnabas and Saul on their mission. It is one of the oldest places of Christian worship that can still be visited.",
+          "symbolism": "A hidden cave behind a church front: the humble beginnings of the community where the disciples were first called Christians.",
+          "impact": "Pilgrims still visit the grotto, and Mass is celebrated there on the feast of Saints Peter and Paul.",
+          "img": "img/sentout0.jpg",
+          "credit": "Photo: Volkan Hatem, CC BY 2.5, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Antioch_Saint_Pierre_Church_Front.JPG"
+        }
+      ],
+      "tags": [
+        "call",
+        "prayer"
+      ],
+      "orderNote": "Dates for the first journey vary; most place it c. AD 46–48, between the famine visit (Acts 11:30; 12:25) and the Jerusalem council of c. AD 49."
+    },
+    {
+      "id": "salamis",
+      "harmony": "Acts 13:4–5",
+      "lane": "paul",
+      "place": "salamis",
+      "from": "antioch",
+      "date": "c. AD 47",
+      "title": "Sailing to Cyprus: the word at Salamis",
+      "people": [
+        "Barnabas",
+        "Saul",
+        "John Mark"
+      ],
+      "gospels": {
+        "Acts": "13:4–5"
+      },
+      "summary": "Barnabas and Saul go down to Seleucia, Antioch's harbor, and sail for Cyprus, Barnabas's home island. At Salamis, its chief port, they preach in the synagogues of the Jews; there were enough Jews there for more than one. Barnabas's young cousin John Mark goes with them as their helper. As later in every city, Paul begins with the synagogue.",
+      "journey": "About 16 miles down the Orontes valley to the port of Seleucia, then about 130 miles by sea southwest to Salamis on the east coast of Cyprus: one or two days' sail with a fair wind.",
+      "route": [
+        [
+          36.161,
+          36.202
+        ],
+        [
+          36.1,
+          36.18
+        ],
+        [
+          36.03,
+          36.15
+        ],
+        [
+          35.97,
+          36.13
+        ],
+        [
+          35.93,
+          36.12
+        ],
+        [
+          35.75,
+          36.0
+        ],
+        [
+          35.2,
+          35.75
+        ],
+        [
+          34.6,
+          35.48
+        ],
+        [
+          34.2,
+          35.3
+        ],
+        [
+          33.9,
+          35.18
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 13:4–5",
+          "text": "So, being sent out by the Holy Spirit, they went down to Seleucia; and from there they sailed to Cyprus. When they arrived at Salamis, they proclaimed the word of God in the synagogues of the Jews. And they had John to assist them."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The gymnasium of Salamis",
+          "artist": "Photo: Michal Klajban",
+          "year": "2019",
+          "medium": "Photograph",
+          "location": "Salamis, near Famagusta, Cyprus",
+          "description": "Marble columns of the colonnade around the gymnasium's exercise court stand among the ruins of Salamis, the city where Barnabas and Saul first preached on Cyprus.",
+          "significance": "Salamis was the largest city and main port of Cyprus, with a large Jewish community. The gymnasium was rebuilt after earthquakes in the 1st and 4th centuries.",
+          "symbolism": "A Greek gymnasium and Jewish synagogues side by side: the mixed world the first mission entered.",
+          "impact": "By tradition Barnabas returned to Salamis and was martyred there; the Monastery of St Barnabas stands nearby.",
+          "img": "img/salamis0.jpg",
+          "credit": "Photo: Michal Klajban, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Columns_in_Roman_gymnasium,_Salamis,_Northern_Cyprus.jpg"
+        }
+      ],
+      "tags": [
+        "sermon"
+      ],
+      "orderNote": "Colossians 4:10 calls Mark Barnabas's cousin. A later tradition says Barnabas was martyred at Salamis; the Monastery of St Barnabas near the ruins marks his tomb, found, by tradition, in AD 478."
+    },
+    {
+      "id": "elymas",
+      "harmony": "Acts 13:6–12",
+      "lane": "paul",
+      "place": "paphos",
+      "from": "salamis",
+      "date": "c. AD 47",
+      "title": "Paphos: Elymas blinded, the proconsul believes",
+      "people": [
+        "Paul",
+        "Barnabas",
+        "Elymas (Bar-Jesus)",
+        "Sergius Paulus"
+      ],
+      "gospels": {
+        "Acts": "13:6–12"
+      },
+      "summary": "At Paphos, the Roman capital of Cyprus, the proconsul Sergius Paulus asks to hear the word of God. A Jewish magician and false prophet, Bar-Jesus, also called Elymas, tries to turn him away from the faith. Saul, \"who is also called Paul,\" looks at him and declares him blind for a time; at once mist and darkness fall on him. The proconsul believes, astonished at the teaching of the Lord. From here on Luke calls Saul by his Roman name, Paul, and puts him first.",
+      "journey": "About 100 miles across the island, most likely by the Roman road along the south coast through Kition, Amathus and Kourion: about a week on foot, with stops to preach.",
+      "route": [
+        [
+          33.9,
+          35.18
+        ],
+        [
+          33.75,
+          35.05
+        ],
+        [
+          33.63,
+          34.92
+        ],
+        [
+          33.4,
+          34.8
+        ],
+        [
+          33.14,
+          34.71
+        ],
+        [
+          32.89,
+          34.67
+        ],
+        [
+          32.65,
+          34.7
+        ],
+        [
+          32.41,
+          34.76
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 13:11",
+          "text": "And now, behold, the hand of the Lord is upon you, and you shall be blind and unable to see the sun for a time.\" Immediately mist and darkness fell upon him and he went about seeking people to lead him by the hand."
+        },
+        {
+          "ref": "Acts 13:12",
+          "text": "Then the proconsul believed, when he saw what had occurred, for he was astonished at the teaching of the Lord."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Conversion of the Proconsul (The Blinding of Elymas)",
+          "artist": "Raphael",
+          "year": "1515–16",
+          "medium": "Bodycolour (distemper) on paper, mounted on canvas",
+          "location": "Victoria and Albert Museum, London (lent by the Royal Collection)",
+          "description": "Sergius Paulus sits enthroned under a Roman portico. At the left Paul, in red, stretches out his arm; at the right Elymas lurches forward with hands groping the air, struck blind, while the courtiers stare. A plaque on the throne records the proconsul's conversion \"by the preaching of Saul.\"",
+          "significance": "One of the seven surviving full-size cartoons Raphael made for the tapestries of the Acts of the Apostles that Pope Leo X commissioned for the Sistine Chapel.",
+          "symbolism": "Paul's stretched-out arm and Elymas's helpless, groping hands mirror each other: the word of God has power, and the false prophet can no longer see his way.",
+          "impact": "The Raphael Cartoons, bought by Charles I in 1623, were copied and engraved for centuries and shaped how Europe pictured the apostles.",
+          "img": "img/elymas0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:V&A_-_Raphael,_The_Conversion_of_the_Proconsul_(1515).jpg"
+        },
+        {
+          "kind": "Descriptive",
+          "title": "Saint Paul and Sergius, Roman Proconsul in Cyprus",
+          "artist": "Malnazar",
+          "year": "1637–38",
+          "medium": "Tempera and gold on paper (illuminated manuscript)",
+          "location": "J. Paul Getty Museum, Los Angeles",
+          "description": "Against a gold sky, Paul stands holding a book of the Scriptures while the proconsul kneels before him with his hands crossed on his breast, between brightly colored city towers.",
+          "significance": "A page from an Armenian Bible illuminated by Malnazar, a leading painter of the Armenian community of New Julfa in Isfahan, Persia.",
+          "symbolism": "The kneeling Roman governor shows the gospel reaching the rulers of the Gentile world; Paul's halo and the book mark him as apostle and teacher.",
+          "impact": "Armenian Bibles of New Julfa carried the Acts scenes in a style that joins Byzantine, Persian and European models.",
+          "img": "img/elymas1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Malnazar_-_Saint_Paul_and_Sergius,_Roman_Proconsul_in_Cyprus_-_Google_Art_Project.jpg"
+        }
+      ],
+      "tags": [
+        "miracle",
+        "conflict"
+      ],
+      "orderNote": "Luke correctly calls the governor of Cyprus a proconsul: the island was a senatorial province from 22 BC. A Lucius Sergius Paullus appears as a Roman official in an inscription of Claudius's reign; whether he is the same man is debated."
+    },
+    {
+      "id": "johnmark",
+      "harmony": "Acts 13:13",
+      "lane": "paul",
+      "place": "perga",
+      "from": "paphos",
+      "date": "c. AD 47",
+      "title": "Perga: John Mark turns back",
+      "people": [
+        "Paul",
+        "Barnabas",
+        "John Mark",
+        "Paul's company"
+      ],
+      "gospels": {
+        "Acts": "13:13"
+      },
+      "summary": "\"Paul and his company\" sail from Paphos to the mainland of Asia Minor and come to Perga in Pamphylia. There John Mark leaves them and goes home to Jerusalem. Luke gives no reason. Paul took it hard: later he refused to take Mark on the second journey, and he and Barnabas parted over it (Acts 15:37–39). Years after, Paul calls Mark \"very useful in serving me\" (2 Timothy 4:11).",
+      "journey": "About 170 miles by sea northwest from Paphos, past the Akamas cape and across the open water to the Pamphylian coast, then a few miles up the Cestrus river (or by road from Attalia) to Perga: two to three days' sail.",
+      "route": [
+        [
+          32.41,
+          34.76
+        ],
+        [
+          32.25,
+          34.95
+        ],
+        [
+          32.2,
+          35.1
+        ],
+        [
+          31.8,
+          35.6
+        ],
+        [
+          31.3,
+          36.2
+        ],
+        [
+          30.95,
+          36.75
+        ],
+        [
+          30.9,
+          36.84
+        ],
+        [
+          30.87,
+          36.92
+        ],
+        [
+          30.854,
+          36.961
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 13:13",
+          "text": "Now Paul and his company set sail from Paphos, and came to Perga in Pamphylia. And John left them and returned to Jerusalem;"
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The colonnaded street of Perga",
+          "artist": "Photo: Bernard Gagnon",
+          "year": "2014",
+          "medium": "Photograph",
+          "location": "Perge, near Antalya, Turkey",
+          "description": "The marble columns of Perga's main street run north toward the acropolis hill. A water channel once ran down the middle of the paved road.",
+          "significance": "Perga was one of the great cities of Pamphylia; most of what stands today was built in the 2nd century AD, a few generations after Paul.",
+          "symbolism": "Paul passed this way twice: hurrying through on the way in (Acts 13:14), and preaching here on the way out (Acts 14:25).",
+          "impact": "The site, with its theater, stadium and Hellenistic gate, is one of the best-preserved Roman cities of southern Turkey.",
+          "img": "img/johnmark0.jpg",
+          "credit": "Photo: Bernard Gagnon, CC BY-SA 3.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Colonnade,_Perge_01.jpg"
+        }
+      ],
+      "tags": [],
+      "orderNote": "Why Mark left is unknown. Guesses include homesickness, fear of the hard road over the Taurus, or unease that Paul, not his cousin Barnabas, now led the mission. Some (Ramsay) link the quick move inland to an illness Paul mentions in Galatians 4:13."
+    },
+    {
+      "id": "antiochsermon",
+      "harmony": "Acts 13:14–43",
+      "lane": "paul",
+      "place": "pisidianantioch",
+      "from": "perga",
+      "date": "c. AD 47",
+      "title": "Paul's sermon in the synagogue at Pisidian Antioch",
+      "people": [
+        "Paul",
+        "Barnabas",
+        "Rulers of the synagogue",
+        "Jews and God-fearers"
+      ],
+      "gospels": {
+        "Acts": "13:14–43"
+      },
+      "summary": "At Antioch of Pisidia, a Roman colony on the high plateau, Paul and Barnabas go to the synagogue on the sabbath. After the reading of the Law and the Prophets the rulers invite them to speak. Paul stands up and tells Israel's story from the Exodus to David, then proclaims Jesus, David's descendant, crucified and raised by God. This is Paul's first sermon in Acts. Many Jews and devout converts follow them, and the people ask them to speak again next sabbath.",
+      "journey": "About 100 miles north over the Taurus mountains, climbing from the coastal plain to some 3,600 ft by rough mountain roads past Adada and Lake Egirdir: about a week on foot, through country known for brigands and swollen rivers.",
+      "route": [
+        [
+          30.854,
+          36.961
+        ],
+        [
+          30.87,
+          37.05
+        ],
+        [
+          30.9,
+          37.2
+        ],
+        [
+          30.95,
+          37.4
+        ],
+        [
+          31.0,
+          37.6
+        ],
+        [
+          31.05,
+          37.87
+        ],
+        [
+          31.12,
+          38.12
+        ],
+        [
+          31.189,
+          38.306
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 13:16",
+          "text": "So Paul stood up, and motioning with his hand said: \"Men of Israel, and you that fear God, listen."
+        },
+        {
+          "ref": "Acts 13:38–39",
+          "text": "Let it be known to you therefore, brethren, that through this man forgiveness of sins is proclaimed to you, and by him every one that believes is freed from everything from which you could not be freed by the law of Moses."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Psalm 2:7",
+          "note": "\"You are my son, today I have begotten you\": Paul reads it of the Resurrection (Acts 13:33)."
+        },
+        {
+          "ref": "Psalm 16:10",
+          "note": "\"You do not give me up to Sheol, or let your godly one see the Pit\": in its Greek form, \"see corruption,\" Paul applies it to Jesus, who rose (Acts 13:35–37)."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The Temple of Augustus at Antioch of Pisidia",
+          "artist": "Photo: Dosseman",
+          "year": "2012",
+          "medium": "Photograph",
+          "location": "Yalvaç, Isparta Province, Turkey",
+          "description": "The podium of the temple of the emperor Augustus stands at the center of a semicircular precinct cut into the rock at the highest point of the city. The modern town of Yalvaç and the Sultan Mountains lie beyond.",
+          "significance": "A copy of Augustus's own account of his deeds, the Res Gestae, was set up in Antioch; fragments of it were found here. The cult of the emperor was at the heart of the colony's life when Paul preached in its synagogue.",
+          "symbolism": "Paul proclaims a Son of David whom God raised from the dead, in a city whose highest place honored the emperor as a son of a god.",
+          "impact": "Excavations here helped scholars like W. M. Ramsay picture the Roman colonies of Galatia that Paul evangelized.",
+          "img": "img/antiochsermon0.jpg",
+          "credit": "Photo: Dosseman, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Antioch_in_Pisidia_Augustus_Temple_2951.jpg"
+        }
+      ],
+      "tags": [
+        "sermon",
+        "teaching"
+      ],
+      "orderNote": "2 Corinthians 11:26 (\"danger from rivers, danger from robbers\") is often linked to this crossing of the Taurus, but Paul does not say where those dangers were."
+    },
+    {
+      "id": "turngentiles",
+      "harmony": "Acts 13:44–52",
+      "lane": "paul",
+      "place": "pisidianantioch",
+      "date": "c. AD 47",
+      "title": "\"We turn to the Gentiles\"",
+      "people": [
+        "Paul",
+        "Barnabas",
+        "The Jews of Antioch",
+        "Gentiles of the city",
+        "Devout women of high standing"
+      ],
+      "gospels": {
+        "Acts": "13:44–52"
+      },
+      "summary": "The next sabbath almost the whole city gathers to hear. Some of the Jews, jealous at the crowds, contradict Paul. Paul and Barnabas answer boldly: the word had to come to Israel first, but since they reject it, \"we turn to the Gentiles.\" The Gentiles rejoice, and the word spreads through the region. Then leading women and men of the city are stirred up against them; they are driven out, shake the dust from their feet, and go on to Iconium, leaving disciples full of joy and the Holy Spirit.",
+      "scripture": [
+        {
+          "ref": "Acts 13:46",
+          "text": "And Paul and Barnabas spoke out boldly, saying, \"It was necessary that the word of God should be spoken first to you. Since you thrust it from you, and judge yourselves unworthy of eternal life, behold, we turn to the Gentiles."
+        },
+        {
+          "ref": "Acts 13:47",
+          "text": "For so the Lord has commanded us, saying, 'I have set you to be a light for the Gentiles, that you may bring salvation to the uttermost parts of the earth.'\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Isaiah 49:6",
+          "note": "\"I will give you as a light to the nations, that my salvation may reach to the end of the earth\": the Servant's mission, which Paul takes as his own."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The main street of Antioch of Pisidia",
+          "artist": "Photo: Dosseman",
+          "year": "2018",
+          "medium": "Photograph",
+          "location": "Yalvaç, Isparta Province, Turkey",
+          "description": "The paved Decumanus Maximus, the main east–west street of the Roman colony, runs past the corner of the square in front of the theater, with the bare hills of the plateau behind.",
+          "significance": "Antioch was a Roman colony settled with veterans by Augustus. Its streets, theater and temple of Augustus give a picture of the city where \"almost the whole city gathered together\" to hear Paul.",
+          "symbolism": "A Roman street on the edge of the Gentile world: from here Paul and Barnabas turn to the Gentiles.",
+          "impact": "The ruins have been excavated since the 1920s; the site is visited by many Christian pilgrims following Paul's route.",
+          "img": "img/turngentiles0.jpg",
+          "credit": "Photo: Dosseman, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Antioch_in_Pisida_Decumanus_Maximus_047.jpg"
+        }
+      ],
+      "tags": [
+        "conflict",
+        "teaching"
+      ]
+    },
+    {
+      "id": "iconium",
+      "harmony": "Acts 14:1–7",
+      "lane": "paul",
+      "place": "iconium",
+      "from": "pisidianantioch",
+      "date": "c. AD 47",
+      "title": "Iconium: a city divided",
+      "people": [
+        "Paul",
+        "Barnabas",
+        "Jews and Greeks of Iconium"
+      ],
+      "gospels": {
+        "Acts": "14:1–7"
+      },
+      "summary": "At Iconium they again speak first in the synagogue, and a great number of Jews and Greeks believe. They stay a long time, speaking boldly, and the Lord confirms the word with signs and wonders. The city splits, some siding with the Jews who oppose them and some with the apostles. When Gentiles and Jews with their rulers plot to stone them, they escape to Lystra and Derbe, cities of Lycaonia.",
+      "journey": "About 90 miles southeast across the plateau, partly on the Via Sebaste, the new Roman road built under Augustus: four or five days on foot.",
+      "route": [
+        [
+          31.189,
+          38.306
+        ],
+        [
+          31.45,
+          38.2
+        ],
+        [
+          31.75,
+          38.08
+        ],
+        [
+          32.1,
+          37.97
+        ],
+        [
+          32.48,
+          37.87
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 14:1",
+          "text": "Now at Iconium they entered together into the Jewish synagogue, and so spoke that a great company believed, both of Jews and of Greeks."
+        },
+        {
+          "ref": "Acts 14:3",
+          "text": "So they remained for a long time, speaking boldly for the Lord, who bore witness to the word of his grace, granting signs and wonders to be done by their hands."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Paul and Theocleia, fresco in the Grotto of St Paul",
+          "artist": "Unknown painter",
+          "year": "6th century",
+          "medium": "Fresco (photographed when uncovered)",
+          "location": "Grotto of St Paul, Bülbül Dağı, Ephesus",
+          "description": "Paul, named in Greek letters (PAULOS), raises his hand as he teaches. Beside him stands Theocleia, the mother of Thecla, in a veil and jewels. The fresco was found under layers of plaster in a cave church above Ephesus.",
+          "significance": "It illustrates the 2nd-century Acts of Paul and Thecla, set in Iconium, in which Thecla listens to Paul from her window and gives up marriage to follow him, against her mother's will.",
+          "symbolism": "Paul's raised hand is the gesture of a teacher; Theocleia's rich dress stands for the family and world Thecla leaves behind.",
+          "impact": "Thecla became one of the most popular saints of the early Church; the legend of Iconium was told from Asia Minor to Egypt and Armenia.",
+          "img": "img/iconium0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Paul_and_Thecla.jpg"
+        },
+        {
+          "kind": "Artifact",
+          "title": "Paul and Thecla, relief at Etchmiadzin Cathedral",
+          "artist": "Photo: Rita Willaert",
+          "year": "2008",
+          "medium": "Photograph of a stone relief",
+          "location": "Etchmiadzin Cathedral, Vagharshapat, Armenia",
+          "description": "A worn stone relief set into the cathedral wall shows two arched niches: on one side a standing figure, on the other a seated figure teaching. It is identified as Paul and Thecla.",
+          "significance": "An early medieval relief on the mother church of Armenia, showing how far the story of Paul's convert from Iconium travelled.",
+          "symbolism": "Teacher and listener under two arches: the Iconium legend in which Thecla hears the word and follows it.",
+          "impact": "Etchmiadzin, by tradition founded in the 4th century, is the seat of the Armenian Catholicos and a UNESCO World Heritage site.",
+          "img": "img/iconium1.jpg",
+          "credit": "Photo: Rita Willaert, CC BY 2.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Etchmiadzin_Cathedral_relief_Saint_Thecla_and_Paul_the_Apostle.jpg"
+        }
+      ],
+      "tags": [
+        "sermon",
+        "conflict"
+      ],
+      "orderNote": "The 2nd-century Acts of Paul and Thecla is set at Iconium: Thecla, a young woman, hears Paul preach and follows him. It is a legend, not history, but it preserves the only physical description of Paul (short, bald, bow-legged, with meeting eyebrows)."
+    },
+    {
+      "id": "lystraheal",
+      "harmony": "Acts 14:8–10",
+      "lane": "paul",
+      "place": "lystra",
+      "from": "iconium",
+      "date": "c. AD 47–48",
+      "title": "The lame man at Lystra",
+      "people": [
+        "Paul",
+        "Barnabas",
+        "A man lame from birth"
+      ],
+      "gospels": {
+        "Acts": "14:8–10"
+      },
+      "summary": "At Lystra sits a man who has never walked, crippled from birth. He listens to Paul preaching. Paul looks at him, sees he has faith to be made well, and calls out, \"Stand upright on your feet.\" The man leaps up and walks. The scene echoes Peter's healing of the lame man at the Temple gate (Acts 3).",
+      "journey": "About 20 miles south-southwest from Iconium to the Roman colony of Lystra: a day's walk.",
+      "route": [
+        [
+          32.48,
+          37.87
+        ],
+        [
+          32.42,
+          37.75
+        ],
+        [
+          32.33,
+          37.58
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 14:9–10",
+          "text": "He listened to Paul speaking; and Paul, looking intently at him and seeing that he had faith to be made well, said in a loud voice, \"Stand upright on your feet.\" And he sprang up and walked."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Isaiah 35:6",
+          "note": "\"then shall the lame man leap like a hart\": the sign of the age of salvation."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "Saint Paul Healing the Cripple at Lystra",
+          "artist": "Karel Dujardin",
+          "year": "1663",
+          "medium": "Oil on canvas",
+          "location": "Rijksmuseum, Amsterdam",
+          "description": "Paul, in a red mantle, strides forward and stretches out his hand. In front of him the lame man, on crutches and with a bandaged head, looks up in hope, while mothers, children and other sick people press in around them.",
+          "significance": "A late work by Dujardin, a Dutch painter trained in the Italianate style, painted during his years in Amsterdam.",
+          "symbolism": "Paul's open hand and the cripple's crutches show the moment just before the command, \"Stand upright on your feet.\"",
+          "impact": "One of Dujardin's largest works and a showpiece of Dutch classicism in the Rijksmuseum's collection.",
+          "img": "img/lystraheal0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Karel_Dujardin_-_Paulus_geneest_de_kreupele_te_Lystra_-_Google_Art_Project.jpg"
+        }
+      ],
+      "tags": [
+        "miracle",
+        "healing"
+      ]
+    },
+    {
+      "id": "lystragods",
+      "harmony": "Acts 14:11–18",
+      "lane": "paul",
+      "place": "lystra",
+      "date": "c. AD 47–48",
+      "title": "Taken for Zeus and Hermes",
+      "people": [
+        "Paul",
+        "Barnabas",
+        "The priest of Zeus",
+        "The people of Lystra"
+      ],
+      "gospels": {
+        "Acts": "14:11–18"
+      },
+      "summary": "The crowd cries out in their own Lycaonian tongue, \"The gods have come down to us in the likeness of men!\" They call Barnabas Zeus and Paul, the chief speaker, Hermes. The priest of Zeus brings oxen and garlands to the gates to offer sacrifice. Paul and Barnabas tear their clothes and rush into the crowd: they are men like them, bringing news of the living God who made heaven and earth and gives rain and harvests. Even so, they barely stop the sacrifice.",
+      "scripture": [
+        {
+          "ref": "Acts 14:11–12",
+          "text": "And when the crowds saw what Paul had done, they lifted up their voices, saying in Lycaonian, \"The gods have come down to us in the likeness of men!\" Barnabas they called Zeus, and Paul, because he was the chief speaker, they called Hermes."
+        },
+        {
+          "ref": "Acts 14:15",
+          "text": "\"Men, why are you doing this? We also are men, of like nature with you, and bring you good news, that you should turn from these vain things to a living God who made the heaven and the earth and the sea and all that is in them."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Psalm 146:6",
+          "note": "God \"who made heaven and earth, the sea, and all that is in them\": the words of Paul's appeal."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Sacrifice at Lystra",
+          "artist": "Raphael",
+          "year": "1515–16",
+          "medium": "Bodycolour (distemper) on paper, mounted on canvas",
+          "location": "Victoria and Albert Museum, London (lent by the Royal Collection)",
+          "description": "A garlanded ox is led to an altar, and a man raises an axe to strike it, while a statue of Hermes watches from a column. At the left Paul tears his garment in protest. Among the crowd stands the healed man, his crutches cast down.",
+          "significance": "Another of Raphael's cartoons for the Sistine Chapel tapestries; Raphael based the sacrifice on a Roman relief.",
+          "symbolism": "The healed cripple links the miracle to the mistake: the crowd sees gods where Paul points them to the living God.",
+          "impact": "Widely engraved, the design fixed the scene in European art for three centuries.",
+          "img": "img/lystragods0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:V&A_-_Raphael,_The_Sacrifice_at_Lystra_(1515).jpg"
+        },
+        {
+          "kind": "Masterpiece",
+          "title": "Paul and Barnabas at Lystra",
+          "artist": "Jacob Jordaens",
+          "year": "1616",
+          "medium": "Oil on canvas",
+          "location": "State Hermitage Museum, Saint Petersburg",
+          "description": "A priest in a golden robe and the townspeople press a garlanded ox forward for sacrifice. Paul, in grey, grasps his torn garment and turns away in horror, while a young man pours water into a basin for the rite.",
+          "significance": "An early work of the Flemish painter Jordaens, full of the robust figures and crowded energy he learned from Rubens.",
+          "symbolism": "Paul tearing his clothes is the Jewish sign of grief at blasphemy: he refuses the honor due to God alone.",
+          "impact": "A strong example of Flemish Baroque history painting in the Hermitage collection, and one of the few great paintings of this scene.",
+          "img": "img/lystragods1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_(I)_-_Paulus_en_Barnabas_te_Lystra_(Hand.14-16-18)_-_ГЭ-491_-_Hermitage_Museum.jpg"
+        }
+      ],
+      "tags": [
+        "teaching"
+      ],
+      "orderNote": "Ovid (Metamorphoses 8) tells a local Phrygian legend in which Zeus and Hermes visited the region in human form and only the old couple Baucis and Philemon took them in; it may explain the crowd's eagerness. Inscriptions near Lystra link the two gods in worship."
+    },
+    {
+      "id": "lystrastoned",
+      "harmony": "Acts 14:19–20",
+      "lane": "paul",
+      "place": "lystra",
+      "date": "c. AD 47–48",
+      "title": "Paul stoned and left for dead",
+      "people": [
+        "Paul",
+        "Barnabas",
+        "Jews from Antioch and Iconium",
+        "The disciples"
+      ],
+      "gospels": {
+        "Acts": "14:19–20",
+        "2Cor": "11:25",
+        "2Tim": "3:10–11"
+      },
+      "summary": "Jews come from Antioch and Iconium and win over the crowd. They stone Paul and drag him outside the city, thinking he is dead. But when the disciples gather round him, he gets up and goes back into the city. The next day he leaves with Barnabas for Derbe. Paul never forgot it: \"once I was stoned\" (2 Corinthians 11:25). Timothy, who may have seen it, was from Lystra (Acts 16:1).",
+      "scripture": [
+        {
+          "ref": "Acts 14:19–20",
+          "text": "But Jews came there from Antioch and Iconium; and having persuaded the people, they stoned Paul and dragged him out of the city, supposing that he was dead. But when the disciples gathered about him, he rose up and entered the city; and on the next day he went on with Barnabas to Derbe."
+        },
+        {
+          "ref": "2 Timothy 3:11",
+          "text": "my persecutions, my sufferings, what befell me at Antioch, at Iconium, and at Lystra, what persecutions I endured; yet from them all the Lord rescued me."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "Saint Paul Surrounded by Disciples after His Lapidation at Lystra",
+          "artist": "Giovanni Guerra",
+          "year": "c. 1590–1618",
+          "medium": "Pen and brown ink, brush and wash",
+          "location": "Metropolitan Museum of Art, New York",
+          "description": "Paul kneels in prayer among the stones that were thrown at him, while the disciples crowd round, amazed that he is alive. In the background the city gate stands open, ready for him to walk back in.",
+          "significance": "One of a series of narrative drawings of Acts by Guerra, a designer of fresco cycles in late 16th-century Rome. The Latin inscription cites Acts 14:20.",
+          "symbolism": "The stones still lie at his knees, but Paul is risen and praying: \"from them all the Lord rescued me.\"",
+          "impact": "The stoning at Lystra is rarely painted; drawings and prints like this kept the scene in illustrated Bibles.",
+          "img": "img/lystrastoned0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Saint_Paul_Surrounded_by_Disciples_after_His_Lapidation_at_Lystra_(Acts_14-20)_MET_DP810090.jpg"
+        }
+      ],
+      "tags": [
+        "conflict"
+      ],
+      "orderNote": "Some connect Paul's vision of being \"caught up to the third heaven\" fourteen years before 2 Corinthians (2 Cor 12:2–4) with this stoning; it is a guess, and the dates fit only roughly."
+    },
+    {
+      "id": "derbe",
+      "harmony": "Acts 14:20–21",
+      "lane": "paul",
+      "place": "derbe",
+      "from": "lystra",
+      "date": "c. AD 48",
+      "title": "Derbe: many disciples",
+      "people": [
+        "Paul",
+        "Barnabas",
+        "Gaius of Derbe (later)"
+      ],
+      "gospels": {
+        "Acts": "14:20–21"
+      },
+      "summary": "At Derbe, the easternmost town of the journey, Paul and Barnabas preach the gospel and make many disciples. Luke records no opposition here. Gaius of Derbe later travels with Paul (Acts 20:4). From Derbe the road ran on east to the Cilician Gates and Paul's home city of Tarsus, but they turn back instead.",
+      "journey": "About 60 miles east-southeast across the Lycaonian plain, the day after the stoning: three days or more on foot for a badly bruised man.",
+      "route": [
+        [
+          32.33,
+          37.58
+        ],
+        [
+          32.6,
+          37.5
+        ],
+        [
+          33.0,
+          37.42
+        ],
+        [
+          33.36,
+          37.35
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 14:21",
+          "text": "When they had preached the gospel to that city and had made many disciples, they returned to Lystra and to Iconium and to Antioch,"
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "Site of Derbe, Karajah Dagh in the distance",
+          "artist": "After E. J. Davis",
+          "year": "1879",
+          "medium": "Chromolithograph (book illustration)",
+          "location": "E. J. Davis, Life in Asiatic Turkey (London, 1879)",
+          "description": "Travellers on camels and on foot follow a stream across the wide, dry Lycaonian plain toward a small hill, with the jagged volcanic mass of Kara Dağ rising beyond.",
+          "significance": "Davis was one of the British travellers who searched for Derbe in the 19th century. Modern inscriptions place the city at Kerti Hüyük, in the same plain below Kara Dağ.",
+          "symbolism": "The empty plain shows how remote Derbe was: the far edge of the Roman province, where the first journey turned back.",
+          "impact": "Travellers' views like this shaped how Victorian readers imagined Paul's journeys through Asia Minor.",
+          "img": "img/derbe0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:DAVIS(1879)_p329_SITE_OF_DERBE,_KARAJH_DAGH_MOUNTAINS_IN_THE_DISTANCE.jpg"
+        },
+        {
+          "kind": "Artifact",
+          "title": "Bronze coin of Derbe with the empress Lucilla",
+          "artist": "Mint of Derbe",
+          "year": "c. AD 164–169",
+          "medium": "Bronze coin",
+          "location": "Bibliothèque nationale de France, Paris (Waddington collection)",
+          "description": "The obverse shows the bust of Lucilla, daughter of Marcus Aurelius and wife of Lucius Verus, with her name in Greek letters around the edge.",
+          "significance": "Derbe struck its own coins in the 2nd century AD, proof that the small town on the Lycaonian frontier became a city with civic rights in Roman times.",
+          "symbolism": "A Roman empress on a frontier town's coin: the empire's reach into the remote places where the gospel came early.",
+          "impact": "Coins and inscriptions like these were the key evidence for finding the lost city.",
+          "img": "img/derbe1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Monnaie_-_Bronze,_Derbe,_Lycaonie,_Lucilla_-_btv1b8516566x_(1_of_2).jpg"
+        }
+      ],
+      "tags": [
+        "sermon"
+      ],
+      "orderNote": "Derbe's site was long unknown. Inscriptions found in 1956 and 1964 point to Kerti Hüyük, about 60 miles from Lystra; some prefer nearby Devri Şehri. The map marks Kerti Hüyük."
+    },
+    {
+      "id": "strengthen",
+      "harmony": "Acts 14:21–23",
+      "lane": "paul",
+      "place": "pisidianantioch",
+      "from": "derbe",
+      "date": "c. AD 48",
+      "title": "Back through the cities: elders appointed",
+      "people": [
+        "Paul",
+        "Barnabas",
+        "The new churches of Lystra, Iconium and Antioch",
+        "Elders"
+      ],
+      "gospels": {
+        "Acts": "14:21–23"
+      },
+      "summary": "Rather than go on east to Tarsus, Paul and Barnabas return through Lystra, Iconium and Antioch. They strengthen the new disciples and tell them plainly that \"through many tribulations we must enter the kingdom of God.\" In every church they appoint elders, and with prayer and fasting commit them to the Lord. The young churches are given leaders before the missionaries leave.",
+      "journey": "About 170 miles back the way they came, through Lystra and Iconium to Pisidian Antioch, the very cities that had driven them out: two weeks or more on the road, with stays in each.",
+      "route": [
+        [
+          33.36,
+          37.35
+        ],
+        [
+          33.0,
+          37.42
+        ],
+        [
+          32.6,
+          37.5
+        ],
+        [
+          32.33,
+          37.58
+        ],
+        [
+          32.42,
+          37.75
+        ],
+        [
+          32.48,
+          37.87
+        ],
+        [
+          32.1,
+          37.97
+        ],
+        [
+          31.75,
+          38.08
+        ],
+        [
+          31.45,
+          38.2
+        ],
+        [
+          31.189,
+          38.306
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 14:22",
+          "text": "strengthening the souls of the disciples, exhorting them to continue in the faith, and saying that through many tribulations we must enter the kingdom of God."
+        },
+        {
+          "ref": "Acts 14:23",
+          "text": "And when they had appointed elders for them in every church, with prayer and fasting, they committed them to the Lord in whom they believed."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Gudelissin: mound marking the site of Derbe",
+          "artist": "Photograph in W. M. Ramsay, The Church in the Roman Empire before A.D. 170",
+          "year": "1893",
+          "medium": "Halftone photograph (book illustration)",
+          "location": "Lycaonian plain, Konya Province, Turkey",
+          "description": "A low, bare mound strewn with stones and a few ruined walls rises from the scrubby Lycaonian plain, with hills on the horizon.",
+          "significance": "Ramsay, the great explorer of Paul's routes in Asia Minor, identified this mound as Derbe, the point from which Paul and Barnabas turned back to revisit their churches. Later inscriptions moved the site some miles away to Kerti Hüyük, in the same plain.",
+          "symbolism": "From the edge of the map the missionaries turn back, not forward, to strengthen the young churches they had left behind.",
+          "impact": "Ramsay's books argued that Luke was an accurate historian and that Galatians was written to these south Galatian churches; they shaped a century of study of Paul's journeys.",
+          "img": "img/strengthen0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:The_church_in_the_Roman_empire_before_A.D._170_(1893)_(14596357417).jpg"
+        }
+      ],
+      "tags": [
+        "teaching",
+        "prayer"
+      ],
+      "orderNote": "Many scholars (the \"South Galatian\" view) hold that Paul's Letter to the Galatians was written to these churches of Antioch, Iconium, Lystra and Derbe, in the Roman province of Galatia; others think it went to ethnic Galatians further north."
+    },
+    {
+      "id": "attalia",
+      "harmony": "Acts 14:24–25",
+      "lane": "paul",
+      "place": "attalia",
+      "from": "pisidianantioch",
+      "date": "c. AD 48",
+      "title": "The word in Perga, down to Attalia",
+      "people": [
+        "Paul",
+        "Barnabas"
+      ],
+      "gospels": {
+        "Acts": "14:24–25"
+      },
+      "summary": "They go back through Pisidia and come down to the plain of Pamphylia. This time they preach in Perga, which they had passed through quickly on the way in. Then they go down to Attalia, the main harbor of the region, to find a ship home.",
+      "journey": "About 100 miles south back over the Taurus through Pisidia to Perga, then about 12 miles to the port of Attalia: a week or more on foot.",
+      "route": [
+        [
+          31.189,
+          38.306
+        ],
+        [
+          31.12,
+          38.12
+        ],
+        [
+          31.05,
+          37.87
+        ],
+        [
+          31.0,
+          37.6
+        ],
+        [
+          30.95,
+          37.4
+        ],
+        [
+          30.9,
+          37.2
+        ],
+        [
+          30.87,
+          37.05
+        ],
+        [
+          30.854,
+          36.961
+        ],
+        [
+          30.79,
+          36.93
+        ],
+        [
+          30.7,
+          36.886
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 14:24–25",
+          "text": "Then they passed through Pisidia, and came to Pamphylia. And when they had spoken the word in Perga, they went down to Attalia;"
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Hadrian's Gate, Antalya",
+          "artist": "Photo: Bernard Gagnon",
+          "year": "2014",
+          "medium": "Photograph",
+          "location": "Antalya (ancient Attalia), Turkey",
+          "description": "A triple-arched marble gate with Corinthian columns, set into the old city wall of Antalya. Its paving still shows the ruts worn by cart wheels.",
+          "significance": "The gate was built in honor of the emperor Hadrian's visit in AD 130, about eighty years after Paul and Barnabas came down to Attalia's harbor to sail home.",
+          "symbolism": "A city gate opening toward the sea: the end of the road through the Taurus and the start of the voyage back to Antioch.",
+          "impact": "Attalia, modern Antalya, is still the main port and city of the region; its old quarter, Kaleiçi, keeps the line of the ancient walls and harbor.",
+          "img": "img/attalia0.jpg",
+          "credit": "Photo: Bernard Gagnon, CC BY-SA 3.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Hadrian's_Gate,_Antalya_01.jpg"
+        }
+      ],
+      "tags": [
+        "sermon"
+      ]
+    },
+    {
+      "id": "returnantioch",
+      "harmony": "Acts 14:26–28",
+      "lane": "paul",
+      "place": "antioch",
+      "from": "attalia",
+      "date": "c. AD 48",
+      "title": "Home to Antioch: \"a door of faith to the Gentiles\"",
+      "people": [
+        "Paul",
+        "Barnabas",
+        "The church at Antioch"
+      ],
+      "gospels": {
+        "Acts": "14:26–28"
+      },
+      "summary": "They sail back to Antioch, where they had first been commended to the grace of God for this work. Gathering the church, they report all that God has done with them and \"how he had opened a door of faith to the Gentiles.\" They stay a long time with the disciples there. The first journey has lasted perhaps a year and a half, maybe more.",
+      "journey": "About 300 miles by sea east along the coasts of Pamphylia and Cilicia, between Asia Minor and Cyprus, to Seleucia, then 16 miles up the Orontes to Antioch: a week or more under sail. The whole first journey covered some 1,250 miles by land and sea.",
+      "route": [
+        [
+          30.7,
+          36.886
+        ],
+        [
+          31.3,
+          36.72
+        ],
+        [
+          32.0,
+          36.45
+        ],
+        [
+          32.8,
+          35.98
+        ],
+        [
+          33.6,
+          36.05
+        ],
+        [
+          34.5,
+          36.1
+        ],
+        [
+          35.4,
+          36.1
+        ],
+        [
+          35.85,
+          36.1
+        ],
+        [
+          35.93,
+          36.12
+        ],
+        [
+          35.97,
+          36.13
+        ],
+        [
+          36.03,
+          36.15
+        ],
+        [
+          36.1,
+          36.18
+        ],
+        [
+          36.161,
+          36.202
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 14:26–27",
+          "text": "and from there they sailed to Antioch, where they had been commended to the grace of God for the work which they had fulfilled. And when they arrived, they gathered the church together and declared all that God had done with them, and how he had opened a door of faith to the Gentiles."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The Titus Tunnel at Seleucia Pieria",
+          "artist": "Photo: Htkava",
+          "year": "Undated",
+          "medium": "Photograph",
+          "location": "Çevlik, near Samandağ, Hatay, Turkey",
+          "description": "A section of the great channel cut through solid rock above Seleucia, Antioch's port, with water pooling at its mouth.",
+          "significance": "Begun under Vespasian and Titus in the later 1st century AD, the tunnel and canal, nearly a mile long, diverted a mountain stream so that floods would not silt up the harbor where Paul and Barnabas landed and set sail.",
+          "symbolism": "The harbor of Seleucia was the door through which the first missions went out and came home.",
+          "impact": "One of the most impressive Roman engineering works in Turkey, it is now on UNESCO's tentative list.",
+          "img": "img/returnantioch0.jpg",
+          "credit": "Photo: Htkava, CC BY-SA 3.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Titus_Tunnel,_Seleucia_Pieria.jpg"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "circumcision",
+      "harmony": "Acts 15:1–2",
+      "lane": "paul",
+      "place": "antioch",
+      "date": "c. AD 48–49",
+      "title": "Dissension at Antioch over circumcision",
+      "people": [
+        "Paul",
+        "Barnabas",
+        "Men from Judea",
+        "(Galatians 2: Peter, men from James)"
+      ],
+      "gospels": {
+        "Acts": "15:1–2",
+        "Gal": "2:11–14"
+      },
+      "summary": "Men come down from Judea and teach the believers at Antioch that Gentiles cannot be saved unless they are circumcised and keep the Law of Moses. Paul and Barnabas oppose them hard. The question goes to the heart of the gospel: are Gentiles saved by grace through faith in Christ, or must they first become Jews? The church sends Paul, Barnabas and others up to Jerusalem to the apostles and elders.",
+      "scripture": [
+        {
+          "ref": "Acts 15:1",
+          "text": "But some men came down from Judea and were teaching the brethren, \"Unless you are circumcised according to the custom of Moses, you cannot be saved.\""
+        },
+        {
+          "ref": "Galatians 2:14",
+          "text": "But when I saw that they were not straightforward about the truth of the gospel, I said to Cephas before them all, \"If you, though a Jew, live like a Gentile and not like a Jew, how can you compel the Gentiles to live like Jews?\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "Saints Peter and Paul",
+          "artist": "Guido Reni",
+          "year": "c. 1605",
+          "medium": "Oil on canvas",
+          "location": "Pinacoteca di Brera, Milan",
+          "description": "Peter, old and bald, sits with his keys on the ground and his head in his hand, listening. Paul, in red, stands over him with the book of the Scriptures, raising a hand to make his point.",
+          "significance": "An early masterpiece of Reni's Roman years. It has long been read as the dispute at Antioch, when Paul \"opposed Peter to his face\" (Galatians 2:11); an 1804 engraving of it is titled with Paul's words, \"How can you compel the Gentiles to live like Jews?\"",
+          "symbolism": "Peter's thoughtful pose and Paul's urgent gesture show two apostles in earnest debate, not enmity: the keys and the book are both theirs.",
+          "impact": "The painting is one of the best-loved images of the two founders of the Roman church together.",
+          "img": "img/circumcision0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Guido_Reni_-_Sts_Peter_and_Paul_-_WGA19309.jpg"
+        }
+      ],
+      "tags": [
+        "conflict"
+      ],
+      "orderNote": "Galatians 2:11–14 tells how Paul rebuked Peter at Antioch when, after \"certain men came from James,\" Peter stopped eating with Gentiles. Some put that clash here, just before the council; others place it after the council (Robertson and many older harmonies) or before the first journey."
+    },
+    {
+      "id": "jerusalemcouncil",
+      "harmony": "Acts 15:3–12",
+      "lane": "apostles",
+      "place": "jerusalemchurch",
+      "from": "antioch",
+      "date": "c. AD 49",
+      "title": "The Council of Jerusalem: Peter speaks",
+      "people": [
+        "Peter",
+        "James",
+        "The apostles and elders",
+        "Paul",
+        "Barnabas",
+        "Believing Pharisees",
+        "(Galatians 2: Titus, John)"
+      ],
+      "gospels": {
+        "Acts": "15:3–12",
+        "Gal": "2:1–10"
+      },
+      "summary": "On the way through Phoenicia and Samaria, Paul and Barnabas bring great joy to the believers with news of the Gentiles' conversion. In Jerusalem some believers from the party of the Pharisees insist that Gentiles must be circumcised and keep the Law. The apostles and elders meet. After long debate Peter rises: God gave the Holy Spirit to the Gentiles at Cornelius's house just as to us, cleansing their hearts by faith, so why put on them a yoke no one could bear? \"We shall be saved through the grace of the Lord Jesus, just as they will.\" Then the assembly listens in silence as Barnabas and Paul tell of the signs God has done among the Gentiles.",
+      "journey": "About 330 miles south by the coast road through Phoenicia, by Tripolis, Berytus, Sidon, Tyre and Ptolemais, then inland through Samaria to Jerusalem: two to three weeks on foot, with stops to tell the churches of the Gentiles' conversion.",
+      "route": [
+        [
+          36.161,
+          36.202
+        ],
+        [
+          36.02,
+          35.85
+        ],
+        [
+          35.78,
+          35.52
+        ],
+        [
+          35.88,
+          34.89
+        ],
+        [
+          35.84,
+          34.44
+        ],
+        [
+          35.65,
+          34.12
+        ],
+        [
+          35.5,
+          33.89
+        ],
+        [
+          35.37,
+          33.56
+        ],
+        [
+          35.2,
+          33.27
+        ],
+        [
+          35.07,
+          32.92
+        ],
+        [
+          35.18,
+          32.6
+        ],
+        [
+          35.192,
+          32.276
+        ],
+        [
+          35.25,
+          32.0
+        ],
+        [
+          35.231,
+          31.776
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 15:8–9",
+          "text": "And God who knows the heart bore witness to them, giving them the Holy Spirit just as he did to us; and he made no distinction between us and them, but cleansed their hearts by faith."
+        },
+        {
+          "ref": "Acts 15:11",
+          "text": "But we believe that we shall be saved through the grace of the Lord Jesus, just as they will.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "The Council of Jerusalem (Peter window)",
+          "artist": "Königliche Glasmalereianstalt, Munich",
+          "year": "1873",
+          "medium": "Stained glass",
+          "location": "Cologne Cathedral (south transept, Peter window)",
+          "description": "Peter stands on the steps in the middle of the assembly, holding a book and raising his hand as he speaks. Around him the apostles and elders sit and listen; at the right an elder holding a written sheet ponders, and books and scrolls lie open on the floor.",
+          "significance": "The main scene of a window on the life of Peter given to Cologne Cathedral when it was being completed in the 19th century.",
+          "symbolism": "Peter speaks from the center of the Church's first council; the open books point to Scripture as the ground of its decision.",
+          "impact": "The Council of Jerusalem is rarely shown in art; it is remembered as the model for all later councils of the Church.",
+          "img": "img/jerusalemcouncil0.jpg",
+          "credit": "Photo: Doppelklecks, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Koelner_Dom_Petrusfenster_Apostelkonzil.jpg"
+        }
+      ],
+      "tags": [
+        "teaching",
+        "conflict"
+      ],
+      "orderNote": "Most identify Paul's visit in Galatians 2:1–10 (with Barnabas and Titus, \"after fourteen years\") with this council. Others identify it with the famine visit of Acts 11:30, which would put Galatians before the council. This is Peter's last appearance in Acts."
+    },
+    {
+      "id": "jamesverdict",
+      "harmony": "Acts 15:13–29",
+      "lane": "apostles",
+      "place": "jerusalemchurch",
+      "date": "c. AD 49",
+      "title": "James's judgment and the apostles' letter",
+      "people": [
+        "James",
+        "The apostles and elders",
+        "Judas Barsabbas",
+        "Silas",
+        "Paul",
+        "Barnabas"
+      ],
+      "gospels": {
+        "Acts": "15:13–29"
+      },
+      "summary": "James, the brother of the Lord and leader of the Jerusalem church, sums up. The prophets foretold that the Gentiles would seek the Lord, so \"we should not trouble those of the Gentiles who turn to God.\" They are asked only to abstain from food offered to idols, from unchastity, from what is strangled and from blood, so that Jews and Gentiles can share a table. The apostles, elders and whole church agree and write a letter, sent with Judas Barsabbas and Silas: \"it has seemed good to the Holy Spirit and to us.\" Gentiles need not become Jews to be Christians.",
+      "scripture": [
+        {
+          "ref": "Acts 15:19–20",
+          "text": "Therefore my judgment is that we should not trouble those of the Gentiles who turn to God, but should write to them to abstain from the pollutions of idols and from unchastity and from what is strangled and from blood."
+        },
+        {
+          "ref": "Acts 15:28",
+          "text": "For it has seemed good to the Holy Spirit and to us to lay upon you no greater burden than these necessary things:"
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Amos 9:11–12",
+          "note": "\"I will raise up the booth of David that is fallen\": James quotes it in the Greek form, of the Gentiles who are called by the Lord's name (Acts 15:16–17)."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "Saint James the Brother of the Lord",
+          "artist": "Unknown icon painter",
+          "year": "Modern (Neo-Byzantine)",
+          "medium": "Icon",
+          "location": "Unknown",
+          "description": "James, named in Greek \"the Brother of God\" (Adelphotheos), wears a bishop's omophorion marked with crosses and holds a jewelled Gospel book against a gold ground.",
+          "significance": "The Orthodox Church honors James as the first bishop of Jerusalem, who presided at the council; his feast is October 23.",
+          "symbolism": "The bishop's vestments show his role as head of the Jerusalem church; the closed book is the word he judged by.",
+          "impact": "The ancient Liturgy of St James, still used in Jerusalem on his feast, is named after him.",
+          "img": "img/jamesverdict0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Saint_James_the_Just.jpg"
+        }
+      ],
+      "tags": [
+        "teaching"
+      ],
+      "orderNote": "The four rules echo the laws for foreigners living in Israel (Leviticus 17–18). Some manuscripts (the Western text) drop \"what is strangled\" and add the Golden Rule, turning the rules into moral ones."
+    },
+    {
+      "id": "letterantioch",
+      "harmony": "Acts 15:30–35",
+      "lane": "paul",
+      "place": "antioch",
+      "from": "jerusalemchurch",
+      "date": "c. AD 49",
+      "title": "The letter read at Antioch",
+      "people": [
+        "Paul",
+        "Barnabas",
+        "Judas Barsabbas",
+        "Silas",
+        "The church at Antioch"
+      ],
+      "gospels": {
+        "Acts": "15:30–35"
+      },
+      "summary": "Paul and Barnabas return to Antioch with Judas and Silas, gather the congregation and hand over the letter. The church rejoices at its encouragement. Judas and Silas, both prophets, strengthen the believers with many words, and after a time Judas goes back to Jerusalem. Paul and Barnabas stay on in Antioch, teaching and preaching with many others. Silas will soon be Paul's partner on his second journey.",
+      "journey": "About 330 miles back north through Samaria and the coast road of Phoenicia to Antioch: two to three weeks on foot.",
+      "route": [
+        [
+          35.231,
+          31.776
+        ],
+        [
+          35.25,
+          32.0
+        ],
+        [
+          35.192,
+          32.276
+        ],
+        [
+          35.18,
+          32.6
+        ],
+        [
+          35.07,
+          32.92
+        ],
+        [
+          35.2,
+          33.27
+        ],
+        [
+          35.37,
+          33.56
+        ],
+        [
+          35.5,
+          33.89
+        ],
+        [
+          35.65,
+          34.12
+        ],
+        [
+          35.84,
+          34.44
+        ],
+        [
+          35.88,
+          34.89
+        ],
+        [
+          35.78,
+          35.52
+        ],
+        [
+          36.02,
+          35.85
+        ],
+        [
+          36.161,
+          36.202
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 15:30–31",
+          "text": "So when they were sent off, they went down to Antioch; and having gathered the congregation together, they delivered the letter. And when they read it, they rejoiced at the exhortation."
+        },
+        {
+          "ref": "Acts 15:35",
+          "text": "But Paul and Barnabas remained in Antioch, teaching and preaching the word of the Lord, with many others also."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Apostle Paul",
+          "artist": "Rembrandt",
+          "year": "c. 1633–36",
+          "medium": "Oil on canvas",
+          "location": "Kunsthistorisches Museum, Vienna",
+          "description": "An old Paul, with a long white beard, sits at a table with a great open book, his hand resting on its pages and a pen in his other hand. He looks out, lost in thought, with the hilt of a sword glinting in the dark behind him.",
+          "significance": "One of several images of Paul by Rembrandt, who was drawn to the apostle as a thinker, teacher and letter writer, as Paul was in Antioch after the council, \"teaching and preaching the word of the Lord.\"",
+          "symbolism": "The open book stands for Scripture and the written word that settled the dispute; the sword is the sign of Paul's martyrdom.",
+          "impact": "Rembrandt's apostles, quiet and human, changed how Paul was pictured: no longer only a hero of action but a pastor and teacher.",
+          "img": "img/letterantioch0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Apostle_Paul_-_WGA19120.jpg"
+        }
+      ],
+      "tags": [
+        "teaching"
+      ],
+      "orderNote": "Acts 15:34 (\"But it seemed good to Silas to remain there\") is missing from the best manuscripts and from the RSV; Silas is nonetheless in Antioch when Paul chooses him in 15:40."
+    }
+  ]
+}

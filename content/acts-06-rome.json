@@ -1,0 +1,1785 @@
+{
+  "_batch": "acts-06-rome",
+  "_sections": "Acts 21:17–28:31",
+  "_unverified": [],
+  "_notes": [
+    "Lane `paul` (new): Paul and his companions, including Luke's \"we\" passages. Lane `rome` for the tribune Claudius Lysias's night transfer (nightride) and Felix's two-year delay (felixyears); lane `herod` for Agrippa II and Bernice's arrival (agrippa).",
+    "New place `adria` (The Sea of Adria, the storm; certainty Traditional) marks the open sea for the storm event; its position is a point on the reconstructed line of drift, not a recorded position.",
+    "New event field `routeUncertain: true` on `tempest` and `shipwreck`: the drift from Cauda to Malta is a reconstruction (after James Smith, 1848). Please draw these two route lines dashed or faded, and say so in the legend.",
+    "`meetjames` carries the journey Caesarea to Jerusalem (Acts 21:15–16). If the third-journey batch already ends with that walk to Jerusalem, drop one of the two journeys.",
+    "Council (`paulcouncil`) is mapped at `temple` (data.js), since the council met near the Temple; the riot (`templeriot`) is also at `temple`. The Caesarea events use `caesarea` from data.js.",
+    "Extra keys in `gospels`: `Rom` (meetjames 15:25–31, threetaverns 1:11–13) and `Phil` (hiredhouse 1:12–14)."
+  ],
+  "places": {
+    "adria": {
+      "name": "The Sea of Adria (the storm)",
+      "ll": [
+        19.0,
+        35.45
+      ],
+      "region": "Central Mediterranean",
+      "certainty": "Traditional",
+      "note": "In Paul's day \"Adria\" meant the whole central Mediterranean between Crete, Sicily and Greece, not only the Adriatic. Luke gives no position for the fourteen days of the storm. The map marks the open sea on the most likely line of drift, from Cauda toward Malta; the true course is unknown."
+    },
+    "antonia": {
+      "name": "Antonia Fortress (the barracks)",
+      "ll": [
+        35.2335,
+        31.7803
+      ],
+      "region": "Jerusalem",
+      "certainty": "Probable",
+      "note": "Herod the Great's fortress at the northwest corner of the Temple courts, named for Mark Antony. A Roman cohort was stationed there, and stairs led down into the Temple courts (Josephus, Jewish War 5.5.8). These are \"the steps\" of Acts 21:35 and 40 and \"the barracks\" where Paul was held. The fortress was razed by Titus in AD 70; its rock base lies under the Umariyya school on the Via Dolorosa."
+    },
+    "appiiforum": {
+      "name": "Forum of Appius and Three Taverns",
+      "ll": [
+        13.1,
+        41.43
+      ],
+      "region": "Italy",
+      "certainty": "Probable",
+      "note": "Two stopping places on the Appian Way south of Rome. The Forum of Appius, a market town by the Pontine marshes, lay 43 Roman miles from the city; Three Taverns, a road station near modern Cisterna, about 33. The map marks the Forum of Appius."
+    },
+    "fairhavens": {
+      "name": "Fair Havens (Crete)",
+      "ll": [
+        24.78,
+        34.93
+      ],
+      "region": "Crete",
+      "certainty": "Probable",
+      "note": "A small open bay on the south coast of Crete, near Lasea. The name survives as Kaloi Limenes, just east of Cape Lithino, where the coast turns north and the shelter ends; ruins of Lasea lie a few miles east. A small chapel of St Paul stands on the shore."
+    },
+    "jerusalemchurch": {
+      "name": "Jerusalem (the city)",
+      "ll": [
+        35.231,
+        31.776
+      ],
+      "region": "Judea",
+      "certainty": "Certain",
+      "note": "The first church met in the Temple courts and \"in their homes\" across the city (Acts 2:46; 5:42). Acts names no single meeting place, so events of the church's common life are mapped at the city itself."
+    },
+    "malta": {
+      "name": "Malta (St Paul's Bay)",
+      "ll": [
+        14.4,
+        35.95
+      ],
+      "region": "Malta",
+      "certainty": "Traditional",
+      "note": "Luke names the island Melite. A long tradition, and the seamanship study of James Smith (1848), place the wreck at St Paul's Bay on Malta's northeast coast, where a sandbar off the small St Paul's Islands matches \"a place where two seas met\" (Acts 27:41). Other bays on Malta have been proposed, and a few scholars have argued for Mljet off Croatia or Cephalonia in Greece."
+    },
+    "myra": {
+      "name": "Myra",
+      "ll": [
+        29.98,
+        36.26
+      ],
+      "region": "Lycia",
+      "certainty": "Certain",
+      "note": "A chief city of Lycia, on the south coast of Asia Minor, with its port at Andriake. A regular stop for the grain ships from Alexandria to Rome, which sailed north to Lycia before turning west. Today Demre, Turkey, famous for its rock-cut tombs and for St Nicholas, its bishop in the 4th century."
+    },
+    "puteoli": {
+      "name": "Puteoli",
+      "ll": [
+        14.12,
+        40.82
+      ],
+      "region": "Italy",
+      "certainty": "Certain",
+      "note": "The main port of Rome for the Alexandrian grain fleet before the harbors at Ostia were built up, on the Bay of Naples. Paul found Christians here and stayed seven days. Today Pozzuoli; its Roman market hall (the \"Temple of Serapis\") and amphitheater survive."
+    },
+    "rome": {
+      "name": "Rome",
+      "ll": [
+        12.4964,
+        41.9028
+      ],
+      "region": "Italy",
+      "certainty": "Certain",
+      "note": "The capital of the empire, where a Christian community had existed for years before Paul came (his letter to the Romans was written about AD 57). Acts does not say where in the city Paul's rented lodging was. Later traditions honor sites such as San Paolo alla Regola and Santa Maria in Via Lata; the Mamertine prison is linked by tradition with a later imprisonment."
+    },
+    "sidon": {
+      "name": "Sidon",
+      "ll": [
+        35.37,
+        33.56
+      ],
+      "region": "Phoenicia",
+      "certainty": "Certain",
+      "note": "The old Phoenician port, a day's sail north of Caesarea. The first stop on Paul's voyage to Rome, where the centurion Julius let him visit his friends. Today Saida, Lebanon; the Crusader Sea Castle stands on an islet in the ancient harbor."
+    },
+    "syracuse": {
+      "name": "Syracuse",
+      "ll": [
+        15.29,
+        37.07
+      ],
+      "region": "Sicily",
+      "certainty": "Certain",
+      "note": "The great Greek city of eastern Sicily, with a fine harbor around the island of Ortygia. Paul's ship stayed three days. Tradition later linked the catacomb church of San Giovanni with Paul's preaching here."
+    }
+  },
+  "events": [
+    {
+      "id": "meetjames",
+      "harmony": "Acts 21:17–26",
+      "lane": "paul",
+      "place": "jerusalemchurch",
+      "date": "Pentecost, AD 57",
+      "title": "Paul meets James and the elders",
+      "people": [
+        "Paul",
+        "James",
+        "The elders",
+        "Luke",
+        "Mnason of Cyprus"
+      ],
+      "gospels": {
+        "Acts": "21:17–26",
+        "Rom": "15:25–31"
+      },
+      "summary": "Paul reaches Jerusalem with the collection from the Gentile churches, and the brethren receive him gladly. The next day he tells James and all the elders what God has done among the Gentiles, and they glorify God. But thousands of Jewish believers have heard that Paul tells Jews to give up the law of Moses. So the elders ask him to join four men under a vow, pay their costs and go with them to the Temple, to show that he still keeps the law.",
+      "stay": "They lodged with Mnason of Cyprus, an early disciple (Acts 21:16).",
+      "scripture": [
+        {
+          "ref": "Acts 21:18–19",
+          "text": "On the following day Paul went in with us to James; and all the elders were present. After greeting them, he related one by one the things that God had done among the Gentiles through his ministry."
+        },
+        {
+          "ref": "Acts 21:26",
+          "text": "Then Paul took the men, and the next day he purified himself with them and went into the temple, to give notice when the days of purification would be fulfilled and the offering presented for every one of them."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "St James the Brother of the Lord",
+          "artist": "Stephanos Tzangarolas",
+          "year": "c. 1688–1710",
+          "medium": "Tempera on panel (icon)",
+          "location": "Benaki Museum, Athens",
+          "description": "James stands full length on a gold ground in the richly embroidered vestments of a bishop, holding an open scroll with Greek writing and raising his right hand. The Greek title names him \"James the Brother of God\" (that is, of the Lord).",
+          "significance": "An icon by Stephanos Tzangarolas, a priest-monk and painter of the Cretan school in the late 17th century, who signed it at the foot. Eastern tradition honors James as the first bishop of Jerusalem, the leader Paul meets in Acts 21.",
+          "symbolism": "The bishop's robes, embroidered with tiny figures of saints, show James as head of the mother church in Jerusalem; the scroll recalls the ancient Liturgy of St James that bears his name.",
+          "impact": "James 'the Just' was remembered for his strict piety; Josephus records his death by stoning in AD 62, soon after Paul reached Rome.",
+          "img": "img/meetjames0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Tzangarolas_Stephanos_-_St_James_the_Brother_of_the_Lord_-_Google_Art_Project.jpg"
+        }
+      ],
+      "tags": [],
+      "orderNote": "Paul hurried to reach Jerusalem by Pentecost (Acts 20:16), which fixes the season; most date the year AD 57, some AD 56 or 58. Acts does not mention the collection here, but Paul's letters show it was the purpose of the visit (Romans 15:25–31; Acts 24:17), and Romans 15:31 shows he feared the believers might not accept it."
+    },
+    {
+      "id": "templeriot",
+      "harmony": "Acts 21:27–36",
+      "lane": "paul",
+      "place": "temple",
+      "date": "Pentecost, AD 57",
+      "title": "The riot in the Temple and Paul's arrest",
+      "people": [
+        "Paul",
+        "Jews from Asia",
+        "Claudius Lysias (the tribune)",
+        "Roman soldiers"
+      ],
+      "gospels": {
+        "Acts": "21:27–36"
+      },
+      "summary": "Near the end of the seven days of purification, Jews from Asia see Paul in the Temple and stir up the crowd. They had seen him in the city with Trophimus, a Gentile from Ephesus, and suppose Paul brought him past the barrier into the inner courts. The crowd drags Paul out, the gates are shut, and they begin to beat him. The Roman tribune runs down with soldiers from the fortress, binds Paul with two chains and has him carried up the steps above the mob shouting \"Away with him!\"",
+      "scripture": [
+        {
+          "ref": "Acts 21:28",
+          "text": "crying out, \"Men of Israel, help! This is the man who is teaching men everywhere against the people and the law and this place; moreover he also brought Greeks into the temple, and he has defiled this holy place.\""
+        },
+        {
+          "ref": "Acts 21:30",
+          "text": "Then all the city was aroused, and the people ran together; they seized Paul and dragged him out of the temple, and at once the gates were shut."
+        },
+        {
+          "ref": "Acts 21:31–32",
+          "text": "And as they were trying to kill him, word came to the tribune of the cohort that all Jerusalem was in confusion. He at once took soldiers and centurions, and ran down to them; and when they saw the tribune and the soldiers, they stopped beating Paul."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The Temple warning inscription",
+          "artist": "Unknown (Herodian Temple)",
+          "year": "1st century BC – 1st century AD",
+          "medium": "Limestone, Greek inscription",
+          "location": "Istanbul Archaeology Museums",
+          "description": "A limestone block with seven lines of Greek capitals. It reads: \"No foreigner is to enter within the balustrade and enclosure around the Temple. Whoever is caught will have himself to blame for his death, which follows.\"",
+          "significance": "Found complete near the Temple Mount in 1871 by Charles Clermont-Ganneau. Signs like this stood on the barrier around the inner courts; the charge against Paul was that he had brought a Greek past them (Acts 21:28–29).",
+          "symbolism": "Paul himself later wrote that Christ \"has broken down the dividing wall of hostility\" between Jew and Gentile (Ephesians 2:14), perhaps with this barrier in mind.",
+          "impact": "One of the few objects that survive from Herod's Temple; Josephus describes the same warning in Greek and Latin (Jewish War 5.5.2).",
+          "img": "img/templeriot0.jpg",
+          "credit": "Photo: Yong Woo Park, CC0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Temple_Warning_Inscription_from_Jerusalem_Istanbul_Archaeology_Museums.jpg"
+        }
+      ],
+      "tags": [
+        "conflict"
+      ],
+      "orderNote": "A stone barrier (the soreg) kept Gentiles out of the inner courts; Greek inscriptions on it warned that any foreigner who passed would have himself to blame for the death that followed. Two of these inscriptions have been found (1871 and 1935)."
+    },
+    {
+      "id": "barracks",
+      "harmony": "Acts 21:37–22:29",
+      "lane": "paul",
+      "place": "antonia",
+      "date": "Pentecost, AD 57",
+      "title": "Paul's speech from the barracks steps",
+      "people": [
+        "Paul",
+        "Claudius Lysias (the tribune)",
+        "The crowd",
+        "A centurion"
+      ],
+      "gospels": {
+        "Acts": "21:37–22:29"
+      },
+      "summary": "The tribune takes Paul for an Egyptian rebel, but Paul answers in Greek that he is a Jew of Tarsus and asks to speak. Standing on the steps, he addresses the crowd in Hebrew (Aramaic) and tells of his zeal for the law, the light on the Damascus road, Ananias, and the Lord's command to go to the Gentiles. At the word \"Gentiles\" the crowd erupts again. The tribune orders him examined by scourging, but Paul asks the centurion whether it is lawful to scourge a Roman citizen who has not been condemned.",
+      "scripture": [
+        {
+          "ref": "Acts 21:39",
+          "text": "Paul replied, \"I am a Jew, from Tarsus in Cilicia, a citizen of no mean city; I beg you, let me speak to the people.\""
+        },
+        {
+          "ref": "Acts 22:21",
+          "text": "And he said to me, 'Depart; for I will send you far away to the Gentiles.'\""
+        },
+        {
+          "ref": "Acts 22:28",
+          "text": "The tribune answered, \"I bought this citizenship for a large sum.\" Paul said, \"But I was born a citizen.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "Saint Paul Rescued from the Multitude",
+          "artist": "Gustave Doré",
+          "year": "1866",
+          "medium": "Wood engraving",
+          "location": "From La Grande Bible de Tours (1866)",
+          "description": "Roman soldiers with spears force their way through a raging crowd and lift Paul bodily up the steps of the fortress, while the mob below shake their fists and a figure at the top of the stair raises his arm.",
+          "significance": "One of more than 200 plates in Doré's illustrated Bible, among the most reproduced Bible pictures of the 19th century.",
+          "symbolism": "Paul is carried above the crowd \"because of the violence of the crowd\" (Acts 21:35): he is saved by the very power that has made him a prisoner.",
+          "impact": "Doré's Bible appeared in many languages and editions and shaped how a whole generation pictured the Bible.",
+          "img": "img/barracks0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Paul_Addresses_the_Crowd_After_His_Arrest_by_Gustave_Doré.jpg"
+        },
+        {
+          "kind": "Artifact",
+          "title": "The Antonia Fortress (model)",
+          "artist": "Holyland Model of Jerusalem, after Michael Avi-Yonah",
+          "year": "1966 (photo 2016)",
+          "medium": "Scale model (1:50), stone",
+          "location": "Israel Museum, Jerusalem",
+          "description": "The Antonia Fortress in the model of Jerusalem: a walled block of pale stone with four tall corner towers and battlements.",
+          "significance": "The model reconstructs Jerusalem before AD 70 from Josephus and archaeology. From this fortress the tribune ran down with his soldiers, and on its steps Paul spoke to the crowd.",
+          "symbolism": "Its towers looked straight down into the Temple courts: Roman power watching over the house of God.",
+          "impact": "The model, built at the Holyland Hotel and moved to the Israel Museum in 2006, is the most familiar picture of Herodian Jerusalem.",
+          "img": "img/barracks1.jpg",
+          "credit": "Photo: Oren Rozen, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Israel_Museum_290416_Model_of_Jerusalem_03.jpg"
+        }
+      ],
+      "tags": [
+        "sermon",
+        "conflict"
+      ],
+      "orderNote": "This is the second of three accounts of Paul's conversion in Acts (9:1–19, 22:3–21, 26:9–18); they differ in detail, for example over who heard the voice."
+    },
+    {
+      "id": "paulcouncil",
+      "harmony": "Acts 22:30–23:11",
+      "lane": "paul",
+      "place": "temple",
+      "date": "Pentecost, AD 57",
+      "title": "Paul before the Sanhedrin",
+      "people": [
+        "Paul",
+        "Ananias the high priest",
+        "Pharisees",
+        "Sadducees",
+        "Claudius Lysias (the tribune)"
+      ],
+      "gospels": {
+        "Acts": "22:30–23:11"
+      },
+      "summary": "To learn the charge, the tribune brings Paul before the chief priests and the whole council. The high priest Ananias orders him struck on the mouth, and Paul flares back at him, not knowing he is the high priest. Seeing that the council is divided, Paul cries out that he is a Pharisee on trial for the hope of the resurrection, and Pharisees and Sadducees fall to quarreling. The soldiers pull him out by force. That night the Lord stands by him and tells him he must bear witness also at Rome.",
+      "scripture": [
+        {
+          "ref": "Acts 23:6",
+          "text": "But when Paul perceived that one part were Sadducees and the other Pharisees, he cried out in the council, \"Brethren, I am a Pharisee, a son of Pharisees; with respect to the hope and the resurrection of the dead I am on trial.\""
+        },
+        {
+          "ref": "Acts 23:11",
+          "text": "The following night the Lord stood by him and said, \"Take courage, for as you have testified about me at Jerusalem, so you must bear witness also at Rome.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "Paul before the High Council",
+          "artist": "Christoph Anton Mayr",
+          "year": "1768",
+          "medium": "Ceiling fresco",
+          "location": "Parish Church of Sts Peter and Paul, Söll, Tyrol (Austria)",
+          "description": "Paul, in a green robe, stands on the steps of a great hall beside a Roman officer and points to heaven, while the elders of the council gesture and argue on either side of him.",
+          "significance": "Part of a ceiling cycle of the lives of Peter and Paul, the church's patrons, painted in the late Baroque style of the Tyrol.",
+          "symbolism": "The council is split into two arguing groups, as Luke tells it: Pharisees and Sadducees divided over the resurrection, and Paul between them pointing upward.",
+          "impact": "Mayr painted the whole ceiling cycle of the church, a rich example of Tyrolean Rococo.",
+          "img": "img/paulcouncil0.jpg",
+          "credit": "Photo: Wolfgang Sauber, CC BY-SA 3.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:St.Peter_und_Paul_in_Söll_-_Deckenfresko_Peter_und_Paul_1b_Paulus_vor_dem_Hohen_Rat.jpg"
+        }
+      ],
+      "tags": [
+        "conflict",
+        "appearance"
+      ],
+      "orderNote": "Acts does not say where the council met; Lysias \"brought Paul down\" from the fortress, so it was near the Temple, perhaps in the council chamber by the Temple courts (the Chamber of Hewn Stone of later Jewish tradition). This Ananias, son of Nedebaeus, was high priest about AD 47–59 and was known for his violence (Josephus, Antiquities 20.9.2)."
+    },
+    {
+      "id": "plot",
+      "harmony": "Acts 23:12–22",
+      "lane": "paul",
+      "place": "antonia",
+      "date": "Pentecost, AD 57",
+      "title": "The plot against Paul's life",
+      "people": [
+        "Paul",
+        "Paul's nephew",
+        "More than forty conspirators",
+        "Claudius Lysias (the tribune)"
+      ],
+      "gospels": {
+        "Acts": "23:12–22"
+      },
+      "summary": "More than forty men bind themselves by an oath neither to eat nor drink until they have killed Paul. They ask the chief priests to have him brought down to the council again, so they can ambush him on the way. Paul's sister's son hears of it, gets into the barracks and tells Paul, who sends him to the tribune. The tribune listens in private and tells the young man to say nothing.",
+      "scripture": [
+        {
+          "ref": "Acts 23:12",
+          "text": "When it was day, the Jews made a plot and bound themselves by an oath neither to eat nor drink till they had killed Paul."
+        },
+        {
+          "ref": "Acts 23:16",
+          "text": "Now the son of Paul's sister heard of their ambush; so he went and entered the barracks and told Paul."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The Antonia Fortress, the barracks (model)",
+          "artist": "Holyland Model of Jerusalem",
+          "year": "1966 (photo 2008)",
+          "medium": "Scale model (1:50), stone",
+          "location": "Israel Museum, Jerusalem",
+          "description": "The model of the Antonia Fortress seen from above: its high walls and corner towers rise directly behind the colonnades of the Temple court, with stairs leading down into it.",
+          "significance": "Paul was held in this fortress, the \"barracks\" of Acts, and it was here that his nephew found him and warned him of the plot.",
+          "symbolism": "The walls that held Paul captive also protected him from the men who had sworn to kill him.",
+          "impact": "Josephus says the fortress was like a city in size, with courts, baths and quarters for a whole cohort.",
+          "img": "img/plot0.jpg",
+          "credit": "Photo: Ariely, CC BY 3.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Antonia_Fortress.jpg"
+        }
+      ],
+      "tags": [
+        "conflict"
+      ],
+      "orderNote": "This is the only mention of Paul's family in Jerusalem; nothing more is known of his sister or her son."
+    },
+    {
+      "id": "nightride",
+      "harmony": "Acts 23:23–35",
+      "lane": "rome",
+      "place": "caesarea",
+      "from": "antonia",
+      "date": "Summer, AD 57",
+      "title": "The night ride to Caesarea",
+      "people": [
+        "Claudius Lysias (the tribune)",
+        "Paul",
+        "Two centurions",
+        "470 soldiers, horsemen and spearmen",
+        "Felix the governor"
+      ],
+      "gospels": {
+        "Acts": "23:23–35"
+      },
+      "summary": "The tribune Claudius Lysias acts at once. At nine at night he sends Paul out under a guard of two hundred soldiers, seventy horsemen and two hundred spearmen, with a mount for Paul to ride. He writes to the governor Felix that he rescued a Roman citizen and found no charge deserving death or chains. The foot soldiers go as far as Antipatris, and the horsemen take Paul on to Caesarea. Felix keeps him under guard in Herod's praetorium until his accusers come.",
+      "stay": "Felix ordered him to be guarded in Herod's praetorium (Acts 23:35), the former palace of Herod the Great on the promontory at Caesarea.",
+      "journey": "About 60–65 miles. By night from Jerusalem north through the hills by Gophna and down to Antipatris (about 40 miles), then the next day across the open coastal plain to Caesarea (about 25 miles) with the horsemen only.",
+      "route": [
+        [
+          35.2335,
+          31.7803
+        ],
+        [
+          35.22,
+          31.84
+        ],
+        [
+          35.215,
+          31.96
+        ],
+        [
+          35.1,
+          32.03
+        ],
+        [
+          34.93,
+          32.105
+        ],
+        [
+          34.92,
+          32.3
+        ],
+        [
+          34.89,
+          32.5
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 23:23–24",
+          "text": "Then he called two of the centurions and said, \"At the third hour of the night get ready two hundred soldiers with seventy horsemen and two hundred spearmen to go as far as Caesarea. Also provide mounts for Paul to ride, and bring him safely to Felix the governor.\""
+        },
+        {
+          "ref": "Acts 23:31",
+          "text": "So the soldiers, according to their instructions, took Paul and brought him by night to Antipatris."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Tel Afek, the site of Antipatris",
+          "artist": "Photo: Avishai Teicher",
+          "year": "Modern photograph",
+          "medium": "Photograph",
+          "location": "Yarkon National Park (Tel Afek), Israel",
+          "description": "The square walls of the later Ottoman fort at Tel Afek, built over the mound of ancient Aphek, which Herod the Great rebuilt as Antipatris.",
+          "significance": "Herod named the town for his father, Antipater. It stood where the hill road from Jerusalem met the coastal highway; here the foot soldiers turned back and the horsemen took Paul on to Caesarea.",
+          "symbolism": "A crossroads town on the edge of the hill country: beyond it the open plain, safe from ambush.",
+          "impact": "Excavations have uncovered a stretch of Roman paved road and shops from the town of Paul's day.",
+          "img": "img/nightride0.jpg",
+          "credit": "Photo: Avishai Teicher (PikiWiki Israel), CC BY 2.5, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:PikiWiki_Israel_51795_antipatris_fortress.jpg"
+        }
+      ],
+      "tags": [],
+      "orderNote": "Forty miles in one night is a hard march; some think the infantry turned back early or that the march took longer than one night. The route by Beth-horon and Lydda is also possible."
+    },
+    {
+      "id": "felix",
+      "harmony": "Acts 24:1–23",
+      "lane": "paul",
+      "place": "caesarea",
+      "date": "Summer, AD 57",
+      "title": "Paul before Felix",
+      "people": [
+        "Paul",
+        "Felix the governor",
+        "Ananias the high priest",
+        "Tertullus",
+        "The elders"
+      ],
+      "gospels": {
+        "Acts": "24:1–23"
+      },
+      "summary": "Five days later the high priest Ananias comes down with elders and an orator named Tertullus, who flatters Felix and calls Paul a pest and a ringleader of the sect of the Nazarenes. Paul answers that he came up to worship only twelve days before, bringing alms to his nation, and stirred up no crowd. He confesses that he serves the God of his fathers according to the Way, in the hope of the resurrection. Felix, who knows the Way well, puts the case off until Lysias comes, and gives Paul some liberty and leave for his friends to care for him.",
+      "scripture": [
+        {
+          "ref": "Acts 24:14–15",
+          "text": "But this I admit to you, that according to the Way, which they call a sect, I worship the God of our fathers, believing everything laid down by the law or written in the prophets, having a hope in God which these themselves accept, that there will be a resurrection of both the just and the unjust."
+        },
+        {
+          "ref": "Acts 24:16",
+          "text": "So I always take pains to have a clear conscience toward God and toward men."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "Paul before Felix",
+          "artist": "William Hogarth",
+          "year": "1748",
+          "medium": "Oil on canvas",
+          "location": "Lincoln's Inn, London",
+          "description": "Paul, in chains, points upward as he speaks before the governor Felix, crowned with laurel, and his wife Drusilla. The orator Tertullus stands at the left with his brief, the old high priest Ananias sits by the governor, and on the floor lies the letter of Claudius Lysias to Felix.",
+          "significance": "Painted for the hall of Lincoln's Inn, one of London's Inns of Court, as a picture of a just case pleaded before a judge.",
+          "symbolism": "Felix looks uneasily at the prisoner as Paul speaks of \"justice and self-control and future judgment\": the prisoner judges the judge.",
+          "impact": "Hogarth's only large painting for a legal setting; his engraving of it was widely sold, and he also made a mocking 'burlesque' version of the same scene.",
+          "img": "img/felix0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Hogarth_-_Paul_Before_Felix,_1747-1751.jpg"
+        }
+      ],
+      "tags": [
+        "conflict",
+        "teaching"
+      ],
+      "orderNote": "Antonius Felix, a freedman, governed Judea about AD 52–59 (Tacitus, Histories 5.9, says he \"exercised the power of a king with the mind of a slave\")."
+    },
+    {
+      "id": "felixyears",
+      "harmony": "Acts 24:24–27",
+      "lane": "rome",
+      "place": "caesarea",
+      "date": "AD 57–59",
+      "title": "Felix, Drusilla, and two years in prison",
+      "people": [
+        "Felix the governor",
+        "Drusilla",
+        "Paul",
+        "Porcius Festus"
+      ],
+      "gospels": {
+        "Acts": "24:24–27"
+      },
+      "summary": "Some days later Felix comes with his wife Drusilla, a Jewish princess, the daughter of Herod Agrippa I, and sends for Paul to hear him speak about faith in Christ. When Paul argues about justice, self-control and the judgment to come, Felix is alarmed and sends him away. He sends for him often, hoping for a bribe. Two years pass; then Felix is recalled, and to do the Jews a favor he leaves Paul in prison.",
+      "stay": "Two years under guard at Caesarea (Acts 24:27).",
+      "scripture": [
+        {
+          "ref": "Acts 24:25",
+          "text": "And as he argued about justice and self-control and future judgment, Felix was alarmed and said, \"Go away for the present; when I have an opportunity I will summon you.\""
+        },
+        {
+          "ref": "Acts 24:27",
+          "text": "But when two years had elapsed, Felix was succeeded by Porcius Festus; and desiring to do the Jews a favor, Felix left Paul in prison."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Herod's Promontory Palace, Caesarea",
+          "artist": "Photo: Deror Avi",
+          "year": "2011",
+          "medium": "Photograph",
+          "location": "Caesarea National Park, Israel",
+          "description": "The paved floors and low walls of Herod's palace on its point at Caesarea, by the sea, with the old harbor and the later Crusader walls in the distance.",
+          "significance": "Built by Herod the Great about 20 BC, the palace became the residence of the Roman governors, the \"praetorium of Herod\" where Paul was kept for two years (Acts 23:35).",
+          "symbolism": "A king's pleasure palace turned into a governor's prison: here Paul waited while Felix waited for a bribe.",
+          "impact": "A stone found nearby in 1961 bears the name of Pontius Pilate, one of the governors who lived here.",
+          "img": "img/felixyears0.jpg",
+          "credit": "Photo: Deror Avi, CC BY-SA 3.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Herods_Promontory_Palace_P1080624.JPG"
+        }
+      ],
+      "tags": [
+        "teaching"
+      ],
+      "orderNote": "Some scholars think Paul wrote one or more of his prison letters (Philippians, Colossians, Philemon, Ephesians) during these two years at Caesarea; most place them in Rome, and some in an earlier imprisonment at Ephesus."
+    },
+    {
+      "id": "festus",
+      "harmony": "Acts 25:1–12",
+      "lane": "paul",
+      "place": "caesarea",
+      "date": "AD 59",
+      "title": "Before Festus: \"I appeal to Caesar\"",
+      "people": [
+        "Paul",
+        "Porcius Festus",
+        "The chief priests",
+        "The Jews from Jerusalem"
+      ],
+      "gospels": {
+        "Acts": "25:1–12"
+      },
+      "summary": "Three days after he arrives, the new governor Porcius Festus goes up to Jerusalem, where the chief priests ask him to send Paul there, planning an ambush on the road. Festus hears the case at Caesarea instead. The charges cannot be proved, and Festus, wishing to please the Jews, asks Paul if he will be tried in Jerusalem. Paul refuses: he stands before Caesar's tribunal and appeals to Caesar. As a Roman citizen he has that right, and Festus must send him to Rome.",
+      "scripture": [
+        {
+          "ref": "Acts 25:10–11",
+          "text": "But Paul said, \"I am standing before Caesar's tribunal, where I ought to be tried; to the Jews I have done no wrong, as you know very well. If then I am a wrongdoer, and have committed anything for which I deserve to die, I do not seek to escape death; but if there is nothing in their charges against me, no one can give me up to them. I appeal to Caesar.\""
+        },
+        {
+          "ref": "Acts 25:12",
+          "text": "Then Festus, when he had conferred with his council, answered, \"You have appealed to Caesar; to Caesar you shall go.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Bust of the emperor Nero",
+          "artist": "Roman sculptor",
+          "year": "1st century AD",
+          "medium": "Marble",
+          "location": "Glyptothek, Munich",
+          "description": "A marble head of Nero, with his heavy jaw and full face and the rows of curled locks over the brow that he made fashionable.",
+          "significance": "Nero was the Caesar to whom Paul appealed (reigned AD 54–68). In AD 59 he was still in the early years of his reign, before the fire of Rome and his persecution of the Christians in AD 64.",
+          "symbolism": "Paul trusted Roman justice; tradition holds that he was later beheaded under the same emperor.",
+          "impact": "Few portraits of Nero survive, since many were destroyed after his memory was condemned by the Senate.",
+          "img": "img/festus0.jpg",
+          "credit": "Photo: Yair Haklai, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Bust_of_Nero_(GL_321).jpg"
+        }
+      ],
+      "tags": [
+        "conflict"
+      ],
+      "orderNote": "The year Festus replaced Felix is debated (between AD 55 and 60); AD 59 is the date most often given, partly because new coinage of the province appears that year. The emperor to whom Paul appealed was Nero (reigned AD 54–68)."
+    },
+    {
+      "id": "agrippa",
+      "harmony": "Acts 25:13–27",
+      "lane": "herod",
+      "place": "caesarea",
+      "date": "AD 59",
+      "title": "King Agrippa and Bernice come to Caesarea",
+      "people": [
+        "Herod Agrippa II",
+        "Bernice",
+        "Porcius Festus",
+        "Paul"
+      ],
+      "gospels": {
+        "Acts": "25:13–27"
+      },
+      "summary": "King Agrippa II, the last ruler of the Herod family, comes with his sister Bernice to welcome the new governor. Festus lays Paul's case before him: the charges are only disputes about their religion and \"about one Jesus, who was dead, but whom Paul asserted to be alive.\" Agrippa wants to hear the man himself. The next day the king and Bernice enter the audience hall with great pomp, with the tribunes and leading men of the city, and Paul is brought in. Festus needs something to write to the emperor.",
+      "scripture": [
+        {
+          "ref": "Acts 25:13",
+          "text": "Now when some days had passed, Agrippa the king and Bernice arrived at Caesarea to welcome Festus."
+        },
+        {
+          "ref": "Acts 25:23",
+          "text": "So on the morrow Agrippa and Bernice came with great pomp, and they entered the audience hall with the military tribunes and the prominent men of the city. Then by command of Festus Paul was brought in."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "Paul before Festus, King Agrippa and Queen Bernice",
+          "artist": "Hendrick Bloemaert",
+          "year": "1635",
+          "medium": "Oil on canvas",
+          "location": "Centraal Museum, Utrecht",
+          "description": "Paul, in a red cloak, raises his hand as he speaks to King Agrippa, in a turban and ermine-trimmed robe with a scepter, and Bernice, crowned and dressed in yellow silk. The governor Festus sits on the dais beneath a canopy marked SPQR.",
+          "significance": "A work of the Utrecht school, by the son of Abraham Bloemaert, showing the grand hearing of Acts 25:23.",
+          "symbolism": "The \"great pomp\" of the king and his sister is set against the barefoot prisoner; the letters SPQR over the governor's seat recall that the case now belongs to Rome.",
+          "impact": "Bloemaert's large history paintings were made for Utrecht's Catholic and civic patrons in the decades of the Dutch Republic.",
+          "img": "img/agrippa0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Paul_and_King_Agrippa_by_Hendrick_Bloemaert_Centraal_Museum_2570.jpg"
+        }
+      ],
+      "tags": [],
+      "orderNote": "Agrippa II, son of the Herod Agrippa of Acts 12, ruled territories north and east of Galilee and had charge of the Temple and the choice of high priests. His sister Bernice later became the mistress of Titus."
+    },
+    {
+      "id": "agrippaspeech",
+      "harmony": "Acts 26:1–32",
+      "lane": "paul",
+      "place": "caesarea",
+      "date": "AD 59",
+      "title": "Paul's defense before Agrippa",
+      "people": [
+        "Paul",
+        "Herod Agrippa II",
+        "Bernice",
+        "Porcius Festus"
+      ],
+      "gospels": {
+        "Acts": "26:1–32"
+      },
+      "summary": "Stretching out his hand, Paul tells the king of his life as a strict Pharisee, his persecution of the saints, and the light brighter than the sun on the road to Damascus, where the risen Jesus sent him to open the eyes of the Gentiles. He says he was not disobedient to the heavenly vision. Festus shouts that Paul is mad; Paul appeals to the king, who knows the prophets. Agrippa answers half in jest, and the hearers agree that Paul has done nothing to deserve death. He could have been set free if he had not appealed to Caesar.",
+      "scripture": [
+        {
+          "ref": "Acts 26:19",
+          "text": "\"Wherefore, O King Agrippa, I was not disobedient to the heavenly vision,"
+        },
+        {
+          "ref": "Acts 26:28–29",
+          "text": "And Agrippa said to Paul, \"In a short time you think to make me a Christian!\" And Paul said, \"Whether short or long, I would to God that not only you but also all who hear me this day might become such as I am—except for these chains.\""
+        },
+        {
+          "ref": "Acts 26:32",
+          "text": "And Agrippa said to Festus, \"This man could have been set free if he had not appealed to Caesar.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "St Paul before Agrippa",
+          "artist": "Sir James Thornhill",
+          "year": "c. 1710",
+          "medium": "Oil sketch",
+          "location": "Yale Center for British Art, New Haven",
+          "description": "Within a frame shaped like a panel of the dome, Paul raises his hands as he speaks to Agrippa and Bernice, seated high on a dais among their court; a scribe takes down his words and soldiers stand behind him.",
+          "significance": "A design for one of the eight scenes from the life of St Paul that Thornhill painted in grisaille inside the dome of St Paul's Cathedral, London (1716–19).",
+          "symbolism": "Paul's gesture is that of a classical orator: the prisoner speaks as the true king in the room.",
+          "impact": "Thornhill's dome cycle is one of the great works of English Baroque painting, seen by millions of visitors to the cathedral.",
+          "img": "img/agrippaspeech0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:James_Thornhill_-_St._Paul_before_Agrippa_-_Google_Art_Project.jpg"
+        },
+        {
+          "kind": "Masterpiece",
+          "title": "Saint Paul Speaking before King Agrippa",
+          "artist": "Giorgio Vasari",
+          "year": "1573",
+          "medium": "Pen and brown ink, brown wash",
+          "location": "Metropolitan Museum of Art, New York",
+          "description": "In a classical hall with statues in niches, Paul points upward as he defends himself before the king, Bernice and the governor seated on a dais. The Latin caption reads \"He defends himself before the king and the Roman governor.\"",
+          "significance": "A late drawing by Vasari, painter, architect and the first historian of Renaissance art.",
+          "symbolism": "Paul points past the seated rulers to heaven: \"I was not disobedient to the heavenly vision.\"",
+          "impact": "Vasari's Lives of the Artists (1550, 1568) made him the founder of art history.",
+          "img": "img/agrippaspeech1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Saint_Paul_Speaking_before_King_Agrippa_(Acts_26)_MET_DP812210.jpg"
+        }
+      ],
+      "tags": [
+        "sermon"
+      ],
+      "orderNote": "The third account of Paul's conversion in Acts. Agrippa's words in 26:28 are hard to translate: the King James Version's \"Almost thou persuadest me to be a Christian\" is now usually read as a wry question, \"In so short a time you think to make me a Christian?\""
+    },
+    {
+      "id": "sidon",
+      "harmony": "Acts 27:1–3",
+      "lane": "paul",
+      "place": "sidon",
+      "from": "caesarea",
+      "date": "Late summer, AD 59",
+      "title": "Setting sail for Rome: Sidon",
+      "people": [
+        "Paul",
+        "Julius the centurion",
+        "Luke",
+        "Aristarchus",
+        "Other prisoners"
+      ],
+      "gospels": {
+        "Acts": "27:1–3"
+      },
+      "summary": "Paul and some other prisoners are handed over to Julius, a centurion of the Augustan Cohort. They board a ship of Adramyttium bound for the ports of Asia, with Luke (\"we\") and Aristarchus of Thessalonica. The next day they put in at Sidon, and Julius kindly lets Paul go to his friends to be cared for. Luke's account of this voyage is the most detailed description of a sea journey to survive from the ancient world.",
+      "journey": "About 80 miles north by sea, a day's sail along the coast of Samaria, around Mount Carmel and past Ptolemais and Tyre.",
+      "route": [
+        [
+          34.89,
+          32.5
+        ],
+        [
+          34.87,
+          32.62
+        ],
+        [
+          34.9,
+          32.75
+        ],
+        [
+          34.93,
+          32.845
+        ],
+        [
+          35.04,
+          32.95
+        ],
+        [
+          35.08,
+          33.1
+        ],
+        [
+          35.16,
+          33.27
+        ],
+        [
+          35.3,
+          33.46
+        ],
+        [
+          35.37,
+          33.56
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 27:1",
+          "text": "And when it was decided that we should sail for Italy, they delivered Paul and some other prisoners to a centurion of the Augustan Cohort, named Julius."
+        },
+        {
+          "ref": "Acts 27:3",
+          "text": "The next day we put in at Sidon; and Julius treated Paul kindly, and gave him leave to go to his friends and be cared for."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The Sea Castle at Sidon",
+          "artist": "Photo: Vyacheslav Argenberg",
+          "year": "2008",
+          "medium": "Photograph",
+          "location": "Sidon (Saida), Lebanon",
+          "description": "A tower of the Crusader Sea Castle rising from the water of Sidon's harbor. Ancient column drums are laid crosswise in its walls, reused from older buildings.",
+          "significance": "The castle was built in 1228, but the harbor is the ancient one where Paul's ship put in on its first day out of Caesarea.",
+          "symbolism": "A harbor of friends: the centurion Julius let Paul go ashore to be cared for.",
+          "impact": "Sidon was one of the great Phoenician cities, often named with Tyre in the Bible.",
+          "img": "img/sidon0.jpg",
+          "credit": "Photo: Vyacheslav Argenberg, CC BY 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Sidon_Sea_Castle,_Sidon,_Lebanon.jpg"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "myra",
+      "harmony": "Acts 27:4–6",
+      "lane": "paul",
+      "place": "myra",
+      "from": "sidon",
+      "date": "Early autumn, AD 59",
+      "title": "Under the lee of Cyprus to Myra",
+      "people": [
+        "Paul",
+        "Julius the centurion",
+        "Luke",
+        "Aristarchus"
+      ],
+      "gospels": {
+        "Acts": "27:4–6"
+      },
+      "summary": "Against the westerly winds of summer, the ship keeps to the sheltered side of Cyprus, passing to the east and north of the island. It then works west along the coast of Cilicia and Pamphylia to Myra in Lycia. There Julius finds a grain ship of Alexandria bound for Italy and puts the prisoners on board. In all, 276 people sailed on her (Acts 27:37).",
+      "journey": "About 430 miles by sea, north past the east end of Cyprus, through the channel between Cyprus and Cilicia, then west along the coast of Pamphylia and Lycia. Some manuscripts add that the crossing took fifteen days.",
+      "route": [
+        [
+          35.37,
+          33.56
+        ],
+        [
+          35.25,
+          33.8
+        ],
+        [
+          35.05,
+          34.4
+        ],
+        [
+          34.75,
+          35.4
+        ],
+        [
+          34.45,
+          35.8
+        ],
+        [
+          33.8,
+          35.85
+        ],
+        [
+          33.0,
+          35.75
+        ],
+        [
+          32.3,
+          35.95
+        ],
+        [
+          31.4,
+          36.25
+        ],
+        [
+          30.6,
+          36.15
+        ],
+        [
+          30.45,
+          36.1
+        ],
+        [
+          30.15,
+          36.15
+        ],
+        [
+          29.96,
+          36.2
+        ],
+        [
+          29.98,
+          36.26
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 27:5–6",
+          "text": "And when we had sailed across the sea which is off Cilicia and Pamphylia, we came to Myra in Lycia. There the centurion found a ship of Alexandria sailing for Italy, and put us on board."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The rock tombs of Myra",
+          "artist": "Photo: Saffron Blaze",
+          "year": "4th century BC (modern photograph)",
+          "medium": "Photograph",
+          "location": "Demre (ancient Myra), Turkey",
+          "description": "Lycian tombs carved like little temple fronts, with columns and pediments, cut one above another into the face of a cliff.",
+          "significance": "The tombs date from the 4th century BC and were already old when Paul's ship put in at Myra's port, where Julius found an Alexandrian grain ship bound for Italy.",
+          "symbolism": "The cliff of the dead above the harbor: Paul passed on to a voyage in which all would be saved.",
+          "impact": "Myra later became famous as the see of St Nicholas, bishop there in the 4th century.",
+          "img": "img/myra0.jpg",
+          "credit": "Photo: Saffron Blaze, CC BY-SA 3.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Myra_Rock_Tombs.jpg"
+        }
+      ],
+      "tags": [],
+      "orderNote": "Egyptian grain ships often sailed north to Lycia before heading west, because of the steady northwest winds; Myra was a regular port of call for the Alexandrian fleet."
+    },
+    {
+      "id": "fairhavens",
+      "harmony": "Acts 27:7–12",
+      "lane": "paul",
+      "place": "fairhavens",
+      "from": "myra",
+      "date": "October, AD 59",
+      "title": "Fair Havens and Paul's warning",
+      "people": [
+        "Paul",
+        "Julius the centurion",
+        "The captain and the owner of the ship",
+        "Luke"
+      ],
+      "gospels": {
+        "Acts": "27:7–12"
+      },
+      "summary": "Against the wind, the ship makes slow progress to off Cnidus, then turns south under the lee of Crete, around Cape Salmone, and coasts with difficulty to Fair Havens. It is late in the season: the Fast of the Day of Atonement is past, and sailing is dangerous. Paul warns that the voyage will bring loss of cargo, ship and lives. But the centurion trusts the captain and the owner, and the majority decide to try for Phoenix, a better harbor further west, to winter there.",
+      "journey": "About 375 miles by sea, slowly west past Rhodes to the waters off Cnidus, then south around Cape Salmone at the east end of Crete and west along its south coast.",
+      "route": [
+        [
+          29.98,
+          36.26
+        ],
+        [
+          29.95,
+          36.18
+        ],
+        [
+          29.6,
+          36.12
+        ],
+        [
+          29.1,
+          36.22
+        ],
+        [
+          28.6,
+          36.45
+        ],
+        [
+          27.9,
+          36.6
+        ],
+        [
+          27.4,
+          36.6
+        ],
+        [
+          27.3,
+          36.15
+        ],
+        [
+          26.75,
+          35.7
+        ],
+        [
+          26.45,
+          35.3
+        ],
+        [
+          26.35,
+          34.95
+        ],
+        [
+          25.9,
+          34.9
+        ],
+        [
+          25.4,
+          34.92
+        ],
+        [
+          24.95,
+          34.88
+        ],
+        [
+          24.78,
+          34.92
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 27:7–8",
+          "text": "We sailed slowly for a number of days, and arrived with difficulty off Cnidus, and as the wind did not allow us to go on, we sailed under the lee of Crete off Salmone. Coasting along it with difficulty, we came to a place called Fair Havens, near which was the city of Lasea."
+        },
+        {
+          "ref": "Acts 27:9–10",
+          "text": "As much time had been lost, and the voyage was already dangerous because the fast had already gone by, Paul advised them, saying, \"Sirs, I perceive that the voyage will be with injury and much loss, not only of the cargo and the ship, but also of our lives.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Kali Limenes (Fair Havens), Crete",
+          "artist": "Photo: Olaf Tausch",
+          "year": "2012",
+          "medium": "Photograph",
+          "location": "Kali Limenes, south coast of Crete, Greece",
+          "description": "The shore at Kali Limenes on Crete's south coast: a long beach under bare hills, with small rocky islets offshore.",
+          "significance": "The place keeps Luke's name, \"Fair Havens.\" The bay is sheltered from the northwest but open to the east and south, which is why the sailors wanted a better harbor for the winter.",
+          "symbolism": "The safe harbor they chose to leave: Paul's warning was ignored here.",
+          "impact": "A chapel of St Paul stands nearby; the Greek Church remembers the apostle's stop here.",
+          "img": "img/fairhavens0.jpg",
+          "credit": "Photo: Olaf Tausch, CC BY 3.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Kali_Limenes_04.jpg"
+        }
+      ],
+      "tags": [
+        "prophecy"
+      ],
+      "orderNote": "Ancient writers counted the seas dangerous from mid-September and closed from about November 11 to March 10 (Vegetius). In AD 59 the Day of Atonement fell on October 5, which is one reason that year is favored."
+    },
+    {
+      "id": "tempest",
+      "harmony": "Acts 27:13–26",
+      "lane": "paul",
+      "place": "adria",
+      "from": "fairhavens",
+      "date": "October–November, AD 59",
+      "title": "The storm at sea",
+      "people": [
+        "Paul",
+        "The sailors",
+        "Julius the centurion",
+        "Luke",
+        "An angel"
+      ],
+      "gospels": {
+        "Acts": "27:13–26"
+      },
+      "summary": "A gentle south wind tempts them out, but soon a violent northeaster (in Greek, Eurakylon) sweeps down from the mountains of Crete. The ship cannot face it and is driven before it. Under the lee of the small island of Cauda they haul in the boat, undergird the hull with ropes, and lower the gear for fear of the Syrtis sandbanks off Africa; then they throw the cargo and the tackle overboard. For many days neither sun nor stars appear, and all hope is abandoned. Then Paul stands up among them: an angel has told him he must stand before Caesar, and God has granted him the lives of all who sail with him.",
+      "journey": "The drift is a reconstruction, not a recorded course. From Fair Havens the ship was blown southwest to Cauda, about 40 miles, and then drove west for fourteen days across \"the sea of Adria\". James Smith (1848) worked out that a ship lying to in such a gale drifts about 36 nautical miles a day, slightly north of west, which would carry her the roughly 550 miles from Cauda to Malta in about thirteen days. The line on the map follows that estimate; the true path is unknown.",
+      "route": [
+        [
+          24.78,
+          34.92
+        ],
+        [
+          24.62,
+          34.9
+        ],
+        [
+          24.4,
+          34.85
+        ],
+        [
+          24.15,
+          34.77
+        ],
+        [
+          23.5,
+          34.85
+        ],
+        [
+          22.0,
+          35.05
+        ],
+        [
+          20.5,
+          35.25
+        ],
+        [
+          19.0,
+          35.45
+        ]
+      ],
+      "routeUncertain": true,
+      "scripture": [
+        {
+          "ref": "Acts 27:14–15",
+          "text": "But soon a tempestuous wind, called the northeaster, struck down from the land; and when the ship was caught and could not face the wind, we gave way to it and were driven."
+        },
+        {
+          "ref": "Acts 27:20",
+          "text": "And when neither sun nor stars appeared for many a day, and no small tempest lay on us, all hope of our being saved was at last abandoned."
+        },
+        {
+          "ref": "Acts 27:23–24",
+          "text": "For this very night there stood by me an angel of the God to whom I belong and whom I worship, and he said, 'Do not be afraid, Paul; you must stand before Caesar; and lo, God has granted you all those who sail with you.'"
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Jonah 1:4–5",
+          "note": "Jonah's ship is caught in \"a mighty tempest\" and the sailors throw the cargo into the sea; but where Jonah was fleeing from God, Paul is sent by him."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "Gavdos (Cauda)",
+          "artist": "Photo: Artemis Katsadoura",
+          "year": "2011",
+          "medium": "Photograph",
+          "location": "Gavdos, south of Crete, Greece",
+          "description": "A sand beach on Gavdos, with wind-whipped surf and faint mountains on the horizon.",
+          "significance": "Luke's Cauda, about 25 miles south of Crete. In its brief shelter the crew hauled in the ship's boat and passed ropes under the hull before the storm drove them out to sea.",
+          "symbolism": "The last land they saw for fourteen days.",
+          "impact": "Gavdos is the southernmost inhabited point of Europe.",
+          "img": "img/tempest0.jpg",
+          "credit": "Photo: Artemis Katsadoura, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Gavdos_Island.jpg"
+        }
+      ],
+      "tags": [
+        "appearance",
+        "prophecy"
+      ],
+      "orderNote": "The northeaster (Greek Eurakylon) is still a known winter wind in the eastern Mediterranean, the gregale. Cauda is the island of Gavdos, south of Crete."
+    },
+    {
+      "id": "shipwreck",
+      "harmony": "Acts 27:27–44",
+      "lane": "paul",
+      "place": "malta",
+      "from": "adria",
+      "date": "November, AD 59",
+      "title": "The shipwreck on Malta",
+      "people": [
+        "Paul",
+        "The sailors",
+        "The soldiers",
+        "Julius the centurion",
+        "Luke",
+        "276 people on board"
+      ],
+      "gospels": {
+        "Acts": "27:27–44"
+      },
+      "summary": "On the fourteenth night the sailors sense land; soundings show twenty fathoms, then fifteen, and they drop four anchors from the stern and pray for day. Some sailors try to escape in the boat, but Paul warns the centurion and the soldiers cut it loose. At dawn Paul urges all to eat, takes bread, gives thanks and breaks it, and they are encouraged. They make for a beach in a bay, strike a shoal, and the stern breaks up in the surf. The soldiers plan to kill the prisoners, but the centurion, wishing to save Paul, stops them, and all 276 come safe to land, swimming or on planks.",
+      "journey": "The last stretch of the drift (see the storm above): the line on the map is a reconstruction ending at St Paul's Bay, the traditional site of the wreck.",
+      "route": [
+        [
+          19.0,
+          35.45
+        ],
+        [
+          17.5,
+          35.65
+        ],
+        [
+          16.0,
+          35.85
+        ],
+        [
+          14.9,
+          35.97
+        ],
+        [
+          14.5,
+          35.98
+        ],
+        [
+          14.4,
+          35.95
+        ]
+      ],
+      "routeUncertain": true,
+      "scripture": [
+        {
+          "ref": "Acts 27:35",
+          "text": "And when he had said this, he took bread, and giving thanks to God in the presence of all he broke it and began to eat."
+        },
+        {
+          "ref": "Acts 27:41",
+          "text": "But striking a shoal they ran the vessel aground; the bow stuck and remained immovable, and the stern was broken up by the surf."
+        },
+        {
+          "ref": "Acts 27:44",
+          "text": "and the rest on planks or on pieces of the ship. And so it was that all escaped to land."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "title": "St Paul Shipwrecked on Malta",
+          "artist": "Francesco Bartolozzi, after Benjamin West",
+          "year": "1791",
+          "medium": "Etching and engraving",
+          "location": "Wellcome Collection, London",
+          "description": "A tall, crowded scene below a rocky cliff: survivors are carried and helped up from the shore, with the wreck in the surf at the lower left, while islanders bring baskets and firewood down from above. At the center Paul, haloed, shakes the viper from his hand into the fire.",
+          "significance": "A print after Benjamin West's great altarpiece, The Preservation of St Paul after Shipwreck at Malta (1789), painted for the chapel of the Royal Hospital for Seamen at Greenwich.",
+          "symbolism": "Painted for a chapel of old sailors, it shows a shipwreck in which every life was saved.",
+          "impact": "West, an American who became President of the Royal Academy in London, painted the huge altarpiece, which still hangs in the chapel of the Old Royal Naval College.",
+          "img": "img/shipwreck0.jpg",
+          "credit": "Wellcome Collection, CC BY 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:St._Paul_shipwrecked_on_Malta._Etching_by_F._Bartolozzi,_179_Wellcome_V0014670.jpg"
+        },
+        {
+          "kind": "Artifact",
+          "title": "St Paul's Islands, Malta",
+          "artist": "Photo: Samuele",
+          "year": "2007",
+          "medium": "Photograph",
+          "location": "St Paul's Islands, St Paul's Bay, Malta",
+          "description": "The rocky islet of St Paul's Islands, with a ruined fort and a tall statue of St Paul (seen here under repair), and Gozo in the distance.",
+          "significance": "The islets lie at the mouth of St Paul's Bay. A shallow channel between them and the mainland is the traditional \"place where two seas met\" where the ship ran aground.",
+          "symbolism": "The statue faces the sea that brought Paul, and with him the faith, to Malta.",
+          "impact": "The statue was set up in 1845. Malta keeps the feast of St Paul's Shipwreck as a national holiday on February 10.",
+          "img": "img/shipwreck1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Malta_-_St._Paul_Islands_-_St._Paul_statue.jpg"
+        }
+      ],
+      "tags": [],
+      "orderNote": "Most scholars accept Malta (Luke's \"Melite\") and St Paul's Bay, where the depths and the sandbar between the mainland and St Paul's Islands match Luke's account. Other proposals include St Thomas Bay and Mellieha Bay on Malta, Mljet in the Adriatic and Cephalonia in Greece; none has won wide acceptance."
+    },
+    {
+      "id": "viper",
+      "harmony": "Acts 28:1–6",
+      "lane": "paul",
+      "place": "malta",
+      "date": "November, AD 59",
+      "title": "The viper on Malta",
+      "people": [
+        "Paul",
+        "The islanders",
+        "Luke"
+      ],
+      "gospels": {
+        "Acts": "28:1–6"
+      },
+      "summary": "The islanders show the castaways unusual kindness and light a fire, for it is raining and cold. As Paul puts a bundle of sticks on the fire, a viper driven out by the heat fastens on his hand. The islanders say he must be a murderer whom Justice will not let live. Paul shakes the creature off into the fire and suffers no harm, and when nothing happens to him they change their minds and say he is a god.",
+      "scripture": [
+        {
+          "ref": "Acts 28:1–2",
+          "text": "After we had escaped, we then learned that the island was called Malta. And the natives showed us unusual kindness, for they kindled a fire and welcomed us all, because it had begun to rain and was cold."
+        },
+        {
+          "ref": "Acts 28:3",
+          "text": "Paul had gathered a bundle of sticks and put them on the fire, when a viper came out because of the heat and fastened on his hand."
+        },
+        {
+          "ref": "Acts 28:5–6",
+          "text": "He, however, shook off the creature into the fire and suffered no harm. They waited, expecting him to swell up or suddenly fall down dead; but when they had waited a long time and saw no misfortune come to him, they changed their minds and said that he was a god."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "St Paul on Malta",
+          "artist": "Adam Elsheimer",
+          "year": "c. 1600",
+          "medium": "Oil on copper",
+          "location": "National Gallery, London",
+          "description": "On a stormy night the castaways come up out of the raging sea, strip off their wet clothes and gather around the fires. At the left, beside the fire, Paul shakes the viper from his hand; a beacon burns on the headland and the moon breaks through the clouds.",
+          "significance": "A tiny painting by the German master who worked in Rome, famous for his night scenes lit by several sources at once: fire, beacon and moon.",
+          "symbolism": "The fire that warms the castaways also drives out the serpent, and Paul is unharmed, a sign of God's protection.",
+          "impact": "Elsheimer's small coppers deeply influenced Rubens and Rembrandt.",
+          "img": "img/viper0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Adam_Elsheimer_-_St_Paul_at_Malta_-_WGA7504.jpg"
+        },
+        {
+          "kind": "Masterpiece",
+          "title": "Saint Paul Shipwrecked on Malta",
+          "artist": "Laurent de La Hyre",
+          "year": "1630",
+          "medium": "Oil on canvas",
+          "location": "Birmingham Museum of Art, Alabama",
+          "description": "Paul, in blue and rose robes, bends over the fire with the viper hanging from his hand, while islanders lean in to watch. Behind them, survivors are helped ashore from the stormy sea.",
+          "significance": "An early work by one of the founders of French classical painting.",
+          "symbolism": "The islanders lean in, waiting for him to fall dead; in Luke's story they turn in a moment from \"murderer\" to \"a god.\"",
+          "impact": "La Hyre went on to become a founding member of the French Royal Academy of Painting (1648).",
+          "img": "img/viper1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Laurent_de_La_Hyre's_Saint_Paul_Shipwrecked_on_Malta.jpg"
+        }
+      ],
+      "tags": [
+        "miracle"
+      ],
+      "orderNote": "Malta has no venomous snakes today; some think vipers have died out as the woods were cleared, others that the snake was a harmless kind the islanders feared. Maltese tradition honors a grotto at Rabat (St Paul's Grotto) as the place where Paul stayed."
+    },
+    {
+      "id": "publius",
+      "harmony": "Acts 28:7–10",
+      "lane": "paul",
+      "place": "malta",
+      "date": "Winter, AD 59–60",
+      "title": "Paul heals the father of Publius",
+      "people": [
+        "Paul",
+        "Publius, the chief man of the island",
+        "The father of Publius",
+        "The islanders",
+        "Luke"
+      ],
+      "gospels": {
+        "Acts": "28:7–10"
+      },
+      "summary": "Publius, the chief man of the island, takes them in and entertains them for three days. His father lies sick with fever and dysentery; Paul goes in, prays, lays his hands on him and heals him. Then the rest of the sick on the island come and are cured. When the travelers sail, the islanders load them with gifts and with everything they need.",
+      "stay": "Three days with Publius; three months on the island in all (Acts 28:7, 11).",
+      "scripture": [
+        {
+          "ref": "Acts 28:8",
+          "text": "It happened that the father of Publius lay sick with fever and dysentery; and Paul visited him and prayed, and putting his hands on him healed him."
+        },
+        {
+          "ref": "Acts 28:9–10",
+          "text": "And when this had taken place, the rest of the people on the island who had diseases also came and were cured. They presented many gifts to us; and when we sailed, they put on board whatever we needed."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "St Paul heals the father of Publius",
+          "artist": "Mathis Gerung",
+          "year": "c. 1530–32",
+          "medium": "Illumination on parchment",
+          "location": "Bavarian State Library, Munich (Ottheinrich Bible, Cgm 8010)",
+          "description": "A wide miniature: Paul, barefoot and haloed, reaches out to the old man lying sick in a curtained bed, while Publius and a companion, in 16th-century dress, look on from the left.",
+          "significance": "From the Ottheinrich Bible, the oldest surviving illustrated manuscript of the New Testament in German, finished for the Elector Ottheinrich.",
+          "symbolism": "Hospitality returned: the man who took in the castaways receives healing in his own house.",
+          "impact": "The manuscript was split up during the Thirty Years' War; its parts were reunited in Munich in 2008.",
+          "img": "img/publius0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Ottheinrich_Folio263r_Act28B.jpg"
+        },
+        {
+          "kind": "Artifact",
+          "title": "St Paul's Grotto, Rabat",
+          "artist": "Photo: Simon Burchell",
+          "year": "2025",
+          "medium": "Photograph",
+          "location": "Rabat, Malta",
+          "description": "A rock-cut cave beneath the church of St Paul in Rabat, with a marble statue of the apostle.",
+          "significance": "Maltese tradition holds that Paul lived and preached here during his three months on the island.",
+          "symbolism": "The cave is a place of welcome, remembering the islanders' \"unusual kindness.\"",
+          "impact": "Popes John Paul II (1990) and Benedict XVI (2010) prayed here on their visits to Malta.",
+          "img": "img/publius1.jpg",
+          "credit": "Photo: Simon Burchell, CC BY-SA 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:St._Paul's_Grotto,_Rabat_02.jpg"
+        }
+      ],
+      "tags": [
+        "healing",
+        "miracle"
+      ],
+      "orderNote": "\"Chief man\" (Greek protos) is attested as the title of Malta's Roman official in inscriptions. Maltese tradition makes Publius the island's first bishop and places his estate at San Pawl Milqi, near St Paul's Bay."
+    },
+    {
+      "id": "syracuse",
+      "harmony": "Acts 28:11–12",
+      "lane": "paul",
+      "place": "syracuse",
+      "from": "malta",
+      "date": "Early spring, AD 60",
+      "title": "On to Syracuse",
+      "people": [
+        "Paul",
+        "Julius the centurion",
+        "Luke",
+        "Aristarchus"
+      ],
+      "gospels": {
+        "Acts": "28:11–12"
+      },
+      "summary": "After three months, when the sailing season reopens, they set sail in another Alexandrian ship that had wintered at the island. Its figurehead is the Twin Brothers, Castor and Pollux, the protectors of sailors. They put in at Syracuse in Sicily and stay three days.",
+      "journey": "About 95 miles by sea, north from Malta past Cape Passero, the southeast tip of Sicily, a day's sail with a fair wind.",
+      "route": [
+        [
+          14.4,
+          35.95
+        ],
+        [
+          14.45,
+          36.0
+        ],
+        [
+          14.7,
+          36.25
+        ],
+        [
+          15.05,
+          36.58
+        ],
+        [
+          15.25,
+          36.68
+        ],
+        [
+          15.33,
+          36.95
+        ],
+        [
+          15.29,
+          37.07
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 28:11",
+          "text": "After three months we set sail in a ship which had wintered in the island, a ship of Alexandria, with the Twin Brothers as figurehead."
+        },
+        {
+          "ref": "Acts 28:12",
+          "text": "Putting in at Syracuse, we stayed there for three days."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The catacombs of San Giovanni, Syracuse",
+          "artist": "Photo: Bernard Gagnon",
+          "year": "2024",
+          "medium": "Photograph",
+          "location": "Syracuse, Sicily",
+          "description": "A long underground gallery cut in the rock, lined with burial niches and lit from openings above.",
+          "significance": "Early Christian catacombs of the 3rd–5th centuries, among the largest outside Rome. A tradition of Syracuse says Paul preached during his three days here, at the crypt of St Marcian above the catacombs.",
+          "symbolism": "The tombs of a church that grew from small beginnings in a harbor city.",
+          "impact": "Syracuse had a Christian community very early; its bishops were among the first in Sicily.",
+          "img": "img/syracuse0.jpg",
+          "credit": "Photo: Bernard Gagnon, CC BY 4.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Catacombs_of_San_Giovanni_Evangelista_(Syracuse)_01.jpg"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "puteoli",
+      "harmony": "Acts 28:13–14",
+      "lane": "paul",
+      "place": "puteoli",
+      "from": "syracuse",
+      "date": "Spring, AD 60",
+      "title": "Rhegium and Puteoli",
+      "people": [
+        "Paul",
+        "Julius the centurion",
+        "Luke",
+        "The brethren at Puteoli"
+      ],
+      "gospels": {
+        "Acts": "28:13–14"
+      },
+      "summary": "Tacking against the wind, they work up the coast to Rhegium at the toe of Italy and wait a day. Then a south wind springs up and carries them through the Strait of Messina and up the coast, and on the second day they reach Puteoli on the Bay of Naples, the great port of the grain fleet. There they find Christians and are invited to stay a week. From here Paul goes on to Rome by road.",
+      "stay": "Seven days with the brethren at Puteoli (Acts 28:14).",
+      "journey": "About 310 miles by sea: some 80 miles up the east coast of Sicily to Rhegium, then about 230 miles through the Strait of Messina and north along the coast of Italy to Puteoli in two days.",
+      "route": [
+        [
+          15.29,
+          37.07
+        ],
+        [
+          15.33,
+          37.25
+        ],
+        [
+          15.22,
+          37.5
+        ],
+        [
+          15.35,
+          37.85
+        ],
+        [
+          15.55,
+          38.02
+        ],
+        [
+          15.63,
+          38.11
+        ],
+        [
+          15.62,
+          38.26
+        ],
+        [
+          15.55,
+          38.45
+        ],
+        [
+          15.7,
+          38.68
+        ],
+        [
+          15.85,
+          39.2
+        ],
+        [
+          15.45,
+          39.8
+        ],
+        [
+          14.8,
+          40.15
+        ],
+        [
+          14.15,
+          40.5
+        ],
+        [
+          14.1,
+          40.65
+        ],
+        [
+          14.12,
+          40.78
+        ],
+        [
+          14.12,
+          40.82
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 28:13–14",
+          "text": "And from there we made a circuit and arrived at Rhegium; and after one day a south wind sprang up, and on the second day we came to Puteoli. There we found brethren, and were invited to stay with them for seven days. And so we came to Rome."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The Roman market at Puteoli",
+          "artist": "Photo: Miguel Hermoso Cuesta",
+          "year": "2013",
+          "medium": "Photograph",
+          "location": "Pozzuoli, Italy",
+          "description": "Three tall marble columns and the round central shrine of the Roman market hall (macellum) of Puteoli, long called the Temple of Serapis, below the level of the modern town.",
+          "significance": "The market served the busy port where the Alexandrian grain ships unloaded and where Paul found Christians and stayed a week.",
+          "symbolism": "Rome's food came through this port, and so did Paul with his message.",
+          "impact": "Holes bored by sea creatures high on the columns show how the ground here has sunk and risen again; geologists still study it.",
+          "img": "img/puteoli0.jpg",
+          "credit": "Photo: Miguel Hermoso Cuesta, CC BY-SA 3.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Macellum_de_Pozzuoli_01.JPG"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "threetaverns",
+      "harmony": "Acts 28:15",
+      "lane": "paul",
+      "place": "appiiforum",
+      "from": "puteoli",
+      "date": "Spring, AD 60",
+      "title": "The brethren meet Paul on the Appian Way",
+      "people": [
+        "Paul",
+        "Julius the centurion",
+        "Luke",
+        "The brethren from Rome"
+      ],
+      "gospels": {
+        "Acts": "28:15",
+        "Rom": "1:11–13"
+      },
+      "summary": "News runs ahead of them, and Christians from Rome come out along the Appian Way to meet Paul, some as far as the Forum of Appius, others to Three Taverns. Three years earlier he had written to them that he longed to see them. On seeing them, Paul thanks God and takes courage.",
+      "journey": "About 100 miles on foot, five days or so: north from Puteoli to Capua, then on the Appian Way along the coast by Sinuessa, Minturnae, Formiae and Tarracina to the Forum of Appius at the edge of the Pontine marshes.",
+      "route": [
+        [
+          14.12,
+          40.82
+        ],
+        [
+          14.2,
+          40.92
+        ],
+        [
+          14.25,
+          41.08
+        ],
+        [
+          13.95,
+          41.15
+        ],
+        [
+          13.83,
+          41.16
+        ],
+        [
+          13.77,
+          41.24
+        ],
+        [
+          13.61,
+          41.26
+        ],
+        [
+          13.43,
+          41.36
+        ],
+        [
+          13.25,
+          41.29
+        ],
+        [
+          13.1,
+          41.43
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 28:15",
+          "text": "And the brethren there, when they heard of us, came as far as the Forum of Appius and Three Taverns to meet us. On seeing them Paul thanked God and took courage."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Artifact",
+          "title": "The Appian Way",
+          "artist": "Photo: Nicolò Musmeci",
+          "year": "2005",
+          "medium": "Photograph",
+          "location": "Via Appia Antica, near Rome",
+          "description": "The stone-paved Appian Way runs straight between umbrella pines and cypresses past a ruined medieval tower, Torre Selci, in the countryside south of Rome.",
+          "significance": "Built from 312 BC, the \"queen of roads\" led from Rome to Capua and on to Brundisium. Paul walked its last stretch from Capua to the city, and the brethren came out along it to meet him.",
+          "symbolism": "The road of the empire becomes the road of the gospel.",
+          "impact": "Christians later buried their dead in catacombs along this road; the Quo Vadis tradition of Peter is set on it too.",
+          "img": "img/threetaverns0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Appia_antica_2-7-05_048.jpg"
+        }
+      ],
+      "tags": [],
+      "orderNote": "The road beyond Tarracina crossed the marshes; travelers often took a canal boat by night to the Forum of Appius, as the poet Horace did (Satires 1.5)."
+    },
+    {
+      "id": "romejews",
+      "harmony": "Acts 28:16–29",
+      "lane": "paul",
+      "place": "rome",
+      "from": "appiiforum",
+      "date": "Spring, AD 60",
+      "title": "Paul in Rome meets the Jewish leaders",
+      "people": [
+        "Paul",
+        "The soldier who guarded him",
+        "The leaders of the Jews in Rome"
+      ],
+      "gospels": {
+        "Acts": "28:16–29"
+      },
+      "summary": "In Rome Paul is allowed to live by himself, chained to a soldier who guards him. After three days he calls together the leaders of the Jews and tells them he is in chains \"because of the hope of Israel.\" On an appointed day many come to his lodging, and from morning till evening he tries to convince them about Jesus from the law and the prophets. Some are convinced and some disbelieve. Paul quotes Isaiah on hearts grown dull, and says that this salvation has been sent to the Gentiles: they will listen.",
+      "journey": "About 40 miles (43 Roman miles) up the Appian Way from the Forum of Appius, past Three Taverns and Aricia, two or three days on foot, entering Rome from the south.",
+      "route": [
+        [
+          13.1,
+          41.43
+        ],
+        [
+          12.95,
+          41.52
+        ],
+        [
+          12.85,
+          41.6
+        ],
+        [
+          12.67,
+          41.72
+        ],
+        [
+          12.58,
+          41.8
+        ],
+        [
+          12.4964,
+          41.9028
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Acts 28:16",
+          "text": "And when we came into Rome, Paul was allowed to stay by himself, with the soldier that guarded him."
+        },
+        {
+          "ref": "Acts 28:23",
+          "text": "When they had appointed a day for him, they came to him at his lodging in great numbers. And he expounded the matter to them from morning till evening, testifying to the kingdom of God and trying to convince them about Jesus both from the law of Moses and from the prophets."
+        },
+        {
+          "ref": "Acts 28:28",
+          "text": "Let it be known to you then that this salvation of God has been sent to the Gentiles; they will listen.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Isaiah 6:9–10",
+          "note": "\"Hear and hear, but do not understand\": Paul's last words in Acts quote the call of Isaiah, as Jesus did in the parable of the sower."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Apostle Paul Preaching on the Ruins",
+          "artist": "Giovanni Paolo Pannini",
+          "year": "1744",
+          "medium": "Oil on canvas",
+          "location": "State Hermitage Museum, Saint Petersburg",
+          "description": "Among broken columns, a ruined arch and a temple portico, Paul, in a yellow robe, stands on the fallen stones and preaches to a mixed group of listeners: women and children, workmen and Roman soldiers.",
+          "significance": "Pannini was the great painter of Roman ruins and imaginary views (capriccios); he often set a Bible scene among the monuments.",
+          "symbolism": "The ruins of pagan Rome frame the preacher of the kingdom that would outlast it.",
+          "impact": "Pannini's views were prized by Grand Tour travelers and spread the image of Rome across Europe.",
+          "img": "img/romejews0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Giovanni_Paolo_Pannini_-_Apostle_Paul_Preaching_on_the_Ruins_-_WGA16977.jpg"
+        }
+      ],
+      "tags": [
+        "teaching"
+      ]
+    },
+    {
+      "id": "hiredhouse",
+      "harmony": "Acts 28:30–31",
+      "lane": "paul",
+      "place": "rome",
+      "date": "AD 60–62",
+      "title": "Two years under guard in Rome",
+      "people": [
+        "Paul",
+        "His visitors",
+        "The praetorian guard"
+      ],
+      "gospels": {
+        "Acts": "28:30–31",
+        "Phil": "1:12–14"
+      },
+      "summary": "Paul lives two whole years in Rome at his own expense, under guard, and welcomes all who come to him. He preaches the kingdom of God and teaches about the Lord Jesus Christ \"quite openly and unhindered.\" With this word Acts ends, the gospel having come from Jerusalem to the capital of the world. Paul's letters to the Philippians, Colossians, Ephesians and Philemon are traditionally dated to these years; in Philippians he writes that his imprisonment has made Christ known throughout the praetorian guard.",
+      "stay": "Two whole years in his own rented lodging (Acts 28:30).",
+      "scripture": [
+        {
+          "ref": "Acts 28:30–31",
+          "text": "And he lived there two whole years at his own expense, and welcomed all who came to him, preaching the kingdom of God and teaching about the Lord Jesus Christ quite openly and unhindered."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "title": "The Apostle Paul in Prison",
+          "artist": "Rembrandt",
+          "year": "1627",
+          "medium": "Oil on panel",
+          "location": "Staatsgalerie, Stuttgart",
+          "description": "Paul sits on his straw bed in a bare cell, lit by a shaft of light from a barred window, pausing as he writes, with his sword and books beside him.",
+          "significance": "One of Rembrandt's earliest masterpieces, painted at about 21. It shows Paul as the writer of letters from captivity.",
+          "symbolism": "The sword is the sign of his martyrdom and of \"the sword of the Spirit, which is the word of God\" (Ephesians 6:17); the light falls on his thought, not on his chains.",
+          "impact": "Rembrandt returned to Paul again and again; this panel already shows his mastery of light and inner life.",
+          "img": "img/hiredhouse0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_St._Paul_in_Prison.jpg"
+        }
+      ],
+      "tags": [
+        "teaching"
+      ],
+      "orderNote": "Acts does not say what came next. Early tradition (1 Clement 5, the Pastoral Letters, Eusebius) holds that Paul was released, travelled further, perhaps to Spain, and was later imprisoned again and beheaded under Nero about AD 64–67, at the place honored by the Basilica of St Paul Outside the Walls. Others think the trial ended in his death at the close of these two years."
+    }
+  ]
+}
