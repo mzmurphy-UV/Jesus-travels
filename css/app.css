@@ -272,3 +272,25 @@ h3 { font-family: var(--f-sc); font-weight: 400; font-size: 1rem; letter-spacing
 #lens { padding-right: 14px; border-right: 1px solid var(--rule); }
 @media (max-width: 900px) { #lens { border-right: 0; padding-right: 0; } .seg button { font-size: .68rem; padding: 3px 7px; } }
 .tags span { background: none; border: 1px solid var(--rule); color: var(--muted); font-size: .7rem; }
+
+/* Holy Week day strip */
+.days[hidden] { display: none; }
+.days button[aria-pressed="true"] { border-color: var(--herod); color: var(--herod); background: color-mix(in srgb, var(--herod) 10%, transparent); }
+
+/* Gospels side by side */
+.par-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.par-open { font-family: var(--f-ui); font-size: .72rem; border: 1px solid var(--lapis); color: var(--lapis); background: none; border-radius: 999px; padding: 3px 10px; cursor: pointer; white-space: nowrap; }
+.par { display: flex; flex-direction: column; gap: 14px; }
+.par-col { display: flex; flex-direction: column; gap: 8px; }
+.par-col h4 { margin: 0; font-family: var(--f-sc); font-weight: 400; font-size: 1rem; letter-spacing: .06em; }
+.par-col h4 a { font-family: var(--f-ui); font-size: .74rem; letter-spacing: 0; color: var(--lapis); text-decoration: none; margin-left: 4px; }
+.par-col h4 a:hover { text-decoration: underline; }
+.par-col.absent { opacity: .55; }
+.par.wide { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; align-items: start; }
+.par.wide .par-col { border-top: 2px solid var(--lc, var(--lapis)); padding-top: 8px; }
+.compare { position: fixed; inset: 0; z-index: 1000; background: rgba(10,8,6,.6); display: flex; align-items: flex-start; justify-content: center; padding: 24px max(16px, env(safe-area-inset-right, 0px)) 24px max(16px, env(safe-area-inset-left, 0px)); overflow: auto; }
+.cmp-box { position: relative; background: var(--panel); color: var(--ink); border-radius: 8px; box-shadow: var(--shadow); width: min(1200px, 100%); padding: 22px 26px 18px; display: flex; flex-direction: column; gap: 12px; --lc: var(--lapis); }
+.cmp-box .kind { font-family: var(--f-ui); font-size: .66rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+.cmp-box h2 { margin: 0; font-family: var(--f-display); font-weight: 400; font-size: 1.7rem; padding-right: 40px; }
+.cmp-box .lb-close { top: 14px; right: 14px; position: absolute; width: 36px; height: 36px; border-radius: 50%; border: 0; background: var(--chip); color: var(--ink); font-size: 1.4rem; cursor: pointer; }
+@media (max-width: 900px) { .par.wide { grid-template-columns: minmax(0, 1fr); } .cmp-box { padding: 18px 16px; } }

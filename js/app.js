@@ -17,6 +17,22 @@
     for (let i = CONTEXT.length - 1; i >= 0; i--) if (Object.values(PLACES).some(p => Math.hypot(p.ll[0] - CONTEXT[i][1], p.ll[1] - CONTEXT[i][2]) < 0.03)) CONTEXT.splice(i, 1);
     [["apostles", "Peter & the apostles"], ["women", "The women disciples"], ["paul", "Paul & his companions"]].forEach(([id, name]) => { if (!LANES.some(l => l.id === id) && EVENTS.some(e => e.lane === id)) LANES.push({ id, name }); });
   }
+  // Holy Week: the run of events from the Friday before Palm Sunday to Easter evening, each with its day
+  const HW_DAYS = ["Six days before", "Palm Sunday", "Monday", "Tuesday", "Wednesday", "Holy Thursday", "Good Friday", "Holy Saturday", "Easter Sunday"];
+  const HW_SHORT = ["Fri", "Palm Sun", "Mon", "Tue", "Wed", "Thu", "Good Fri", "Sat", "Easter"];
+  const HWDAY = new Map();
+  {
+    const a = EVENTS.findIndex(e => /Friday before Passion Week/.test(e.date));
+    let b = -1; EVENTS.forEach((e, i) => { if (/Sunday evening, AD 33/.test(e.date)) b = i; });
+    const order = { Monday: 2, Tuesday: 3, Wednesday: 4, Thursday: 5, Friday: 6, Saturday: 7 };
+    let d = 0;
+    if (a >= 0) for (let i = a; i <= b; i++) {
+      const t = EVENTS[i].date, w = (t.match(/Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday/) || [])[0];
+      if (/Friday before/.test(t)) d = 0; else if (w === "Sunday") d = /Passion Week/.test(t) ? 1 : 8; else if (w) d = order[w];
+      HWDAY.set(EVENTS[i], d);
+    }
+  }
+
   const store = { get: (k, d) => { try { return localStorage.getItem(k) ?? d; } catch (_) { return d; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (_) {} } };
 
   // ---------- Map styles: streamed from MapTiler, with modern labels, roads and borders stripped ----------
@@ -157,6 +173,8 @@
     // Era labels: the first visible event of each year
     // Era labels: the first visible event of each year, at least three columns apart so they don't run together
     let last = null, lastPos = -9;
+    if (kind === "holyweek") { let d = -1; VIS.forEach(i => { const k = HWDAY.get(EVENTS[i]); if (k !== d) { eraAt[i] = HW_SHORT[k]; d = k; } }); renderDays(); return; }
+    renderDays();
     VIS.forEach((i, pos) => { const y = Math.trunc(yearOf(EVENTS[i])); if ((last === null || y > last) && pos - lastPos >= 3) { eraAt[i] = y < 0 ? `${-y} BC` : `AD ${y}`; last = y; lastPos = pos; } });
   }
 
@@ -192,6 +210,27 @@
   const BOOKNAME = { Mt: "Matthew", Mk: "Mark", Lk: "Luke", Jn: "John", Acts: "Acts", Rom: "Romans", "1Cor": "1 Corinthians", "2Cor": "2 Corinthians", Gal: "Galatians", Phil: "Philippians", "1Thess": "1 Thessalonians", "2Tim": "2 Timothy" };
   const TAGNAME = { miracle: "Miracle", healing: "Healing", "nature-miracle": "Nature miracle", raising: "Raising the dead", exorcism: "Exorcism", parable: "Parable", teaching: "Teaching", sermon: "Sermon",
     prayer: "Prayer", call: "Call", conflict: "Conflict", prophecy: "Prophecy", passion: "Passion", appearance: "Appearance" };
+  // ---------- Gospels side by side ----------
+  const GOSPELS = [["Mt", "Matthew"], ["Mk", "Mark"], ["Lk", "Luke"], ["Jn", "John"]];
+  const passageUrl = ref => `https://www.biblegateway.com/passage/?search=${encodeURIComponent(ref.replace(/[–—]/g, "-"))}&version=RSVCE`;
+  // One block per Gospel: its passage, its key quote (from `parallels` when the content has it), or a note that it doesn't tell this event
+  function parallels(e, all) {
+    return `<div class="par${all ? " wide" : ""}">` + GOSPELS.map(([k, n]) => {
+      if (!e.gospels[k]) return all ? `<section class="par-col absent"><h4>${n}</h4><p class="empty">Not told in ${n}.</p></section>` : "";
+      const ref = `${n} ${e.gospels[k]}`;
+      const qs = e.parallels && e.parallels[k] ? [e.parallels[k]] : e.scripture.filter(s => s.ref.startsWith(n + " "));
+      return `<section class="par-col"><h4>${n} <a href="${passageUrl(ref)}" target="_blank" rel="noopener">${esc(e.gospels[k])} ↗</a></h4>${qs.length ? qs.map(s => `<blockquote><p>${esc(s.text)}</p><cite>${esc(s.ref)}</cite></blockquote>`).join("") : `<p class="empty">No quotation here yet; follow the link to read ${n}'s account.</p>`}</section>`;
+    }).join("") + `</div>`;
+  }
+  function openParallels(e, back) {
+    const ov = document.createElement("div"); ov.className = "compare"; ov.setAttribute("role", "dialog"); ov.setAttribute("aria-modal", "true"); ov.setAttribute("aria-label", `${e.title}, the Gospels side by side`);
+    ov.innerHTML = `<div class="cmp-box"><button class="lb-close" aria-label="Close">×</button><span class="kind">The Gospels side by side</span><h2>${esc(e.title)}</h2>
+      ${e.orderNote ? `<p class="echo">${esc(e.orderNote)}</p>` : ""}${parallels(e, true)}<p class="credit">Links open the full passage in the RSV Catholic Edition on Bible Gateway.</p></div>`;
+    const close = () => { ov.remove(); document.removeEventListener("keydown", onKey); back && back.focus(); };
+    const onKey = ev => { if (ev.key === "Escape") close(); };
+    ov.querySelector(".lb-close").onclick = close; ov.onclick = ev => { if (ev.target === ov) close(); };
+    document.addEventListener("keydown", onKey); document.body.appendChild(ov); ov.querySelector(".lb-close").focus();
+  }
   function renderFolio(e) {
     const p = PLACES[e.place];
     const lane = LANES.find(l => l.id === e.lane);
@@ -211,7 +250,12 @@
       if (e.tags && e.tags.length) body += `<div class="people tags">${e.tags.map(t => `<span>${esc(TAGNAME[t] || t)}</span>`).join("")}</div>`;
       if (e.scripture[0]) body += `<blockquote><p>${esc(e.scripture[0].text)}</p><cite>${esc(e.scripture[0].ref)} · RSV-2CE</cite></blockquote>`;
     } else if (tab === "scripture") {
-      body += e.scripture.map(s => `<blockquote><p>${esc(s.text)}</p><cite>${esc(s.ref)}</cite></blockquote>`).join("");
+      const told = GOSPELS.filter(([k]) => e.gospels[k]);
+      if (told.length >= 2) {
+        body += `<div class="par-head"><h3>As each Gospel tells it</h3><button class="par-open" type="button">Side by side ⤢</button></div>${parallels(e, false)}`;
+        const rest = e.scripture.filter(s => !GOSPELS.some(([, n]) => s.ref.startsWith(n + " ")));
+        if (rest.length) body += `<h3>Also quoted</h3>` + rest.map(s => `<blockquote><p>${esc(s.text)}</p><cite>${esc(s.ref)}</cite></blockquote>`).join("");
+      } else body += e.scripture.map(s => `<blockquote><p>${esc(s.text)}</p><cite>${esc(s.ref)}</cite></blockquote>`).join("");
       if (e.echoes && e.echoes.length) body += `<h3>Old Testament echoes</h3>` + e.echoes.map(x => `<p class="echo"><b>${esc(x.ref)}</b>. ${esc(x.note)}</p>`).join("");
       body += `<p class="credit">Scripture quotations are from the Revised Standard Version of the Bible, Second Catholic Edition, copyright © 2000 and 2006 by the National Council of the Churches of Christ in the United States of America. Used by permission. Quotations were checked word for word against the RSV Catholic Edition, with the archaic pronouns (thee, thou) modernized as in the Second Catholic Edition.</p>`;
     } else if (tab === "art") {
@@ -234,6 +278,7 @@
       <div class="tabs" role="tablist">${tabs.map(([k, n]) => `<button role="tab" data-tab="${k}" aria-selected="${tab === k}">${n}</button>`).join("")}</div>
     </div><div class="folio-body">${body}</div>`;
     folio.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => { tab = b.dataset.tab; renderFolio(e); });
+    folio.querySelectorAll(".par-open").forEach(b => b.onclick = () => openParallels(e, b));
     folio.querySelectorAll("[data-go]").forEach(a => a.onclick = ev => { ev.preventDefault(); go(+a.dataset.go); });
     folio.querySelectorAll("img[data-zoom]").forEach(img => img.onclick = () => {
       const a = e.art[+img.dataset.zoom];
@@ -262,7 +307,8 @@
     const e = EVENTS[i], r = journeyOf(e), past = [];
     // The last few journeys stay on the map as dashed lines; older ones fade out so the map stays readable
     const trail = ["paul", "apostles"].includes(e.lane) ? e.lane : "jesus";
-    EVENTS.slice(0, i).filter(x => journeyOf(x) && x.lane === trail).slice(-5).forEach(x => past.push(feat(journeyOf(x), false, laneHex(x.lane))));
+    // In Holy Week the whole day so far stays drawn, whoever walked it
+    (kind === "holyweek" ? EVENTS.slice(0, i).filter(x => journeyOf(x) && HWDAY.get(x) === HWDAY.get(e)) : EVENTS.slice(0, i).filter(x => journeyOf(x) && x.lane === trail).slice(-5)).forEach(x => past.push(feat(journeyOf(x), false, laneHex(x.lane))));
     if (!r) return setRoutes(fc(past));
     const color = laneHex(e.lane);
     const unc = !!e.routeUncertain;
@@ -308,9 +354,10 @@
     drawRoutes(i);
     const r = journeyOf(e);
     const crowded = Object.values(PLACES).some(q => q !== p && Math.hypot(q.ll[0] - p.ll[0], q.ll[1] - p.ll[1]) < 0.03);
-    flyBounds(r || [p.ll], r ? 13 : e.place === "egypt" ? 8 : crowded ? 13 : 10.6);
+    const hw = kind === "holyweek";
+    flyBounds(r || [p.ll], hw ? 14.5 : r ? 13 : e.place === "egypt" ? 8 : crowded ? 13 : 10.6);
     updateMarkers();
-    markTimeline();
+    markTimeline(); renderDays();
     document.getElementById("now").innerHTML = `${esc(e.title)}<span>${esc(e.date)}</span>`;
     renderFolio(e);
     renderRulers();
@@ -321,7 +368,7 @@
     const i = cur, e = EVENTS[i];
     evBtns.forEach((b, k) => { if (!b) return; b.classList.toggle("on", k === i); b.classList.toggle("done", k < i); });
     cells.forEach(c => c.classList.toggle("cur", +c.dataset.i === i));
-    dateEls.forEach(d => { const k = +d.dataset.i; d.textContent = k === i ? shortDate(e.date) : (eraAt[k] || ""); d.classList.toggle("era", k === i); });
+    dateEls.forEach(d => { const k = +d.dataset.i; d.textContent = k === i ? (kind === "holyweek" ? HW_SHORT[HWDAY.get(e)] : shortDate(e.date)) : (eraAt[k] || ""); d.classList.toggle("era", k === i); });
     const pos = VIS.indexOf(i);
     document.getElementById("count").textContent = pos >= 0 ? `${pos + 1} / ${VIS.length}` : `${VIS.length} shown`;
   }
@@ -336,7 +383,7 @@
   document.getElementById("prev").onclick = () => { stop(); step(-1); };
   document.getElementById("next").onclick = () => { stop(); step(1); };
   document.addEventListener("keydown", e => {
-    if (e.target.closest("input,textarea,#map") || document.querySelector(".lightbox")) return;
+    if (e.target.closest("input,textarea,#map") || document.querySelector(".lightbox,.compare")) return;
     if (e.key === "ArrowRight") { stop(); step(1); } if (e.key === "ArrowLeft") { stop(); step(-1); }
   });
 
@@ -456,13 +503,22 @@
   markBasemap(bm);
   bmButtons.forEach(b => b.onclick = () => setBasemap(b.dataset.bm));
 
+  // Holy Week day strip: jump to the first event of each day
+  const daysEl = document.getElementById("days");
+  function renderDays() {
+    daysEl.hidden = kind !== "holyweek"; if (daysEl.hidden) return;
+    const day = cur >= 0 ? HWDAY.get(EVENTS[cur]) : -1;
+    daysEl.innerHTML = HW_DAYS.map((n, d) => { const first = VIS.find(i => HWDAY.get(EVENTS[i]) === d); return first === undefined ? "" : `<button data-go="${first}" aria-pressed="${d === day}">${n}<small>${VIS.filter(i => HWDAY.get(EVENTS[i]) === d).length}</small></button>`; }).join("");
+    daysEl.querySelectorAll("button").forEach(b => b.onclick = () => { stop(); go(+b.dataset.go); });
+  }
+
   // ---------- Gospel lens and kind filter ----------
   const KINDS = { miracles: ["miracle", "healing", "nature-miracle", "raising", "exorcism"], parables: ["parable"], teaching: ["teaching", "sermon"], passion: ["passion"], appearances: ["appearance"] };
   const LENSES = { all: "All", Mt: "Matthew", Mk: "Mark", Lk: "Luke", Jn: "John", Acts: "Acts" };
-  const KINDNAMES = { all: "Everything", miracles: "Miracles", parables: "Parables", teaching: "Teaching", passion: "Passion", appearances: "Risen Lord" };
+  const KINDNAMES = { all: "Everything", miracles: "Miracles", parables: "Parables", teaching: "Teaching", holyweek: "Holy Week", passion: "Passion", appearances: "Risen Lord" };
   let lens = store.get("ntmap.lens", "all"), kind = store.get("ntmap.kind", "all");
   if (!LENSES[lens]) lens = "all"; if (!KINDNAMES[kind]) kind = "all";
-  const passes = (e, l, k) => (l === "all" || e.gospels[l]) && (k === "all" || (e.tags || []).some(t => KINDS[k].includes(t)));
+  const passes = (e, l, k) => (l === "all" || e.gospels[l]) && (k === "all" || (k === "holyweek" ? HWDAY.has(e) : (e.tags || []).some(t => KINDS[k].includes(t))));
   const lensEl = document.getElementById("lens"), kindEl = document.getElementById("kinds");
   function renderFilters() {
     lensEl.innerHTML = Object.entries(LENSES).map(([k, n]) => `<button data-lens="${k}" aria-pressed="${lens === k}">${n}<small>${EVENTS.filter(e => passes(e, k, kind)).length}</small></button>`).join("");
