@@ -74,7 +74,7 @@ const ROUTES = {
 };
 
 const LANES = [
-  { id: "jesus", name: "Mary, Joseph & Jesus" },
+  { id: "jesus", name: "Jesus & the Holy Family" },
   { id: "john",  name: "John the Baptist & family" },
   { id: "herod", name: "The Herods" },
   { id: "rome",  name: "Rome & its governors" }

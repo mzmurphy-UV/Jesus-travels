@@ -59,9 +59,9 @@ function rulersAt(y) {
   return R;
 }
 
-// A year for an event: its own `year`, or the first year in its date ("c. 6–4 BC" is -6, "c. AD 28–29" is 28).
+// A year for an event: its own `year`, or the first year in its date ("c. 6–4 BC" is -6, "Spring AD 32" is 32).
 function yearOf(e) {
   if (typeof e.year === "number") return e.year;
-  const m = String(e.date).match(/(\d+)/); if (!m) return 0;
-  return /BC/.test(e.date) && !/AD/.test(e.date) ? -m[1] : +m[1];
+  const ad = String(e.date).match(/AD (\d+)/); if (ad) return +ad[1];
+  const bc = String(e.date).match(/(\d+)(?:[–-]\d+)? BC/); return bc ? -bc[1] : 0;
 }

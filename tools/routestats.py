@@ -4,6 +4,11 @@ from PIL import Image
 src=open('js/data.js').read()
 m=re.search(r'const ROUTES = (\{.*?\n\});',src,re.S)
 routes=json.loads(m.group(1))
+import glob
+# Journeys from the Gospel batches carry their own waypoints; key them by event id
+for f in sorted(glob.glob('content/gospels-*.json')):
+    for e in json.load(open(f))['events']:
+        if e.get('route'): routes['@'+e['id']]=e['route']
 Z=12
 os.makedirs('.cache/terr12',exist_ok=True)
 cache={}
@@ -46,5 +51,5 @@ for k,pts in routes.items():
     up*=3.28084; dn*=3.28084
     prof=[round(float(np.interp(t,dist,el_s))*3.28084) for t in np.linspace(0,dist[-1],60)]
     out[k]={"mi":round(d[-1]),"up":int(round(up,-2)),"down":int(round(dn,-2)),"hi":int(round(el_s.max()*3.28084,-1)),"lo":int(round(el_s.min()*3.28084,-1)),"profile":prof}
-    print(k,out[k]["mi"],out[k]["up"],out[k]["down"],out[k]["hi"],out[k]["lo"])
+    #print(k,out[k]["mi"],out[k]["up"],out[k]["down"],out[k]["hi"],out[k]["lo"])
 open('js/routestats.js','w').write('// Distance and climb along each drawn route, measured from elevation data (AWS Terrain Tiles).\n// Feet and miles. Built by tools/routestats.py; rebuild when ROUTES change.\nconst ROUTE_STATS = {\n'+',\n'.join(f'  {json.dumps(k)}: {json.dumps(v,separators=(",",":"))}' for k,v in out.items())+'\n};\n')

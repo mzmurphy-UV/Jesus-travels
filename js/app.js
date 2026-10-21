@@ -8,6 +8,15 @@
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const mapwrap = document.getElementById("mapwrap");
+
+  // Merge the Gospel events (js/gospels.js) after the opening events in data.js
+  if (typeof GOSPEL_EVENTS !== "undefined") {
+    for (const [k, p] of Object.entries(GOSPEL_PLACES)) if (!PLACES[k]) PLACES[k] = p;
+    EVENTS.push(...GOSPEL_EVENTS);
+    // A town that is now a real place no longer needs its context dot
+    for (let i = CONTEXT.length - 1; i >= 0; i--) if (Object.values(PLACES).some(p => Math.hypot(p.ll[0] - CONTEXT[i][1], p.ll[1] - CONTEXT[i][2]) < 0.03)) CONTEXT.splice(i, 1);
+    [["apostles", "The apostles"], ["women", "The women disciples"]].forEach(([id, name]) => { if (!LANES.some(l => l.id === id) && EVENTS.some(e => e.lane === id)) LANES.push({ id, name }); });
+  }
   const store = { get: (k, d) => { try { return localStorage.getItem(k) ?? d; } catch (_) { return d; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (_) {} } };
 
   // ---------- Map styles: streamed from MapTiler, with modern labels, roads and borders stripped ----------
@@ -81,20 +90,30 @@
   const placeEls = {};
   const placeHasEvent = new Set(EVENTS.map(e => e.place));
   const LBL = { einkarem: "l", shepherds: "b", bethlehem: "bl", herodium: "b", temple: "t", bethabara: "b", wilderness: "t" };
-  const KEYPLACES = ["nazareth", "temple", "bethlehem", "egypt"];
+  const KEYPLACES = ["nazareth", "temple", "bethlehem", "egypt", "capernaum"];
   Object.entries(PLACES).forEach(([id, p]) => {
     const m = mk("place" + (placeHasEvent.has(id) ? " has-event" : ""), p.name, p.ll, LBL[id] || "r", () => true);
     const g = m.el; g.tabIndex = 0; g.setAttribute("role", "button"); g.setAttribute("aria-label", p.name);
-    m.labelShow = z => z >= (placeHasEvent.has(id) ? 7.9 : 8.6) || KEYPLACES.includes(id) || g.classList.contains("active");
+    m.labelShow = z => z >= (placeHasEvent.has(id) ? 9.2 : 9.8) || KEYPLACES.includes(id) || g.classList.contains("active");
     g.addEventListener("click", ev => { ev.stopPropagation(); const i = EVENTS.findIndex((e, k) => e.place === id && k >= cur); go(i >= 0 ? i : EVENTS.findIndex(e => e.place === id)); });
     g.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); g.click(); } });
-    placeEls[id] = g; m.isPlace = true;
+    placeEls[id] = g; m.isPlace = true; m.rank = () => g.classList.contains("active") ? 3 : KEYPLACES.includes(id) ? 2 : placeHasEvent.has(id) ? 1 : 0;
   });
   function updateMarkers() {
     const z = map.getZoom();
-    for (const m of markers) { m.el.classList.toggle("hide", !m.show(z)); if (m.labelShow) m.lbl.classList.toggle("hide", !m.labelShow(z)); }
+    for (const m of markers) { m.el.classList.toggle("hide", !m.show(z)); m.lbl.classList.toggle("hide", !!m.labelShow && !m.labelShow(z)); }
+  }
+  // Hide place labels that would overlap a more important one (the current place wins, then key towns)
+  function declutter() {
+    updateMarkers();
+    const placed = [];
+    markers.filter(m => /\b(place|ctx|mtn)\b/.test(m.el.className) && !m.el.classList.contains("hide") && !m.lbl.classList.contains("hide")).sort((a, b) => (b.rank ? b.rank() : -1) - (a.rank ? a.rank() : -1)).forEach(m => {
+      const r = m.lbl.getBoundingClientRect();
+      if (placed.some(q => r.left < q.right + 4 && r.right + 4 > q.left && r.top < q.bottom && r.bottom > q.top)) m.lbl.classList.add("hide"); else placed.push(r);
+    });
   }
   map.on("zoom", updateMarkers);
+  map.on("moveend", declutter);
 
   // ---------- Camera ----------
   const pad = () => innerWidth <= 900 ? { top: 50, bottom: 40, left: 30, right: 30 } : { top: 60, bottom: 60, left: 80, right: 80 };
@@ -114,32 +133,36 @@
   document.getElementById("zin").onclick = () => map.zoomIn();
   document.getElementById("zout").onclick = () => map.zoomOut();
 
-  // ---------- Timeline ----------
+  // ---------- Timeline (only the events the current lens and filter let through) ----------
   const lanesEl = document.getElementById("lanes");
-  lanesEl.style.setProperty("--n", EVENTS.length);
-  const evBtns = [], cells = [];
-  const dateRow = document.createElement("div"); dateRow.className = "lname"; lanesEl.appendChild(dateRow);
-  const dateEls = EVENTS.map(() => { const d = document.createElement("div"); d.className = "dates"; lanesEl.appendChild(d); return d; });
-  LANES.forEach(l => {
-    const n = document.createElement("div"); n.className = "lname"; n.style.setProperty("--lc", laneColor(l.id)); n.innerHTML = `<i></i>${l.name}`; lanesEl.appendChild(n);
-    EVENTS.forEach((e, i) => {
-      const c = document.createElement("div"); c.className = "cell"; c.style.setProperty("--lc", laneColor(l.id)); c.dataset.i = i;
-      if (e.lane === l.id) { const b = document.createElement("button"); b.className = "ev"; b.style.setProperty("--lc", laneColor(l.id)); b.title = `${e.title} · ${e.date}`; b.setAttribute("aria-label", `${e.title}, ${e.date}`); b.onclick = () => go(i); c.appendChild(b); evBtns[i] = b; }
-      cells.push(c); lanesEl.appendChild(c);
+  let VIS = EVENTS.map((_, i) => i), evBtns = [], cells = [], dateEls = [], eraAt = {};
+  function buildTimeline() {
+    lanesEl.innerHTML = ""; evBtns = []; cells = []; eraAt = {};
+    lanesEl.style.setProperty("--n", VIS.length);
+    const dateRow = document.createElement("div"); dateRow.className = "lname"; lanesEl.appendChild(dateRow);
+    dateEls = VIS.map(i => { const d = document.createElement("div"); d.className = "dates"; d.dataset.i = i; lanesEl.appendChild(d); return d; });
+    LANES.filter(l => VIS.some(i => EVENTS[i].lane === l.id)).forEach(l => {
+      const n = document.createElement("div"); n.className = "lname"; n.style.setProperty("--lc", laneColor(l.id)); n.innerHTML = `<i></i>${l.name}`; lanesEl.appendChild(n);
+      VIS.forEach(i => {
+        const e = EVENTS[i];
+        const c = document.createElement("div"); c.className = "cell"; c.style.setProperty("--lc", laneColor(l.id)); c.dataset.i = i;
+        if (e.lane === l.id) { const b = document.createElement("button"); b.className = "ev"; b.style.setProperty("--lc", laneColor(l.id)); b.title = `${e.title} · ${e.date}`; b.setAttribute("aria-label", `${e.title}, ${e.date}`); b.onclick = () => go(i); c.appendChild(b); evBtns[i] = b; }
+        cells.push(c); lanesEl.appendChild(c);
+      });
     });
-  });
-  // Era labels: the first event of each distinct date span
-  const eraAt = {}; let lastEra = "";
-  EVENTS.forEach((e, i) => { const y = Math.trunc(yearOf(e)); if (lastEra === "" || y > lastEra) { eraAt[i] = y < 0 ? `${-y} BC` : `AD ${y}`; lastEra = y; } });
+    // Era labels: the first visible event of each year
+    let last = null;
+    VIS.forEach(i => { const y = Math.trunc(yearOf(EVENTS[i])); if (last === null || y > last) { eraAt[i] = y < 0 ? `${-y} BC` : `AD ${y}`; last = y; } });
+  }
 
   // ---------- Folio ----------
   const folio = document.getElementById("folio");
   let tab = "story";
   const wiki = a => "https://en.wikipedia.org/wiki/Special:Search?search=" + encodeURIComponent(`${a.title} ${a.artist.split(" and ")[0]}`);
   const fmt = n => (n < 0 ? "−" : "") + Math.abs(n).toLocaleString("en-US");
-  const journeyOf = e => e.from ? ROUTES[`${e.from}>${e.place}`] : null;
+  const journeyOf = e => e.route || (e.from ? ROUTES[`${e.from}>${e.place}`] : null);
   function journeyStats(e) {
-    const st = e.from && ROUTE_STATS[`${e.from}>${e.place}`]; if (!st) return "";
+    const st = e.from && ROUTE_STATS[e.route ? "@" + e.id : `${e.from}>${e.place}`]; if (!st) return "";
     const pr = st.profile, lo = Math.min(...pr, 0), hi = Math.max(...pr), span = Math.max(hi - lo, 200);
     const X = i => (i / (pr.length - 1) * 300).toFixed(1), Y = v => (56 - (v - lo) / span * 52).toFixed(1);
     const area = `M0 60L${pr.map((v, i) => `${X(i)} ${Y(v)}`).join("L")}L300 60Z`;
@@ -160,6 +183,8 @@
     lb.querySelector(".lb-img").onclick = ev => { if (ev.target === ev.currentTarget || ev.target.tagName === "IMG") close(); };
     document.addEventListener("keydown", onKey); document.body.appendChild(lb); lb.querySelector(".lb-close").focus();
   }
+  const TAGNAME = { miracle: "Miracle", healing: "Healing", "nature-miracle": "Nature miracle", raising: "Raising the dead", exorcism: "Exorcism", parable: "Parable", teaching: "Teaching", sermon: "Sermon",
+    prayer: "Prayer", call: "Call", conflict: "Conflict", prophecy: "Prophecy", passion: "Passion", appearance: "Appearance" };
   function renderFolio(e) {
     const p = PLACES[e.place];
     const lane = LANES.find(l => l.id === e.lane);
@@ -175,13 +200,15 @@
       body += `</dl>`;
       body += `<h3>People</h3><div class="people">${e.people.map(x => `<span>${esc(x)}</span>`).join("")}</div>`;
       if (e.history) body += `<h3>From history</h3><p class="echo">${esc(e.history)}</p>`;
+      if (e.orderNote) body += `<h3>On the order</h3><p class="echo">${esc(e.orderNote)}</p>`;
+      if (e.tags && e.tags.length) body += `<div class="people tags">${e.tags.map(t => `<span>${esc(TAGNAME[t] || t)}</span>`).join("")}</div>`;
       if (e.scripture[0]) body += `<blockquote><p>${esc(e.scripture[0].text)}</p><cite>${esc(e.scripture[0].ref)} · RSV-2CE</cite></blockquote>`;
     } else if (tab === "scripture") {
       body += e.scripture.map(s => `<blockquote><p>${esc(s.text)}</p><cite>${esc(s.ref)}</cite></blockquote>`).join("");
       if (e.echoes && e.echoes.length) body += `<h3>Old Testament echoes</h3>` + e.echoes.map(x => `<p class="echo"><b>${esc(x.ref)}</b>. ${esc(x.note)}</p>`).join("");
       body += `<p class="credit">Scripture quotations are from the Revised Standard Version of the Bible, Second Catholic Edition, copyright © 2000 and 2006 by the National Council of the Churches of Christ in the United States of America. Used by permission. Quotations were checked word for word against the RSV Catholic Edition, with the archaic pronouns (thee, thou) modernized as in the Second Catholic Edition.</p>`;
     } else if (tab === "art") {
-      if (!e.art.length) body += `<p class="empty">No artwork for this event yet. It is mostly known from history rather than from painters.</p>`;
+      if (!e.art.length) body += `<p class="empty">No artwork for this event yet.</p>`;
       body += e.art.map((a, k) => `<article class="artcard">${a.img ? `<figure><img src="${esc(a.img)}" alt="${esc(a.title)}, ${esc(a.artist)}" loading="lazy" data-zoom="${k}"><figcaption>${esc(a.credit)} · <a href="${esc(a.source)}" target="_blank" rel="noopener">file page</a></figcaption></figure>` : ""}<span class="kind">${esc(a.kind)}</span><h4>${esc(a.title)}</h4><div class="by">${esc(a.artist)} · ${esc(a.year)} · ${esc(a.medium)}</div>
         <dl><dt>Where now</dt><dd>${esc(a.location)}</dd><dt>Shows</dt><dd>${esc(a.description)}</dd><dt>Significance</dt><dd>${esc(a.significance)}</dd><dt>Symbolism</dt><dd>${esc(a.symbolism)}</dd><dt>Impact</dt><dd>${esc(a.impact)}</dd></dl>
         <a href="${wiki(a)}" target="_blank" rel="noopener">See the work ↗</a></article>`).join("");
@@ -194,7 +221,7 @@
       body += `<p class="credit">Certainty: Certain means the site is securely identified; Probable means scholars broadly agree; Traditional means the location rests on early Church tradition.</p>`;
     }
     folio.innerHTML = `<div class="folio-head">
-      <div class="eyebrow"><span class="lane">${esc(lane.name)}</span><span>·</span><span>${esc(e.date)}</span><span>·</span><span>${esc(p.name)}</span></div>
+      <div class="eyebrow"><span class="lane">${esc(lane.name)}</span><span>·</span><span>${esc(e.date)}</span><span>·</span><span>${esc(p.name)}</span>${e.harmony ? `<span>·</span><span title="Section in A. T. Robertson, A Harmony of the Gospels (1922)">Harmony ${esc(e.harmony)}</span>` : ""}</div>
       <h2>${esc(e.title)}</h2>
       <div class="gospels">${G.map(([k, n]) => `<span class="gchip ${e.gospels[k] ? "on" : ""}">${e.gospels[k] ? `<b>${n}</b> ${esc(e.gospels[k])}` : n}</span>`).join("")}</div>
       <div class="tabs" role="tablist">${tabs.map(([k, n]) => `<button role="tab" data-tab="${k}" aria-selected="${tab === k}">${n}</button>`).join("")}</div>
@@ -226,7 +253,8 @@
   function drawRoutes(i) {
     cancelAnimationFrame(routeAnim);
     const e = EVENTS[i], r = journeyOf(e), past = [];
-    EVENTS.slice(0, i).forEach(x => { const rr = journeyOf(x); if (rr && x.lane === "jesus") past.push(feat(rr, false, laneHex(x.lane))); });
+    // The last few journeys stay on the map as dashed lines; older ones fade out so the map stays readable
+    EVENTS.slice(0, i).filter(x => journeyOf(x) && x.lane === "jesus").slice(-5).forEach(x => past.push(feat(journeyOf(x), false, laneHex(x.lane))));
     if (!r) return setRoutes(fc(past));
     const color = laneHex(e.lane);
     if (reduce) return setRoutes(fc([...past, feat(r, true, color)]));
@@ -270,34 +298,47 @@
     Object.entries(placeEls).forEach(([id, g]) => g.style.zIndex = id === e.place ? "2" : "");
     drawRoutes(i);
     const r = journeyOf(e);
-    flyBounds(r || [p.ll], r ? 10.6 : e.place === "egypt" ? 8 : 10.6);
+    const crowded = Object.values(PLACES).some(q => q !== p && Math.hypot(q.ll[0] - p.ll[0], q.ll[1] - p.ll[1]) < 0.03);
+    flyBounds(r || [p.ll], r ? 13 : e.place === "egypt" ? 8 : crowded ? 13 : 10.6);
     updateMarkers();
-    evBtns.forEach((b, k) => { if (!b) return; b.classList.toggle("on", k === i); b.classList.toggle("done", k < i); });
-    cells.forEach(c => c.classList.toggle("cur", +c.dataset.i === i));
-    dateEls.forEach((d, k) => { d.textContent = k === i ? e.date.replace("c. ", "") : (eraAt[k] || "").replace("c. ", ""); d.classList.toggle("era", k === i); });
-    document.getElementById("count").textContent = `${i + 1} / ${EVENTS.length}`;
+    markTimeline();
     document.getElementById("now").innerHTML = `${esc(e.title)}<span>${esc(e.date)}</span>`;
     renderFolio(e);
     renderRulers();
     evBtns[i] && evBtns[i].scrollIntoView({ block: "nearest", inline: "center", behavior: reduce ? "auto" : "smooth" });
     store.set("ntmap.cur", i);
   }
+  function markTimeline() {
+    const i = cur, e = EVENTS[i];
+    evBtns.forEach((b, k) => { if (!b) return; b.classList.toggle("on", k === i); b.classList.toggle("done", k < i); });
+    cells.forEach(c => c.classList.toggle("cur", +c.dataset.i === i));
+    dateEls.forEach(d => { const k = +d.dataset.i; d.textContent = k === i ? shortDate(e.date) : (eraAt[k] || ""); d.classList.toggle("era", k === i); });
+    const pos = VIS.indexOf(i);
+    document.getElementById("count").textContent = pos >= 0 ? `${pos + 1} / ${VIS.length}` : `${VIS.length} shown`;
+  }
+  // "Tuesday afternoon, Passion Week, AD 33" -> "AD 33"; "c. 6–4 BC" -> "6–4 BC"
+  const shortDate = d => { const m = d.match(/(?:c\. )?((?:\d+[–-])?\d+ BC|AD \d+(?:[–-]\d+)?)/); return m ? m[1] : d; };
+  const step = dir => { const pos = VIS.indexOf(cur); const next = pos >= 0 ? VIS[pos + dir] : (dir > 0 ? VIS.find(k => k > cur) : [...VIS].reverse().find(k => k < cur)); if (next !== undefined) go(next); };
   let timer = null;
   const playBtn = document.getElementById("play");
   function stop() { clearInterval(timer); timer = null; playBtn.textContent = "Play"; }
-  playBtn.onclick = () => { if (timer) return stop(); if (cur >= EVENTS.length - 1) go(0); playBtn.textContent = "Pause"; timer = setInterval(() => { if (cur >= EVENTS.length - 1) return stop(); go(cur + 1); }, 4500); };
-  document.getElementById("prev").onclick = () => { stop(); go(cur - 1); };
-  document.getElementById("next").onclick = () => { stop(); go(cur + 1); };
+  const atEnd = () => cur >= VIS[VIS.length - 1];
+  playBtn.onclick = () => { if (timer) return stop(); if (atEnd()) go(VIS[0]); playBtn.textContent = "Pause"; timer = setInterval(() => { if (atEnd()) return stop(); step(1); }, 4500); };
+  document.getElementById("prev").onclick = () => { stop(); step(-1); };
+  document.getElementById("next").onclick = () => { stop(); step(1); };
   document.addEventListener("keydown", e => {
     if (e.target.closest("input,textarea,#map") || document.querySelector(".lightbox")) return;
-    if (e.key === "ArrowRight") { stop(); go(cur + 1); } if (e.key === "ArrowLeft") { stop(); go(cur - 1); }
+    if (e.key === "ArrowRight") { stop(); step(1); } if (e.key === "ArrowLeft") { stop(); step(-1); }
   });
 
   // ---------- Search: events, people, places, and Bible references ----------
   const BOOKS = { Matthew: ["matthew", "matt", "mt"], Mark: ["mark", "mk", "mrk"], Luke: ["luke", "lk", "luk"], John: ["john", "jn", "jhn", "joh"], Acts: ["acts", "ac"],
     Genesis: ["genesis", "gen", "gn"], Exodus: ["exodus", "exod", "ex"], Leviticus: ["leviticus", "lev"], Numbers: ["numbers", "num"], Joshua: ["joshua", "josh"],
     "1 Samuel": ["1 samuel", "1 sam", "1sam", "1 sm"], "2 Samuel": ["2 samuel", "2 sam", "2sam", "2 sm"], "2 Kings": ["2 kings", "2 kgs", "2kgs", "2 ki"],
-    Psalm: ["psalm", "psalms", "ps", "psa"], Isaiah: ["isaiah", "isa", "is"], Jeremiah: ["jeremiah", "jer"], Hosea: ["hosea", "hos"], Micah: ["micah", "mic"], Malachi: ["malachi", "mal"] };
+    Psalm: ["psalm", "psalms", "ps", "psa"], Isaiah: ["isaiah", "isa", "is"], Jeremiah: ["jeremiah", "jer"], Hosea: ["hosea", "hos"], Micah: ["micah", "mic"], Malachi: ["malachi", "mal"],
+    Deuteronomy: ["deuteronomy", "deut", "dt"], "1 Kings": ["1 kings", "1 kgs", "1kgs", "1 ki"], Ezekiel: ["ezekiel", "ezek", "ez"], Zechariah: ["zechariah", "zech", "zec"], Daniel: ["daniel", "dan", "dn"],
+    Jonah: ["jonah", "jon"], Proverbs: ["proverbs", "prov", "prv"], Sirach: ["sirach", "sir"], Joel: ["joel"], Amos: ["amos"], Job: ["job"], Esther: ["esther", "esth"], "2 Chronicles": ["2 chronicles", "2 chr"],
+    "Song of Songs": ["song of songs", "song", "song of solomon"], "1 Maccabees": ["1 maccabees", "1 macc"], "1 Corinthians": ["1 corinthians", "1 cor"] };
   const ALIAS = {}; for (const [b, list] of Object.entries(BOOKS)) list.forEach(a => ALIAS[a] = b);
   const CODE = { Mt: "Matthew", Mk: "Mark", Lk: "Luke", Jn: "John" };
   const normBook = s => ALIAS[s.toLowerCase().replace(/\./g, "").replace(/\s+/g, " ").trim()];
@@ -334,7 +375,7 @@
         if (refs.some(r => x.main.some(m => overlaps(r, m)))) res.push({ kind: "event", i: x.i, score: 3, why: "Scripture", tab: "scripture" });
         else if (refs.some(r => x.echo.some(m => overlaps(r, m)))) res.push({ kind: "event", i: x.i, score: 2, why: "Old Testament echo", tab: "scripture" });
       });
-      return res.length ? res : [{ kind: "none", text: `No event in this part of the story covers ${q} yet.` }];
+      return res.length ? res : [{ kind: "none", text: `No event on the map covers ${q} yet.` }];
     }
     const toks = fold(q).split(/\s+/).filter(t => t.length > 1 && !["the", "of", "at", "in", "and", "a"].includes(t));
     if (!toks.length) return [];
@@ -371,7 +412,7 @@
     flyBounds([h.ll], 11);
     showPin(h.ll);
     noteEl.querySelector("h4").textContent = h.name;
-    noteEl.querySelector("p").textContent = h.note ? h.note + " No event happens here yet in this part of the timeline." : `No event happens here yet in this part of the timeline (the Annunciation to the Baptism). ${h.name} comes up later in Jesus' ministry, or is shown for context.`;
+    noteEl.querySelector("p").textContent = h.note ? h.note + " No Gospel event happens here on this map yet." : `No Gospel event happens here on this map yet. ${h.name} is shown for context.`;
     noteEl.hidden = false;
   }
   let pin = null;
@@ -404,8 +445,34 @@
   markBasemap(bm);
   bmButtons.forEach(b => b.onclick = () => setBasemap(b.dataset.bm));
 
+  // ---------- Gospel lens and kind filter ----------
+  const KINDS = { miracles: ["miracle", "healing", "nature-miracle", "raising", "exorcism"], parables: ["parable"], teaching: ["teaching", "sermon"], passion: ["passion"], appearances: ["appearance"] };
+  const LENSES = { all: "All four", Mt: "Matthew", Mk: "Mark", Lk: "Luke", Jn: "John" };
+  const KINDNAMES = { all: "Everything", miracles: "Miracles", parables: "Parables", teaching: "Teaching", passion: "Passion", appearances: "Risen Lord" };
+  let lens = store.get("ntmap.lens", "all"), kind = store.get("ntmap.kind", "all");
+  if (!LENSES[lens]) lens = "all"; if (!KINDNAMES[kind]) kind = "all";
+  const passes = (e, l, k) => (l === "all" || e.gospels[l]) && (k === "all" || (e.tags || []).some(t => KINDS[k].includes(t)));
+  const lensEl = document.getElementById("lens"), kindEl = document.getElementById("kinds");
+  function renderFilters() {
+    lensEl.innerHTML = Object.entries(LENSES).map(([k, n]) => `<button data-lens="${k}" aria-pressed="${lens === k}">${n}<small>${EVENTS.filter(e => passes(e, k, kind)).length}</small></button>`).join("");
+    kindEl.innerHTML = Object.entries(KINDNAMES).map(([k, n]) => `<button data-kind="${k}" aria-pressed="${kind === k}">${n}<small>${EVENTS.filter(e => passes(e, lens, k)).length}</small></button>`).join("");
+    lensEl.querySelectorAll("button").forEach(b => b.onclick = () => { lens = b.dataset.lens; store.set("ntmap.lens", lens); applyFilter(); });
+    kindEl.querySelectorAll("button").forEach(b => b.onclick = () => { kind = b.dataset.kind; store.set("ntmap.kind", kind); applyFilter(); });
+  }
+  function applyFilter(first) {
+    VIS = EVENTS.map((_, i) => i).filter(i => passes(EVENTS[i], lens, kind));
+    if (!VIS.length) { kind = "all"; VIS = EVENTS.map((_, i) => i).filter(i => passes(EVENTS[i], lens, kind)); }
+    renderFilters(); buildTimeline();
+    if (first) return;
+    stop();
+    if (!VIS.includes(cur)) go(VIS.find(k => k > cur) ?? VIS[VIS.length - 1]);
+    else { markTimeline(); evBtns[cur] && evBtns[cur].scrollIntoView({ block: "nearest", inline: "center" }); }
+  }
+
   // Start
   updateMarkers();
-  const start = Math.max(0, Math.min(EVENTS.length - 1, +store.get("ntmap.cur", 0) || 0));
+  applyFilter(true);
+  let start = Math.max(0, Math.min(EVENTS.length - 1, +store.get("ntmap.cur", 0) || 0));
+  if (!VIS.includes(start)) start = VIS.find(k => k > start) ?? VIS[0];
   go(start);
 })();

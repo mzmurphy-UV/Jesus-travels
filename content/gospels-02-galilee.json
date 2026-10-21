@@ -1,0 +1,3146 @@
+{
+  "_batch": "gospels-02-galilee",
+  "_sections": "§37–71",
+  "_unverified": [],
+  "_notes": [
+    "Chronology: dates follow a ministry from the Baptism c. AD 29 (Luke 3:1, as in data.js) to the Crucifixion in April AD 33, with Passovers in AD 30 (John 2), 31, 32 (John 6) and 33. Robertson himself dated the Crucifixion AD 30 or 29; the order of events is his either way.",
+    "Split sections: §54 → sermon (§54), beatitudes (§54a), ourfather (§54b), builders (§54c); §64 → sower §64a (includes the seed growing by itself and the lamp), tares §64b (with its explanation in the house), mustardseed §64c (mustard seed and leaven), treasure §64d (hidden treasure and pearl), dragnet §64e (net and householder); §71 → herodfears §71a (lane herod, Tiberias) and johnbeheaded §71b (lane john, Machaerus, told by Mark as a flashback).",
+    "Places with no journey: §37 (summary heading), §45, §57–60 use the general 'galilee' marker or stay where the previous event was, because the Gospels name no town. §58–60 sit on the 'galilee' marker with no route; §61 then has a route from 'galilee' back to Capernaum.",
+    "§36 in batch 1 (galileearrival) ends on the 'galilee' marker, so §37 has no journey and §38 goes from 'galilee' to Cana. The last Jesus-lane location in this batch is 'galilee' (§70, touring). §71a–b are Herod/John events with no journey, so the next batch (§72, the Twelve return; feeding of the 5,000 near Bethsaida) should start its journey from 'galilee' or 'capernaum'.",
+    "Matthew 6:9–10 is modernized per the brief ('who are in heaven, hallowed be your name'); worth checking against a printed RSV-2CE in case it keeps the traditional wording of the Lord's Prayer.",
+    "Scripture: Bible Gateway's RSVCE prints pronunciation marks in names (Caper′na-um, Chora′zin, Tal′itha cu′mi). As in data.js (Luke 1:13 'Zechariah'), these are removed (Capernaum, Chorazin, Talitha cumi, Bethsaida, Joanna, Zebulun, Naphtali, Nineveh, Magdalene). check.py reports these 5 quotes as mismatches only for that reason (Matthew 4:13, Matthew 11:21, Matthew 12:41, Luke 8:1–3, Mark 5:41–42).",
+    "No art found for six minor teaching events: builders (§54c), johnsquestion (§57), cityswoes (§58), signjonah (§62), truekin (§63), dragnet (§64e). Images that failed to download (upload.wikimedia.org rate limit, no mirror) and were dropped: Hogarth 'Christ at the Pool of Bethesda' (St Bartholomew's Hospital), Hitda Codex 'Healing of Peter's Mother-in-law', Millais 'The Enemy Sowing Tares'; any could be added later as bethesda1 / petersmother1 / tares1.",
+    "Id note: renamed this batch's Matthew 6 Lord's Prayer event to 'ourfather' because gospels-03b.json already uses 'lordsprayer' (Luke 11).",
+    "Three Tissot items are pen-and-ink landscape or costume studies, not watercolors (capernaumhome0, secondtour0, nazarethlast0); their medium is given only as 'Drawing on paper'."
+  ],
+  "places": {
+    "beatitudes": {
+      "name": "Mount of Beatitudes",
+      "ll": [
+        35.556,
+        32.881
+      ],
+      "region": "Galilee",
+      "certainty": "Traditional",
+      "note": "The hill above Tabgha, between Capernaum and the Plain of Gennesaret. Matthew says only \"the mountain\" and Luke \"a level place,\" which could be a level spot on a hillside. A Byzantine chapel stood on the lower slope; the present church (1938, by Antonio Barluzzi) is eight-sided for the eight Beatitudes."
+    },
+    "bethesda": {
+      "name": "Pool of Bethesda",
+      "ll": [
+        35.2359,
+        31.7813
+      ],
+      "region": "Jerusalem",
+      "certainty": "Certain",
+      "note": "A pool \"by the Sheep Gate\" north of the Temple, which John says had five porticoes. Excavations beside the Church of St Anne uncovered two large pools separated by a central wall, a good match for five porches, with later healing baths and a Byzantine church above them."
+    },
+    "cana": {
+      "name": "Cana",
+      "ll": [
+        35.34,
+        32.75
+      ],
+      "region": "Galilee",
+      "certainty": "Probable",
+      "note": "Cana of Galilee was Nathanael's home town (John 21:2). Two sites are proposed. Kafr Kanna, about 4 miles northeast of Nazareth, holds the Franciscan Wedding Church and the pilgrim tradition. Khirbet Qana, a ruined hilltop about 8 miles north of Nazareth, is favored by many archaeologists; excavations there found a Jewish village of Jesus' time and a cave venerated by early pilgrims."
+    },
+    "capernaum": {
+      "name": "Capernaum",
+      "ll": [
+        35.575,
+        32.881
+      ],
+      "region": "Galilee",
+      "certainty": "Certain",
+      "note": "A fishing town on the northwest shore of the Sea of Galilee, on the road toward Damascus. It became Jesus' home base in Galilee (Matthew 9:1 calls it \"his own city\"). The white limestone synagogue of the 4th–5th century stands on the black basalt foundations of an earlier one, and a modern church hovers over the house honored as Peter's."
+    },
+    "galilee": {
+      "name": "Towns and villages of Galilee",
+      "ll": [
+        35.42,
+        32.8
+      ],
+      "region": "Galilee",
+      "certainty": "Probable",
+      "note": "Lower Galilee, the hill country west of the Sea of Galilee ruled by Herod Antipas. It was dense with farming villages and small towns linked by roads. The point stands for Jesus' movements through the region rather than one place."
+    },
+    "kursi": {
+      "name": "Kursi (country of the Gerasenes)",
+      "ll": [
+        35.65,
+        32.826
+      ],
+      "region": "Decapolis",
+      "certainty": "Traditional",
+      "note": "Mark and Luke say \"the country of the Gerasenes,\" Matthew \"the country of the Gadarenes\"; some manuscripts read Gergesenes. Gerasa (Jerash) lies over 30 miles away and Gadara about 6 miles from the lake. Kursi, on the east shore where a steep slope comes close to the water, has a large 5th-century Byzantine monastery and a chapel marking the miracle, uncovered in 1970 during road building."
+    },
+    "machaerus": {
+      "name": "Machaerus",
+      "ll": [
+        35.64,
+        31.56
+      ],
+      "region": "Perea",
+      "certainty": "Certain",
+      "note": "A Herodian fortress-palace on a hilltop east of the Dead Sea, in today's Jordan. Josephus (Antiquities 18.5.2) names it as the place where Herod Antipas imprisoned and beheaded John the Baptist. Excavations have uncovered the palace courtyard, baths and a ritual bath."
+    },
+    "nain": {
+      "name": "Nain",
+      "ll": [
+        35.35,
+        32.63
+      ],
+      "region": "Galilee",
+      "certainty": "Certain",
+      "note": "A village on the north slope of the Hill of Moreh, about 6 miles southeast of Nazareth and in sight of Mount Tabor. It is still called Nein. A small Franciscan church (1880) stands on older church remains, and rock-cut tombs lie east of the village."
+    },
+    "seagalilee": {
+      "name": "Sea of Galilee (on the water)",
+      "ll": [
+        35.59,
+        32.83
+      ],
+      "region": "Galilee",
+      "certainty": "Certain",
+      "note": "A freshwater lake about 13 miles long and 8 wide, nearly 700 feet below sea level, ringed by hills. Winds funnel down through the valleys and can raise sudden, violent storms. Fishing boats of the period held a crew of four or five and some passengers."
+    },
+    "tabgha": {
+      "name": "Tabgha (Sea of Galilee shore)",
+      "ll": [
+        35.549,
+        32.873
+      ],
+      "region": "Galilee",
+      "certainty": "Traditional",
+      "note": "Heptapegon, \"seven springs,\" about 2 miles west of Capernaum. Warm springs flow into the lake here and draw fish, so fishermen have long worked this shore. Nearby is a small bay, often called the Bay of Parables, whose slope forms a natural amphitheater: a voice from a boat carries to a crowd on the shore."
+    }
+  },
+  "events": [
+    {
+      "id": "galileeteach",
+      "harmony": "§37",
+      "lane": "jesus",
+      "place": "galilee",
+      "date": "Late AD 30",
+      "title": "Jesus preaches in Galilee",
+      "people": [
+        "Jesus",
+        "The people of Galilee"
+      ],
+      "gospels": {
+        "Mt": "4:17",
+        "Mk": "1:14–15",
+        "Lk": "4:14–15"
+      },
+      "summary": "After John is arrested, Jesus returns to Galilee in the power of the Spirit. He teaches in the synagogues and announces that the time is fulfilled and the kingdom of God is at hand. His fame spreads through the whole region. This opens the great Galilean ministry, the longest and busiest period of his public life.",
+      "scripture": [
+        {
+          "ref": "Mark 1:14–15",
+          "text": "Now after John was arrested, Jesus came into Galilee, preaching the gospel of God, and saying, \"The time is fulfilled, and the kingdom of God is at hand; repent, and believe in the gospel.\""
+        },
+        {
+          "ref": "Luke 4:14–15",
+          "text": "And Jesus returned in the power of the Spirit into Galilee, and a report concerning him went out through all the surrounding country. And he taught in their synagogues, being glorified by all."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Daniel 2:44",
+          "note": "The God of heaven will set up a kingdom that shall never be destroyed."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/galileeteach0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Jesus_Teaches_in_the_Synagogues_(Jésus_enseigne_dans_les_synagogues)_-_James_Tissot.jpg",
+          "title": "Jesus Teaches in the Synagogues",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Wrapped in a prayer shawl, Jesus stands at the reading desk of a synagogue hung with lamps, a scroll before him.",
+          "significance": "Tissot made three long trips to the Holy Land to study landscapes, buildings and dress for his Life of Christ.",
+          "symbolism": "The plain room and listening elders stress that Jesus' ministry began in ordinary village synagogues.",
+          "impact": "The series of about 350 pictures drew huge crowds in Paris, London and New York in the 1890s."
+        }
+      ],
+      "tags": [
+        "teaching"
+      ],
+      "orderNote": "Robertson treats this as a summary heading for the whole Galilean ministry. How long that ministry lasted is uncertain: about a year and a half if the feast of John 5:1 was a Passover, otherwise perhaps six to eight months."
+    },
+    {
+      "id": "courtier",
+      "harmony": "§38",
+      "lane": "jesus",
+      "place": "cana",
+      "from": "galilee",
+      "date": "Late AD 30",
+      "title": "The official's son healed from Cana",
+      "people": [
+        "Jesus",
+        "A royal official of Capernaum",
+        "His son"
+      ],
+      "gospels": {
+        "Jn": "4:46–54"
+      },
+      "summary": "Jesus comes again to Cana, where he had turned water into wine. An official in Herod Antipas' service, whose son lies dying in Capernaum, begs him to come down. Jesus tells him to go: his son will live. On the road home his servants meet him with the news that the fever left the boy at the very hour Jesus spoke. John calls it the second sign Jesus did in Galilee.",
+      "journey": "A few miles across the hills of Lower Galilee to Cana.",
+      "route": [
+        [
+          35.42,
+          32.8
+        ],
+        [
+          35.38,
+          32.775
+        ],
+        [
+          35.34,
+          32.75
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "John 4:49–50",
+          "text": "The official said to him, \"Sir, come down before my child dies.\" Jesus said to him, \"Go; your son will live.\" The man believed the word that Jesus spoke to him and went his way."
+        },
+        {
+          "ref": "John 4:53",
+          "text": "The father knew that was the hour when Jesus had said to him, \"Your son will live\"; and he himself believed, and all his household."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/courtier0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Healing_of_the_Officer's_Son_(La_guérison_du_fils_de_l'officier)_-_James_Tissot.jpg",
+          "title": "The Healing of the Officer's Son",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "In a busy street under market awnings, the richly dressed official pleads with Jesus, who answers that his son will live.",
+          "significance": "One of the few paintings of this scene from John 4, rarely shown in art.",
+          "symbolism": "The healing happens by a word spoken miles away; the picture centers on the father's faith, not on the sick boy.",
+          "impact": "The Brooklyn Museum bought the whole series by public subscription in 1900."
+        }
+      ],
+      "tags": [
+        "miracle",
+        "healing"
+      ],
+      "orderNote": "Cana to Capernaum is about 16 to 20 miles, depending on which site is Cana, so the healing happens at a distance. Some link this official with Chuza, Herod's steward (Luke 8:3), but that is only a guess."
+    },
+    {
+      "id": "nazarethreject",
+      "harmony": "§39",
+      "lane": "jesus",
+      "place": "nazareth",
+      "from": "cana",
+      "date": "Late AD 30",
+      "title": "Rejected at Nazareth",
+      "people": [
+        "Jesus",
+        "The synagogue of Nazareth"
+      ],
+      "gospels": {
+        "Lk": "4:16–31"
+      },
+      "summary": "On the Sabbath Jesus stands up in the synagogue of his home town and reads from Isaiah: the Spirit of the Lord has anointed him to bring good news to the poor and release to captives. He tells them the scripture is fulfilled today. The hearers first wonder at him, then grow angry when he recalls how Elijah and Elisha were sent to foreigners. They drive him to the brow of the hill to throw him down, but he passes through their midst.",
+      "journey": "About 4 to 9 miles from Cana, depending on which site is Cana, over the hills of Lower Galilee.",
+      "route": [
+        [
+          35.34,
+          32.75
+        ],
+        [
+          35.32,
+          32.725
+        ],
+        [
+          35.3,
+          32.7
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Luke 4:18–19",
+          "text": "\"The Spirit of the Lord is upon me, because he has anointed me to preach good news to the poor. He has sent me to proclaim release to the captives and recovering of sight to the blind, to set at liberty those who are oppressed, to proclaim the acceptable year of the Lord.\""
+        },
+        {
+          "ref": "Luke 4:21",
+          "text": "And he began to say to them, \"Today this scripture has been fulfilled in your hearing.\""
+        },
+        {
+          "ref": "Luke 4:29–30",
+          "text": "And they rose up and put him out of the city, and led him to the brow of the hill on which their city was built, that they might throw him down headlong. But passing through the midst of them he went away."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Isaiah 61:1–2",
+          "note": "The passage Jesus reads: the anointed one sent with good news to the poor."
+        },
+        {
+          "ref": "1 Kings 17:8–9; 2 Kings 5:14",
+          "note": "The widow of Zarephath and Naaman the Syrian, foreigners helped by Elijah and Elisha."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/nazarethreject0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Jesus_Unrolls_the_Book_in_the_Synagogue_(Jésus_dans_la_synagogue_déroule_le_livre)_-_James_Tissot_-_overall.jpg",
+          "title": "Jesus Unrolls the Book in the Synagogue",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Jesus stands on the raised reading platform of a synagogue hung with lamps, among men wrapped in prayer shawls.",
+          "significance": "Tissot shows a scroll and synagogue furnishings based on what he saw of Jewish worship in his own day.",
+          "symbolism": "The open scroll marks the moment Jesus declares, \"Today this scripture has been fulfilled.\"",
+          "impact": "Helps readers picture Luke's account, the only Gospel scene of Jesus reading aloud."
+        },
+        {
+          "kind": "Descriptive",
+          "img": "img/nazarethreject1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Brow_of_the_Hill_near_Nazareth_(L'escarpement_de_Nazareth)_-_James_Tissot.jpg",
+          "title": "The Brow of the Hill near Nazareth",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "An angry crowd surges along a path at the edge of a cliff, while Jesus walks calmly back through the middle of them.",
+          "significance": "Tissot based the cliff on the steep drops he saw around Nazareth.",
+          "symbolism": "Jesus alone is still amid the shouting crowd: \"passing through the midst of them he went away.\"",
+          "impact": "A vivid picture of a scene few artists have attempted."
+        }
+      ],
+      "tags": [
+        "teaching",
+        "conflict"
+      ],
+      "orderNote": "Luke places this visit at the start of the ministry; Mark 6:1–6 and Matthew 13:54–58 tell of a visit much later. Robertson takes them as two visits (§39 and §69); many scholars think Luke has moved the one visit forward as a program for the whole ministry. A cliff south of the town, the Mount of the Precipice, is the traditional site."
+    },
+    {
+      "id": "capernaumhome",
+      "harmony": "§40",
+      "lane": "jesus",
+      "place": "capernaum",
+      "from": "nazareth",
+      "date": "Late AD 30",
+      "title": "A new home in Capernaum",
+      "people": [
+        "Jesus"
+      ],
+      "gospels": {
+        "Mt": "4:13–16"
+      },
+      "summary": "Leaving Nazareth, Jesus settles in Capernaum, a lakeside town in the old tribal lands of Zebulun and Naphtali. Matthew sees in this the fulfilment of Isaiah's promise of a great light for \"Galilee of the Gentiles.\" From now on Capernaum is his base, though much of his time is spent on the road.",
+      "stay": "Capernaum was his home base for the rest of the Galilean ministry, probably in Peter's house.",
+      "journey": "About 28 miles from Nazareth, down through the hills and the Arbel pass to the lake shore, a long day's walk.",
+      "route": [
+        [
+          35.3,
+          32.7
+        ],
+        [
+          35.34,
+          32.75
+        ],
+        [
+          35.42,
+          32.79
+        ],
+        [
+          35.47,
+          32.81
+        ],
+        [
+          35.515,
+          32.825
+        ],
+        [
+          35.549,
+          32.873
+        ],
+        [
+          35.575,
+          32.881
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Matthew 4:13",
+          "text": "and leaving Nazareth he went and dwelt in Capernaum by the sea, in the territory of Zebulun and Naphtali,"
+        },
+        {
+          "ref": "Matthew 4:16",
+          "text": "the people who sat in darkness have seen a great light, and for those who sat in the region and shadow of death light has dawned.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Isaiah 9:1–2",
+          "note": "The people who walked in darkness have seen a great light, in Zebulun and Naphtali."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/capernaumhome0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Sea_of_Tiberias_-_James_Tissot.jpg",
+          "title": "Sea of Tiberias",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Drawing on paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "A quiet stretch of the lake shore, with reeds, boulders and the hills of the far side.",
+          "significance": "A landscape study Tissot made on site during his Holy Land travels.",
+          "symbolism": "The lake was the setting for most of Jesus' Galilean ministry, from Capernaum on its northern shore.",
+          "impact": "Tissot's landscapes gave Western viewers a first look at the real setting of the Gospels."
+        }
+      ],
+      "tags": [
+        "prophecy"
+      ]
+    },
+    {
+      "id": "fishers",
+      "harmony": "§41",
+      "lane": "jesus",
+      "place": "tabgha",
+      "from": "capernaum",
+      "date": "Late AD 30",
+      "title": "The call of the four fishermen",
+      "people": [
+        "Jesus",
+        "Simon Peter",
+        "Andrew",
+        "James",
+        "John",
+        "Zebedee"
+      ],
+      "gospels": {
+        "Mt": "4:18–22",
+        "Mk": "1:16–20",
+        "Lk": "5:1–11"
+      },
+      "summary": "By the lake Jesus calls two pairs of brothers, Simon and Andrew and James and John, to follow him and become fishers of men. Luke tells how Jesus first teaches the crowd from Simon's boat, then sends him out to let down the nets after a fruitless night; the catch is so great the nets begin to break. Simon falls at his knees. They leave everything and follow him. Several of them had already met Jesus at the Jordan.",
+      "journey": "About 2 miles along the shore west of Capernaum.",
+      "route": [
+        [
+          35.575,
+          32.881
+        ],
+        [
+          35.56,
+          32.877
+        ],
+        [
+          35.549,
+          32.873
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Luke 5:5",
+          "text": "And Simon answered, \"Master, we toiled all night and took nothing! But at your word I will let down the nets.\""
+        },
+        {
+          "ref": "Luke 5:8",
+          "text": "But when Simon Peter saw it, he fell down at Jesus' knees, saying, \"Depart from me, for I am a sinful man, O Lord.\""
+        },
+        {
+          "ref": "Mark 1:17",
+          "text": "And Jesus said to them, \"Follow me and I will make you become fishers of men.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Jeremiah 16:16",
+          "note": "\"I am sending for many fishers, says the Lord, and they shall catch them.\""
+        },
+        {
+          "ref": "1 Kings 19:19–21",
+          "note": "Elisha leaves his plowing at once to follow Elijah."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "img": "img/fishers0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Duccio_di_Buoninsegna_036.jpg",
+          "title": "The Calling of the Apostles Peter and Andrew",
+          "artist": "Duccio di Buoninsegna",
+          "year": "1308–1311",
+          "medium": "Tempera on panel",
+          "location": "National Gallery of Art, Washington",
+          "description": "Christ stands on the shore and beckons to Peter and Andrew, who sit in their boat with a net full of fish on a gold background.",
+          "significance": "A panel from the back predella of the Maestà, Duccio's great altarpiece for Siena Cathedral, later broken up and sold.",
+          "symbolism": "The gold sky turns a fishing scene into a sacred moment; the brothers' turning toward Christ is the whole story.",
+          "impact": "One of the founding works of Sienese painting; parts of the Maestà are now spread among museums in Europe and America."
+        },
+        {
+          "kind": "Masterpiece",
+          "img": "img/fishers1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Ghirlandaio,_Domenico_-_Calling_of_the_Apostles_-_1481.jpg",
+          "title": "The Calling of the First Apostles",
+          "artist": "Domenico Ghirlandaio",
+          "year": "1481–1482",
+          "medium": "Fresco",
+          "location": "Sistine Chapel, Vatican City",
+          "description": "Peter and Andrew kneel before Christ by the lake, while in the background the call of the fishermen is told again in smaller scenes.",
+          "significance": "Part of the cycle of the life of Christ that Pope Sixtus IV commissioned for the side walls of the Sistine Chapel, decades before Michelangelo's ceiling.",
+          "symbolism": "Florentine onlookers in contemporary dress stand around the scene, as if the call reaches into the painter's own city.",
+          "impact": "Seen by millions of visitors to the Sistine Chapel, and by the cardinals at every papal conclave."
+        }
+      ],
+      "tags": [
+        "call",
+        "miracle",
+        "nature-miracle"
+      ],
+      "orderNote": "Robertson takes Luke's miraculous catch as the same call told in Mark and Matthew; some scholars see two occasions. Mark and Matthew do not name the place beyond \"the Sea of Galilee\"; the shore at Tabgha is the traditional site."
+    },
+    {
+      "id": "unclean",
+      "harmony": "§42",
+      "lane": "jesus",
+      "place": "capernaum",
+      "from": "tabgha",
+      "date": "Late AD 30",
+      "title": "A demoniac healed in the synagogue",
+      "people": [
+        "Jesus",
+        "A man with an unclean spirit",
+        "The synagogue at Capernaum"
+      ],
+      "gospels": {
+        "Mk": "1:21–28",
+        "Lk": "4:31–37"
+      },
+      "summary": "On the Sabbath Jesus teaches in the synagogue at Capernaum, and the people are astonished, for he teaches with authority, not like the scribes. A man with an unclean spirit cries out that he knows who Jesus is, the Holy One of God. Jesus silences the spirit and commands it to come out. His fame spreads at once through all Galilee.",
+      "journey": "About 2 miles back along the shore to Capernaum.",
+      "route": [
+        [
+          35.549,
+          32.873
+        ],
+        [
+          35.56,
+          32.877
+        ],
+        [
+          35.575,
+          32.881
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Mark 1:22",
+          "text": "And they were astonished at his teaching, for he taught them as one who had authority, and not as the scribes."
+        },
+        {
+          "ref": "Mark 1:27",
+          "text": "And they were all amazed, so that they questioned among themselves, saying, \"What is this? A new teaching! With authority he commands even the unclean spirits, and they obey him.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/unclean0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Possessed_Man_in_the_Synagogue_(Le_possédé_dans_la_Synagogue)_-_James_Tissot.jpg",
+          "title": "The Possessed Man in the Synagogue",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "In the synagogue a possessed man is thrown to the floor among the startled worshipers in prayer shawls.",
+          "significance": "Tissot shows the fear and confusion that Mark describes.",
+          "symbolism": "Christ's calm authority contrasts with the man's frenzy.",
+          "impact": "A rare picture of Jesus' first recorded exorcism."
+        }
+      ],
+      "tags": [
+        "exorcism",
+        "teaching"
+      ]
+    },
+    {
+      "id": "petersmother",
+      "harmony": "§43",
+      "lane": "jesus",
+      "place": "capernaum",
+      "date": "Late AD 30",
+      "title": "Peter's mother-in-law and many others healed",
+      "people": [
+        "Jesus",
+        "Simon Peter",
+        "Andrew",
+        "James",
+        "John",
+        "Peter's mother-in-law"
+      ],
+      "gospels": {
+        "Mt": "8:14–17",
+        "Mk": "1:29–34",
+        "Lk": "4:38–41"
+      },
+      "summary": "Leaving the synagogue, Jesus goes to the house of Simon and Andrew, where Simon's mother-in-law lies sick with a fever. He takes her by the hand and lifts her up; the fever leaves her and she serves them. At sundown, when the Sabbath ends, the whole town gathers at the door, and he heals many sick and casts out many demons.",
+      "stay": "In the house of Simon and Andrew at Capernaum.",
+      "scripture": [
+        {
+          "ref": "Mark 1:31",
+          "text": "And he came and took her by the hand and lifted her up, and the fever left her; and she served them."
+        },
+        {
+          "ref": "Matthew 8:17",
+          "text": "This was to fulfil what was spoken by the prophet Isaiah, \"He took our infirmities and bore our diseases.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Isaiah 53:4",
+          "note": "\"He took our infirmities and bore our diseases,\" as Matthew quotes it."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/petersmother0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Healing_of_Peter's_Mother-in-law_(La_guérison_de_la_belle-mère_de_Pierre)_-_James_Tissot_-_overall.jpg",
+          "title": "The Healing of Peter's Mother-in-law",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Outside a stone house, Jesus bends to raise the sick woman by the hand while Peter looks on.",
+          "significance": "Tissot sets the scene at a modest Galilean house rather than in a grand interior.",
+          "symbolism": "The touch of the hand, which Mark mentions, is the center of the picture.",
+          "impact": "One of very few paintings of this short Gospel scene."
+        }
+      ],
+      "tags": [
+        "miracle",
+        "healing",
+        "exorcism"
+      ]
+    },
+    {
+      "id": "firsttour",
+      "harmony": "§44",
+      "lane": "jesus",
+      "place": "galilee",
+      "from": "capernaum",
+      "date": "Late AD 30",
+      "title": "The first tour of Galilee",
+      "people": [
+        "Jesus",
+        "Simon Peter",
+        "Andrew",
+        "James",
+        "John"
+      ],
+      "gospels": {
+        "Mt": "4:23–25",
+        "Mk": "1:35–39",
+        "Lk": "4:42–44"
+      },
+      "summary": "Before dawn Jesus goes out to a lonely place to pray. When Simon and the others find him and say everyone is looking for him, he answers that he must preach in the other towns too, for that is why he came. He goes throughout Galilee teaching in the synagogues, preaching the kingdom and healing every disease. Crowds come from Galilee, the Decapolis, Jerusalem, Judea and beyond the Jordan.",
+      "journey": "A circuit of the towns and villages of Galilee; the Gospels give no route or length.",
+      "route": [
+        [
+          35.575,
+          32.881
+        ],
+        [
+          35.549,
+          32.873
+        ],
+        [
+          35.53,
+          32.85
+        ],
+        [
+          35.515,
+          32.825
+        ],
+        [
+          35.47,
+          32.81
+        ],
+        [
+          35.42,
+          32.8
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Mark 1:35",
+          "text": "And in the morning, a great while before day, he rose and went out to a lonely place, and there he prayed."
+        },
+        {
+          "ref": "Mark 1:38",
+          "text": "And he said to them, \"Let us go on to the next towns, that I may preach there also; for that is why I came out.\""
+        },
+        {
+          "ref": "Matthew 4:23",
+          "text": "And he went about all Galilee, teaching in their synagogues and preaching the gospel of the kingdom and healing every disease and every infirmity among the people."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/firsttour0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Jesus_Went_Out_into_a_Desert_Place_(Jésus_va_dans_un_endroit_désert)_-_James_Tissot_-_overall.jpg",
+          "title": "Jesus Went Out into a Desert Place",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Jesus sits alone on a rocky slope among olive trees, while below the disciples come looking for him.",
+          "significance": "Tissot often painted Jesus' solitary prayer, which the Gospels mention again and again.",
+          "symbolism": "The solitary figure apart from the searching crowd shows prayer as the source of his ministry.",
+          "impact": "These quiet scenes balance the crowded miracle pictures of the series."
+        }
+      ],
+      "tags": [
+        "teaching",
+        "prayer",
+        "healing"
+      ],
+      "orderNote": "Robertson counts three tours of Galilee: this one with the four fishermen, a second in Luke 8:1–3 (§60), and a third after the sending of the Twelve (§70)."
+    },
+    {
+      "id": "leper",
+      "harmony": "§45",
+      "lane": "jesus",
+      "place": "galilee",
+      "date": "Late AD 30",
+      "title": "A leper healed",
+      "people": [
+        "Jesus",
+        "A man full of leprosy"
+      ],
+      "gospels": {
+        "Mt": "8:2–4",
+        "Mk": "1:40–45",
+        "Lk": "5:12–16"
+      },
+      "summary": "In one of the towns a leper kneels before Jesus and says, \"If you will, you can make me clean.\" Moved with pity, Jesus touches him, something the Law treated as making a person unclean, and he is cleansed. Jesus tells him to tell no one but to show himself to the priest as Moses commanded. The man spreads the news everywhere, so that Jesus can no longer openly enter a town.",
+      "scripture": [
+        {
+          "ref": "Mark 1:40–41",
+          "text": "And a leper came to him beseeching him, and kneeling said to him, \"If you will, you can make me clean.\" Moved with pity, he stretched out his hand and touched him, and said to him, \"I will; be clean.\""
+        },
+        {
+          "ref": "Mark 1:45",
+          "text": "But he went out and began to talk freely about it, and to spread the news, so that Jesus could no longer openly enter a town, but was out in the country; and people came to him from every quarter."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Leviticus 14:2–4",
+          "note": "The law for the cleansing of a leper, shown to the priest."
+        },
+        {
+          "ref": "2 Kings 5:14",
+          "note": "Naaman the Syrian cleansed of leprosy in the Jordan."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/leper0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Healing_of_the_Lepers_at_Capernaum_(Guérison_des_lépreux_à_Capernaum)_-_James_Tissot_-_overall.jpg",
+          "title": "Healing of the Lepers at Capernaum",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "A leper in rags kneels in a village street and raises his arms toward Jesus.",
+          "significance": "Tissot shows the outcast alone in the street, with townspeople keeping their distance.",
+          "symbolism": "Jesus touches a man whom the Law kept apart.",
+          "impact": "A widely reproduced image from the series."
+        }
+      ],
+      "tags": [
+        "miracle",
+        "healing"
+      ],
+      "orderNote": "Luke says only \"in one of the cities\"; Matthew places the healing as Jesus comes down from the mountain after the Sermon. Robertson follows Mark's order."
+    },
+    {
+      "id": "paralytic",
+      "harmony": "§46",
+      "lane": "jesus",
+      "place": "capernaum",
+      "from": "galilee",
+      "date": "Late AD 30",
+      "title": "The paralytic let down through the roof",
+      "people": [
+        "Jesus",
+        "A paralyzed man",
+        "Four friends",
+        "Scribes and Pharisees"
+      ],
+      "gospels": {
+        "Mt": "9:1–8",
+        "Mk": "2:1–12",
+        "Lk": "5:17–26"
+      },
+      "summary": "Back in Capernaum, the house where Jesus is staying is so crowded that no one can reach the door. Four men carry a paralyzed friend onto the roof, open it up, and let him down on his pallet. Seeing their faith, Jesus tells the man his sins are forgiven. When scribes object that only God can forgive sins, Jesus heals him to show that the Son of man has authority to forgive. The man walks out carrying his pallet.",
+      "journey": "Back to Capernaum after the tour.",
+      "route": [
+        [
+          35.42,
+          32.8
+        ],
+        [
+          35.47,
+          32.81
+        ],
+        [
+          35.515,
+          32.825
+        ],
+        [
+          35.53,
+          32.85
+        ],
+        [
+          35.549,
+          32.873
+        ],
+        [
+          35.575,
+          32.881
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Mark 2:4–5",
+          "text": "And when they could not get near him because of the crowd, they removed the roof above him; and when they had made an opening, they let down the pallet on which the paralytic lay. And when Jesus saw their faith, he said to the paralytic, \"My son, your sins are forgiven.\""
+        },
+        {
+          "ref": "Mark 2:11–12",
+          "text": "\"I say to you, rise, take up your pallet and go home.\" And he rose, and immediately took up the pallet and went out before them all; so that they were all amazed and glorified God, saying, \"We never saw anything like this!\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/paralytic0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Palsied_Man_Let_Down_through_the_Roof_(Le_paralytique_descendu_du_toit)_-_James_Tissot_-_overall.jpg",
+          "title": "The Palsied Man Let Down through the Roof",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "A paralyzed man on his mat is lowered by ropes through an opening in the roof into a crowded room.",
+          "significance": "Tissot builds the scene around a flat-roofed house like those he saw in Palestine.",
+          "symbolism": "The opening above lets light fall on the man as faith brings him to Jesus.",
+          "impact": "One of the best-known images in the series."
+        },
+        {
+          "kind": "Masterpiece",
+          "img": "img/paralytic1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Anthony_van_Dyck_-_Christ_healing_the_paralytic.jpg",
+          "title": "Christ Healing the Paralytic",
+          "artist": "Anthony van Dyck",
+          "year": "c. 1619",
+          "medium": "Oil on canvas",
+          "location": "Royal Collection, United Kingdom",
+          "description": "Christ, in a red robe and blue mantle, turns toward a frail old man with a bandaged head, while a young man looks on.",
+          "significance": "An early work painted while van Dyck was in Rubens' studio in Antwerp.",
+          "symbolism": "Christ's raised hand both forgives and heals; the close half-length figures place us right beside the bed.",
+          "impact": "Shows the young van Dyck already rivaling his master in color and feeling."
+        }
+      ],
+      "tags": [
+        "miracle",
+        "healing",
+        "conflict"
+      ],
+      "orderNote": "Robertson takes the house to be Peter's. A flat roof of beams, branches and packed earth, as in Galilean houses of basalt, could be dug through; Luke speaks of tiles."
+    },
+    {
+      "id": "levi",
+      "harmony": "§47",
+      "lane": "jesus",
+      "place": "capernaum",
+      "date": "Late AD 30",
+      "title": "The call of Matthew (Levi)",
+      "people": [
+        "Jesus",
+        "Matthew (Levi), son of Alphaeus",
+        "Tax collectors and sinners",
+        "Pharisees"
+      ],
+      "gospels": {
+        "Mt": "9:9–13",
+        "Mk": "2:13–17",
+        "Lk": "5:27–32"
+      },
+      "summary": "Walking by the lake, Jesus sees Levi, also called Matthew, sitting at the tax office and says, \"Follow me.\" He leaves everything and follows. Levi then holds a great feast in his house for Jesus, with many tax collectors and sinners at table. When the Pharisees complain, Jesus answers that he came to call not the righteous but sinners.",
+      "scripture": [
+        {
+          "ref": "Matthew 9:9",
+          "text": "As Jesus passed on from there, he saw a man called Matthew sitting at the tax office; and he said to him, \"Follow me.\" And he rose and followed him."
+        },
+        {
+          "ref": "Mark 2:17",
+          "text": "And when Jesus heard it, he said to them, \"Those who are well have no need of a physician, but those who are sick; I came not to call the righteous, but sinners.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Hosea 6:6",
+          "note": "\"I desire mercy, and not sacrifice,\" which Jesus quotes in Matthew 9:13."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "img": "img/levi0.jpg",
+          "credit": "Photo: Gleb Simonov, CC0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Caravaggio_—_The_Calling_of_Saint_Matthew.jpg",
+          "title": "The Calling of Saint Matthew",
+          "artist": "Caravaggio",
+          "year": "1599–1600",
+          "medium": "Oil on canvas",
+          "location": "Contarelli Chapel, San Luigi dei Francesi, Rome",
+          "description": "Christ and Peter step into a dim counting room and Christ points at Matthew, who sits at a table with coins and well-dressed companions.",
+          "significance": "Caravaggio's first major public commission; it made him famous in Rome overnight.",
+          "symbolism": "A beam of light follows Christ's pointing hand, which echoes Adam's hand in Michelangelo's Creation: a new creation. Scholars still debate which figure is Matthew.",
+          "impact": "One of the most influential paintings of the Baroque; its dramatic light set a style followed across Europe."
+        },
+        {
+          "kind": "Descriptive",
+          "img": "img/levi1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Calling_of_Saint_Matthew_(Vocation_de_Saint_Mathieu)_-_James_Tissot_-_overall.jpg",
+          "title": "The Calling of Saint Matthew",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Jesus stops at the window of a customs booth beside resting camels and calls the tax collector inside.",
+          "significance": "Tissot sets the call in a busy street, as a real customs post on the road by the lake.",
+          "symbolism": "The booth's barred window stands for the trade Matthew is about to leave.",
+          "impact": "Gives a plain, historical view of the same scene Caravaggio set in a Roman tavern."
+        }
+      ],
+      "tags": [
+        "call",
+        "conflict"
+      ],
+      "orderNote": "Mark and Luke call him Levi; the first Gospel calls him Matthew, and all three lists of the Twelve include a Matthew. Most take them as one man with two names."
+    },
+    {
+      "id": "newwine",
+      "harmony": "§48",
+      "lane": "jesus",
+      "place": "capernaum",
+      "date": "Late AD 30",
+      "title": "New wine in fresh wineskins",
+      "people": [
+        "Jesus",
+        "Disciples of John",
+        "Pharisees"
+      ],
+      "gospels": {
+        "Mt": "9:14–17",
+        "Mk": "2:18–22",
+        "Lk": "5:33–39"
+      },
+      "summary": "John's disciples and the Pharisees ask why Jesus' disciples do not fast. He answers with three short parables: wedding guests do not fast while the bridegroom is with them; no one sews new cloth on an old garment; no one puts new wine into old wineskins. The days will come, he says, when the bridegroom is taken away, and then they will fast.",
+      "scripture": [
+        {
+          "ref": "Mark 2:19",
+          "text": "And Jesus said to them, \"Can the wedding guests fast while the bridegroom is with them? As long as they have the bridegroom with them, they cannot fast."
+        },
+        {
+          "ref": "Mark 2:22",
+          "text": "And no one puts new wine into old wineskins; if he does, the wine will burst the skins, and the wine is lost, and so are the skins; but new wine is for fresh skins.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Hosea 2:19–20",
+          "note": "God as the bridegroom of his people."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/newwine0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Meal_in_the_House_of_Matthew_(Le_repas_chez_Mathieu)_-_James_Tissot.jpg",
+          "title": "The Meal in the House of Matthew",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Guests gather in the shaded courtyard of Matthew's house, while critics stand in the foreground watching.",
+          "significance": "Tissot shows the custom of reclining at table and the mixed company the Pharisees objected to.",
+          "symbolism": "The feast is the setting for the question about fasting and Jesus' sayings about the bridegroom and new wine.",
+          "impact": "Helps readers picture how meals were eaten in Jesus' world."
+        }
+      ],
+      "tags": [
+        "parable",
+        "teaching",
+        "conflict"
+      ],
+      "orderNote": "Robertson thinks the question was probably prompted by the disciples feasting at Matthew's house on a Jewish fast day."
+    },
+    {
+      "id": "bethesda",
+      "harmony": "§49",
+      "lane": "jesus",
+      "place": "bethesda",
+      "from": "capernaum",
+      "date": "AD 31 (an unnamed feast)",
+      "title": "The healing at the Pool of Bethesda",
+      "people": [
+        "Jesus",
+        "A man ill for 38 years",
+        "The Jewish authorities"
+      ],
+      "gospels": {
+        "Jn": "5:1–47"
+      },
+      "summary": "At a feast in Jerusalem, Jesus finds a man who has been ill for thirty-eight years lying by the Pool of Bethesda among many sick people. He asks, \"Do you want to be healed?\" and tells him to rise, take up his pallet and walk. Because it is the Sabbath, the authorities object, and Jesus replies that his Father is working still and so is he. They seek all the more to kill him, for he calls God his own Father. A long discourse follows on the Son's authority and the witnesses to him.",
+      "journey": "About 90 to 100 miles from Capernaum down the Jordan Valley and up from Jericho to Jerusalem, about four or five days.",
+      "route": [
+        [
+          35.575,
+          32.881
+        ],
+        [
+          35.515,
+          32.825
+        ],
+        [
+          35.535,
+          32.79
+        ],
+        [
+          35.57,
+          32.7
+        ],
+        [
+          35.55,
+          32.5
+        ],
+        [
+          35.53,
+          32.15
+        ],
+        [
+          35.47,
+          31.88
+        ],
+        [
+          35.3,
+          31.8
+        ],
+        [
+          35.2359,
+          31.7813
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "John 5:6",
+          "text": "When Jesus saw him and knew that he had been lying there a long time, he said to him, \"Do you want to be healed?\""
+        },
+        {
+          "ref": "John 5:8–9",
+          "text": "Jesus said to him, \"Rise, take up your pallet, and walk.\" And at once the man was healed, and he took up his pallet and walked. Now that day was the sabbath."
+        },
+        {
+          "ref": "John 5:17",
+          "text": "But Jesus answered them, \"My Father is working still, and I am working.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/bethesda0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Piscina_Probatica_or_Pool_of_Bethesda_(La_piscine_probatique_ou_de_Bethesda)_-_James_Tissot_-_overall.jpg",
+          "title": "The Piscina Probatica or Pool of Bethesda",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Sick people wait under stone arches around the pool; two hands reach into the water to stir it.",
+          "significance": "Tissot drew on the excavations and descriptions of the pool known in his day.",
+          "symbolism": "The hands recall the old belief, added in some manuscripts at John 5:4, that an angel stirred the water and the first one in was healed.",
+          "impact": "An early attempt to show the pool as an actual place."
+        }
+      ],
+      "tags": [
+        "miracle",
+        "healing",
+        "conflict",
+        "teaching"
+      ],
+      "orderNote": "John does not name the feast, and the manuscripts differ on \"a feast\" or \"the feast.\" Robertson thinks it most probably a Passover, which would make the ministry about three years long; others propose Purim, Pentecost or Tabernacles. Some scholars think John 5 and 6 have been transposed."
+    },
+    {
+      "id": "grainfields",
+      "harmony": "§50",
+      "lane": "jesus",
+      "place": "galilee",
+      "from": "bethesda",
+      "date": "AD 31",
+      "title": "Plucking grain on the Sabbath",
+      "people": [
+        "Jesus",
+        "The disciples",
+        "Pharisees"
+      ],
+      "gospels": {
+        "Mt": "12:1–8",
+        "Mk": "2:23–28",
+        "Lk": "6:1–5"
+      },
+      "summary": "Walking through grainfields on a Sabbath, the disciples pluck heads of grain and rub them in their hands to eat. The Pharisees call this unlawful work. Jesus points to David eating the holy bread when he was hungry and to the priests who work in the Temple on the Sabbath. The Sabbath was made for man, he says, and the Son of man is lord even of the Sabbath.",
+      "journey": "About 85 to 95 miles back north to Galilee by the Jordan Valley.",
+      "route": [
+        [
+          35.2359,
+          31.7813
+        ],
+        [
+          35.3,
+          31.8
+        ],
+        [
+          35.47,
+          31.88
+        ],
+        [
+          35.53,
+          32.15
+        ],
+        [
+          35.55,
+          32.5
+        ],
+        [
+          35.5,
+          32.65
+        ],
+        [
+          35.42,
+          32.8
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Mark 2:23",
+          "text": "One sabbath he was going through the grainfields; and as they made their way his disciples began to pluck ears of grain."
+        },
+        {
+          "ref": "Mark 2:27–28",
+          "text": "And he said to them, \"The sabbath was made for man, not man for the sabbath; so the Son of man is lord even of the sabbath.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "1 Samuel 21:1–6",
+          "note": "David and his men eat the holy bread at Nob."
+        },
+        {
+          "ref": "Hosea 6:6",
+          "note": "\"I desire mercy, and not sacrifice,\" quoted in Matthew 12:7."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/grainfields0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Disciples_Eat_Wheat_on_the_Sabbath_(Les_disciples_mangent_du_blé_au_sabbat)_-_James_Tissot_-_overall.jpg",
+          "title": "The Disciples Eat Wheat on the Sabbath",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Pharisees lean on a stone wall to watch as Jesus and the disciples walk through the ripe fields below a hill town.",
+          "significance": "Tissot shows the terraced grainfields of the hill country.",
+          "symbolism": "The ripe grain marks the season and the small, ordinary act that sparked the dispute.",
+          "impact": "A rare picture of this Sabbath controversy."
+        }
+      ],
+      "tags": [
+        "conflict",
+        "teaching"
+      ],
+      "orderNote": "Robertson places this \"probably in Galilee on the way back from Jerusalem\"; the Gospels name no place. Ripe grain points to spring, between Passover and Pentecost."
+    },
+    {
+      "id": "witheredhand",
+      "harmony": "§51",
+      "lane": "jesus",
+      "place": "galilee",
+      "date": "AD 31",
+      "title": "The man with the withered hand",
+      "people": [
+        "Jesus",
+        "A man with a withered hand",
+        "Pharisees",
+        "Herodians"
+      ],
+      "gospels": {
+        "Mt": "12:9–14",
+        "Mk": "3:1–6",
+        "Lk": "6:6–11"
+      },
+      "summary": "On another Sabbath, in a synagogue, the Pharisees watch to see whether Jesus will heal a man with a withered hand. Jesus asks whether it is lawful on the Sabbath to do good or to do harm, to save life or to kill. Grieved at their hardness of heart, he tells the man to stretch out his hand, and it is restored. The Pharisees go out and plot with the Herodians how to destroy him.",
+      "scripture": [
+        {
+          "ref": "Mark 3:4",
+          "text": "And he said to them, \"Is it lawful on the sabbath to do good or to do harm, to save life or to kill?\" But they were silent."
+        },
+        {
+          "ref": "Mark 3:5",
+          "text": "And he looked around at them with anger, grieved at their hardness of heart, and said to the man, \"Stretch out your hand.\" He stretched it out, and his hand was restored."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/witheredhand0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Man_with_the_Withered_Hand_(L'homme_à_la_main_desséchée)_-_James_Tissot_-_overall.jpg",
+          "title": "The Man with the Withered Hand",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "In a crowded synagogue, the man in a striped robe holds out his hand as the worshipers watch.",
+          "significance": "Tissot captures the tension of a healing done under hostile eyes.",
+          "symbolism": "The outstretched hand is both the man's obedience and the sign of restoration.",
+          "impact": "One of few paintings of this scene."
+        },
+        {
+          "kind": "Descriptive",
+          "img": "img/witheredhand1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Pharisees_and_the_Herodians_Conspire_Against_Jesus_(Les_pharisiens_et_les_hérodiens_conspirent_contre_Jésus)_-_James_Tissot_-_overall.jpg",
+          "title": "The Pharisees and the Herodians Conspire Against Jesus",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Pharisees and Herodians sit together on a low wall beneath the trees, deep in talk.",
+          "significance": "Tissot gives the opponents of Jesus their own scene, following Mark 3:6.",
+          "symbolism": "Religious and political rivals unite against him.",
+          "impact": "Marks the turn toward the Passion early in the Gospel story."
+        }
+      ],
+      "tags": [
+        "miracle",
+        "healing",
+        "conflict"
+      ],
+      "orderNote": "The synagogue is not named. It may have been at Capernaum, but Robertson says only \"in Galilee.\""
+    },
+    {
+      "id": "multitudes",
+      "harmony": "§52",
+      "lane": "jesus",
+      "place": "tabgha",
+      "from": "galilee",
+      "date": "AD 31",
+      "title": "Crowds by the Sea of Galilee",
+      "people": [
+        "Jesus",
+        "The disciples",
+        "Crowds from Galilee, Judea, Idumea, Perea, Tyre and Sidon"
+      ],
+      "gospels": {
+        "Mt": "12:15–21",
+        "Mk": "3:7–12"
+      },
+      "summary": "Jesus withdraws with his disciples to the lake, and a great multitude follows from all over the land, from Idumea in the south to Tyre and Sidon in the north. He has a boat kept ready so the crowd will not crush him. All who have diseases press to touch him, and unclean spirits fall down crying, \"You are the Son of God,\" but he orders them not to make him known. Matthew sees here Isaiah's gentle Servant.",
+      "journey": "Down to the lake shore, about 10 miles from central Galilee.",
+      "route": [
+        [
+          35.42,
+          32.8
+        ],
+        [
+          35.47,
+          32.81
+        ],
+        [
+          35.515,
+          32.825
+        ],
+        [
+          35.53,
+          32.85
+        ],
+        [
+          35.549,
+          32.873
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Mark 3:9–10",
+          "text": "And he told his disciples to have a boat ready for him because of the crowd, lest they should crush him; for he had healed many, so that all who had diseases pressed upon him to touch him."
+        },
+        {
+          "ref": "Matthew 12:18",
+          "text": "\"Behold, my servant whom I have chosen, my beloved with whom my soul is well pleased. I will put my Spirit upon him, and he shall proclaim justice to the Gentiles."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Isaiah 42:1–4",
+          "note": "The chosen Servant who will not break a bruised reed, quoted in full by Matthew."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/multitudes0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Jesus_Preaches_in_a_Ship_(Jésus_prèche_dans_une_barque)_-_James_Tissot_-_overall.jpg",
+          "title": "Jesus Preaches in a Ship",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Jesus speaks from a boat drawn close to the shore, with the crowd gathered on the beach.",
+          "significance": "Tissot shows how the water carried his voice to a large crowd.",
+          "symbolism": "The boat kept ready for him, as Mark says, becomes his pulpit.",
+          "impact": "A popular image of Jesus as teacher by the lake."
+        }
+      ],
+      "tags": [
+        "healing",
+        "exorcism",
+        "prophecy"
+      ]
+    },
+    {
+      "id": "twelve",
+      "harmony": "§53",
+      "lane": "jesus",
+      "place": "beatitudes",
+      "from": "tabgha",
+      "date": "AD 31",
+      "title": "The choosing of the Twelve",
+      "people": [
+        "Jesus",
+        "Simon Peter",
+        "Andrew",
+        "James and John, sons of Zebedee",
+        "Philip",
+        "Bartholomew",
+        "Matthew",
+        "Thomas",
+        "James son of Alphaeus",
+        "Thaddaeus (Judas son of James)",
+        "Simon the Zealot",
+        "Judas Iscariot"
+      ],
+      "gospels": {
+        "Mk": "3:13–19",
+        "Lk": "6:12–16"
+      },
+      "summary": "Jesus goes up into the hills and spends the whole night in prayer. In the morning he calls his disciples and chooses twelve of them, whom he names apostles, to be with him, to be sent out to preach, and to have authority over demons. The list begins with Simon, whom he names Peter, and ends with Judas Iscariot, who betrayed him. The number twelve recalls the twelve tribes of Israel.",
+      "journey": "Up into the hills above the lake, about a mile.",
+      "route": [
+        [
+          35.549,
+          32.873
+        ],
+        [
+          35.553,
+          32.878
+        ],
+        [
+          35.556,
+          32.881
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Luke 6:12–13",
+          "text": "In these days he went out into the hills to pray; and all night he continued in prayer to God. And when it was day, he called his disciples, and chose from them twelve, whom he named apostles;"
+        },
+        {
+          "ref": "Mark 3:14–15",
+          "text": "And he appointed twelve, to be with him, and to be sent out to preach and have authority to cast out demons:"
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Genesis 49:28",
+          "note": "The twelve tribes of Israel; the Twelve point to a renewed Israel."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/twelve0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Ordaining_of_the_Twelve_Apostles_(Election_des_douze_apôtres)_-_James_Tissot.jpg",
+          "title": "Ordaining of the Twelve Apostles",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "On a rocky hillside above the lake, Jesus calls out to the disciples as they come toward him one by one.",
+          "significance": "Tissot sets the choosing on the hills above the Sea of Galilee, following Luke's \"he went out into the hills.\"",
+          "symbolism": "Twelve men for the twelve tribes of a renewed Israel.",
+          "impact": "A rare depiction of the choosing of the Twelve."
+        }
+      ],
+      "tags": [
+        "call",
+        "prayer"
+      ],
+      "orderNote": "Matthew gives the names only when the Twelve are sent out (Matthew 10:2–4, §70). The four lists (with Acts 1:13) agree on the names except Thaddaeus, whom Luke calls Judas son of James. The hill is not named; tradition places it near the Mount of Beatitudes."
+    },
+    {
+      "id": "sermon",
+      "harmony": "§54",
+      "lane": "jesus",
+      "place": "beatitudes",
+      "date": "AD 31",
+      "title": "The Sermon on the Mount",
+      "people": [
+        "Jesus",
+        "The disciples",
+        "Great crowds"
+      ],
+      "gospels": {
+        "Mt": "5:1–7:29",
+        "Lk": "6:17–49"
+      },
+      "summary": "Seeing the crowds, Jesus sits down on the mountain and teaches his disciples. The sermon sets out the righteousness of the kingdom, deeper than that of the scribes and Pharisees: the Law fulfilled, not abolished; anger and lust judged in the heart; love of enemies; prayer, almsgiving and fasting done in secret; trust in the Father instead of anxiety; and the Golden Rule. The crowds are astonished, for he teaches as one who has authority.",
+      "scripture": [
+        {
+          "ref": "Matthew 5:1–2",
+          "text": "Seeing the crowds, he went up on the mountain, and when he sat down his disciples came to him. And he opened his mouth and taught them, saying:"
+        },
+        {
+          "ref": "Matthew 5:14",
+          "text": "\"You are the light of the world. A city set on a hill cannot be hid."
+        },
+        {
+          "ref": "Matthew 7:28–29",
+          "text": "And when Jesus finished these sayings, the crowds were astonished at his teaching, for he taught them as one who had authority, and not as their scribes."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Exodus 19–20",
+          "note": "Moses receives the Law on Sinai; Matthew presents Jesus teaching the Law's fulfilment on a mountain."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "img": "img/sermon0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Fra_Angelico_-_Die_Bergpredigt.jpeg",
+          "title": "The Sermon on the Mount",
+          "artist": "Fra Angelico",
+          "year": "c. 1438–1445",
+          "medium": "Fresco",
+          "location": "Convent of San Marco, Florence",
+          "description": "Christ sits on a rocky height with his hand raised, teaching the apostles, who sit in a circle around him on the bare hillside.",
+          "significance": "One of the frescoes Fra Angelico and his workshop painted in the friars' cells of San Marco, as aids to prayer.",
+          "symbolism": "The pale, simplified rocks and quiet figures turn the scene into a meditation: only Christ and those who listen.",
+          "impact": "The San Marco frescoes are among the most loved works of the early Renaissance."
+        },
+        {
+          "kind": "Masterpiece",
+          "img": "img/sermon1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Cosimo_Rosselli_Sermone_della_Montagna.jpg",
+          "title": "Sermon on the Mount and Healing of the Leper",
+          "artist": "Cosimo Rosselli (landscape by Piero di Cosimo)",
+          "year": "1481–1482",
+          "medium": "Fresco",
+          "location": "Sistine Chapel, Vatican City",
+          "description": "Christ stands on a hillside preaching to a great crowd; the fresco also shows the healing of a leper that follows the sermon in Matthew.",
+          "significance": "Part of the cycle of the life of Christ on the side walls of the Sistine Chapel.",
+          "symbolism": "Two moments from Matthew 5–8 appear in one picture: the teaching and then the healing that follows it.",
+          "impact": "Seen by millions in the Sistine Chapel; it shows how Renaissance painters told several episodes in one frame."
+        }
+      ],
+      "tags": [
+        "sermon",
+        "teaching"
+      ],
+      "orderNote": "Matthew sets the sermon \"on the mountain,\" Luke \"on a level place\" and in shorter form. Robertson takes them as one discourse, perhaps on a level spot on a hillside; others think Matthew has gathered sayings from many occasions."
+    },
+    {
+      "id": "beatitudes",
+      "harmony": "§54a",
+      "lane": "jesus",
+      "place": "beatitudes",
+      "date": "AD 31",
+      "title": "The Beatitudes",
+      "people": [
+        "Jesus",
+        "The disciples",
+        "Great crowds"
+      ],
+      "gospels": {
+        "Mt": "5:3–12",
+        "Lk": "6:20–26"
+      },
+      "summary": "The sermon opens with blessings on those the world overlooks: the poor in spirit, those who mourn, the meek, those who hunger for righteousness, the merciful, the pure in heart, the peacemakers and the persecuted. Each is promised a share in the kingdom. Matthew gives eight or nine blessings; Luke gives four, followed by four matching woes on the rich and the satisfied.",
+      "scripture": [
+        {
+          "ref": "Matthew 5:3",
+          "text": "\"Blessed are the poor in spirit, for theirs is the kingdom of heaven."
+        },
+        {
+          "ref": "Matthew 5:9",
+          "text": "\"Blessed are the peacemakers, for they shall be called sons of God."
+        },
+        {
+          "ref": "Luke 6:20",
+          "text": "And he lifted up his eyes on his disciples, and said: \"Blessed are you poor, for yours is the kingdom of God."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Psalm 37:11",
+          "note": "\"The meek shall possess the land.\""
+        },
+        {
+          "ref": "Isaiah 61:1–3",
+          "note": "Good news to the poor and comfort for those who mourn."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/beatitudes0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Sermon_of_the_Beatitudes_(La_sermon_des_béatitudes)_-_James_Tissot.jpg",
+          "title": "The Sermon of the Beatitudes",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Jesus stands on a rocky height above the lake and speaks to a crowd spread across the hillside below.",
+          "significance": "Tissot shows the open-air setting and the size of the crowd.",
+          "symbolism": "The sloping ground forms a natural amphitheater, as on the hills above the lake.",
+          "impact": "One of the most reproduced images of the Sermon on the Mount."
+        }
+      ],
+      "tags": [
+        "sermon",
+        "teaching"
+      ]
+    },
+    {
+      "id": "ourfather",
+      "harmony": "§54b",
+      "lane": "jesus",
+      "place": "beatitudes",
+      "date": "AD 31",
+      "title": "The Lord's Prayer",
+      "people": [
+        "Jesus",
+        "The disciples"
+      ],
+      "gospels": {
+        "Mt": "6:9–13"
+      },
+      "summary": "Warning against praying to be seen or heaping up empty phrases, Jesus gives his disciples a model prayer. It addresses God as Father, asks first for his name, kingdom and will, then for daily bread, forgiveness as we forgive, and deliverance from evil. It became the central prayer of Christians everywhere.",
+      "scripture": [
+        {
+          "ref": "Matthew 6:9–10",
+          "text": "Pray then like this: Our Father who are in heaven, Hallowed be your name. Your kingdom come, Your will be done, On earth as it is in heaven."
+        },
+        {
+          "ref": "Matthew 6:11–13",
+          "text": "Give us this day our daily bread; And forgive us our debts, As we also have forgiven our debtors; And lead us not into temptation, But deliver us from evil."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/ourfather0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Lord's_Prayer_(Le_Pater_Noster)_-_James_Tissot.jpg",
+          "title": "The Lord's Prayer",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Jesus stands with open arms among the disciples seated on the ground around him, teaching them to pray.",
+          "significance": "Tissot gives the prayer its own scene, a moment of private instruction.",
+          "symbolism": "The circle of disciples shows that this is a prayer for a community, \"Our Father.\"",
+          "impact": "A widely used image for teaching the Lord's Prayer."
+        }
+      ],
+      "tags": [
+        "prayer",
+        "sermon",
+        "teaching"
+      ],
+      "orderNote": "Luke gives a shorter form of the prayer on a later occasion, when a disciple asks Jesus to teach them to pray (Luke 11:1–4). Robertson treats that as a separate teaching."
+    },
+    {
+      "id": "builders",
+      "harmony": "§54c",
+      "lane": "jesus",
+      "place": "beatitudes",
+      "date": "AD 31",
+      "title": "The wise and foolish builders",
+      "people": [
+        "Jesus",
+        "The disciples",
+        "Great crowds"
+      ],
+      "gospels": {
+        "Mt": "7:24–27",
+        "Lk": "6:46–49"
+      },
+      "summary": "Jesus closes the sermon with a parable. Whoever hears his words and does them is like a wise man who built his house on the rock: rain, floods and wind beat on it, and it stands. Whoever hears and does not act is like a foolish man who built on sand, and great is its fall. The point is not hearing but doing.",
+      "scripture": [
+        {
+          "ref": "Matthew 7:24–25",
+          "text": "\"Every one then who hears these words of mine and does them will be like a wise man who built his house upon the rock; and the rain fell, and the floods came, and the winds blew and beat upon that house, but it did not fall, because it had been founded on the rock."
+        },
+        {
+          "ref": "Matthew 7:26",
+          "text": "And every one who hears these words of mine and does not do them will be like a foolish man who built his house upon the sand;"
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Proverbs 10:25",
+          "note": "\"When the tempest passes, the wicked is no more, but the righteous is established for ever.\""
+        }
+      ],
+      "art": [],
+      "tags": [
+        "parable",
+        "sermon",
+        "teaching"
+      ]
+    },
+    {
+      "id": "centurion",
+      "harmony": "§55",
+      "lane": "jesus",
+      "place": "capernaum",
+      "from": "beatitudes",
+      "date": "AD 31",
+      "title": "The centurion's servant healed",
+      "people": [
+        "Jesus",
+        "A centurion of Capernaum",
+        "His servant",
+        "Jewish elders"
+      ],
+      "gospels": {
+        "Mt": "8:5–13",
+        "Lk": "7:1–10"
+      },
+      "summary": "Entering Capernaum, Jesus is asked to heal the servant of a centurion, a Gentile officer who, the Jewish elders say, built their synagogue. The centurion sends word that he is not worthy for Jesus to come under his roof: just say the word, and the servant will be healed. Jesus marvels and says he has not found such faith in Israel. The servant is healed at that hour.",
+      "journey": "About 2 miles down from the hill to Capernaum.",
+      "route": [
+        [
+          35.556,
+          32.881
+        ],
+        [
+          35.565,
+          32.882
+        ],
+        [
+          35.575,
+          32.881
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Matthew 8:8",
+          "text": "But the centurion answered him, \"Lord, I am not worthy to have you come under my roof; but only say the word, and my servant will be healed."
+        },
+        {
+          "ref": "Matthew 8:10",
+          "text": "When Jesus heard him, he marveled, and said to those who followed him, \"Truly, I say to you, not even in Israel have I found such faith."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "img": "img/centurion0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Jesús_y_el_centurión_(El_Veronés).jpg",
+          "title": "Christ and the Centurion",
+          "artist": "Paolo Veronese",
+          "year": "c. 1571",
+          "medium": "Oil on canvas",
+          "location": "Museo del Prado, Madrid",
+          "description": "The armored centurion kneels before Christ with his soldiers behind him, while the apostles crowd around Jesus.",
+          "significance": "Veronese painted this subject several times; it suited his love of rich costume and grand settings.",
+          "symbolism": "A Roman officer kneels to a Jewish teacher: power bowing to faith.",
+          "impact": "The centurion's words, \"Lord, I am not worthy,\" are prayed at every Mass, which made the scene especially popular in Catholic art."
+        }
+      ],
+      "tags": [
+        "miracle",
+        "healing"
+      ],
+      "orderNote": "Matthew has the centurion come himself; Luke has him send Jewish elders and then friends. The centurion's words are echoed in the Mass before Communion."
+    },
+    {
+      "id": "nain",
+      "harmony": "§56",
+      "lane": "jesus",
+      "place": "nain",
+      "from": "capernaum",
+      "date": "AD 31",
+      "title": "The widow's son raised at Nain",
+      "people": [
+        "Jesus",
+        "A widow of Nain",
+        "Her only son",
+        "The disciples",
+        "A great crowd"
+      ],
+      "gospels": {
+        "Lk": "7:11–17"
+      },
+      "summary": "As Jesus comes near the gate of Nain with his disciples and a crowd, a funeral procession comes out: the only son of a widow. Seeing her, Jesus has compassion and says, \"Do not weep.\" He touches the bier and tells the young man to arise, and he sits up and begins to speak. Fear seizes everyone, and they glorify God, saying a great prophet has arisen among them.",
+      "journey": "About 25 to 30 miles southwest from Capernaum, past Mount Tabor, a day and a half's walk.",
+      "route": [
+        [
+          35.575,
+          32.881
+        ],
+        [
+          35.549,
+          32.873
+        ],
+        [
+          35.515,
+          32.825
+        ],
+        [
+          35.47,
+          32.81
+        ],
+        [
+          35.42,
+          32.76
+        ],
+        [
+          35.39,
+          32.69
+        ],
+        [
+          35.35,
+          32.63
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Luke 7:13–14",
+          "text": "And when the Lord saw her, he had compassion on her and said to her, \"Do not weep.\" And he came and touched the bier, and the bearers stood still. And he said, \"Young man, I say to you, arise.\""
+        },
+        {
+          "ref": "Luke 7:15–16",
+          "text": "And the dead man sat up, and began to speak. And he gave him to his mother. Fear seized them all; and they glorified God, saying, \"A great prophet has arisen among us!\" and \"God has visited his people!\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "1 Kings 17:17–24",
+          "note": "Elijah raises the son of the widow of Zarephath and gives him back to his mother."
+        },
+        {
+          "ref": "2 Kings 4:32–37",
+          "note": "Elisha raises the Shunammite's son at Shunem, on the other side of the same hill."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/nain0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Resurrection_of_the_Widow's_Son_at_Nain_(La_résurrection_du_fils_de_la_veuve_de_Naïm)_-_James_Tissot_-_overall.jpg",
+          "title": "The Resurrection of the Widow's Son at Nain",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "At the town gate Jesus stops the funeral procession, and the young man rises on his bier amid the crowd.",
+          "significance": "Tissot shows the open bier used for burial in Palestine.",
+          "symbolism": "The mother's grief and her son's return to life sit side by side.",
+          "impact": "One of the best-known images of this miracle, which Luke alone records."
+        }
+      ],
+      "tags": [
+        "miracle",
+        "raising"
+      ]
+    },
+    {
+      "id": "johnsquestion",
+      "harmony": "§57",
+      "lane": "jesus",
+      "place": "nain",
+      "date": "AD 31",
+      "title": "John's question from prison",
+      "people": [
+        "Jesus",
+        "Two disciples of John",
+        "John the Baptist (in prison)",
+        "The crowds"
+      ],
+      "gospels": {
+        "Mt": "11:2–19",
+        "Lk": "7:18–35"
+      },
+      "summary": "John, in prison, hears what Jesus is doing and sends two disciples to ask, \"Are you he who is to come, or shall we look for another?\" Jesus tells them to report what they see: the blind see, lepers are cleansed, the dead are raised, the poor hear good news. Then he praises John to the crowds as more than a prophet, the messenger sent before him. Yet he compares his generation to children who will dance to neither tune.",
+      "scripture": [
+        {
+          "ref": "Matthew 11:3",
+          "text": "and said to him, \"Are you he who is to come, or shall we look for another?\""
+        },
+        {
+          "ref": "Matthew 11:4–5",
+          "text": "And Jesus answered them, \"Go and tell John what you hear and see: the blind receive their sight and the lame walk, lepers are cleansed and the deaf hear, and the dead are raised up, and the poor have good news preached to them."
+        },
+        {
+          "ref": "Matthew 11:11",
+          "text": "Truly, I say to you, among those born of women there has risen no one greater than John the Baptist; yet he who is least in the kingdom of heaven is greater than he."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Isaiah 35:5–6; 61:1",
+          "note": "The eyes of the blind opened and good news preached to the poor."
+        },
+        {
+          "ref": "Malachi 3:1",
+          "note": "\"Behold, I send my messenger to prepare the way before me.\""
+        }
+      ],
+      "art": [],
+      "tags": [
+        "teaching",
+        "prophecy"
+      ],
+      "orderNote": "Robertson places Jesus \"probably near Nain\" when the messengers come, since Luke ties the question to news of the raising there. John was held at Machaerus, east of the Dead Sea, about 75 miles away."
+    },
+    {
+      "id": "cityswoes",
+      "harmony": "§58",
+      "lane": "jesus",
+      "place": "galilee",
+      "date": "AD 31",
+      "title": "Woes on the lake towns, and \"Come to me\"",
+      "people": [
+        "Jesus",
+        "The crowds"
+      ],
+      "gospels": {
+        "Mt": "11:20–30"
+      },
+      "summary": "Jesus reproaches Chorazin, Bethsaida and Capernaum, the towns where most of his mighty works were done, because they did not repent; Tyre, Sidon and even Sodom would have. Then he thanks the Father for revealing these things to babes and says that no one knows the Father except the Son. He ends with an invitation to all who labor and are heavy laden: his yoke is easy and his burden light.",
+      "scripture": [
+        {
+          "ref": "Matthew 11:21",
+          "text": "\"Woe to you, Chorazin! woe to you, Bethsaida! for if the mighty works done in you had been done in Tyre and Sidon, they would have repented long ago in sackcloth and ashes."
+        },
+        {
+          "ref": "Matthew 11:28–30",
+          "text": "Come to me, all who labor and are heavy laden, and I will give you rest. Take my yoke upon you, and learn from me; for I am gentle and lowly in heart, and you will find rest for your souls. For my yoke is easy, and my burden is light.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Jeremiah 6:16",
+          "note": "\"Walk in it, and find rest for your souls.\""
+        }
+      ],
+      "art": [],
+      "tags": [
+        "teaching",
+        "prophecy",
+        "prayer"
+      ],
+      "orderNote": "Luke gives the woes later, when the Seventy are sent out (Luke 10:13–15, 21–22). Robertson follows Matthew's setting here and says only \"Galilee.\""
+    },
+    {
+      "id": "sinfulwoman",
+      "harmony": "§59",
+      "lane": "jesus",
+      "place": "galilee",
+      "date": "AD 31",
+      "title": "A sinful woman anoints his feet",
+      "people": [
+        "Jesus",
+        "Simon the Pharisee",
+        "A woman of the city, a sinner"
+      ],
+      "gospels": {
+        "Lk": "7:36–50"
+      },
+      "summary": "At dinner in the house of Simon, a Pharisee, a woman known as a sinner comes in with an alabaster flask of ointment. Weeping, she wets Jesus' feet with her tears, wipes them with her hair, kisses them and anoints them. Simon thinks a prophet would know what sort of woman she is. Jesus tells the parable of two debtors forgiven, one much and one little, and declares her many sins forgiven, for she loved much.",
+      "scripture": [
+        {
+          "ref": "Luke 7:37–38",
+          "text": "And behold, a woman of the city, who was a sinner, when she learned that he was sitting at table in the Pharisee's house, brought an alabaster flask of ointment, and standing behind him at his feet, weeping, she began to wet his feet with her tears, and wiped them with the hair of her head, and kissed his feet, and anointed them with the ointment."
+        },
+        {
+          "ref": "Luke 7:47",
+          "text": "Therefore I tell you, her sins, which are many, are forgiven, for she loved much; but he who is forgiven little, loves little.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "img": "img/sinfulwoman0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Rubens-Feast_of_Simon_the_Pharisee.jpg",
+          "title": "The Feast in the House of Simon the Pharisee",
+          "artist": "Peter Paul Rubens",
+          "year": "c. 1618–1620",
+          "medium": "Oil on canvas",
+          "location": "State Hermitage Museum, Saint Petersburg",
+          "description": "The woman kneels at Christ's feet and wipes them with her hair, while Simon and his guests react with shock and disapproval.",
+          "significance": "A large banquet piece by Rubens and his workshop, later bought for Catherine the Great.",
+          "symbolism": "The penitent's humility contrasts with the stiff, staring Pharisees; Christ calmly defends her.",
+          "impact": "Shows the Counter-Reformation theme of penitence and forgiveness."
+        },
+        {
+          "kind": "Descriptive",
+          "img": "img/sinfulwoman1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Meal_in_the_House_of_the_Pharisee_(Le_repas_chez_le_pharisien)_-_James_Tissot_-_overall.jpg",
+          "title": "The Meal in the House of the Pharisee",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "The woman bends over Jesus' feet as he reclines at table, while Simon and the guests look on.",
+          "significance": "Tissot shows the custom of reclining at meals, which explains how she could reach his feet.",
+          "symbolism": "Her tears and loosened hair stand against the formal setting of the feast.",
+          "impact": "Helps readers picture Luke's scene accurately."
+        }
+      ],
+      "tags": [
+        "parable",
+        "teaching"
+      ],
+      "orderNote": "Robertson holds this to be distinct from the anointing at Bethany a year later. Western tradition since Gregory the Great identified the woman with Mary Magdalene, but Luke introduces Mary Magdalene as a new figure in the next paragraph; the town is not named."
+    },
+    {
+      "id": "secondtour",
+      "harmony": "§60",
+      "lane": "jesus",
+      "place": "galilee",
+      "date": "AD 31",
+      "title": "The second tour, with the Twelve and the women",
+      "people": [
+        "Jesus",
+        "The Twelve",
+        "Mary Magdalene",
+        "Joanna, wife of Chuza",
+        "Susanna",
+        "Many other women"
+      ],
+      "gospels": {
+        "Lk": "8:1–3"
+      },
+      "summary": "Jesus goes through cities and villages preaching the kingdom of God, now with the Twelve. Luke notes that women also travel with them: Mary called Magdalene, from whom seven demons had gone out; Joanna, wife of Herod's steward Chuza; Susanna; and many others, who provide for them out of their own means. Several of these women will stand by the cross and come to the empty tomb.",
+      "scripture": [
+        {
+          "ref": "Luke 8:1–3",
+          "text": "Soon afterward he went on through cities and villages, preaching and bringing the good news of the kingdom of God. And the twelve were with him, and also some women who had been healed of evil spirits and infirmities: Mary, called Magdalene, from whom seven demons had gone out, and Joanna, the wife of Chuza, Herod's steward, and Susanna, and many others, who provided for them out of their means."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/secondtour0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Women_of_Galilee_-_James_Tissot.jpg",
+          "title": "Women of Galilee",
+          "artist": "James Tissot",
+          "year": "1886–1889",
+          "medium": "Drawing on paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Three Galilean women carry water jars on their heads and shoulders.",
+          "significance": "Tissot made studies of local people to ground his Gospel scenes in the life of the land.",
+          "symbolism": "Recalls the Galilean women who traveled with Jesus and provided for him.",
+          "impact": "Tissot's costume studies record village dress of 19th-century Palestine."
+        }
+      ],
+      "tags": [
+        "teaching"
+      ]
+    },
+    {
+      "id": "beelzebub",
+      "harmony": "§61",
+      "lane": "jesus",
+      "place": "capernaum",
+      "from": "galilee",
+      "date": "AD 31",
+      "title": "The Beelzebul accusation",
+      "people": [
+        "Jesus",
+        "A blind and mute demoniac",
+        "Scribes from Jerusalem",
+        "Pharisees",
+        "Jesus' family"
+      ],
+      "gospels": {
+        "Mt": "12:22–37",
+        "Mk": "3:19–30"
+      },
+      "summary": "Jesus heals a blind and mute demoniac, and the crowds ask whether he can be the Son of David. Scribes from Jerusalem say he casts out demons by Beelzebul, the prince of demons. Jesus answers that a kingdom divided against itself cannot stand: if he casts out demons by the Spirit of God, the kingdom has come upon them. He warns that blasphemy against the Holy Spirit will not be forgiven. Meanwhile his family set out to seize him, saying he is beside himself.",
+      "journey": "Back to Capernaum; Mark says \"he went home.\"",
+      "route": [
+        [
+          35.42,
+          32.8
+        ],
+        [
+          35.47,
+          32.81
+        ],
+        [
+          35.515,
+          32.825
+        ],
+        [
+          35.53,
+          32.85
+        ],
+        [
+          35.549,
+          32.873
+        ],
+        [
+          35.575,
+          32.881
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Mark 3:21",
+          "text": "And when his friends heard it, they went out to seize him, for they said, \"He is beside himself.\""
+        },
+        {
+          "ref": "Matthew 12:28",
+          "text": "But if it is by the Spirit of God that I cast out demons, then the kingdom of God has come upon you."
+        },
+        {
+          "ref": "Matthew 12:30",
+          "text": "He who is not with me is against me, and he who does not gather with me scatters."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/beelzebub0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Blind_and_Mute_Man_Possessed_by_Devils_(Le_démoniaque_aveugle_et_muet)_-_James_Tissot.jpg",
+          "title": "The Blind and Mute Man Possessed by Devils",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "On the steps of a colonnaded building Jesus lays his hand on the blind and mute man, while onlookers crowd around.",
+          "significance": "Tissot illustrates the healing that led to the Beelzebul controversy.",
+          "symbolism": "The healing is a sign that the kingdom of God has come.",
+          "impact": "Part of Tissot's effort to paint every scene of the Gospels."
+        }
+      ],
+      "tags": [
+        "exorcism",
+        "conflict",
+        "teaching"
+      ],
+      "orderNote": "Luke gives a similar controversy later (Luke 11:14–23); Robertson treats it as a separate occasion. He calls this the start of a \"busy day\" that runs through the parables by the sea and the storm on the lake."
+    },
+    {
+      "id": "signjonah",
+      "harmony": "§62",
+      "lane": "jesus",
+      "place": "capernaum",
+      "date": "AD 31",
+      "title": "The sign of Jonah",
+      "people": [
+        "Jesus",
+        "Scribes and Pharisees"
+      ],
+      "gospels": {
+        "Mt": "12:38–45"
+      },
+      "summary": "The same day, scribes and Pharisees ask Jesus for a sign. He answers that an evil and adulterous generation will be given no sign but the sign of Jonah: as Jonah was three days in the belly of the whale, so the Son of man will be three days in the heart of the earth. The men of Nineveh repented at Jonah's preaching, and something greater than Jonah is here.",
+      "scripture": [
+        {
+          "ref": "Matthew 12:39–40",
+          "text": "But he answered them, \"An evil and adulterous generation seeks for a sign; but no sign shall be given to it except the sign of the prophet Jonah. For as Jonah was three days and three nights in the belly of the whale, so will the Son of man be three days and three nights in the heart of the earth."
+        },
+        {
+          "ref": "Matthew 12:41",
+          "text": "The men of Nineveh will arise at the judgment with this generation and condemn it; for they repented at the preaching of Jonah, and behold, something greater than Jonah is here."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Jonah 1:17",
+          "note": "Jonah in the belly of the fish three days and three nights."
+        },
+        {
+          "ref": "Jonah 3:5",
+          "note": "The people of Nineveh believe God and repent."
+        }
+      ],
+      "art": [],
+      "tags": [
+        "conflict",
+        "prophecy",
+        "teaching"
+      ]
+    },
+    {
+      "id": "truekin",
+      "harmony": "§63",
+      "lane": "jesus",
+      "place": "capernaum",
+      "date": "AD 31",
+      "title": "His mother and brothers",
+      "people": [
+        "Jesus",
+        "Mary his mother",
+        "His brothers",
+        "The crowd"
+      ],
+      "gospels": {
+        "Mt": "12:46–50",
+        "Mk": "3:31–35",
+        "Lk": "8:19–21"
+      },
+      "summary": "While Jesus is teaching, his mother and brothers come and stand outside, asking for him. He looks around at those seated about him and says, \"Here are my mother and my brothers!\" Whoever does the will of God is his brother and sister and mother. The saying does not reject his family; it opens it to all who do God's will, and Luke presents Mary as the first who heard the word and kept it.",
+      "scripture": [
+        {
+          "ref": "Mark 3:33–35",
+          "text": "And he replied, \"Who are my mother and my brethren?\" And looking around on those who sat about him, he said, \"Here are my mother and my brethren! Whoever does the will of God is my brother, and sister, and mother.\""
+        }
+      ],
+      "art": [],
+      "tags": [
+        "teaching"
+      ],
+      "orderNote": "Who the \"brothers\" were has been debated since early times: Catholic and Orthodox tradition holds that they were cousins or children of Joseph by an earlier marriage, while many Protestants take them as later children of Mary and Joseph."
+    },
+    {
+      "id": "sower",
+      "harmony": "§64a",
+      "lane": "jesus",
+      "place": "tabgha",
+      "from": "capernaum",
+      "date": "AD 31",
+      "title": "The parable of the sower",
+      "people": [
+        "Jesus",
+        "The disciples",
+        "A great crowd on the shore"
+      ],
+      "gospels": {
+        "Mt": "13:1–23",
+        "Mk": "4:1–29",
+        "Lk": "8:4–18"
+      },
+      "summary": "So great a crowd gathers by the lake that Jesus sits in a boat and teaches them in parables. A sower's seed falls on the path, on rocky ground, among thorns and on good soil, which yields thirty, sixty and a hundredfold. Later he explains it to the disciples: the seed is the word, and the soils are the ways people hear it. Mark adds a companion parable of seed that grows by itself while the farmer sleeps.",
+      "journey": "Out of the house and down to the shore, a short walk.",
+      "route": [
+        [
+          35.575,
+          32.881
+        ],
+        [
+          35.56,
+          32.877
+        ],
+        [
+          35.549,
+          32.873
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Matthew 13:3",
+          "text": "And he told them many things in parables, saying: \"A sower went out to sow."
+        },
+        {
+          "ref": "Matthew 13:8",
+          "text": "Other seeds fell on good soil and brought forth grain, some a hundredfold, some sixty, some thirty."
+        },
+        {
+          "ref": "Mark 4:26–27",
+          "text": "And he said, \"The kingdom of God is as if a man should scatter seed upon the ground, and should sleep and rise night and day, and the seed should sprout and grow, he knows not how."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Isaiah 6:9–10",
+          "note": "Hearing but not understanding, quoted to explain why he teaches in parables."
+        },
+        {
+          "ref": "Isaiah 55:10–11",
+          "note": "Like rain making the earth sprout, God's word does not return empty."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "img": "img/sower0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_d._Ä._030.jpg",
+          "title": "Landscape with the Parable of the Sower",
+          "artist": "Pieter Bruegel the Elder",
+          "year": "1557",
+          "medium": "Oil on panel",
+          "location": "Timken Museum of Art, San Diego",
+          "description": "A small sower strides across a hillside field in the foreground of a vast landscape of river, towns and mountains.",
+          "significance": "One of Bruegel's earliest dated paintings; it shows his gift for the panoramic \"world landscape.\"",
+          "symbolism": "The sower is almost lost in the wide world around him, as the word is scattered over every kind of ground.",
+          "impact": "The only painting by Bruegel in a public collection in the western United States."
+        },
+        {
+          "kind": "Descriptive",
+          "img": "img/sower1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Sower_(Le_semeur)_-_James_Tissot_-_overall.jpg",
+          "title": "The Sower",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "A farmer scatters seed by hand over stony ground.",
+          "significance": "Tissot illustrates the parable itself, not only the scene of Jesus telling it.",
+          "symbolism": "Seed falls on every kind of ground, as in the parable.",
+          "impact": "Part of the parable series within Tissot's Life of Christ."
+        }
+      ],
+      "tags": [
+        "parable",
+        "teaching"
+      ],
+      "orderNote": "Robertson calls this the first great group of at least ten parables, all spoken the same day. A cove between Tabgha and Capernaum, sometimes called the Bay of Parables or Sower's Cove, is the traditional setting."
+    },
+    {
+      "id": "tares",
+      "harmony": "§64b",
+      "lane": "jesus",
+      "place": "tabgha",
+      "date": "AD 31",
+      "title": "The parable of the wheat and the tares",
+      "people": [
+        "Jesus",
+        "The disciples",
+        "The crowd"
+      ],
+      "gospels": {
+        "Mt": "13:24–30, 36–43"
+      },
+      "summary": "An enemy sows weeds among a man's wheat by night. The servants want to pull them up, but the householder says to let both grow together until the harvest, lest the wheat be uprooted too; then the reapers will separate them. In the house, Jesus explains it to the disciples: the field is the world, the good seed the sons of the kingdom, and the harvest the close of the age.",
+      "scripture": [
+        {
+          "ref": "Matthew 13:24–25",
+          "text": "Another parable he put before them, saying, \"The kingdom of heaven may be compared to a man who sowed good seed in his field; but while men were sleeping, his enemy came and sowed weeds among the wheat, and went away."
+        },
+        {
+          "ref": "Matthew 13:30",
+          "text": "Let both grow together until the harvest; and at harvest time I will tell the reapers, Gather the weeds first and bind them in bundles to be burned, but gather the wheat into my barn.'\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "img": "img/tares0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Abraham_Bloemaert_-_Parable_of_the_Wheat_and_the_Tares_-_Walters_372505.jpg",
+          "title": "Parable of the Wheat and the Tares",
+          "artist": "Abraham Bloemaert",
+          "year": "1624",
+          "medium": "Oil on canvas",
+          "location": "Walters Art Museum, Baltimore",
+          "description": "Peasants sleep in the foreground beneath a hut on stilts while the devil, with horns and tail, sows weeds in the field.",
+          "significance": "Bloemaert, a leading Utrecht painter, turns the parable into a Dutch peasant scene.",
+          "symbolism": "The sleepers are the \"men sleeping\" of the parable: evil spreads while no one watches.",
+          "impact": "An example of how Dutch painters set the parables in everyday life."
+        }
+      ],
+      "tags": [
+        "parable",
+        "teaching"
+      ],
+      "orderNote": "The \"tares\" are probably darnel, a weed that looks like wheat until it ripens."
+    },
+    {
+      "id": "mustardseed",
+      "harmony": "§64c",
+      "lane": "jesus",
+      "place": "tabgha",
+      "date": "AD 31",
+      "title": "The mustard seed and the leaven",
+      "people": [
+        "Jesus",
+        "The crowd"
+      ],
+      "gospels": {
+        "Mt": "13:31–35",
+        "Mk": "4:30–34"
+      },
+      "summary": "Two short parables show the kingdom's small beginning and great end. A mustard seed, smallest of seeds, grows into a shrub big enough for birds to nest in its branches. A little leaven hidden in three measures of flour leavens the whole batch. Mark notes that Jesus spoke the word in many such parables, explaining everything privately to his disciples.",
+      "scripture": [
+        {
+          "ref": "Matthew 13:31–32",
+          "text": "Another parable he put before them, saying, \"The kingdom of heaven is like a grain of mustard seed which a man took and sowed in his field; it is the smallest of all seeds, but when it has grown it is the greatest of shrubs and becomes a tree, so that the birds of the air come and make nests in its branches.\""
+        },
+        {
+          "ref": "Matthew 13:33",
+          "text": "He told them another parable. \"The kingdom of heaven is like leaven which a woman took and hid in three measures of meal, till it was all leavened.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Ezekiel 17:23; Daniel 4:12",
+          "note": "A great tree where birds of every sort nest in its branches."
+        },
+        {
+          "ref": "Psalm 78:2",
+          "note": "\"I will open my mouth in a parable,\" quoted in Matthew 13:35."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/mustardseed0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Jesus_Sits_by_the_Seashore_and_Preaches_(Jésus_s'assied_au_bord_de_la_mer_et_prêche)_-_James_Tissot.jpg",
+          "title": "Jesus Sits by the Seashore and Preaches",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Jesus sits by the shore of the lake and teaches the crowd gathered around him.",
+          "significance": "Tissot shows the setting Matthew gives for the day of parables.",
+          "symbolism": "Jesus teaches the crowd with images drawn from fields, kitchens and the lake around them.",
+          "impact": "Helps readers place the parables in their lakeside setting."
+        }
+      ],
+      "tags": [
+        "parable",
+        "teaching"
+      ]
+    },
+    {
+      "id": "treasure",
+      "harmony": "§64d",
+      "lane": "jesus",
+      "place": "capernaum",
+      "from": "tabgha",
+      "date": "AD 31",
+      "title": "The hidden treasure and the pearl",
+      "people": [
+        "Jesus",
+        "The disciples"
+      ],
+      "gospels": {
+        "Mt": "13:44–46"
+      },
+      "summary": "Back in the house, Jesus tells the disciples two twin parables. A man finds treasure hidden in a field, hides it again, and in his joy sells all he has to buy that field. A merchant seeking fine pearls finds one of great value and sells everything to buy it. The kingdom is worth everything, and finding it brings joy.",
+      "journey": "From the shore back to the house in Capernaum.",
+      "route": [
+        [
+          35.549,
+          32.873
+        ],
+        [
+          35.56,
+          32.877
+        ],
+        [
+          35.575,
+          32.881
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Matthew 13:44",
+          "text": "\"The kingdom of heaven is like treasure hidden in a field, which a man found and covered up; then in his joy he goes and sells all that he has and buys that field."
+        },
+        {
+          "ref": "Matthew 13:45–46",
+          "text": "\"Again, the kingdom of heaven is like a merchant in search of fine pearls, who, on finding one pearl of great value, went and sold all that he had and bought it."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Proverbs 2:4–5",
+          "note": "Seek wisdom like silver and search for it as for hidden treasures."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "img": "img/treasure0.jpg",
+          "credit": "Photo: Yelkrokoyade, CC BY-SA 3.0, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Parable_of_the_hidden_treasure_Rembrandt_-_Gerard_Dou.jpg",
+          "title": "The Parable of the Hidden Treasure",
+          "artist": "Gerrit Dou (formerly attributed to Rembrandt)",
+          "year": "c. 1630",
+          "medium": "Oil on panel",
+          "location": "Museum of Fine Arts, Budapest",
+          "description": "A man kneels with his spade beside the hole he has dug, where jars and vessels of treasure lie uncovered.",
+          "significance": "Painted when Dou was Rembrandt's pupil in Leiden; it long passed as Rembrandt's own work.",
+          "symbolism": "The ordinary laborer and his spade show that the treasure is found in the middle of daily work.",
+          "impact": "One of very few paintings of this parable."
+        },
+        {
+          "kind": "Descriptive",
+          "img": "img/treasure1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Pearl_of_Great_Price_(The_Parables_of_Our_Lord_and_Saviour_Jesus_Christ)_MET_DP835752.jpg",
+          "title": "The Pearl of Great Price",
+          "artist": "John Everett Millais, engraved by the Dalziel Brothers",
+          "year": "1864",
+          "medium": "Wood engraving",
+          "location": "The Metropolitan Museum of Art, New York",
+          "description": "A merchant, surrounded by traders, holds a single pearl in his hand.",
+          "significance": "From The Parables of Our Lord, a set of twenty illustrations Millais worked on for years.",
+          "symbolism": "The merchant's whole attention on one small pearl shows the kingdom outweighing everything else.",
+          "impact": "The series is counted among the finest Victorian wood engravings."
+        }
+      ],
+      "tags": [
+        "parable",
+        "teaching"
+      ]
+    },
+    {
+      "id": "dragnet",
+      "harmony": "§64e",
+      "lane": "jesus",
+      "place": "capernaum",
+      "date": "AD 31",
+      "title": "The parable of the net",
+      "people": [
+        "Jesus",
+        "The disciples"
+      ],
+      "gospels": {
+        "Mt": "13:47–53"
+      },
+      "summary": "The kingdom is like a net thrown into the sea that gathers fish of every kind; when it is full, the fishermen sort the good into vessels and throw away the bad. So it will be at the close of the age. Jesus asks if they have understood, and ends with the householder who brings out of his treasure what is new and what is old.",
+      "scripture": [
+        {
+          "ref": "Matthew 13:47–48",
+          "text": "\"Again, the kingdom of heaven is like a net which was thrown into the sea and gathered fish of every kind; when it was full, men drew it ashore and sat down and sorted the good into vessels but threw away the bad."
+        },
+        {
+          "ref": "Matthew 13:52",
+          "text": "And he said to them, \"Therefore every scribe who has been trained for the kingdom of heaven is like a householder who brings out of his treasure what is new and what is old.\""
+        }
+      ],
+      "art": [],
+      "tags": [
+        "parable",
+        "teaching"
+      ],
+      "orderNote": "A dragnet, or seine, was pulled between boats or from the shore and caught everything in its path; it was still used on the lake in modern times."
+    },
+    {
+      "id": "storm",
+      "harmony": "§65",
+      "lane": "jesus",
+      "place": "seagalilee",
+      "from": "capernaum",
+      "date": "AD 31",
+      "title": "Jesus stills the storm",
+      "people": [
+        "Jesus",
+        "The disciples"
+      ],
+      "gospels": {
+        "Mt": "8:18, 23–27",
+        "Mk": "4:35–41",
+        "Lk": "8:22–25"
+      },
+      "summary": "That evening Jesus says, \"Let us go across to the other side.\" A great storm of wind arises, and the waves break into the boat while he sleeps on a cushion in the stern. The terrified disciples wake him: \"Teacher, do you not care if we perish?\" He rebukes the wind and says to the sea, \"Peace! Be still!\" There is a great calm, and they ask one another, \"Who then is this, that even wind and sea obey him?\"",
+      "journey": "Out from Capernaum onto the lake toward the eastern shore, a crossing of about 6 miles.",
+      "route": [
+        [
+          35.575,
+          32.881
+        ],
+        [
+          35.59,
+          32.865
+        ],
+        [
+          35.59,
+          32.83
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Mark 4:38",
+          "text": "But he was in the stern, asleep on the cushion; and they woke him and said to him, \"Teacher, do you not care if we perish?\""
+        },
+        {
+          "ref": "Mark 4:39",
+          "text": "And he awoke and rebuked the wind, and said to the sea, \"Peace! Be still!\" And the wind ceased, and there was a great calm."
+        },
+        {
+          "ref": "Mark 4:41",
+          "text": "And they were filled with awe, and said to one another, \"Who then is this, that even wind and sea obey him?\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Psalm 107:28–29",
+          "note": "\"He made the storm be still, and the waves of the sea were hushed.\""
+        },
+        {
+          "ref": "Jonah 1:4–6",
+          "note": "Jonah asleep in a ship in a great storm."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "img": "img/storm0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Christ_in_the_Storm_on_the_Lake_of_Galilee.jpg",
+          "title": "The Storm on the Sea of Galilee",
+          "artist": "Rembrandt",
+          "year": "1633",
+          "medium": "Oil on canvas",
+          "location": "Isabella Stewart Gardner Museum, Boston (stolen in 1990)",
+          "description": "A fishing boat heels over in a huge wave; some disciples fight the sail and rigging while others wake Christ in the dark stern.",
+          "significance": "Rembrandt's only seascape. He includes himself among the passengers, looking out at the viewer.",
+          "symbolism": "Light and storm split the canvas in two: chaos at the bow, and Christ calm in the shadow.",
+          "impact": "Stolen in the 1990 Gardner Museum heist, the largest unsolved art theft in history; its empty frame still hangs in the museum."
+        },
+        {
+          "kind": "Masterpiece",
+          "img": "img/storm1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Eugène_Delacroix_-_Christ_on_the_Sea_of_Galilee_-_Google_Art_Project.jpg",
+          "title": "Christ on the Sea of Galilee",
+          "artist": "Eugène Delacroix",
+          "year": "1841",
+          "medium": "Oil on canvas",
+          "location": "Nelson-Atkins Museum of Art, Kansas City",
+          "description": "A small boat is tossed in a dark green sea; the disciples struggle and plead while Christ sleeps in a pool of light.",
+          "significance": "Delacroix painted this subject at least six times, a sign of how much it meant to him.",
+          "symbolism": "Christ's peaceful sleep contrasts with the fear and motion of the disciples.",
+          "impact": "The Romantic painter's storms influenced later artists, including Van Gogh, who copied Delacroix."
+        }
+      ],
+      "tags": [
+        "miracle",
+        "nature-miracle"
+      ],
+      "orderNote": "Matthew places the storm earlier, after the Sermon on the Mount, in a collection of miracles; Robertson follows Mark and Luke, who tie it to the evening of the day of parables."
+    },
+    {
+      "id": "gerasene",
+      "harmony": "§66",
+      "lane": "jesus",
+      "place": "kursi",
+      "from": "seagalilee",
+      "date": "AD 31",
+      "title": "The Gerasene demoniac",
+      "people": [
+        "Jesus",
+        "The disciples",
+        "A man possessed by \"Legion\"",
+        "Swineherds",
+        "People of the region"
+      ],
+      "gospels": {
+        "Mt": "8:28–34",
+        "Mk": "5:1–20",
+        "Lk": "8:26–39"
+      },
+      "summary": "On the eastern shore, in Gentile country, a man possessed by many demons comes out from the tombs. No chain can hold him; night and day he cries out and cuts himself with stones. Asked his name, he answers \"Legion.\" Jesus lets the demons enter a great herd of swine, which rush down the steep bank into the lake. The people beg Jesus to leave, but he sends the healed man home to tell how much the Lord has done for him, and he proclaims it in the Decapolis.",
+      "journey": "Landing on the eastern shore after the storm.",
+      "route": [
+        [
+          35.59,
+          32.83
+        ],
+        [
+          35.62,
+          32.828
+        ],
+        [
+          35.65,
+          32.826
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Mark 5:9",
+          "text": "And Jesus asked him, \"What is your name?\" He replied, \"My name is Legion; for we are many.\""
+        },
+        {
+          "ref": "Mark 5:13",
+          "text": "So he gave them leave. And the unclean spirits came out, and entered the swine; and the herd, numbering about two thousand, rushed down the steep bank into the sea, and were drowned in the sea."
+        },
+        {
+          "ref": "Mark 5:19",
+          "text": "But he refused, and said to him, \"Go home to your friends, and tell them how much the Lord has done for you, and how he has had mercy on you.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Isaiah 65:4",
+          "note": "A rebellious people \"who sit in tombs\" and eat swine's flesh."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/gerasene0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Swine_Driven_into_the_Sea_(Les_porcs_précipités_dans_la_mer)_-_James_Tissot.jpg",
+          "title": "The Swine Driven into the Sea",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "In the foreground Jesus holds the healed man, while the herd of swine runs down the rocky slope toward the lake.",
+          "significance": "Tissot shows the steep bank at the water's edge that the Gospels describe.",
+          "symbolism": "The rushing herd shows the destructive power of \"Legion,\" now gone from the man.",
+          "impact": "A dramatic image from the series."
+        }
+      ],
+      "tags": [
+        "miracle",
+        "exorcism"
+      ],
+      "orderNote": "The manuscripts read Gerasenes, Gadarenes or Gergesenes. Robertson, following W. M. Thomson, identifies the place with Khersa (Kursi) on the east shore, within the district of Gadara. Matthew speaks of two demoniacs; Mark and Luke tell of one, perhaps the more prominent."
+    },
+    {
+      "id": "jairus",
+      "harmony": "§67",
+      "lane": "jesus",
+      "place": "capernaum",
+      "from": "kursi",
+      "date": "AD 31",
+      "title": "Jairus' daughter and the woman who touched his cloak",
+      "people": [
+        "Jesus",
+        "Jairus, a ruler of the synagogue",
+        "His twelve-year-old daughter",
+        "A woman with a flow of blood",
+        "Peter, James and John"
+      ],
+      "gospels": {
+        "Mt": "9:18–26",
+        "Mk": "5:21–43",
+        "Lk": "8:40–56"
+      },
+      "summary": "Back across the lake, Jairus, a ruler of the synagogue, begs Jesus to come and lay hands on his dying daughter. On the way a woman who has suffered from bleeding for twelve years touches his garment and is healed; Jesus turns, finds her and says, \"Your faith has made you well.\" News comes that the girl has died. Jesus takes Peter, James and John and her parents into the room, takes her by the hand and says, \"Talitha cumi,\" and she gets up and walks.",
+      "journey": "Back across the lake by boat, about 6 miles.",
+      "route": [
+        [
+          35.65,
+          32.826
+        ],
+        [
+          35.62,
+          32.85
+        ],
+        [
+          35.6,
+          32.87
+        ],
+        [
+          35.575,
+          32.881
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Mark 5:28",
+          "text": "For she said, \"If I touch even his garments, I shall be made well.\""
+        },
+        {
+          "ref": "Mark 5:34",
+          "text": "And he said to her, \"Daughter, your faith has made you well; go in peace, and be healed of your disease.\""
+        },
+        {
+          "ref": "Mark 5:41–42",
+          "text": "Taking her by the hand he said to her, \"Talitha cumi\"; which means, \"Little girl, I say to you, arise.\" And immediately the girl got up and walked; for she was twelve years old. And immediately they were overcome with amazement."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Leviticus 15:25",
+          "note": "A woman with a long discharge of blood was ritually unclean, and so was whatever she touched."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "img": "img/jairus0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Voskreshenie_docheri_Iaira_(1871)_by_Vasiliy_Polenov.jpg",
+          "title": "The Raising of Jairus' Daughter",
+          "artist": "Vasily Polenov",
+          "year": "1871",
+          "medium": "Oil on canvas",
+          "location": "Research Museum of the Russian Academy of Arts, Saint Petersburg",
+          "description": "In a dim room Christ, in a red robe, stretches out his hand toward the girl on her bed, while her mother kneels and others watch from the doorway.",
+          "significance": "Polenov's graduation work at the Imperial Academy of Arts, which won him the gold medal and a study trip abroad.",
+          "symbolism": "The light falls on the girl and on Christ's hand, the moment of \"Talitha cumi.\"",
+          "impact": "Started Polenov's lifelong work on the life of Christ, later seen in his \"Christ and the Sinner\" and Gospel cycle."
+        },
+        {
+          "kind": "Descriptive",
+          "img": "img/jairus1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Woman_with_an_Issue_of_Blood_(L'hémoroïsse)_-_James_Tissot.jpg",
+          "title": "The Woman with an Issue of Blood",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "In a narrow street packed with people, a woman stoops low in the crowd to touch the edge of Jesus' cloak.",
+          "significance": "Tissot shows the tassels (tzitzit) that Jewish men wore on their garments, which Matthew and Luke mention.",
+          "symbolism": "Her hidden touch and Jesus' turning to find her show faith rewarded in public.",
+          "impact": "One of the most reproduced images of the series."
+        }
+      ],
+      "tags": [
+        "miracle",
+        "healing",
+        "raising"
+      ],
+      "orderNote": "Matthew sets this after the feast at Matthew's house; Robertson follows Mark and Luke, judging Matthew not chronological in this part of his Gospel. The town is not named; Capernaum is likely."
+    },
+    {
+      "id": "twoblind",
+      "harmony": "§68",
+      "lane": "jesus",
+      "place": "capernaum",
+      "date": "AD 31",
+      "title": "Two blind men and a mute demoniac",
+      "people": [
+        "Jesus",
+        "Two blind men",
+        "A mute man possessed by a demon",
+        "Pharisees"
+      ],
+      "gospels": {
+        "Mt": "9:27–34"
+      },
+      "summary": "As Jesus goes on, two blind men follow him crying, \"Have mercy on us, Son of David.\" In the house he asks whether they believe he can do this, touches their eyes and says, \"According to your faith be it done to you,\" and their eyes are opened. Then a mute demoniac is brought; the demon is cast out and the man speaks. The crowds marvel, but the Pharisees say he casts out demons by the prince of demons.",
+      "scripture": [
+        {
+          "ref": "Matthew 9:28–29",
+          "text": "When he entered the house, the blind men came to him; and Jesus said to them, \"Do you believe that I am able to do this?\" They said to him, \"Yes, Lord.\" Then he touched their eyes, saying, \"According to your faith be it done to you.\""
+        },
+        {
+          "ref": "Matthew 9:33",
+          "text": "And when the demon had been cast out, the dumb man spoke; and the crowds marveled, saying, \"Never was anything like this seen in Israel.\""
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Isaiah 35:5–6",
+          "note": "\"Then the eyes of the blind shall be opened... and the tongue of the dumb sing for joy.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/twoblind0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Blind_of_Capernaum_(Les_aveugles_de_Capharnum)_-_James_Tissot_-_overall.jpg",
+          "title": "The Blind of Capernaum",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Two blind men kneel with arms raised before Jesus in a stone courtyard.",
+          "significance": "Tissot shows the blind beggars common in the towns he visited.",
+          "symbolism": "Their cry \"Son of David\" names Jesus as Messiah before others do.",
+          "impact": "Part of Tissot's series of healing scenes."
+        },
+        {
+          "kind": "Descriptive",
+          "img": "img/twoblind1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Jesus_Heals_a_Mute_Possessed_Man_(Jésus_guérit_un_possédé_muet)_-_James_Tissot.jpg",
+          "title": "Jesus Heals a Mute Possessed Man",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Jesus touches his own lips as he faces the mute man, who begins to speak.",
+          "significance": "Tissot illustrates the healing that ends Matthew 9.",
+          "symbolism": "The man's restored speech is answered by the crowd's wonder and the Pharisees' accusation.",
+          "impact": "Part of Tissot's series of healing scenes."
+        }
+      ],
+      "tags": [
+        "miracle",
+        "healing",
+        "exorcism",
+        "conflict"
+      ]
+    },
+    {
+      "id": "nazarethlast",
+      "harmony": "§69",
+      "lane": "jesus",
+      "place": "nazareth",
+      "from": "capernaum",
+      "date": "AD 31",
+      "title": "The last visit to Nazareth",
+      "people": [
+        "Jesus",
+        "The disciples",
+        "The people of Nazareth"
+      ],
+      "gospels": {
+        "Mt": "13:54–58",
+        "Mk": "6:1–6"
+      },
+      "summary": "Jesus returns with his disciples to his own country and teaches in the synagogue on the Sabbath. The people are astonished but take offense: is not this the carpenter, the son of Mary, whose brothers and sisters live among them? Jesus says a prophet is not without honor except in his own country. He could do no mighty work there, except heal a few sick people, and he marveled at their unbelief.",
+      "journey": "About 28 miles from Capernaum up through the Arbel pass to Nazareth.",
+      "route": [
+        [
+          35.575,
+          32.881
+        ],
+        [
+          35.549,
+          32.873
+        ],
+        [
+          35.515,
+          32.825
+        ],
+        [
+          35.47,
+          32.81
+        ],
+        [
+          35.42,
+          32.79
+        ],
+        [
+          35.34,
+          32.75
+        ],
+        [
+          35.3,
+          32.7
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Mark 6:3",
+          "text": "Is not this the carpenter, the son of Mary and brother of James and Joses and Judas and Simon, and are not his sisters here with us?\" And they took offense at him."
+        },
+        {
+          "ref": "Mark 6:5–6",
+          "text": "And he could do no mighty work there, except that he laid his hands upon a few sick people and healed them. And he marveled because of their unbelief. And he went about among the villages teaching."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/nazarethlast0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_View_of_Nazareth_-_James_Tissot.jpg",
+          "title": "View of Nazareth",
+          "artist": "James Tissot",
+          "year": "1886–1889",
+          "medium": "Drawing on paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "The small hill town of Nazareth seen across its valley.",
+          "significance": "A landscape study made during Tissot's Holy Land travels.",
+          "symbolism": "The modest town where Jesus grew up and where he was not honored.",
+          "impact": "Records Nazareth as it looked in the 1880s, before modern growth."
+        }
+      ],
+      "tags": [
+        "teaching",
+        "conflict"
+      ],
+      "orderNote": "Robertson sees no reason to identify this with the visit in Luke 4:16–30 (§39): that was at the start of the ministry, this near its close, and the details differ. Many scholars take them as one visit."
+    },
+    {
+      "id": "twelvesent",
+      "harmony": "§70",
+      "lane": "jesus",
+      "place": "galilee",
+      "from": "nazareth",
+      "date": "AD 31",
+      "title": "The Twelve sent out two by two",
+      "people": [
+        "Jesus",
+        "The Twelve"
+      ],
+      "gospels": {
+        "Mt": "9:35–11:1",
+        "Mk": "6:6–13",
+        "Lk": "9:1–6"
+      },
+      "summary": "Seeing the crowds harassed and helpless like sheep without a shepherd, Jesus sends out the Twelve two by two with authority over unclean spirits. They are to preach that the kingdom of heaven is at hand, heal the sick, take no money or bag, and stay in whatever house welcomes them. He warns them of persecution: he sends them as sheep among wolves. They go out preaching repentance, casting out demons and anointing the sick with oil, while Jesus himself tours the villages.",
+      "journey": "A third circuit of the villages of Galilee, while the Twelve go out in pairs.",
+      "route": [
+        [
+          35.3,
+          32.7
+        ],
+        [
+          35.34,
+          32.75
+        ],
+        [
+          35.42,
+          32.8
+        ]
+      ],
+      "scripture": [
+        {
+          "ref": "Matthew 10:7–8",
+          "text": "And preach as you go, saying, 'The kingdom of heaven is at hand.' Heal the sick, raise the dead, cleanse lepers, cast out demons. You received without pay, give without pay."
+        },
+        {
+          "ref": "Matthew 10:16",
+          "text": "\"Behold, I send you out as sheep in the midst of wolves; so be wise as serpents and innocent as doves."
+        },
+        {
+          "ref": "Mark 6:12–13",
+          "text": "So they went out and preached that men should repent. And they cast out many demons, and anointed with oil many that were sick and healed them."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "Numbers 27:17",
+          "note": "Moses prays that God's people may not be \"as sheep which have no shepherd.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/twelvesent0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Exhortation_to_the_Apostles_(Recommandation_aux_apôtres)_-_James_Tissot.jpg",
+          "title": "The Exhortation to the Apostles",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Seated under a tree, Jesus speaks to the Twelve gathered on the ground around him.",
+          "significance": "Tissot illustrates the mission discourse of Matthew 10.",
+          "symbolism": "The close circle of listeners is about to be scattered two by two.",
+          "impact": "Part of Tissot's series on the training of the Twelve."
+        },
+        {
+          "kind": "Descriptive",
+          "img": "img/twelvesent1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_On_Entering_the_House,_Salute_It_(En_entrant_la_maison_salue-la)_-_James_Tissot_-_overall.jpg",
+          "title": "On Entering the House, Salute It",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "An apostle stands in an open doorway and touches his forehead in greeting, a companion behind him.",
+          "significance": "Tissot illustrates one instruction from the mission charge.",
+          "symbolism": "The greeting of peace is the apostles' first gift to each household.",
+          "impact": "Shows the Gospel's instructions as everyday actions."
+        }
+      ],
+      "tags": [
+        "call",
+        "teaching",
+        "healing"
+      ],
+      "orderNote": "Matthew gathers into this charge sayings about persecution that Mark and Luke place later (e.g. Mark 13:9–13). Robertson counts this as the third tour of Galilee."
+    },
+    {
+      "id": "herodfears",
+      "harmony": "§71a",
+      "lane": "herod",
+      "place": "tiberias",
+      "date": "AD 31",
+      "title": "Herod Antipas hears of Jesus",
+      "people": [
+        "Herod Antipas",
+        "His courtiers"
+      ],
+      "gospels": {
+        "Mt": "14:1–2",
+        "Mk": "6:14–16",
+        "Lk": "9:7–9"
+      },
+      "summary": "News of Jesus and of the mighty works done by the Twelve reaches Herod Antipas. Some say John the Baptist has been raised from the dead, others that Jesus is Elijah or one of the prophets. Herod, haunted by his guilt, says, \"John, whom I beheaded, has been raised.\" Luke adds that he sought to see Jesus, a wish fulfilled only at the trial.",
+      "stay": "Antipas ruled from his new capital at Tiberias.",
+      "scripture": [
+        {
+          "ref": "Mark 6:14",
+          "text": "King Herod heard of it; for Jesus' name had become known. Some said, \"John the baptizer has been raised from the dead; that is why these powers are at work in him.\""
+        },
+        {
+          "ref": "Mark 6:16",
+          "text": "But when Herod heard of it he said, \"John, whom I beheaded, has been raised.\""
+        },
+        {
+          "ref": "Luke 9:9",
+          "text": "Herod said, \"John I beheaded; but who is this about whom I hear such things?\" And he sought to see him."
+        }
+      ],
+      "art": [
+        {
+          "kind": "Descriptive",
+          "img": "img/herodfears0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Herod_(Hérode)_-_James_Tissot_-_overall.jpg",
+          "title": "Herod",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Herod Antipas, in rich robes and a tall headdress, stands with folded arms and a hard stare.",
+          "significance": "Tissot gives the tetrarch a portrait of his own, as a figure of worldly power.",
+          "symbolism": "His guarded, suspicious look fits the guilty fear of Mark 6:16.",
+          "impact": "Part of Tissot's gallery of Gospel characters."
+        }
+      ],
+      "tags": [
+        "prophecy"
+      ],
+      "orderNote": "Robertson places Herod in Tiberias; the Gospels do not say where he was. Jesus soon withdraws beyond Antipas' territory, partly, Robertson thinks, to avoid his jealousy."
+    },
+    {
+      "id": "johnbeheaded",
+      "harmony": "§71b",
+      "lane": "john",
+      "place": "machaerus",
+      "date": "AD 31",
+      "title": "The beheading of John the Baptist",
+      "people": [
+        "John the Baptist",
+        "Herod Antipas",
+        "Herodias",
+        "The daughter of Herodias (Salome, per Josephus)",
+        "Guests of Galilee's court"
+      ],
+      "gospels": {
+        "Mt": "14:3–12",
+        "Mk": "6:17–29"
+      },
+      "summary": "Mark tells the story in flashback. Herod had arrested John because John told him it was not lawful to have his brother's wife, Herodias. Herod feared John as a holy man and liked to hear him, but Herodias wanted him dead. At Herod's birthday banquet her daughter dances and pleases him, and he swears to give her whatever she asks. Prompted by her mother, she asks for John's head on a platter, and the king, though sorry, sends a guard to behead him in prison. John's disciples take his body and bury it, then go and tell Jesus.",
+      "stay": "John was held in prison, at Machaerus according to Josephus, for some months before his death.",
+      "scripture": [
+        {
+          "ref": "Mark 6:18",
+          "text": "For John said to Herod, \"It is not lawful for you to have your brother's wife.\""
+        },
+        {
+          "ref": "Mark 6:25",
+          "text": "And she came in immediately with haste to the king, and asked, saying, \"I want you to give me at once the head of John the Baptist on a platter.\""
+        },
+        {
+          "ref": "Mark 6:27–28",
+          "text": "And immediately the king sent a soldier of the guard and gave orders to bring his head. He went and beheaded him in the prison, and brought his head on a platter, and gave it to the girl; and the girl gave it to her mother."
+        }
+      ],
+      "echoes": [
+        {
+          "ref": "1 Kings 19:2",
+          "note": "Queen Jezebel vows to kill the prophet Elijah, as Herodias seeks John's life."
+        },
+        {
+          "ref": "Esther 5:3",
+          "note": "\"It shall be given you, even to the half of my kingdom.\""
+        }
+      ],
+      "art": [
+        {
+          "kind": "Masterpiece",
+          "img": "img/johnbeheaded0.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:La_decapitación_de_San_Juan_Bautista,_por_Caravaggio.jpg",
+          "title": "The Beheading of Saint John the Baptist",
+          "artist": "Caravaggio",
+          "year": "1608",
+          "medium": "Oil on canvas",
+          "location": "Oratory of St John's Co-Cathedral, Valletta, Malta",
+          "description": "In a prison courtyard the executioner kneels over John's body and draws a knife, while a young woman holds out a golden platter and two prisoners watch through a barred window.",
+          "significance": "Caravaggio's largest painting and the only one he signed, in the blood flowing from John's neck.",
+          "symbolism": "The vast empty wall and dim light make the killing feel bleak and ordinary; the prisoners at the window are witnesses for us.",
+          "impact": "Painted for the Knights of Malta while Caravaggio was a member of the order; it is considered one of the masterpieces of Western painting."
+        },
+        {
+          "kind": "Descriptive",
+          "img": "img/johnbeheaded1.jpg",
+          "credit": "Public domain, via Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Daughter_of_Herodias_Dancing_(Hérodiade_dansant)_-_James_Tissot_-_overall.jpg",
+          "title": "The Daughter of Herodias Dancing",
+          "artist": "James Tissot",
+          "year": "1886–1894",
+          "medium": "Opaque watercolor over graphite on gray wove paper",
+          "location": "Brooklyn Museum, New York",
+          "description": "Herodias' daughter bends backward in an acrobatic dance on the banquet table before Herod and his guests, while harpists play below and armed guards stand by.",
+          "significance": "Tissot imagines the court of Antipas from his study of Eastern palaces and dress.",
+          "symbolism": "The dance that pleases the king leads to the oath and John's death.",
+          "impact": "One of the most striking images in Tissot's series, often reproduced."
+        }
+      ],
+      "tags": [],
+      "orderNote": "Mark places the story as a flashback; John probably died some time before Herod heard of the Twelve's mission. Josephus (Antiquities 18.5.2) names Machaerus and says Herod killed John fearing an uprising; he names Herodias' daughter as Salome. Some think the banquet was held at Tiberias, though the head was then brought from Machaerus, a long way off."
+    }
+  ]
+}
