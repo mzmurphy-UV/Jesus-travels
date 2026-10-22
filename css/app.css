@@ -16,6 +16,7 @@
   --apostles: #2f7a78;
   --women: #a0467e;
   --paul: #b4532a;
+  --tradition: #6a4a94;
   --gold: #a87a22;
   --chip: #efe7d6;
   --shadow: 0 1px 2px rgba(60,40,10,.08), 0 6px 18px rgba(60,40,10,.06);
@@ -26,12 +27,12 @@
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #15171c; --panel: #1b1e24; --land: #2a2822; --land-edge: #4c4537; --sea: #0f1824; --sea-ink: #34506d;
-  --ink: #ece4d3; --muted: #a99e8b; --rule: #353229; --lapis: #86a8f0; --john: #b3c46e; --herod: #ec8796; --rome: #ddb059; --apostles: #6cc3bf; --women: #e08cc0; --paul: #f0a07a;
+  --ink: #ece4d3; --muted: #a99e8b; --rule: #353229; --lapis: #86a8f0; --john: #b3c46e; --herod: #ec8796; --rome: #ddb059; --apostles: #6cc3bf; --women: #e08cc0; --paul: #f0a07a; --tradition: #b9a0e6;
   --gold: #d8ad57; --chip: #24272e; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25); color-scheme: dark;
 } }
 :root[data-theme="dark"] {
   --bg: #15171c; --panel: #1b1e24; --land: #2a2822; --land-edge: #4c4537; --sea: #0f1824; --sea-ink: #34506d;
-  --ink: #ece4d3; --muted: #a99e8b; --rule: #353229; --lapis: #86a8f0; --john: #b3c46e; --herod: #ec8796; --rome: #ddb059; --apostles: #6cc3bf; --women: #e08cc0; --paul: #f0a07a;
+  --ink: #ece4d3; --muted: #a99e8b; --rule: #353229; --lapis: #86a8f0; --john: #b3c46e; --herod: #ec8796; --rome: #ddb059; --apostles: #6cc3bf; --women: #e08cc0; --paul: #f0a07a; --tradition: #b9a0e6;
   --gold: #d8ad57; --chip: #24272e; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25); color-scheme: dark;
 }
 html, body { height: 100%; margin: 0; }
@@ -294,3 +295,17 @@ h3 { font-family: var(--f-sc); font-weight: 400; font-size: 1rem; letter-spacing
 .cmp-box h2 { margin: 0; font-family: var(--f-display); font-weight: 400; font-size: 1.7rem; padding-right: 40px; }
 .cmp-box .lb-close { top: 14px; right: 14px; position: absolute; width: 36px; height: 36px; border-radius: 50%; border: 0; background: var(--chip); color: var(--ink); font-size: 1.4rem; cursor: pointer; }
 @media (max-width: 900px) { .par.wide { grid-template-columns: minmax(0, 1fr); } .cmp-box { padding: 18px 16px; } }
+
+/* Beyond Acts: how firm the witness is */
+.basis { display: inline-block; margin: 2px 0 6px; font-family: var(--f-ui); font-size: .7rem; font-weight: 600; letter-spacing: .02em; padding: 1px 8px; border-radius: 999px; border: 1px solid currentColor; }
+.basis[data-b="Scripture"] { color: var(--lapis); }
+.basis[data-b="Early tradition"] { color: var(--tradition); }
+.basis[data-b="Later legend"] { color: var(--herod); border-style: dashed; }
+
+/* Daily-life explainers */
+.explainers { display: flex; flex-wrap: wrap; gap: 6px; }
+.explainers button { font-family: var(--f-ui); font-size: .78rem; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--rule); background: var(--chip); color: var(--ink); cursor: pointer; }
+.explainers button:hover, .explainers button:focus-visible { border-color: var(--gold); }
+.cmp-box.explainer { width: min(680px, 100%); }
+.cmp-box.explainer p { margin: 0; line-height: 1.55; }
+.cmp-box.explainer h3 { margin: 6px 0 0; font-family: var(--f-ui); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; }

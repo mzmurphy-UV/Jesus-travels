@@ -20,7 +20,7 @@ const RULER_COLORS = {
 };
 
 function emperorAt(y) {
-  return y < 14 ? "Augustus (27 BC to AD 14)" : y < 37 ? "Tiberius (AD 14 to 37)" : y < 41 ? "Caligula (AD 37 to 41)" : y < 54 ? "Claudius (AD 41 to 54)" : "Nero (AD 54 to 68)";
+  return y < 14 ? "Augustus (27 BC to AD 14)" : y < 37 ? "Tiberius (AD 14 to 37)" : y < 41 ? "Caligula (AD 37 to 41)" : y < 54 ? "Claudius (AD 41 to 54)" : y < 68.5 ? "Nero (AD 54 to 68)" : y < 70 ? "Galba, Otho and Vitellius (AD 68 to 69)" : y < 79 ? "Vespasian (AD 69 to 79)" : y < 81 ? "Titus (AD 79 to 81)" : y < 96 ? "Domitian (AD 81 to 96)" : "Nerva (AD 96 to 98)";
 }
 
 function prefectAt(y) {
@@ -45,7 +45,10 @@ function rulersAt(y) {
     else if (y < 37) set(["philip"], "syria", "Province of Syria", "Annexed after Philip's death in AD 34");
     else set(["philip"], "agrippa1", "Agrippa I", "King from AD 37");
   } else if (y < 44) set(herodian, "agrippa1", "Agrippa I", "King of Judea, AD 41 to 44");
-  else {
+  else if (y >= 70) {
+    set(["galilee", "samaria", "judea", "idumea", "perea"], "rome", "Roman legate of Judaea", "After Titus took Jerusalem in AD 70, a province with a legion camped in the ruined city");
+    set(["philip"], "agrippa2", "Agrippa II", "King of Philip's former lands until his death, c. AD 93 to 100");
+  } else {
     set(["galilee", "samaria", "judea", "idumea", "perea"], "rome", "Roman procurators", "Judea a Roman province again from AD 44");
     if (y < 53) set(["philip"], "rome", "Roman procurators", "Judea a Roman province again from AD 44");
     else set(["philip"], "agrippa2", "Agrippa II", "King of Philip's former lands from AD 53");

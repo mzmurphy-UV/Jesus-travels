@@ -10,7 +10,7 @@ from PIL import Image
 src = open('js/data.js').read()
 routes = json.loads(re.search(r'const ROUTES = (\{.*?\n\});', src, re.S).group(1))
 for f in sorted(glob.glob('content/*.json')):
-    for e in json.load(open(f))['events']:
+    for e in json.load(open(f)).get('events', []):
         if e.get('route'):
             routes['@' + e['id']] = e['route']
 

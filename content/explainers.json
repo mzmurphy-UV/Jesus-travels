@@ -1,0 +1,147 @@
+{
+ "_notes": "Short background pieces on daily life, linked from the events in `events`. Plain facts with the main sources named; no Scripture quotations.",
+ "fishing": {
+  "title": "Fishing on the Sea of Galilee",
+  "text": [
+   "The lake was the economy of Capernaum, Bethsaida and Magdala. Fishermen worked mostly at night, when fish come up to the surface, from wooden boats about 27 feet long, like the 1st-century boat found near Ginosar in 1986. It could carry a crew of four or five and a catch, or about fifteen people.",
+   "They used three kinds of net: the cast net, thrown by one man from the shore or the shallows; the trammel net, set in a line from boats; and the dragnet, or seine, hauled to the beach by teams on both ends. In the morning the nets were washed and mended, as the Gospels describe.",
+   "Fishing was a family business, often in partnership, as Peter and Andrew were with the sons of Zebedee. Much of the catch was salted and dried for sale: Magdala's Greek name, Taricheae, means \"fish-salting.\" Fishing rights were leased under Herod Antipas, and the trade was taxed through toll collectors like Levi at Capernaum."
+  ],
+  "events": ["fishers", "levi", "dragnet", "storm", "walkonwater", "templetax", "secondcatch", "feedmysheep"]
+ },
+ "houses": {
+  "title": "A house in Galilee",
+  "text": [
+   "Village houses in Galilee were built of rough black basalt, or of limestone in the hills, laid without mortar. Several rooms opened on to a shared courtyard, where an extended family cooked, ground grain, kept animals and worked. At Capernaum such clusters held perhaps fifteen to twenty people.",
+   "Roofs were made of wooden beams laid with branches and packed with clay, rolled flat after each rain. An outside stair or ladder led up to the roof, which was used for drying flax and figs, sleeping in summer, and prayer. This is the kind of roof the friends of the paralytic dug through.",
+   "Rooms were dark, with few small windows and a clay oil lamp on a stand, which is why a woman would light a lamp and sweep to find a lost coin. Floors were beaten earth or rough stone, easy to lose a small coin in."
+  ],
+  "events": ["paralytic", "petersmother", "capernaumhome", "lostsheep", "builders", "marthamary", "sermon"]
+ },
+ "sabbath": {
+  "title": "The sabbath",
+  "text": [
+   "The sabbath ran from sunset on Friday to sunset on Saturday. Families lit lamps before dark, ate a festive meal, and rested from work; in the morning they gathered in the synagogue to hear the law and the prophets read and explained.",
+   "Scripture forbade work but did not define it, so teachers worked it out. The Mishnah, written down about AD 200, lists thirty-nine kinds of forbidden work, including reaping, grinding and carrying from one domain to another. A \"sabbath day's journey\" was about 2,000 cubits, roughly two-thirds of a mile.",
+   "Saving a life overrode the sabbath, all agreed; Jewish teachers debated how far lesser healing or help was allowed. Jesus' sabbath healings took up a live argument, and he answered with examples his hearers accepted, like watering an ox or pulling a sheep from a pit."
+  ],
+  "events": ["grainfields", "witheredhand", "bethesda", "crippledwoman", "bornblind", "greatbanquet", "unclean"]
+ },
+ "synagogue": {
+  "title": "The synagogue",
+  "text": [
+   "A synagogue was the gathering place of a Jewish town, for the reading of Scripture, prayer, teaching, and community business. Synagogues of the 1st century have been found at Magdala, Gamla, Masada and Herodium: plain halls with stone benches on three or four sides, facing the center.",
+   "On the sabbath the Torah was read in Hebrew, often with a translation into Aramaic or Greek, followed by a reading from the prophets. A ruler of the synagogue arranged the service, and any capable man could be invited to read and speak, which is how Jesus and later Paul were asked to teach.",
+   "Outside the Land of Israel, synagogues anchored Jewish communities from Antioch to Rome. Paul went to the synagogue first in each city, where Jews and God-fearing Gentiles already knew the Scriptures."
+  ],
+  "events": ["nazarethreject", "unclean", "crippledwoman", "antiochsermon", "turngentiles", "thessalonica", "beroea", "aquilapriscilla"]
+ },
+ "temple": {
+  "title": "Herod's Temple",
+  "text": [
+   "Herod the Great began rebuilding the Temple about 20 BC; work on the courts went on until about AD 63, only seven years before the Romans destroyed it. Its platform, some 35 acres, was the largest of its kind in the ancient world, and parts of its retaining walls stand today, including the Western Wall.",
+   "Anyone could enter the vast outer court, the Court of the Gentiles, where money changers and animal sellers did business. A stone barrier with warning inscriptions, two of which have been found, kept non-Jews from going farther. Within were the Court of the Women, with its treasury chests, the Court of Israel, and the court of the priests around the altar.",
+   "At the center stood the sanctuary, faced with gold and white stone. Its inner room, the Holy of Holies, was empty after the Exile and was entered only by the high priest, once a year, on the Day of Atonement; a great curtain hung before it."
+  ],
+  "events": ["zechariah", "presentation", "temple12", "templecleansing", "secondcleansing", "widowsmite", "veiltorn", "lameman", "templeriot"]
+ },
+ "passover": {
+  "title": "Passover and the pilgrim feasts",
+  "text": [
+   "Three times a year, at Passover, Weeks (Pentecost) and Tabernacles, Jews went up to Jerusalem. At Passover the city's population swelled many times over; pilgrims camped on the surrounding hills and in nearby villages like Bethany.",
+   "On the afternoon of 14 Nisan, lambs were slaughtered in the Temple courts, and that evening, as the new day began, each household ate the Passover meal inside the city walls. The meal, eaten reclining, included roast lamb, unleavened bread, bitter herbs and cups of wine, with the story of the Exodus retold.",
+   "The Gospels differ on whether the Last Supper was itself the Passover meal (Matthew, Mark and Luke) or was eaten the evening before, so that Jesus died as the lambs were killed (John). Scholars still debate how to reconcile the two."
+  ],
+  "events": ["temple12", "templecleansing", "passoverprep", "lastsupper", "eucharist", "tabernacles", "dedication", "pentecost"]
+ },
+ "money": {
+  "title": "Coins, wages and taxes",
+  "text": [
+   "Three coin systems met in Judea: Roman silver denarii, bearing the emperor's head; Tyrian silver shekels, required for the Temple tax because of their high silver content; and small bronze coins struck by the Herods and the Roman prefects. Money changers in the Temple exchanged one for another, for a fee.",
+   "A denarius was a day's wage for a laborer. The smallest coin, the lepton (\"mite\"), was worth about one hundred-twenty-eighth of a denarius; two of them, the widow's offering, would buy very little. A talent was worth about 6,000 denarii, some twenty years of a laborer's wages.",
+   "People paid the Roman tribute, a head tax and land tax collected for Rome, plus tolls on goods in transit, leased to collectors like Levi and Zacchaeus, and the annual half-shekel Temple tax. Toll collectors were despised as collaborators and often as cheats."
+  ],
+  "events": ["levi", "templetax", "laborers", "tribute", "widowsmite", "talents", "pounds", "zacchaeus", "judasbargain", "unmerciful"]
+ },
+ "shepherds": {
+  "title": "Shepherds and sheep",
+  "text": [
+   "Flocks of sheep and goats grazed the edges of the desert east of Bethlehem and the hills of Judea. Shepherds led their flocks from in front, calling them by voice, and at night brought them into a stone-walled fold, sometimes sleeping across its gap themselves.",
+   "A flock of a hundred was a good-sized holding for one family. Shepherds carried a staff and a club against wolves and thieves. Their work kept them out in the open, often far from synagogue and Temple, and some later rabbis counted them among trades of low repute.",
+   "Israel's kings and leaders had long been called shepherds, and David was taken from the sheepfolds. Ezekiel 34 condemns the false shepherds of Israel and promises that God himself will shepherd his flock, the background to Jesus' words about the good shepherd."
+  ],
+  "events": ["shepherds", "goodshepherd", "lostsheep", "lastjudgment", "feedmysheep", "seventy"]
+ },
+ "samaritans": {
+  "title": "Jews and Samaritans",
+  "text": [
+   "The Samaritans lived in the hill country between Judea and Galilee. They kept the five books of Moses as their only Scripture and worshiped on Mount Gerizim, above Shechem, not in Jerusalem.",
+   "Their relations with Jews were bitter. The Jewish high priest John Hyrcanus destroyed the Samaritan temple on Gerizim about 110 BC, and in the 1st century there were clashes on the roads between Galilee and Jerusalem; Galilean pilgrims sometimes crossed the Jordan to avoid Samaria.",
+   "A Samaritan community survives: about 900 people today, living on Mount Gerizim near Nablus and in Holon near Tel Aviv. They still sacrifice the Passover lambs on the mountain each spring."
+  ],
+  "events": ["samaritanwoman", "samaritanvillage", "goodsamaritan", "tenlepers", "philipsamaria", "simonmagus"]
+ },
+ "purity": {
+  "title": "Clean and unclean",
+  "text": [
+   "The law of Moses set out kinds of ritual impurity: from skin disease, from bodily discharges, from childbirth, and above all from contact with a corpse. Impurity was not sin; it barred a person from the Temple until they had washed, waited, or offered sacrifice.",
+   "Stone vessels, which could not become unclean, and stepped immersion pools (mikva'ot) are found in houses across Judea and Galilee from this period, showing how seriously many people kept purity in daily life. Pharisees extended Temple purity to the household table.",
+   "A person with a skin disease (the Bible's \"leprosy\" covers several conditions) had to live apart and call out a warning. When Jesus touched a leper, a woman with a flow of blood, or a dead girl's hand, the impurity did not pass to him; healing passed to them."
+  ],
+  "events": ["leper", "tenlepers", "jairus", "traditions", "cana", "petervision", "cornelius"]
+ },
+ "weddings": {
+  "title": "Betrothal and weddings",
+  "text": [
+   "A Jewish marriage came in two steps. First came betrothal, a binding agreement made before witnesses, often when the bride was in her early teens; the couple were legally husband and wife, and only divorce could end it. This was Mary and Joseph's state at the Annunciation.",
+   "About a year later came the wedding itself: the groom and his friends went at night, with lamps, to bring the bride from her father's house to his own, and the celebration followed, often for seven days. Running out of wine would have shamed the host family.",
+   "The prophets spoke of God as Israel's bridegroom, and Jesus took up the image of the wedding feast for the kingdom of heaven; Revelation ends with the marriage supper of the Lamb."
+  ],
+  "events": ["annunciation", "josephdream", "cana", "newwine", "weddingfeast", "tenvirgins", "divorce"]
+ },
+ "crucifixion": {
+  "title": "Roman crucifixion",
+  "text": [
+   "Crucifixion was Rome's punishment for slaves, rebels and the worst criminals, never for Roman citizens in the ordinary way. It was meant to be slow and public: the condemned were usually scourged first, made to carry the crossbeam (patibulum) to the place of execution, and hung by roadsides where crowds would see.",
+   "The upright post often stood permanently at the site; the crossbeam was fixed to it with the victim tied or nailed. A heel bone with a nail still through it, found in a Jerusalem tomb in 1968, belonged to a man named Yehohanan crucified in the 1st century. A placard (titulus) gave the charge.",
+   "Death could take hours or days, from exhaustion, shock and suffocation. Breaking the legs hastened it. Bodies were often left for the birds, but Jewish law required burial before nightfall, and Roman governors in Judea usually allowed it."
+  ],
+  "events": ["eccehomo", "mocking", "waycross", "crucifixion", "goodthief", "death", "piercing", "petercross"]
+ },
+ "burial": {
+  "title": "Tombs and burial",
+  "text": [
+   "In Jerusalem, families who could afford it cut tombs into the soft limestone hills outside the city: a low doorway, sometimes sealed with a rolling or square stone, opened into a chamber with benches or long niches for the bodies. Hundreds of such tombs have been found around the city.",
+   "Burial took place on the day of death. The body was washed, anointed with oils and spices, and wrapped in linen, with a separate cloth for the face. Mourners, including hired flute players and wailing women, followed the bier.",
+   "About a year later, when the flesh had decayed, the family gathered the bones into a stone box, an ossuary, often carved with the name. An ossuary inscribed \"Joseph son of Caiaphas,\" found in 1990, is thought by many to be the high priest's."
+  ],
+  "events": ["nain", "jairus", "lazarus", "bethanyanoint", "burial", "womenwatch", "spices", "emptytomb", "peterjohn"]
+ },
+ "roads": {
+  "title": "Travel on foot",
+  "text": [
+   "Most people walked. A traveler on foot covered about 15 to 20 miles a day, a little more on a good Roman road. Nazareth to Jerusalem, about 70 to 90 miles depending on the route, took three or four days.",
+   "Pilgrims traveled in large groups for safety, villages and families together, which is how Mary and Joseph could go a day without missing the boy Jesus. Robbers were a real danger, especially on the steep, lonely road down from Jerusalem to Jericho.",
+   "Rome built its great paved roads in Judea mostly after AD 70; in Jesus' time, travel ran on older beaten tracks. Paul, outside Judea, walked Roman highways like the Egnatian Way across Macedonia and the Appian Way into Rome, with milestones every Roman mile."
+  ],
+  "events": ["nativity", "temple12", "goodsamaritan", "emmaus", "thirdprediction", "damascusroad", "assoswalk", "threetaverns"]
+ },
+ "ships": {
+  "title": "Sailing in Paul's day",
+  "text": [
+   "Ships in the Roman Mediterranean were merchant vessels: there were no passenger lines, and travelers bought space on deck. The great grain ships from Alexandria to Rome, like the one Paul was wrecked in, could be well over 100 feet long and carry hundreds of tons of grain and, as Luke says, 276 people.",
+   "They had one large square sail and steered with two big oars at the stern. They sailed poorly against the wind, so the route from Egypt to Italy ran north to the coast of Asia Minor and west along it, under the lee of islands.",
+   "The sailing season ran roughly from late May to mid-September; after that, sailing was dangerous, and from November to March the sea was mostly closed. Paul's ship left Crete after \"the fast,\" the Day of Atonement, in October: already late."
+  ],
+  "events": ["salamis", "sidon", "myra", "fairhavens", "tempest", "shipwreck", "syracuse", "puteoli"]
+ },
+ "trades": {
+  "title": "Making a living in the cities",
+  "text": [
+   "Paul supported himself by his trade, which Acts calls tentmaking: cutting and sewing leather or goat's-hair cloth into tents, awnings and other goods. He worked with Aquila and Priscilla in Corinth and could set up shop in any city, talking with customers and passers-by as he worked.",
+   "Craftsmen in Roman cities were organized in guilds by trade, and their workshops opened on to the street, often with living space above. The silversmiths of Ephesus who made shrines of Artemis were one such guild, and their riot shows how the gospel could threaten a city's business.",
+   "Trade in luxury goods brought people like Lydia, a seller of purple cloth from Thyatira, across the empire. Purple dye, made from murex shells or from madder root, was costly and a sign of wealth."
+  ],
+  "events": ["aquilapriscilla", "lydia", "ephesusriot", "magicbooks", "tyrannus", "slavegirl"]
+ }
+}

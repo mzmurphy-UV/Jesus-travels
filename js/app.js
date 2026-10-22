@@ -15,7 +15,7 @@
     EVENTS.push(...CONTENT_EVENTS);
     // A town that is now a real place no longer needs its context dot
     for (let i = CONTEXT.length - 1; i >= 0; i--) if (Object.values(PLACES).some(p => Math.hypot(p.ll[0] - CONTEXT[i][1], p.ll[1] - CONTEXT[i][2]) < 0.03)) CONTEXT.splice(i, 1);
-    [["apostles", "Peter & the apostles"], ["women", "The women disciples"], ["paul", "Paul & his companions"]].forEach(([id, name]) => { if (!LANES.some(l => l.id === id) && EVENTS.some(e => e.lane === id)) LANES.push({ id, name }); });
+    [["apostles", "Peter & the apostles"], ["women", "The women disciples"], ["paul", "Paul & his companions"], ["tradition", "After Acts, by tradition"]].forEach(([id, name]) => { if (!LANES.some(l => l.id === id) && EVENTS.some(e => e.lane === id)) LANES.push({ id, name }); });
   }
   // Holy Week: the run of events from the Friday before Palm Sunday to Easter evening, each with its day
   const HW_DAYS = ["Six days before", "Palm Sunday", "Monday", "Tuesday", "Wednesday", "Holy Thursday", "Good Friday", "Holy Saturday", "Easter Sunday"];
@@ -62,7 +62,7 @@
   let bm = store.get("ntmap.basemap", "sat"); if (!["sat", "terrain", "parchment"].includes(bm)) bm = "sat";
   const map = new maplibregl.Map({
     container: "map", style: await styleFor(bm), bounds: [[34.4, 31.0], [35.9, 33.3]], fitBoundsOptions: { padding: 20 },
-    attributionControl: false, maxPitch: 70, minZoom: 3.5, renderWorldCopies: false
+    attributionControl: false, maxPitch: 70, minZoom: 2.5, renderWorldCopies: false
   });
   map.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-right");
   map.addControl(new maplibregl.NavigationControl({ showZoom: false, visualizePitch: true }), "bottom-right");
@@ -175,7 +175,8 @@
     let last = null, lastPos = -9;
     if (kind === "holyweek") { let d = -1; VIS.forEach(i => { const k = HWDAY.get(EVENTS[i]); if (k !== d) { eraAt[i] = HW_SHORT[k]; d = k; } }); renderDays(); return; }
     renderDays();
-    VIS.forEach((i, pos) => { const y = Math.trunc(yearOf(EVENTS[i])); if ((last === null || y > last) && pos - lastPos >= 3) { eraAt[i] = y < 0 ? `${-y} BC` : `AD ${y}`; last = y; lastPos = pos; } });
+    let inBeyond = false;
+    VIS.forEach((i, pos) => { const y = Math.trunc(yearOf(EVENTS[i])); const fresh = EVENTS[i].basis && !inBeyond; if (fresh) inBeyond = true; if ((last === null || y > last || fresh) && pos - lastPos >= 3) { eraAt[i] = y < 0 ? `${-y} BC` : `AD ${y}`; last = y; lastPos = pos; } });
   }
 
   // ---------- Folio ----------
@@ -207,7 +208,7 @@
     lb.querySelector(".lb-img").onclick = ev => { if (ev.target === ev.currentTarget || ev.target.tagName === "IMG") close(); };
     document.addEventListener("keydown", onKey); document.body.appendChild(lb); lb.querySelector(".lb-close").focus();
   }
-  const BOOKNAME = { Mt: "Matthew", Mk: "Mark", Lk: "Luke", Jn: "John", Acts: "Acts", Rom: "Romans", "1Cor": "1 Corinthians", "2Cor": "2 Corinthians", Gal: "Galatians", Phil: "Philippians", "1Thess": "1 Thessalonians", "2Tim": "2 Timothy" };
+  const BOOKNAME = { Mt: "Matthew", Mk: "Mark", Lk: "Luke", Jn: "John", Acts: "Acts", Rom: "Romans", "1Cor": "1 Corinthians", "2Cor": "2 Corinthians", Gal: "Galatians", Phil: "Philippians", "1Thess": "1 Thessalonians", "2Tim": "2 Timothy", "1Pet": "1 Peter", Rev: "Revelation" };
   const TAGNAME = { miracle: "Miracle", healing: "Healing", "nature-miracle": "Nature miracle", raising: "Raising the dead", exorcism: "Exorcism", parable: "Parable", teaching: "Teaching", sermon: "Sermon",
     prayer: "Prayer", call: "Call", conflict: "Conflict", prophecy: "Prophecy", passion: "Passion", appearance: "Appearance" };
   // ---------- Gospels side by side ----------
@@ -222,6 +223,20 @@
       return `<section class="par-col"><h4>${n} <a href="${passageUrl(ref)}" target="_blank" rel="noopener">${esc(e.gospels[k])} ↗</a></h4>${qs.length ? qs.map(s => `<blockquote><p>${esc(s.text)}</p><cite>${esc(s.ref)}</cite></blockquote>`).join("") : `<p class="empty">No quotation here yet; follow the link to read ${n}'s account.</p>`}</section>`;
     }).join("") + `</div>`;
   }
+  // Daily-life explainers (content/explainers.json)
+  const EXPLAINERS = typeof CONTENT_EXPLAINERS !== "undefined" ? CONTENT_EXPLAINERS : {};
+  const explainersFor = e => Object.entries(EXPLAINERS).filter(([, x]) => x.events.includes(e.id));
+  function openExplainer(k, back) {
+    const x = EXPLAINERS[k], idx = id => EVENTS.findIndex(ev => ev.id === id);
+    const ov = document.createElement("div"); ov.className = "compare"; ov.setAttribute("role", "dialog"); ov.setAttribute("aria-modal", "true"); ov.setAttribute("aria-label", x.title);
+    ov.innerHTML = `<div class="cmp-box explainer"><button class="lb-close" aria-label="Close">×</button><span class="kind">Daily life</span><h2>${esc(x.title)}</h2>
+      ${x.text.map(t => `<p>${esc(t)}</p>`).join("")}<h3>In the story</h3><div class="explainers">${x.events.map(idx).filter(i => i >= 0).map(i => `<button type="button" data-go="${i}">${esc(EVENTS[i].title)}</button>`).join("")}</div></div>`;
+    const close = () => { ov.remove(); document.removeEventListener("keydown", onKey); back && back.isConnected && back.focus(); };
+    const onKey = ev => { if (ev.key === "Escape") close(); };
+    ov.querySelector(".lb-close").onclick = close; ov.onclick = ev => { if (ev.target === ov) close(); };
+    ov.querySelectorAll("[data-go]").forEach(b => b.onclick = () => { close(); stop(); go(+b.dataset.go); });
+    document.addEventListener("keydown", onKey); document.body.appendChild(ov); ov.querySelector(".lb-close").focus();
+  }
   function openParallels(e, back) {
     const ov = document.createElement("div"); ov.className = "compare"; ov.setAttribute("role", "dialog"); ov.setAttribute("aria-modal", "true"); ov.setAttribute("aria-label", `${e.title}, the Gospels side by side`);
     ov.innerHTML = `<div class="cmp-box"><button class="lb-close" aria-label="Close">×</button><span class="kind">The Gospels side by side</span><h2>${esc(e.title)}</h2>
@@ -235,7 +250,7 @@
     const p = PLACES[e.place];
     const lane = LANES.find(l => l.id === e.lane);
     folio.style.setProperty("--lc", laneColor(e.lane));
-    const G = e.gospels.Acts ? Object.keys(e.gospels).map(k => [k, BOOKNAME[k] || k]) : [["Mt", "Matthew"], ["Mk", "Mark"], ["Lk", "Luke"], ["Jn", "John"]];
+    const G = e.gospels.Acts || e.basis ? Object.keys(e.gospels).map(k => [k, BOOKNAME[k] || k]) : [["Mt", "Matthew"], ["Mk", "Mark"], ["Lk", "Luke"], ["Jn", "John"]];
     const tabs = [["story", "Story"], ["scripture", "Scripture"], ["art", `Art${e.art.length ? " (" + e.art.length + ")" : ""}`], ["place", "Place"]];
     let body = "";
     if (tab === "story") {
@@ -246,7 +261,9 @@
       body += `</dl>`;
       body += `<h3>People</h3><div class="people">${e.people.map(x => `<span>${esc(x)}</span>`).join("")}</div>`;
       if (e.history) body += `<h3>From history</h3><p class="echo">${esc(e.history)}</p>`;
-      if (e.orderNote) body += `<h3>On the order</h3><p class="echo">${esc(e.orderNote)}</p>`;
+      if (e.orderNote) body += `<h3>${e.basis ? "Sources" : "On the order"}</h3><p class="echo">${esc(e.orderNote)}</p>`;
+      const ex = explainersFor(e);
+      if (ex.length) body += `<h3>Daily life</h3><div class="explainers">${ex.map(([k, x]) => `<button type="button" data-ex="${k}">${esc(x.title)}</button>`).join("")}</div>`;
       if (e.tags && e.tags.length) body += `<div class="people tags">${e.tags.map(t => `<span>${esc(TAGNAME[t] || t)}</span>`).join("")}</div>`;
       if (e.scripture[0]) body += `<blockquote><p>${esc(e.scripture[0].text)}</p><cite>${esc(e.scripture[0].ref)} · RSV-2CE</cite></blockquote>`;
     } else if (tab === "scripture") {
@@ -273,12 +290,13 @@
     }
     folio.innerHTML = `<div class="folio-head">
       <div class="eyebrow"><span class="lane">${esc(lane.name)}</span><span>·</span><span>${esc(e.date)}</span><span>·</span><span>${esc(p.name)}</span>${e.harmony ? `<span>·</span><span title="Section in A. T. Robertson, A Harmony of the Gospels (1922)">Harmony ${esc(e.harmony)}</span>` : ""}</div>
-      <h2>${esc(e.title)}</h2>
+      <h2>${esc(e.title)}</h2>${e.basis ? `<span class="basis" data-b="${esc(e.basis)}" title="How firm the witness is: Scripture, early tradition (recorded by the 2nd to 5th centuries), or later legend">${esc(e.basis)}</span>` : ""}
       <div class="gospels">${G.map(([k, n]) => `<span class="gchip ${e.gospels[k] ? "on" : ""}">${e.gospels[k] ? `<b>${n}</b> ${esc(e.gospels[k])}` : n}</span>`).join("")}</div>
       <div class="tabs" role="tablist">${tabs.map(([k, n]) => `<button role="tab" data-tab="${k}" aria-selected="${tab === k}">${n}</button>`).join("")}</div>
     </div><div class="folio-body">${body}</div>`;
     folio.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => { tab = b.dataset.tab; renderFolio(e); });
     folio.querySelectorAll(".par-open").forEach(b => b.onclick = () => openParallels(e, b));
+    folio.querySelectorAll("[data-ex]").forEach(b => b.onclick = () => openExplainer(b.dataset.ex, b));
     folio.querySelectorAll("[data-go]").forEach(a => a.onclick = ev => { ev.preventDefault(); go(+a.dataset.go); });
     folio.querySelectorAll("img[data-zoom]").forEach(img => img.onclick = () => {
       const a = e.art[+img.dataset.zoom];
@@ -306,7 +324,7 @@
     cancelAnimationFrame(routeAnim);
     const e = EVENTS[i], r = journeyOf(e), past = [];
     // The last few journeys stay on the map as dashed lines; older ones fade out so the map stays readable
-    const trail = ["paul", "apostles"].includes(e.lane) ? e.lane : "jesus";
+    const trail = ["paul", "apostles", "tradition"].includes(e.lane) ? e.lane : "jesus";
     // In Holy Week the whole day so far stays drawn, whoever walked it
     (kind === "holyweek" ? EVENTS.slice(0, i).filter(x => journeyOf(x) && HWDAY.get(x) === HWDAY.get(e)) : EVENTS.slice(0, i).filter(x => journeyOf(x) && x.lane === trail).slice(-5)).forEach(x => past.push(feat(journeyOf(x), false, laneHex(x.lane))));
     if (!r) return setRoutes(fc(past));
@@ -396,9 +414,9 @@
     Jonah: ["jonah", "jon"], Proverbs: ["proverbs", "prov", "prv"], Sirach: ["sirach", "sir"], Joel: ["joel"], Amos: ["amos"], Job: ["job"], Esther: ["esther", "esth"], "2 Chronicles": ["2 chronicles", "2 chr"],
     "Song of Songs": ["song of songs", "song", "song of solomon"], "1 Maccabees": ["1 maccabees", "1 macc"], "1 Corinthians": ["1 corinthians", "1 cor", "1cor"],
     Romans: ["romans", "rom", "rm"], "2 Corinthians": ["2 corinthians", "2 cor", "2cor"], Galatians: ["galatians", "gal"], Ephesians: ["ephesians", "eph"], Philippians: ["philippians", "phil", "php"],
-    Colossians: ["colossians", "col"], "1 Thessalonians": ["1 thessalonians", "1 thess", "1thess", "1 thes"], "2 Thessalonians": ["2 thessalonians", "2 thess"], "2 Timothy": ["2 timothy", "2 tim", "2tim"] };
+    Colossians: ["colossians", "col"], "1 Thessalonians": ["1 thessalonians", "1 thess", "1thess", "1 thes"], "2 Thessalonians": ["2 thessalonians", "2 thess"], "2 Timothy": ["2 timothy", "2 tim", "2tim"], "1 Peter": ["1 peter", "1 pet", "1pet", "1 pt"], Revelation: ["revelation", "rev", "apocalypse"] };
   const ALIAS = {}; for (const [b, list] of Object.entries(BOOKS)) list.forEach(a => ALIAS[a] = b);
-  const CODE = { Mt: "Matthew", Mk: "Mark", Lk: "Luke", Jn: "John", Acts: "Acts", Rom: "Romans", "1Cor": "1 Corinthians", "2Cor": "2 Corinthians", Gal: "Galatians", Phil: "Philippians", "1Thess": "1 Thessalonians", "2Tim": "2 Timothy" };
+  const CODE = { Mt: "Matthew", Mk: "Mark", Lk: "Luke", Jn: "John", Acts: "Acts", Rom: "Romans", "1Cor": "1 Corinthians", "2Cor": "2 Corinthians", Gal: "Galatians", Phil: "Philippians", "1Thess": "1 Thessalonians", "2Tim": "2 Timothy", "1Pet": "1 Peter", Rev: "Revelation" };
   const normBook = s => ALIAS[s.toLowerCase().replace(/\./g, "").replace(/\s+/g, " ").trim()];
   // "Psalm 72:10–11; Isaiah 60:6" or "1:25; 2:1" (with a default book) -> [{ book, c1, v1, c2, v2 }]
   function parseRefs(str, book) {
@@ -514,11 +532,11 @@
 
   // ---------- Gospel lens and kind filter ----------
   const KINDS = { miracles: ["miracle", "healing", "nature-miracle", "raising", "exorcism"], parables: ["parable"], teaching: ["teaching", "sermon"], passion: ["passion"], appearances: ["appearance"] };
-  const LENSES = { all: "All", Mt: "Matthew", Mk: "Mark", Lk: "Luke", Jn: "John", Acts: "Acts" };
+  const LENSES = { all: "All", Mt: "Matthew", Mk: "Mark", Lk: "Luke", Jn: "John", Acts: "Acts", beyond: "Beyond Acts" };
   const KINDNAMES = { all: "Everything", miracles: "Miracles", parables: "Parables", teaching: "Teaching", holyweek: "Holy Week", passion: "Passion", appearances: "Risen Lord" };
   let lens = store.get("ntmap.lens", "all"), kind = store.get("ntmap.kind", "all");
   if (!LENSES[lens]) lens = "all"; if (!KINDNAMES[kind]) kind = "all";
-  const passes = (e, l, k) => (l === "all" || e.gospels[l]) && (k === "all" || (k === "holyweek" ? HWDAY.has(e) : (e.tags || []).some(t => KINDS[k].includes(t))));
+  const passes = (e, l, k) => (l === "all" || (l === "beyond" ? !!e.basis : !e.basis && e.gospels[l])) && (k === "all" || (k === "holyweek" ? HWDAY.has(e) : (e.tags || []).some(t => KINDS[k].includes(t))));
   const lensEl = document.getElementById("lens"), kindEl = document.getElementById("kinds");
   function renderFilters() {
     lensEl.innerHTML = Object.entries(LENSES).map(([k, n]) => `<button data-lens="${k}" aria-pressed="${lens === k}">${n}<small>${EVENTS.filter(e => passes(e, k, kind)).length}</small></button>`).join("");
