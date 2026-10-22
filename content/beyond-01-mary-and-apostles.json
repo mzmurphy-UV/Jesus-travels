@@ -203,7 +203,23 @@
    ],
    "orderNote": "Basis: Scripture. John 19:25–27 and Acts 1:14 are the last New Testament mentions of Mary by name. The \"Beyond Acts\" lane that follows sets traditions beside Scripture, each marked by how old and how firm its witness is.",
    "lane": "tradition",
-   "art": []
+   "art": [
+    {
+     "kind": "Masterpiece",
+     "title": "The Crucifixion with the Virgin and St John",
+     "artist": "Hendrick ter Brugghen",
+     "year": "c. 1625",
+     "medium": "Oil on canvas",
+     "location": "Metropolitan Museum of Art, New York",
+     "description": "Against a dark night sky with stars, the gaunt Christ hangs on the cross between the grieving Virgin Mary and John, who looks up with open hands.",
+     "significance": "Ter Brugghen, a Dutch follower of Caravaggio, deliberately echoed old German art in this stark altarpiece, probably made for a hidden Catholic church in Utrecht.",
+     "symbolism": "Only Mary and John stand beneath the cross, the two whom Jesus gave to each other from it.",
+     "impact": "Long lost, it resurfaced in England in the 1950s and is now one of the Met's most striking Dutch paintings.",
+     "img": "img/marytojohn0.jpg",
+     "credit": "Public domain, via Wikimedia Commons",
+     "source": "https://commons.wikimedia.org/wiki/File:Hendrick_ter_Brugghen_The_Crucifixion_with_the_Virgin_and_Saint_John.jpg"
+    }
+   ]
   },
   {
    "id": "jamesspain",
@@ -438,7 +454,23 @@
    ],
    "orderNote": "Basis: Later legend. Acts 12:2 records James's death in Jerusalem about AD 44 and says nothing of his burial. The finding of the tomb under Bishop Theodemir (died 847) is told in sources of the 11th and 12th centuries, chiefly the Concordia de Antealtares and the Codex Calixtinus. Excavations under the cathedral in 1946–1959 found a Roman-era cemetery and a mausoleum, but nothing that names who lies there.",
    "lane": "tradition",
-   "art": []
+   "art": [
+    {
+     "kind": "Masterpiece",
+     "title": "The Translation of the Body of St James before the Palace of Queen Lupa",
+     "artist": "Martín Bernat",
+     "year": "c. 1480–1490",
+     "medium": "Oil and gold on panel",
+     "location": "Museo del Prado, Madrid",
+     "description": "The apostle's disciples bring his body on an ox cart to the palace of Lupa, a pagan queen of Galicia, who in the legend tried to trick them with wild bulls that turned tame and drew the cart themselves.",
+     "significance": "A panel from a Spanish Gothic altarpiece of the life of St James, painted in Aragon, where the legend of James in Spain was dear.",
+     "symbolism": "The wild oxen tamed under the yoke show the power of the saint even in death, and the conversion of Galicia that the legend tells.",
+     "impact": "Altarpieces like this spread the story of Compostela to the pilgrims who walked the Camino.",
+     "img": "img/compostela0.jpg",
+     "credit": "Public domain, via Wikimedia Commons",
+     "source": "https://commons.wikimedia.org/wiki/File:Traslado_del_cuerpo_de_Santiago_el_Mayor_ante_el_palacio_de_la_reina_Lupa_(Museo_del_Prado).jpg"
+    }
+   ]
   },
   {
    "id": "dormition",
@@ -460,7 +492,23 @@
    ],
    "orderNote": "Basis: Early tradition, though not early history. The story is told in the many \"Transitus Mariae\" (Passing of Mary) writings, in Syriac, Greek, Latin and other languages, the oldest from the late 5th century and drawing on earlier lost texts. The church of Hagia Sion on Mount Zion was honored as the place by the 6th century. The year shown here is only a placeholder; the tradition gives dates from 3 to 15 years after the Ascension.",
    "lane": "tradition",
-   "art": []
+   "art": [
+    {
+     "kind": "Masterpiece",
+     "title": "The Death of the Virgin",
+     "artist": "Andrea Mantegna",
+     "year": "c. 1462",
+     "medium": "Tempera and gold on panel",
+     "location": "Museo del Prado, Madrid",
+     "description": "Mary lies on a bier in a great hall, surrounded by the apostles holding candles, a censer and a book; through the window a calm view opens over the lagoon and bridge of Mantua.",
+     "significance": "Painted for the chapel of the Gonzaga court at Mantua, it is one of Mantegna's most perfect small works, with a deep, exact perspective.",
+     "symbolism": "The open window and still water carry the eye from the death chamber to a wide world of light, a sign of her passing to glory.",
+     "impact": "Mantegna's balance of grief and calm set a model for later Italian images of the Dormition.",
+     "img": "img/dormition0.jpg",
+     "credit": "Public domain, via Wikimedia Commons",
+     "source": "https://commons.wikimedia.org/wiki/File:1462_Mantegna_Der_Tod_Mariens_Museo_del_Prado_anagoria.jpg"
+    }
+   ]
   },
   {
    "id": "assumption",
@@ -523,7 +571,23 @@
    ],
    "orderNote": "Basis: Early tradition. Scripture does not describe Mary's death or assumption; Revelation 12 is read of her, among other meanings, in the liturgy. The empty tomb appears in the Transitus writings of the 5th century; St John Damascene (8th century) tells that Bishop Juvenal of Jerusalem informed the emperor Marcian about 451 that the tomb was empty. The Emperor Maurice fixed the feast on 15 August about AD 600. Pius XII, Munificentissimus Deus, 1 November 1950.",
    "lane": "tradition",
-   "art": []
+   "art": [
+    {
+     "kind": "Masterpiece",
+     "title": "The Assumption of the Virgin (Assunta)",
+     "artist": "Titian",
+     "year": "1516–1518",
+     "medium": "Oil on panel",
+     "location": "Basilica of Santa Maria Gloriosa dei Frari, Venice",
+     "description": "On a cloud borne by a crowd of child angels, Mary rises with her arms raised toward God the Father, while the apostles below reach up in wonder and alarm.",
+     "significance": "Nearly 23 feet high, it made the young Titian famous and is still in place over the high altar it was painted for.",
+     "symbolism": "Three zones, earth, Mary and heaven, are joined by her movement upward and by the red of her robe and of the apostles' cloaks.",
+     "impact": "Its sweeping energy shaped Baroque altarpieces for two centuries.",
+     "img": "img/assumption0.jpg",
+     "credit": "Public domain, via Wikimedia Commons",
+     "source": "https://commons.wikimedia.org/wiki/File:Tizian_041.jpg"
+    }
+   ]
   },
   {
    "id": "thomasindia",
@@ -617,7 +681,23 @@
    ],
    "orderNote": "Basis: Early tradition. The Acts of Thomas, written in Syriac at Edessa in the early 3rd century, tells of his mission to King Gondophares. Gondophares was long thought a fiction, until coins and the Takht-i-Bahi inscription (found 1857, dated to about AD 46) showed an Indo-Parthian king of that name ruling in what is now Pakistan and Afghanistan. Origen, as quoted by Eusebius (Church History 3.1), gives Thomas Parthia; Ephrem and later Syriac writers speak of India. The landing at Muziris in AD 52 is the Kerala tradition, written down later but held for centuries.",
    "lane": "tradition",
-   "art": []
+   "art": [
+    {
+     "kind": "Artifact",
+     "title": "Silver tetradrachm of Gondophares",
+     "artist": "Mint of the Indo-Parthian kingdom",
+     "year": "c. AD 20–46",
+     "medium": "Silver coin",
+     "location": "Photographed in a museum display",
+     "description": "A coin of King Gondophares, showing the king on horseback on one side and a standing god on the other, with inscriptions in Greek and Kharoshthi.",
+     "significance": "Coins like this proved that Gondophares, the king of the Acts of Thomas, was a real ruler of the 1st century in the borderlands of India.",
+     "symbolism": "The two scripts, Greek and Indian, show a kingdom where the Mediterranean and India met.",
+     "impact": "The discovery gave historical weight to the old tradition of Thomas in India.",
+     "img": "img/thomasindia0.jpg",
+     "credit": "Photo: Jean-Michel Moullec from Vern sur Seiche (35, Bret, CC BY 2.0, via Wikimedia Commons",
+     "source": "https://commons.wikimedia.org/wiki/File:A18_Gondophares_tetradrachme_1_(8216148203).jpg"
+    }
+   ]
   },
   {
    "id": "andrewpatras",
@@ -646,7 +726,23 @@
    ],
    "orderNote": "Basis: Early tradition. Origen, as quoted by Eusebius (Church History 3.1), says Andrew's lot was Scythia, north of the Black Sea. The Acts of Andrew, from the late 2nd century, sets his martyrdom at Patras; the date of about AD 60 is traditional. His relics were taken to Constantinople in 357, and his head, kept in Rome from 1462, was given back to Patras by Pope Paul VI in 1964.",
    "lane": "tradition",
-   "art": []
+   "art": [
+    {
+     "kind": "Masterpiece",
+     "title": "The Martyrdom of St Andrew",
+     "artist": "Bartolomé Esteban Murillo",
+     "year": "c. 1675–1682",
+     "medium": "Oil on canvas",
+     "location": "Museo del Prado, Madrid",
+     "description": "Andrew, bound to an X-shaped cross, looks up toward a burst of light where angels descend with a palm and wreath, while soldiers on horseback and onlookers gather below.",
+     "significance": "A late work of the Seville master, painted with the soft, glowing light of his mature style.",
+     "symbolism": "The saltire cross became Andrew's emblem; the light from heaven turns the execution into a welcome.",
+     "impact": "Murillo's gentle, luminous piety made him one of the most loved painters of Spain.",
+     "img": "img/andrewpatras0.jpg",
+     "credit": "Public domain, via Wikimedia Commons",
+     "source": "https://commons.wikimedia.org/wiki/File:El_martirio_de_san_Andr%C3%A9s.jpg"
+    }
+   ]
   },
   {
    "id": "jamesjust",
@@ -675,7 +771,23 @@
    ],
    "orderNote": "Basis: Early tradition, and history. The Jewish historian Josephus, writing about AD 93, records the death of \"the brother of Jesus who was called Christ, whose name was James\" (Antiquities 20.200). The fuller's club and the fall from the Temple come from Hegesippus, a 2nd-century Christian writer quoted by Eusebius (Church History 2.23). James wrote, by tradition, the Letter of James; Catholics identify him with James son of Alphaeus, the Orthodox keep them distinct.",
    "lane": "tradition",
-   "art": []
+   "art": [
+    {
+     "kind": "Icon",
+     "title": "St James, Brother of the Lord, Enthroned",
+     "artist": "Emmanuel Tzanes",
+     "year": "1683",
+     "medium": "Tempera on panel",
+     "location": "Greece (Cretan school)",
+     "description": "James sits enthroned in bishop's vestments, blessing with one hand and holding an open Gospel book; small images of the Virgin and Child and of Christ appear in the upper corners, and the donor kneels at his feet.",
+     "significance": "Tzanes was a leading Cretan icon painter who worked in Venice; James appears as first bishop of Jerusalem.",
+     "symbolism": "The bishop's omophorion marks him as head of the mother church of Jerusalem; the gold background is the light of heaven.",
+     "impact": "The Liturgy of St James, still used on his feast, keeps his memory in Eastern worship.",
+     "img": "img/jamesjust0.jpg",
+     "credit": "Public domain, via Wikimedia Commons",
+     "source": "https://commons.wikimedia.org/wiki/File:James_the_Just_Emmanuel_Tzanes.png"
+    }
+   ]
   },
   {
    "id": "paulspain",
@@ -793,7 +905,23 @@
    ],
    "orderNote": "Basis: Later legend, though old. The meeting is told in the apocryphal Acts of Peter, written about AD 180–190; Ambrose of Milan retells it in the 4th century. The church Domine Quo Vadis was rebuilt in its present form in 1637. The story echoes John 13:36, Peter's question at the Last Supper, and the Lord's answer that he would follow later.",
    "lane": "tradition",
-   "art": []
+   "art": [
+    {
+     "kind": "Masterpiece",
+     "title": "Domine, Quo Vadis?",
+     "artist": "Annibale Carracci",
+     "year": "1601–1602",
+     "medium": "Oil on panel",
+     "location": "National Gallery, London",
+     "description": "On a road outside Rome, Christ, carrying his cross, strides toward the viewer; Peter starts back in astonishment, his arms thrown out.",
+     "significance": "A small, powerful work from Carracci's Roman years, painted with few figures and strong gestures.",
+     "symbolism": "The cross Christ carries foretells Peter's own; Christ's pointing hand turns him back toward Rome and his martyrdom.",
+     "impact": "It fixed the image of the Quo Vadis story in Western art and was widely copied.",
+     "img": "img/quovadis0.jpg",
+     "credit": "Public domain, via Wikimedia Commons",
+     "source": "https://commons.wikimedia.org/wiki/File:Domine,_quo_vadis.jpg"
+    }
+   ]
   },
   {
    "id": "petercross",
@@ -863,7 +991,23 @@
    ],
    "orderNote": "Basis: Early tradition, and well attested. 1 Clement 5–6 (c. AD 96) joins Peter's and Paul's martyrdoms to Nero's persecution; Tacitus (Annals 15.44) describes the persecution itself. Tertullian (c. 200) says Peter suffered \"a passion like his Lord's\" in Rome, and Origen (in Eusebius, Church History 3.1) that he was crucified head downward. About 200 the Roman priest Gaius pointed to the \"trophies\" of the apostles on the Vatican and the Ostian Way. Excavations under St Peter's in 1939–1949 found that shrine, and Pope Paul VI announced in 1968 that bones from it had been identified, with moral certainty, as Peter's.",
    "lane": "tradition",
-   "art": []
+   "art": [
+    {
+     "kind": "Masterpiece",
+     "title": "The Crucifixion of St Peter",
+     "artist": "Caravaggio",
+     "year": "1601",
+     "medium": "Oil on canvas",
+     "location": "Cerasi Chapel, Santa Maria del Popolo, Rome",
+     "description": "Three laborers strain to raise the heavy cross on which Peter is nailed head down; the old apostle lifts his head and looks past the nails.",
+     "significance": "Painted for the same chapel as Carracci's altarpiece; Caravaggio shows the event as hard, physical work, with the executioners' faces hidden.",
+     "symbolism": "The upside-down cross, Peter's chosen humility, is now itself a symbol of the papacy.",
+     "impact": "Its realism and raking light made it one of the defining images of Baroque Rome.",
+     "img": "img/petercross0.jpg",
+     "credit": "Public domain, via Wikimedia Commons",
+     "source": "https://commons.wikimedia.org/wiki/File:Crucifixion_of_Saint_Peter-Caravaggio_(c.1600).jpg"
+    }
+   ]
   },
   {
    "id": "paulmartyr",
@@ -920,7 +1064,23 @@
    ],
    "orderNote": "Basis: Early tradition. 1 Clement 5 (c. AD 96) says Paul \"bore witness before the rulers\" after reaching the limits of the west. Eusebius (Church History 2.25) says he was beheaded in Rome under Nero, and quotes Gaius on his \"trophy\" on the Ostian Way. Tre Fontane is named as the place of death from the 6th century. A marble sarcophagus under the high altar of St Paul Outside the Walls was examined in 2006–2009; bone fragments inside were dated to the 1st or 2nd century.",
    "lane": "tradition",
-   "art": []
+   "art": [
+    {
+     "kind": "Masterpiece",
+     "title": "The Beheading of St Paul",
+     "artist": "Enrique Simonet",
+     "year": "1887",
+     "medium": "Oil on canvas",
+     "location": "Málaga Cathedral",
+     "description": "Paul's body lies on the ground after the sword stroke, his haloed head beside it, while Roman soldiers and a crowd in pale robes press around in a hazy street.",
+     "significance": "Simonet painted it as a scholarship student in Rome and showed it in Madrid in 1887, where it was much admired.",
+     "symbolism": "The light around the fallen head marks him a saint at the moment of death; the sword, the instrument of his martyrdom, is his emblem in art.",
+     "impact": "It made Simonet's name and became one of the best-known Spanish religious paintings of the 19th century.",
+     "img": "img/paulmartyr0.jpg",
+     "credit": "Public domain, via Wikimedia Commons",
+     "source": "https://commons.wikimedia.org/wiki/File:Decapitaci%C3%B3n_de_San_Pablo_-_Simonet_-_1887.jpg"
+    }
+   ]
   },
   {
    "id": "pella",
@@ -1044,7 +1204,23 @@
    ],
    "orderNote": "Basis: Early tradition. The Acts of Thomas (3rd century) tells of his martyrdom by spear at the order of a king called Mazdai. St Ephrem the Syrian (died 373) writes of his relics brought from India to Edessa. The site at Mylapore was described by travelers from the 13th century, including Marco Polo; the Portuguese rebuilt the church over the tomb in 1523.",
    "lane": "tradition",
-   "art": []
+   "art": [
+    {
+     "kind": "Masterpiece",
+     "title": "The Martyrdom of St Thomas",
+     "artist": "Peter Paul Rubens",
+     "year": "1636–1638",
+     "medium": "Oil on canvas",
+     "location": "National Gallery Prague",
+     "description": "Thomas kneels at a pagan altar as his killers stab him with spears, while angels descend with a wreath and palm.",
+     "significance": "Painted late in Rubens's life for the high altar of the Augustinian church of St Thomas in Prague's Lesser Town; the original is now in the National Gallery Prague.",
+     "symbolism": "The palm and wreath are the martyr's victory; the idol behind shows the faith he would not deny.",
+     "impact": "An example of the grand Counter-Reformation altarpiece that Rubens perfected.",
+     "img": "img/thomasdeath0.jpg",
+     "credit": "Public domain, via Wikimedia Commons",
+     "source": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Martyrdom_of_St_Thomas.jpg"
+    }
+   ]
   },
   {
    "id": "philiphierapolis",
@@ -1076,7 +1252,23 @@
    ],
    "orderNote": "Basis: Early tradition. Polycrates' letter is quoted by Eusebius (Church History 3.31 and 5.24). Early writers may have confused the apostle Philip with Philip the evangelist, one of the Seven, whose four prophesying daughters appear in Acts 21:8–9; Eusebius himself treats them as one. The date of about AD 80 is a placeholder; the tradition gives none firmly.",
    "lane": "tradition",
-   "art": []
+   "art": [
+    {
+     "kind": "Masterpiece",
+     "title": "The Crucifixion of St Philip",
+     "artist": "Filippino Lippi",
+     "year": "1487–1502",
+     "medium": "Fresco",
+     "location": "Strozzi Chapel, Santa Maria Novella, Florence",
+     "description": "Philip is hoisted on a cross with ropes and poles by straining workmen, before a crowd and an ornate classical setting.",
+     "significance": "Part of Filippino's fresco cycle for the banker Filippo Strozzi, whose patron saint Philip was; a companion scene shows Philip driving a dragon from the temple at Hierapolis.",
+     "symbolism": "The fantastic antique architecture evokes the pagan city whose idols Philip defied.",
+     "impact": "The Strozzi Chapel frescoes are among the most inventive of late 15th-century Florence.",
+     "img": "img/philiphierapolis0.jpg",
+     "credit": "Public domain, via Wikimedia Commons",
+     "source": "https://commons.wikimedia.org/wiki/File:Filippino_Lippi_-_Crucifixion_of_St_Philip_-_WGA13153.jpg"
+    }
+   ]
   },
   {
    "id": "johnephesus",
@@ -1162,7 +1354,23 @@
    ],
    "orderNote": "Basis: Scripture for John's stay on Patmos (Revelation 1:9). The date comes from Irenaeus (Against Heresies 5.30.3), who says the vision was seen \"toward the end of Domitian's reign\" (81–96); Eusebius (3.18 and 3.20) adds the exile and return. Whether the John of Revelation is the apostle has been debated since the 3rd century; the Church's tradition holds that he is.",
    "lane": "tradition",
-   "art": []
+   "art": [
+    {
+     "kind": "Masterpiece",
+     "title": "St John the Evangelist on the Island of Patmos",
+     "artist": "Diego Velázquez",
+     "year": "c. 1618",
+     "medium": "Oil on canvas",
+     "location": "National Gallery, London",
+     "description": "A young John sits with pen and book, looking up at the vision of the woman clothed with the sun, with an eagle at his side.",
+     "significance": "One of Velázquez's earliest religious works, painted in Seville at about nineteen for a Carmelite convent.",
+     "symbolism": "The eagle is John's emblem; the vision in the sky is the woman of Revelation 12, read as Mary.",
+     "impact": "It was paired with his Immaculate Conception, linking John's vision to Spain's devotion to Mary.",
+     "img": "img/patmos0.jpg",
+     "credit": "Public domain, via Wikimedia Commons",
+     "source": "https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_018_(John_the_Evangelist_from_Patmos).jpg"
+    }
+   ]
   }
  ]
 }

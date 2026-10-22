@@ -283,7 +283,7 @@
       if (e.art.length) body += `<p class="credit">Images come from Wikimedia Commons. Paintings are public domain; photos of objects carry the photographer's license as noted. Tap an image to enlarge it.</p>`;
     } else {
       body += `<p><b>${esc(p.name)}</b> · ${esc(p.region)} <span class="pill ${p.certainty}">${p.certainty}</span></p><p>${esc(p.note)}</p>`;
-      if (p.today) body += `<h3>Today</h3><figure class="today">${p.today.img ? `<img src="${esc(p.today.img)}" alt="${esc(p.today.credit.split(". Photo")[0])}" loading="lazy" data-today onerror="this.remove()">` : ""}<div class="tx"><p>${esc(p.today.text)}</p><p class="credit">${esc(p.today.credit)} · <a href="${esc(p.today.source)}" target="_blank" rel="noopener">file page</a></p></div></figure>`;
+      if (p.today) body += `<h3>Today</h3><figure class="today">${p.today.img ? `<img src="${esc(p.today.img)}" alt="${esc(p.today.credit.split(". Photo")[0])}" loading="lazy" data-today onerror="this.remove()">` : ""}<div class="tx"><p>${esc(p.today.text)}</p>${p.today.credit ? `<p class="credit">${esc(p.today.credit)} · <a href="${esc(p.today.source)}" target="_blank" rel="noopener">file page</a></p>` : ""}</div></figure>`;
       const here = EVENTS.map((x, i) => [x, i]).filter(([x]) => x.place === e.place);
       body += `<h3>Events here</h3>` + here.map(([x, i]) => `<p class="echo"><a href="#" data-go="${i}" style="color:var(--lapis)">${esc(x.title)}</a> · ${esc(x.date)}</p>`).join("");
       body += `<p class="credit">Certainty: Certain means the site is securely identified; Probable means scholars broadly agree; Traditional means the location rests on early Church tradition.</p>`;
